@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="paperformat_oristar_quotation" model="report.paperformat">
+            <field name="name">Oristar Quotation</field>
+            <field name="default" eval="True"/>
+            <field name="format">A4</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">10</field>
+            <field name="margin_bottom">10</field>
+            <field name="margin_left">10</field>
+            <field name="margin_right">10</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">0</field>
+            <field name="dpi">80</field>
+        </record>
+        <record id="quotation_so_report" model="ir.actions.report">
+            <field name="name">Quotation</field>
+            <field name="model">sale.order</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">oristar_ecommerce_website.quotation_data_report</field>
+            <field name="paperformat_id" ref="oristar_ecommerce_website.paperformat_oristar_quotation"/>
+        </record>
+        <template id="quotation_data_report">
+            <t t-call="web.basic_layout">
+                <style>
+                    .article {
+                        font-family: "Roboto", "Odoo Unicode Support Noto", sans-serif;
+                    }
+                    .rad15 {
+                        border: 1px solid #333;
+                        padding: 15px;
+                        border-radius: 30px
+                    }
+                    .my-row {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                    }
+                    .wp48 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 48%;
+                        flex: 0 0 48%;
+                        max-width: 48%;
+                        position: relative;
+                        width: 100%;
+                        min-height: 1px;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                        box-sizing:border-box;
+                    }
+                    .wp4 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 4%;
+                        flex: 0 0 4%;
+                        max-width: 4%;
+                        position: relative;
+                        width: 100%;
+                        min-height: 1px;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                        box-sizing:border-box;
+                    }
+                    .mr-50 {
+                        margin-right: 50px;
+                    }
+                </style>
+                <div class="row">
+                    <div class="col-6">
+                        <img class="float-left mb-5" src="/oristar_ecommerce_website/static/src/images/icons/img_1.png"/>
+                    </div>
+                    <div class="col-6">
+                        <img class="float-right mb-5" src="/oristar_ecommerce_website/static/src/images/icons/img.png"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <p class="font-weight-bold">ORISTAR CORP.</p>
+                        <p>Số 8 Tôn Thất Thuyết, Hà Nội</p>
+                        <p>Phone: 024.3972 0120 - FAX: 024.3972 0124</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="font-weight-bold">Branch</p>
+                        <p class="">Đường N3, KCN cao Sài Gòn, P. Long Thạnh Mỹ, Q. 9, HCM</p>
+                        <p class="">Phone: 028.7108 8838 -FAX: 028.7108 8538</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="font-weight-bold">Factory</p>
+                        <p class="">KCN Tân Quang, Văn Lâm, Hưng Yên</p>
+                        <p class="">Phone: 0221.379 1661 -FAX: 0221.3791607</p>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-weight-bold mt-3 mb-3 text-center">================= ORDER &amp; ORDER CONFIRMATION =================</h5>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p><span class="font-weight-bold">Hà Nội</span>,
+                            <span class="font-weight-bold"> date </span> <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d')"/>
+                            <span class="font-weight-bold"> month </span> <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%m')"/>
+                            <span class="font-weight-bold"> year </span> <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y')"/>
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p class="font-weight-bold">Số.:.../BG/HN-17 Oristar. 2017</p>
+                    </div>
+                </div>
+                <div class="my-row">
+                    <div class="wp48 rad15">
+                        <div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="font-weight-bold" width="70">Company:</td>
+                                        <td class="font-weight-bold">Oristar Corp.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold" width="70">Representative:</td>
+                                        <td ></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold" width="70">Position:</td>
+                                        <td class="font-weight-bold"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold" width="70">Address:</td>
+                                        <td>
+                                            <t t-set="company" t-value="request.env.company"/>
+                                            <t t-esc="company.street"/>
+                                            <t t-esc="company.state_id.name if company.state_id else ''"/>
+                                            <t t-esc="company.country_id.name if company.country_id else ''"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold" width="70">Tel/Fax:</td>
+                                        <td><t t-esc="company.phone"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold" width="70">Email:</td>
+                                        <td><t t-esc="company.email"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="wp4"></div>
+                    <div class="wp48 rad15">
+                        <t t-set="partner" t-value="docs[0].partner_id.sudo()"/>
+                        <div >
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="font-weight-bold" width="70">Company:</td>
+                                        <td class="font-weight-bold">
+                                            <t t-esc="partner.parent_id.name if partner.company_type == 'person' else partner.name"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold"  width="70">Representative:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold" width="70">Position:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold" width="70">Address:</td>
+                                        <td>
+                                            <t t-esc="partner.street"/>
+                                            <t t-esc="partner.township_id.name if partner.township_id else ''"/>
+                                            <t t-esc="partner.district_id.name if partner.district_id else ''"/>
+                                            <t t-esc="partner.state_id.name if partner.state_id else ''"/>
+                                            <t t-esc="partner.country_id.name if partner.country_id else ''"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold" width="70">Tel/Fax:</td>
+                                        <td>
+                                            <t t-esc="partner.phone"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-weight-bold" width="70">Email:</td>
+                                        <td>
+                                             <t t-set="email" t-value="partner.email"/>
+                                             <t t-esc="email"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <p class="font-weight-bold mt-2">Joint Stock Company Oristar (Oristar Corp.) Sincerely send you the quotation</p>
+                <p><span class="font-weight-bold">1. Detail</span></p>
+                <p><span class="font-weight-bold float-right mr-50">Monetary: VND</span></p>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="font-weight-bold">STT</th>
+                            <th class="font-weight-bold">Product</th>
+                            <th class="font-weight-bold">Size (mm)</th>
+                            <th class="font-weight-bold">Origin</th>
+                            <th class="font-weight-bold">Quantity (Pcs)</th>
+                            <th class="font-weight-bold">Weight (Kg)</th>
+                            <th class="font-weight-bold">Price Unit /Kg</th>
+                            <th class="font-weight-bold">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-set="i" t-value="1"/>
+                        <t t-foreach="docs[0].sudo().order_line" t-as="line">
+                            <tr>
+                                <td><t t-esc="i"/></td>
+                                <td><t t-esc="line.product_id.name"/></td>
+                                <td>
+                                    <t t-esc="line.product_thickness" />
+                                    <t t-if="line.product_long">
+                                        <t t-esc=" 'x' + str(line.product_long)"/>
+                                    </t>
+                                    <t t-if="line.product_width">
+                                        <t t-esc=" 'x' + str(line.product_width)"/>
+                                    </t>
+                                    <t t-if="line.milling_faces">
+                                        <t t-set="milling_faces_selection" t-value="line._fields.get('milling_faces').selection"/>
+                                        <t t-set="mfv" t-value="''"/>
+                                        <t t-foreach="milling_faces_selection" t-as="mf">
+                                            <t t-if="mf[0] == line.milling_faces">
+                                                <t t-set="mfv" t-value="mf[1]"/>
+                                            </t>
+                                        </t>
+                                        <p>Milling: <t t-esc="mfv"/></p>
+                                    </t>
+                                </td>
+                                <td><t t-esc="line.product_id.product_origin.name"/></td>
+                                <td><t t-esc="line.product_uom_qty"/></td>
+                                <td><t t-esc="'%.2f' % line.product_weight"/></td>
+                                <td><t t-esc="'{:,.2f}'.format(line.price_unit_with_shipping)[0:-3] + '{:,.2f}'.format(line.price_unit_with_shipping)[-3:].replace('.00','').replace(',00','')"/></td>
+                                <td><t t-esc="'{:,.2f}'.format(line.price_subtotal)[0:-3] + '{:,.2f}'.format(line.price_subtotal)[-3:].replace('.00','').replace(',00','')"/></td>
+                            </tr>
+                            <t t-set="i" t-value="i+1"/>
+                        </t>
+                        <tr>
+                            <td></td>
+                            <td class="font-weight-bold">Untaxed Amount:</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><t t-esc="'{:,.2f}'.format(docs[0].sudo().amount_untaxed)[0:-3] + '{:,.2f}'.format(docs[0].sudo().amount_untaxed)[-3:].replace('.00','').replace(',00','')"/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="font-weight-bold">VAT %</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><t t-esc="'{:,.2f}'.format(docs[0].sudo().amount_tax)[0:-3] + '{:,.2f}'.format(docs[0].sudo().amount_tax)[-3:].replace('.00','').replace(',00','')"/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="font-weight-bold">Total</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><t t-esc="'{:,.2f}'.format(docs[0].sudo().amount_total)[0:-3] + '{:,.2f}'.format(docs[0].sudo().amount_total)[-3:].replace('.00','').replace(',00','')"/></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <p>The weight (in Kg) above is provisional. Customers will pay based on the actual weight between the two parties.</p>
+                <p class="font-weight-bold">2.Quotation valid:</p>
+                <p class="font-weight-bold">3.Payment</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>- Payment:</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>- Account Number:</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="font-weight-bold">4.Shipping</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>- Shipping:</td>
+                            <td>
+                                <t t-if="docs[0].delivery_type == 'receive_at_manufactory'">
+                                    <span>Receive at Manufactory</span>
+                                </t>
+                                <t t-elif="docs[0].delivery_type == 'receive_at_customer_warehosue'">
+                                    <span>Receive at Customer Warehouse</span>
+                                </t>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>- Shipping address:</td>
+                            <t t-if="docs[0].partner_shipping_id and docs[0].partner_shipping_id.type == 'delivery' and docs[0].partner_shipping_id.active">
+                                <td>
+                                    <t t-set="partner_shipping" t-value="docs[0].partner_shipping_id.sudo()"/>
+                                    <t t-esc="partner_shipping.street"/>
+                                    <t t-esc="' ' + partner_shipping.township_id.name if partner_shipping.township_id else ''"/>
+                                    <t t-esc="' ' + partner_shipping.district_id.name if partner_shipping.district_id else ''"/>
+                                    <t t-esc="' ' + partner_shipping.state_id.name if partner_shipping.state_id else ''"/>
+                                    <t t-esc="' ' + partner_shipping.country_id.name if partner_shipping.country_id else ''"/>
+                                </td>
+                            </t>
+                            <t t-else="">
+                                <td></td>
+                            </t>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="font-weight-bold">5.Quality Standard</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>- Full size goods:</td>
+                            <td> Applicable according to Supplier's standards</td>
+                        </tr>
+                        <tr>
+                            <td>- Processed goods:</td>
+                            <td> Applying according to Oristar Factory's machining standards</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="font-weight-bold">6. Time to complain:</p>
+                <p>
+                    - Oristar Corp guarantees the quality and quantity of the goods within 30 days from the date of
+                    receipt with the specific conditions in the economic contract or Oristar Corp's principle contract.
+                </p>
+                <p class="font-weight-bold">7. Notes</p>
+                <div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="font-weight-bold">Sales Representatives</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="font-weight-bold">Buying Agent</p>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

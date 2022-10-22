@@ -1,0 +1,172 @@
+.full {
+    height: 100%;
+    background-color: rgba(33, 89, 163, 0.08);
+    overflow: hidden;
+    padding: 47px 0;
+    position: relative;
+}
+
+.full .logins label {
+    font-weight: 300;
+}
+
+.full .all {
+    position: absolute;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #787878;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.full .back a {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2159A3;
+}
+
+.full .back a img {
+    margin-right: 20px;
+}
+
+.full .logins {
+    width: 430px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 35px 30px;
+    margin-top: 10px;
+}
+
+.full .logins-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 35px 30px;
+    background-color: #fff;
+    width: 430px;
+    border-radius: 4px;
+    margin: 0;
+}
+
+.full .logins .title h3 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 36px;
+    color: #2159A3;
+    margin-bottom: 5px;
+}
+
+.full .logins .title p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #787878;
+}
+
+.full .logins .form-group {
+    margin-bottom: 1rem;
+}
+
+.full .logins .form-control {
+    background: #FFFFFF;
+    border: 0.4px solid hsla(0, 0%, 87%, 0.404);
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 56px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2159A3;
+}
+
+.full .logins .form-control:focus {
+    border: 1px solid rgba(33, 89, 163, 1);
+}
+
+.full .logins button {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.full .logins a {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #0055A8;
+}
+
+div.oe_login_form .alert-success {
+    display: none;
+}
+div.oe_login_form .alert-success.d-show {
+    display: block;
+}
+
+div.oe_login_form .btn-link.btn-sm.float-right {
+    /*Hide back to login button */
+    display: none;
+}
+
+.full .dk .things {
+    padding: 30px 15px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.full .dk .things:hover {
+    background-color: var(--blue);
+}
+
+.full .dk .things:hover a {
+    color: #fff;
+}
+
+.full .dk .things a {
+    font-size: 14px;
+    line-height: 17px;
+    color: #2159A3;
+    text-decoration: none;
+}
+
+.full .dk .things .img {
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 19px;
+    border: 1px solid var(--blue);
+    line-height: 40px;
+}
+
+.full .dk .things:last-child .img {
+    border: 0;
+}
+
+.full .dk .things .img img {
+    width: 30px;
+    height: 30px;
+}
+
+.full .xacminh .col-2 {
+    padding: 0px 7.5px 20px 7.5px;
+}
+.full .xacminh .form-control {
+    border: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 50px;
+    text-align: center;
+    width: 50px;
+}

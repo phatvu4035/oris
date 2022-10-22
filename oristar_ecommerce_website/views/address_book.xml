@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="portal_my_home_sale" name="Show Address Book" customize_show="True" inherit_id="portal.portal_my_home" priority="20">
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+            <t t-call="portal.portal_docs_entry">
+                <t t-set="title">Address Book</t>
+                <t t-set="url" t-value="'/my/address-book/delivery'"/>
+                <t t-set="placeholder_count" t-value="'address_count'"/>
+            </t>
+        </xpath>
+    </template>
+    <template id="address_book" name="Address Book">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="False"/>
+            <div class="breadcrumb-top">
+                <div class="container">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href=""><img src="/oristar_ecommerce_website/static/src/images/icons/Vector_3.png" alt="" /></a>
+                            </li>
+                            <li class="breadcrumb-item"><a href="/">Homepage</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Address Book</li>
+                        </ol>
+                    </nav>
+                    <div class="profile or_portal_address_book my-address">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="title">
+                                        <h3><t t-esc="partner.name"/></h3>
+                                        <p>ID: <t t-esc="partner.id"/></p>
+                                        <p>Email: <t t-esc="partner.email"/></p>
+                                        <p>Phone: <t t-esc="partner.phone"/></p>
+                                    </div>
+                                    <div class="category-profile">
+                                        <ul>
+                                        <li>
+                                            <a href="/my/account"><img src="/oristar_ecommerce_website/static/src/images/icons/Vectordaf.png"
+                                                     alt=""/>
+                                                My account
+                                            </a>
+                                        </li>
+                                        <li><a href="/my/security"><img src="/oristar_ecommerce_website/static/src/images/icons/Vectoadsfr.png"
+                                                     alt=""/>
+                                                Change password
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/my/address-book/delivery">
+                                                <img src="/oristar_ecommerce_website/static/src/images/icons/Vedafdctor.png"
+                                                     alt=""/>
+                                                Address book
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/my/orders">
+                                                <img src="/oristar_ecommerce_website/static/src/images/icons/Vectaasdor.png"
+                                                     alt=""/>
+                                                My orders
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/my/address-book/invoice">
+                                            <img src="/oristar_ecommerce_website/static/src/images/icons/Vectorsdfsd.png" alt="" />
+                                                Invoice Address
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="content">
+                                        <div class="row align-items-center">
+                                            <div class="title col-lg-6 col-md-6">
+                                                <h4>Address Book</h4>
+                                                <p>Manage address book</p>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 text-right">
+                                                <a type="button" data-toggle="modal" data-target="#themmoi" class="btn-luu">Add new address</a>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade sua" id="themmoi">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <button type="button" class="close" data-dismiss="modal">
+                                                        <img src="/oristar_ecommerce_website/static/src/images/icons/x.png" alt="" />
+                                                    </button>
+                                                    <div class="title">
+                                                        <h3>Add new address</h3>
+                                                    </div>
+                                                    <form method="POST" class="portal-for-address">
+                                                        <input type="hidden" name="type" t-att-value="type"/>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group">
+                                                                    <t t-if="type == 'invoice'">
+                                                                        <label for="">Company Name<span class="text-danger">*</span></label>
+                                                                        <input name="name" type="text" class="form-control" placeholder="Oristar" />
+                                                                    </t>
+                                                                    <t t-else="">
+                                                                        <label for="">Full Name<span class="text-danger">*</span></label>
+                                                                        <input name="name" type="text" class="form-control" placeholder="Nguyễn Văn A" />
+                                                                    </t>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label for="">Country<span class="text-danger">*</span></label>
+                                                                    <div class="select">
+                                                                        <select name="country_id" class="form-control">
+                                                                            <option value="0">Country...</option>
+                                                                            <t t-foreach="countries or []" t-as="country">
+                                                                                <t t-set="country_external_id" t-value="country.get_external_id().get(country.id, '')"/>
+                                                                                <option t-att-value="country.id"
+                                                                                t-att-selected="country_external_id == 'base.vn'">
+                                                                                    <t t-esc="country.name" />
+                                                                                </option>
+                                                                            </t>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label for="">State<span class="text-danger">*</span></label>
+                                                                    <div class="select">
+                                                                        <select name="state_id" class="form-control">
+                                                                            <option value="0">State ...</option>
+                                                                            <t t-foreach="states or []" t-as="state">
+                                                                                <option
+                                                                                        t-att-value="state.id"
+                                                                                        t-att-data-country_id="state.country_id.id" t-att-selected="state.id == partner.state_id.id"
+                                                                                >
+                                                                                    <t t-esc="state.name" />
+                                                                                </option>
+                                                                            </t>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group">
+                                                                    <label for="">City</label>
+                                                                    <input type="text" name="city" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group">
+                                                                    <label for="">District<span class="text-danger">*</span></label>
+                                                                    <div class="select">
+                                                                        <select name="district_id" class="form-control">
+                                                                            <option value="0">District...</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group">
+                                                                    <label for="">Township</label>
+                                                                    <div class="select">
+                                                                        <select name="township_id" class="form-control">
+                                                                            <option value="">Township...</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group">
+                                                                    <label for="">Detailed Address<span class="text-danger">*</span></label>
+                                                                    <input name="street" type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group">
+                                                                    <label for="">Phone<span class="text-danger">*</span></label>
+                                                                    <input name="phone" type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group">
+                                                                    <label for="">Email</label>
+                                                                    <input name="email" type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group">
+                                                                    <label for="">ZIP / Postal Code</label>
+                                                                    <input name="zip" type="text" class="form-control" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <button class="btn-luu save-address-btn">Add</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade diachi" id="suadiachi">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <t t-foreach="childs" t-as="child">
+                                            <div class="item">
+                                                <div class="thing">
+                                                    <div class="things">
+                                                        <p><img src="/oristar_ecommerce_website/static/src/images/icons/Vecto1r.png" alt="" />Full Name</p>
+                                                        <span><t t-esc="child.name"/></span>
+                                                    </div>
+                                                    <div class="things">
+                                                        <p><img src="assets/img/icon/Ve23ctor.png" alt="" />Phone</p>
+                                                        <span><t t-esc="child.phone"/></span>
+                                                    </div>
+                                                    <div class="things">
+                                                        <p><img src="/oristar_ecommerce_website/static/src/images/icons/Vectosdfr.png" alt="" />Address</p>
+                                                        <span>
+                                                            <t t-esc="child.street"/> <t t-esc="child.state_id.name"/> <t t-esc="child.country_id.name"/>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="td">
+                                                    <a href="javascript:void(0);"  t-att-data-child-id="child.id" t-att-data-partner-id="partner.id" t-att-data-type="type"
+                                                       t-att-class="'active df-btn' if child.default_delivery_address else 'btn-luu set-default-addr active df-btn'">
+                                                        <t t-if="child.default_delivery_address">
+                                                            Default
+                                                        </t>
+                                                        <t t-else="">
+                                                            Set as default
+                                                        </t>
+                                                    </a>
+                                                    <a type="button" t-att-data-address-id="child.id" class="edit-addr" t-att-data-type="child.type">Edit</a>
+                                                    <a href="" class="delete-addr" t-att-data-child-id="child.id">Delete</a>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

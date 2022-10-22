@@ -1,0 +1,564 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oristar_pricing
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-22 14:03+0000\n"
+"PO-Revision-Date: 2022-09-22 14:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oristar_pricing
+#: model:ir.model.fields.selection,name:oristar_pricing.selection__product_pricelist_item__compute_price__api
+msgid "API"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__message_needaction
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__message_needaction
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__message_needaction
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__activity_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__activity_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__activity_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__activity_exception_decoration
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__activity_exception_decoration
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__activity_exception_decoration
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__activity_state
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__activity_state
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__activity_state
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__activity_type_icon
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__activity_type_icon
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__activity_type_icon
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: oristar_pricing
+#: code:addons/oristar_pricing/models/lme_price.py:0
+#, python-format
+msgid "Alread had price for material %s of market %s on %s"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,help:oristar_pricing.field_product_pricelist_item__lme_market_id
+#: model:ir.model.fields,help:oristar_pricing.field_product_pricelist_item__n_average
+msgid "Apply for Price method 3."
+msgstr "Áp dụng phương pháp 3."
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__message_attachment_count
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__message_attachment_count
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__message_attachment_count
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__close_price
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_spot_price__price
+msgid "Close Price"
+msgstr "Giá đóng"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_product_pricelist_item__compute_price
+msgid "Compute Price"
+msgstr "Giá tính toán"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__create_uid
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__create_uid
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_spot_price__create_uid
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__create_uid
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__create_date
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__create_date
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_spot_price__create_date
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__create_date
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_spot_price__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__description
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__description
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__description
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__display_name
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__display_name
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_spot_price__display_name
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__display_name
+#: model:ir.model.fields,field_description:oristar_pricing.field_product_pricelist_item__display_name
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__name
+#: model_terms:ir.ui.view,arch_db:oristar_pricing.price_file_form_view
+msgid "File Name"
+msgstr "Tên tệp tin"
+
+#. module: oristar_pricing
+#: code:addons/oristar_pricing/models/price_file.py:0
+#, python-format
+msgid "File extension must be '.xlsx'."
+msgstr "Phần mở rộng của tệp tin phải là '.xlsx'."
+
+#. module: oristar_pricing
+#: code:addons/oristar_pricing/models/price_file.py:0
+#, python-format
+msgid "File name must contain 'pp1' or 'pp2' or 'pp3'."
+msgstr "Tên tệp tin phải chứa 'pp1' hoặc 'pp2' hoặc 'pp3'."
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__message_follower_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__message_follower_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__message_follower_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__message_channel_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__message_channel_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__message_channel_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__message_partner_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__message_partner_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__message_partner_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,help:oristar_pricing.field_lme_market__activity_type_icon
+#: model:ir.model.fields,help:oristar_pricing.field_lme_price__activity_type_icon
+#: model:ir.model.fields,help:oristar_pricing.field_price_file__activity_type_icon
+#: model:ir.model.fields,help:oristar_pricing.field_profit_margin_range__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__id
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__id
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_spot_price__id
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__id
+#: model:ir.model.fields,field_description:oristar_pricing.field_product_pricelist_item__id
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__id
+msgid "ID"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__activity_exception_icon
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__activity_exception_icon
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__activity_exception_icon
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,help:oristar_pricing.field_lme_market__activity_exception_icon
+#: model:ir.model.fields,help:oristar_pricing.field_lme_price__activity_exception_icon
+#: model:ir.model.fields,help:oristar_pricing.field_price_file__activity_exception_icon
+#: model:ir.model.fields,help:oristar_pricing.field_profit_margin_range__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,help:oristar_pricing.field_lme_market__message_needaction
+#: model:ir.model.fields,help:oristar_pricing.field_lme_market__message_unread
+#: model:ir.model.fields,help:oristar_pricing.field_lme_price__message_needaction
+#: model:ir.model.fields,help:oristar_pricing.field_lme_price__message_unread
+#: model:ir.model.fields,help:oristar_pricing.field_price_file__message_needaction
+#: model:ir.model.fields,help:oristar_pricing.field_price_file__message_unread
+#: model:ir.model.fields,help:oristar_pricing.field_profit_margin_range__message_needaction
+#: model:ir.model.fields,help:oristar_pricing.field_profit_margin_range__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,help:oristar_pricing.field_lme_market__message_has_error
+#: model:ir.model.fields,help:oristar_pricing.field_lme_market__message_has_sms_error
+#: model:ir.model.fields,help:oristar_pricing.field_lme_price__message_has_error
+#: model:ir.model.fields,help:oristar_pricing.field_lme_price__message_has_sms_error
+#: model:ir.model.fields,help:oristar_pricing.field_price_file__message_has_error
+#: model:ir.model.fields,help:oristar_pricing.field_price_file__message_has_sms_error
+#: model:ir.model.fields,help:oristar_pricing.field_profit_margin_range__message_has_error
+#: model:ir.model.fields,help:oristar_pricing.field_profit_margin_range__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__message_is_follower
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__message_is_follower
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__message_is_follower
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model,name:oristar_pricing.model_lme_market
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__lme_market_id
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_spot_price__lme_market_id
+#: model:ir.model.fields,field_description:oristar_pricing.field_product_pricelist_item__lme_market_id
+#: model_terms:ir.ui.view,arch_db:oristar_pricing.lme_market_form_view
+msgid "LME Market"
+msgstr "Thị trường LME"
+
+#. module: oristar_pricing
+#: model:ir.actions.act_window,name:oristar_pricing.lme_market_action
+#: model_terms:ir.ui.view,arch_db:oristar_pricing.lme_market_tree_view
+msgid "LME Markets"
+msgstr "Thị trường LME"
+
+#. module: oristar_pricing
+#: model:ir.model,name:oristar_pricing.model_lme_price
+#: model_terms:ir.ui.view,arch_db:oristar_pricing.lme_price_form_view
+msgid "LME Price"
+msgstr "Giá LME"
+
+#. module: oristar_pricing
+#: model:ir.actions.act_window,name:oristar_pricing.lme_price_action
+#: model_terms:ir.ui.view,arch_db:oristar_pricing.lme_price_tree_view
+msgid "LME Prices"
+msgstr "Giá LME"
+
+#. module: oristar_pricing
+#: model:ir.model,name:oristar_pricing.model_lme_spot_price
+#: model_terms:ir.ui.view,arch_db:oristar_pricing.lme_spot_price_form_view
+msgid "LME Spot Price"
+msgstr "Giá LME Thời điểm"
+
+#. module: oristar_pricing
+#: model:ir.actions.act_window,name:oristar_pricing.lme_spot_price_action
+#: model_terms:ir.ui.view,arch_db:oristar_pricing.lme_spot_price_tree_view
+msgid "LME Spot Prices"
+msgstr "Giá LME Thời điểm"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market____last_update
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price____last_update
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_spot_price____last_update
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file____last_update
+#: model:ir.model.fields,field_description:oristar_pricing.field_product_pricelist_item____last_update
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__write_uid
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__write_uid
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_spot_price__write_uid
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__write_uid
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__write_date
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__write_date
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_spot_price__write_date
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__write_date
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__message_main_attachment_id
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__message_main_attachment_id
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__message_main_attachment_id
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: oristar_pricing
+#: model_terms:ir.ui.view,arch_db:oristar_pricing.lme_market_form_view
+msgid "Market Name"
+msgstr "Tên thị trường"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__size1_max
+msgid "Max Value of Size 1"
+msgstr "Giá trị cận trên KT1"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__message_has_error
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__message_has_error
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__message_has_error
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__message_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__message_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__message_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__size1_min
+msgid "Min Value of Size 1"
+msgstr "Giá trị cận dưới KT1"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__my_activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__my_activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__my_activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_product_pricelist_item__n_average
+msgid "N Average"
+msgstr "N trung bình"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__name
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__name
+#: model_terms:ir.ui.view,arch_db:oristar_pricing.lme_market_form_view
+msgid "Name"
+msgstr "Tên"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__activity_summary
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__activity_summary
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__activity_summary
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__activity_type_id
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__activity_type_id
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__activity_type_id
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__message_needaction_counter
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__message_needaction_counter
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__message_needaction_counter
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__message_has_error_counter
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__message_has_error_counter
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__message_has_error_counter
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,help:oristar_pricing.field_lme_market__message_needaction_counter
+#: model:ir.model.fields,help:oristar_pricing.field_lme_price__message_needaction_counter
+#: model:ir.model.fields,help:oristar_pricing.field_price_file__message_needaction_counter
+#: model:ir.model.fields,help:oristar_pricing.field_profit_margin_range__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,help:oristar_pricing.field_lme_market__message_has_error_counter
+#: model:ir.model.fields,help:oristar_pricing.field_lme_price__message_has_error_counter
+#: model:ir.model.fields,help:oristar_pricing.field_price_file__message_has_error_counter
+#: model:ir.model.fields,help:oristar_pricing.field_profit_margin_range__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,help:oristar_pricing.field_lme_market__message_unread_counter
+#: model:ir.model.fields,help:oristar_pricing.field_lme_price__message_unread_counter
+#: model:ir.model.fields,help:oristar_pricing.field_price_file__message_unread_counter
+#: model:ir.model.fields,help:oristar_pricing.field_profit_margin_range__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model,name:oristar_pricing.model_price_file
+#: model_terms:ir.ui.view,arch_db:oristar_pricing.price_file_form_view
+msgid "Price File"
+msgstr "Tệp tin dùng để tính giá"
+
+#. module: oristar_pricing
+#: model:ir.actions.act_window,name:oristar_pricing.price_file_action
+#: model_terms:ir.ui.view,arch_db:oristar_pricing.price_file_tree_view
+msgid "Price Files"
+msgstr "Tệp tin dùng để tính giá"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_product_pricelist_item__price_file_id
+msgid "Price Method"
+msgstr "Phương thức tính giá"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_product_pricelist_item__price_method_code
+msgid "Price Method Code"
+msgstr "Mã phương thức tính giá"
+
+#. module: oristar_pricing
+#: model:ir.model,name:oristar_pricing.model_product_pricelist_item
+msgid "Pricelist Rule"
+msgstr "Qui tắc bảng giá"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__product_material_id
+msgid "Product Material"
+msgstr "Vật liệu"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_spot_price__product_material_category_id
+msgid "Product Material Category"
+msgstr "Nhóm vật liệu"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_product_pricelist_item__tsln
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__profit_margin
+msgid "Profit Margin"
+msgstr "Tỉ suất lợi nhuận"
+
+#. module: oristar_pricing
+#: model:ir.actions.act_window,name:oristar_pricing.profit_margin_range_action
+#: model_terms:ir.ui.view,arch_db:oristar_pricing.profit_margin_range_form_view
+msgid "Profit Margin Range"
+msgstr "Khoảng Tỉ suất lợi nhuận"
+
+#. module: oristar_pricing
+#: model:ir.model,name:oristar_pricing.model_profit_margin_range
+msgid "Profit Margin Range Based Size 1"
+msgstr "Khoảng Tỉ suất lợi nhuận theo KT1"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_product_pricelist_item__profit_margin_ids
+#: model_terms:ir.ui.view,arch_db:oristar_pricing.profit_margin_range_tree_view
+msgid "Profit Margin Ranges"
+msgstr "Khoảng Tỉ suất lợi nhuận"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__record_datetime
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_spot_price__record_datetime
+msgid "Recorded At"
+msgstr "Ghi nhận lúc"
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__activity_user_id
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__activity_user_id
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__activity_user_id
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__message_has_sms_error
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__message_has_sms_error
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__message_has_sms_error
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,help:oristar_pricing.field_lme_market__activity_state
+#: model:ir.model.fields,help:oristar_pricing.field_lme_price__activity_state
+#: model:ir.model.fields,help:oristar_pricing.field_price_file__activity_state
+#: model:ir.model.fields,help:oristar_pricing.field_profit_margin_range__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,help:oristar_pricing.field_lme_market__activity_exception_decoration
+#: model:ir.model.fields,help:oristar_pricing.field_lme_price__activity_exception_decoration
+#: model:ir.model.fields,help:oristar_pricing.field_price_file__activity_exception_decoration
+#: model:ir.model.fields,help:oristar_pricing.field_profit_margin_range__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__message_unread
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__message_unread
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__message_unread
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__message_unread_counter
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__message_unread_counter
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__message_unread_counter
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_market__website_message_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_lme_price__website_message_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_price_file__website_message_ids
+#: model:ir.model.fields,field_description:oristar_pricing.field_profit_margin_range__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: oristar_pricing
+#: model:ir.model.fields,help:oristar_pricing.field_lme_market__website_message_ids
+#: model:ir.model.fields,help:oristar_pricing.field_lme_price__website_message_ids
+#: model:ir.model.fields,help:oristar_pricing.field_price_file__website_message_ids
+#: model:ir.model.fields,help:oristar_pricing.field_profit_margin_range__website_message_ids
+msgid "Website communication history"
+msgstr ""

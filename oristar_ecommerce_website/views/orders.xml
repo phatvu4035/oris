@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="my_orders" name="Orders">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="False"/>
+            <div class="profile or_portal_orders">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="title">
+                                <h3><t t-esc="request.env.user.partner_id.name"/></h3>
+                                <p>ID: <t t-esc="request.env.user.partner_id.id"/></p>
+                                <p>Email: <t t-esc="request.env.user.partner_id.email"/></p>
+                                <p>Phone: <t t-esc="request.env.user.partner_id.phone"/></p>
+                            </div>
+                            <div class="category-profile">
+                                <ul>
+                                    <li>
+                                        <a href="/my/account">
+                                            <img src="/oristar_ecommerce_website/static/src/images/icons/Vectordaf.png" alt="" />
+                                            My account
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/my/security">
+                                            <img src="/oristar_ecommerce_website/static/src/images/icons/Vectoadsfr.png" alt="" />
+                                            Change password
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/my/address-book/delivery">
+                                            <img src="/oristar_ecommerce_website/static/src/images/icons/Vedafdctor.png" alt="" />
+                                            Address book
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/my/orders">
+                                            <img src="/oristar_ecommerce_website/static/src/images/icons/Vectaasdor.png" alt="" />
+                                            My orders
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/my/address-book/invoice">
+                                            <img src="/oristar_ecommerce_website/static/src/images/icons/Vectorsdfsd.png" alt="" />
+                                            Invoice Address
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="content">
+                                <div class="qly">
+                                    <div class="title pb30">
+                                        <h4>Manage Orders</h4>
+                                        <p>Manage your order information and state</p>
+                                    </div>
+                                    <form action="" method="GET">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <input type="date" class="form-control" name="order_date"
+                                                           t-att-value="request.params.get('order_date', False)"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5">
+                                                <div class="searchss form-group p-0">
+                                                    <input type="text" class="form-control"
+                                                           placeholder="Search for order code" name="search"
+                                                           t-att-value="request.params.get('search', False)"
+                                                    />
+                                                    <img src="/oristar_ecommerce_website/static/src/images/icons/search.png" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <button class="btn-tim">Tìm</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <t t-if="not quotes and not confirmed and not produces and not deliveries and not delivered and not cancel">
+                                    <p>You currently have no orders.</p>
+                                </t>
+                                <t t-if="quotes or confirmed or produces or deliveries or delivered or cancel">
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#item1">
+                                                Quotation (<t t-esc="len(quotes)"/>)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#item2">
+                                                Confirmed (<t t-esc="len(confirmed)"/>)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#item3">
+                                                Producing (<t t-esc="len(produces)"/>)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#item4">
+                                                Delivering (<t t-esc="len(deliveries)"/>)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#item5">
+                                                Delivered (<t t-esc="len(delivered)"/>)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#item6">
+                                                Cancel (<t t-esc="len(cancel)"/>)
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div id="item1" class="tab-pane active">
+                                            <div class="tabless" style="overflow-x:auto;">
+                                                <t t-if="quotes">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>ORDER CODE</th>
+                                                                <th>ORDER DATE</th>
+                                                                <th>PAYMENT</th>
+                                                                <th>TOTAL</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <t t-foreach="quotes" t-as="order">
+                                                                <tr>
+                                                                    <td>
+                                                                        <t t-esc="order.name"/>
+                                                                    </td>
+                                                                    <td class="date-ord">
+                                                                        <span t-field="order.date_order"/>&amp;nbsp;
+                                                                    </td>
+                                                                    <td>
+                                                                        <t t-if="order.payment_method == 'debt'">
+                                                                            Debit
+                                                                        </t>
+                                                                        <t t-elif="order.payment_method == 'pay'">
+                                                                            Pay
+                                                                        </t>
+                                                                        <t t-elif="order.payment_method == 'advan'">
+                                                                            COD (Advanced)
+                                                                        </t>
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="do"><span t-field="order.amount_total"/></span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a type="button" data-toggle="modal" data-target="#chitiet"
+                                                                           class="btn-luu open-order-form" t-att-data-order-id="order.id">
+                                                                            Detail
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </t>
+                                                        </tbody>
+                                                    </table>
+                                                </t>
+                                                <t t-else="">
+                                                    <p>No quotation yet</p>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div id="item2" class="tab-pane fade">
+                                            <div class="tabless" style="overflow-x:auto;">
+                                                <t t-if="confirmed">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>ORDER CODE</th>
+                                                                <th>ORDER DATE</th>
+                                                                <th>PAYMENT</th>
+                                                                <th>TOTAL</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <t t-foreach="confirmed" t-as="order">
+                                                                <tr>
+                                                                    <td>
+                                                                        <t t-esc="order.name"/>
+                                                                    </td>
+                                                                    <td class="date-ord">
+                                                                        <span t-field="order.date_order"/>&amp;nbsp;
+                                                                    </td>
+                                                                    <td>
+                                                                        <t t-if="order.payment_method == 'debt'">
+                                                                            Debit
+                                                                        </t>
+                                                                        <t t-elif="order.payment_method == 'pay'">
+                                                                            Pay
+                                                                        </t>
+                                                                        <t t-elif="order.payment_method == 'advan'">
+                                                                            COD (Advanced)
+                                                                        </t>
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="do"><span t-field="order.amount_total"/></span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a type="button" data-toggle="modal" data-target="#chitiet"
+                                                                           class="btn-luu open-order-form" t-att-data-order-id="order.id">
+                                                                            Detail
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </t>
+                                                        </tbody>
+                                                    </table>
+                                                </t>
+                                                <t t-else="">
+                                                    <p>No confirmed order yet</p>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div id="item3" class="tab-pane fade">
+                                            <div class="tabless" style="overflow-x:auto;">
+                                                <t t-if="produces">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>ORDER CODE</th>
+                                                                <th>ORDER DATE</th>
+                                                                <th>PAYMENT</th>
+                                                                <th>TOTAL</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <t t-foreach="produces" t-as="order">
+                                                                <tr>
+                                                                    <td>
+                                                                        <t t-esc="order.name"/>
+                                                                    </td>
+                                                                    <td class="date-ord">
+                                                                        <span t-field="order.date_order"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <t t-if="order.payment_method == 'debt'">
+                                                                            Debit
+                                                                        </t>
+                                                                        <t t-elif="order.payment_method == 'pay'">
+                                                                            Pay
+                                                                        </t>
+                                                                        <t t-elif="order.payment_method == 'advan'">
+                                                                            COD (Advanced)
+                                                                        </t>
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="do"><span t-field="order.amount_total"/></span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a type="button" data-toggle="modal" data-target="#chitiet"
+                                                                           class="btn-luu open-order-form" t-att-data-order-id="order.id">
+                                                                            Detail
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </t>
+                                                        </tbody>
+                                                    </table>
+                                                </t>
+                                                <t t-else="">
+                                                    <p>No producing order yet</p>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div id="item4" class="tab-pane fade">
+                                            <div class="tabless" style="overflow-x:auto;">
+                                                <t t-if="deliveries">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>ORDER CODE</th>
+                                                                <th>ORDER DATE</th>
+                                                                <th>PAYMENT</th>
+                                                                <th>TOTAL</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <t t-foreach="deliveries" t-as="order">
+                                                                <tr>
+                                                                    <td>
+                                                                        <t t-esc="order.name"/>
+                                                                    </td>
+                                                                    <td class="date-ord">
+                                                                        <span t-field="order.date_order"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <t t-if="order.payment_method == 'debt'">
+                                                                            Debit
+                                                                        </t>
+                                                                        <t t-elif="order.payment_method == 'pay'">
+                                                                            Pay
+                                                                        </t>
+                                                                        <t t-elif="order.payment_method == 'advan'">
+                                                                            COD (Advanced)
+                                                                        </t>
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="do"><span t-field="order.amount_total"/></span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a type="button" data-toggle="modal" data-target="#chitiet"
+                                                                           class="btn-luu open-order-form" t-att-data-order-id="order.id">
+                                                                        Detail
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </t>
+                                                        </tbody>
+                                                    </table>
+                                                </t>
+                                                <t t-else="">
+                                                    <p>No delivering order yet</p>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div id="item5" class="tab-pane fade">
+                                            <div class="tabless" style="overflow-x:auto;">
+                                                <t t-if="delivered">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>ORDER CODE</th>
+                                                                <th>ORDER DATE</th>
+                                                                <th>PAYMENT</th>
+                                                                <th>TOTAL</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <t t-foreach="delivered" t-as="order">
+                                                                <tr>
+                                                                    <td>
+                                                                        <t t-esc="order.name"/>
+                                                                    </td>
+                                                                    <td class="date-ord">
+                                                                        <span t-field="order.date_order"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <t t-if="order.payment_method == 'debt'">
+                                                                            Debit
+                                                                        </t>
+                                                                        <t t-elif="order.payment_method == 'pay'">
+                                                                            Pay
+                                                                        </t>
+                                                                        <t t-elif="order.payment_method == 'advan'">
+                                                                            COD (Advanced)
+                                                                        </t>
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="do"><span t-field="order.amount_total"/></span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a type="button" data-toggle="modal" data-target="#chitiet"
+                                                                           class="btn-luu open-order-form" t-att-data-order-id="order.id">
+                                                                        Detail
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </t>
+                                                        </tbody>
+                                                    </table>
+                                                </t>
+                                                <t t-else="">
+                                                    <p>No delivered order yet</p>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div id="item6" class="tab-pane fade">
+                                            <div class="tabless" style="overflow-x:auto;">
+                                                <t t-if="cancel">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>ORDER CODE</th>
+                                                                <th>ORDER DATE</th>
+                                                                <th>PAYMENT</th>
+                                                                <th>TOTAL</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <t t-foreach="cancel" t-as="order">
+                                                                <tr>
+                                                                    <td>
+                                                                        <t t-esc="order.name"/>
+                                                                    </td>
+                                                                    <td class="date-ord">
+                                                                        <span t-field="order.date_order" t-options="{'widget': 'datetime'}"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <t t-if="order.payment_method == 'debt'">
+                                                                            Debit
+                                                                        </t>
+                                                                        <t t-elif="order.payment_method == 'pay'">
+                                                                            Pay
+                                                                        </t>
+                                                                        <t t-elif="order.payment_method == 'advan'">
+                                                                            COD (Advanced)
+                                                                        </t>
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="do"><span t-field="order.amount_total"/></span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a type="button" data-toggle="modal" data-target="#chitiet"
+                                                                           class="btn-luu open-order-form" t-att-data-order-id="order.id">
+                                                                        Detail
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </t>
+                                                        </tbody>
+                                                    </table>
+                                                </t>
+                                                <t t-else="">
+                                                    <p>No cancel order yet</p>
+                                                </t>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </t>
+                                <div class="modal fade" id="chitiet">
+                                    <div class="modal-dialog">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

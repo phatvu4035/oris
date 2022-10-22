@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Material Category -->
+        <record id="product_basic_shape_00" model="product.basic.shape">
+            <field name="name">Cuộn</field>
+            <field name="has_size1">True</field>
+            <field name="has_size2">True</field>
+            <field name="has_size3">False</field>
+            <field name="has_weight">True</field>
+            <field name="is_compact">False</field>
+        </record>
+        <record id="product_basic_shape_01" model="product.basic.shape">
+            <field name="name">Tấm</field>
+            <field name="has_size1">True</field>
+            <field name="has_size2">True</field>
+            <field name="has_size3">True</field>
+            <field name="has_weight">False</field>
+            <field name="is_compact">False</field>
+        </record>
+        <record id="product_basic_shape_02" model="product.basic.shape">
+            <field name="name">Thanh đặc</field>
+            <field name="has_size1">True</field>
+            <field name="has_size2">True</field>
+            <field name="has_size3">True</field>
+            <field name="has_weight">False</field>
+            <field name="is_compact">True</field>
+        </record>
+        <record id="product_basic_shape_03" model="product.basic.shape">
+            <field name="name">Thanh rỗng</field>
+            <field name="has_size1">True</field>
+            <field name="has_size2">True</field>
+            <field name="has_size3">True</field>
+            <field name="has_weight">False</field>
+            <field name="is_compact">False</field>
+        </record>
+        <record id="product_basic_shape_04" model="product.basic.shape">
+            <field name="name">Thanh định hình</field>
+            <field name="has_size1">True</field>
+            <field name="has_size2">True</field>
+            <field name="has_size3">True</field>
+            <field name="has_weight">False</field>
+            <field name="is_compact">False</field>
+        </record>
+        <record id="product_basic_shape_05" model="product.basic.shape">
+            <field name="name">Bi</field>
+        </record>
+        <record id="product_basic_shape_06" model="product.basic.shape">
+            <field name="name">Dây</field>
+        </record>
+
+        <!--Detail Shape-->
+        <record id="product_detailed_shape_00" model="product.detailed.shape">
+            <field name="name">Chữ Nhật</field>
+            <field name="shape_category">cnvcv</field>
+            <field name="product_basic_shape_ids" eval="[(4, ref('product_basic_shape_02'))]"/>
+        </record>
+        <record id="product_detailed_shape_01" model="product.detailed.shape">
+            <field name="name">Tròn</field>
+            <field name="shape_category">cnvct</field>
+            <field name="product_basic_shape_ids" eval="[(4, ref('product_basic_shape_02'))]"/>
+        </record>
+        <record id="product_detailed_shape_02" model="product.detailed.shape">
+            <field name="name">Vuông</field>
+            <field name="shape_category">cnvcv</field>
+            <field name="product_basic_shape_ids" eval="[(4, ref('product_basic_shape_02'))]"/>
+        </record>
+        <record id="product_detailed_shape_03" model="product.detailed.shape">
+            <field name="name">Lục giác</field>
+            <field name="shape_category">lg</field>
+            <field name="product_basic_shape_ids" eval="[(4, ref('product_basic_shape_02'))]"/>
+        </record>
+        <record id="product_detailed_shape_04" model="product.detailed.shape">
+            <field name="name">Ống Tròn</field>
+            <field name="shape_category">ot</field>
+            <field name="product_basic_shape_ids" eval="[(4, ref('product_basic_shape_03'))]"/>
+        </record>
+        <record id="product_detailed_shape_05" model="product.detailed.shape">
+            <field name="name">Ống Vuông</field>
+            <field name="shape_category">ov</field>
+            <field name="product_basic_shape_ids" eval="[(4, ref('product_basic_shape_03'))]"/>
+        </record>
+        <record id="product_detailed_shape_06" model="product.detailed.shape">
+            <field name="name">Góc L</field>
+            <field name="shape_category">cnvcv</field>
+            <field name="product_basic_shape_ids" eval="[(4, ref('product_basic_shape_04'))]"/>
+        </record>
+    </data>
+</odoo>

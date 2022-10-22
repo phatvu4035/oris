@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Remove the default breadcrumb -->
+    <template id="portal_layout" name="Oristar Portal Layout" inherit_id="portal.portal_layout">
+        <xpath expr="//div[hasclass('o_portal')]" position="replace">
+            <div t-if="not no_breadcrumbs and not my_details and not breadcrumbs_searchbar" class="o_portal container mt-3">
+            </div>
+        </xpath>
+    </template>
+
+    <template id="portal_my_details" name="Oristar My Detail" inherit_id="portal.portal_my_details">
+        <xpath expr="//form" position="replace">
+            <form action="/my/account" method="post" class="portal-for-address portal-profile-form">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <t t-if="partner.state_id">
+                    <t t-set="districts" t-value="partner.env['res.district'].sudo().search([('state_id', '=', partner.state_id.id)])"/>
+                </t>
+                <t t-if="partner.district_id">
+                    <t t-set="townships" t-value="partner.env['res.township'].sudo().search([('district_id', '=', partner.district_id.id)])"/>
+                </t>
+                <div class="profile or_portal_details">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="title">
+                                    <h3><t t-esc="name or partner.name" /></h3>
+                                    <p>ID: <t t-esc="partner.id" /></p>
+                                    <p>Email: <t t-esc="email or partner.email" /></p>
+                                    <p>Phone: <t t-esc="phone or partner.phone" /></p>
+                                </div>
+                                <div class="category-profile">
+                                    <ul>
+                                        <li>
+                                            <a href=""><img src="/oristar_ecommerce_website/static/src/images/icons/Vectordaf.png"
+                                                     alt=""/>
+                                                My account
+                                            </a>
+                                        </li>
+                                        <li><a href="/my/security"><img src="/oristar_ecommerce_website/static/src/images/icons/Vectoadsfr.png"
+                                                     alt=""/>
+                                                Change password
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/my/address-book/delivery">
+                                                <img src="/oristar_ecommerce_website/static/src/images/icons/Vedafdctor.png"
+                                                     alt=""/>
+                                                Address book
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/my/orders">
+                                                <img src="/oristar_ecommerce_website/static/src/images/icons/Vectaasdor.png"
+                                                     alt=""/>
+                                                My orders
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/my/address-book/invoice">
+                                                <img src="/oristar_ecommerce_website/static/src/images/icons/Vectorsdfsd.png" alt="" />
+                                                Invoice Address
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="content">
+                                    <div t-if="error_message" class="alert alert-danger" role="alert">
+                                          <t t-foreach="error_message" t-as="err"><t t-esc="err"/><br /></t>
+                                      </div>
+                                    <div class="title">
+                                        <h4>Profile</h4>
+                                        <p>Manage personal profiles for account security</p>
+                                    </div>
+                                    <div class="row align-items-center pt20 pb30">
+                                        <div class="col-lg-3 col-md-4">
+                                            <div class="img">
+                                                <t t-if="partner.image_256">
+                                                    <t t-set="avatar_source" t-value="image_data_uri(partner.image_256)"/>
+                                                    <img t-att-src="avatar_source" class="rounded-circle profile-avatar-source"/>
+                                                </t>
+                                                <t t-else="">
+                                                    <t t-set="avatar_source" t-value="'/web/static/src/img/placeholder.png'"/>
+                                                    <img t-att-src="avatar_source" class="rounded-circle profile-avatar-source"/>
+                                                </t>
+                                                <div class="bg0"></div>
+                                                <input type="hidden" class="portal-image-1920" name="image_1920" t-att-value="image_1920"/>
+                                                <div class="icon">
+                                                    <img src="/oristar_ecommerce_website/static/src/images/icons/camera.png"
+                                                         alt=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="text-center">
+                                                <input type="file" class="profile_input_file d-none"
+                                                    accept="image/*"
+                                                />
+                                                <a href="" class="ta">Upload image</a>
+                                                <a href="" class="xa">Remove image</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div t-attf-class="form-group #{error.get('name') and 'o_has_error' or ''}">
+                                                    <t t-if="partner.type == 'invoice'">
+                                                        <label for="">Company Name <span class="text-danger">*</span></label>
+                                                        <input type="text" t-attf-class="form-control #{error.get('name') and 'is-invalid' or ''}" name="name"
+                                                               t-att-value="name or partner.name"/>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <label for="">Full Name <span class="text-danger">*</span></label>
+                                                        <input type="text" t-attf-class="form-control #{error.get('name') and 'is-invalid' or ''}" name="name"
+                                                               t-att-value="name or partner.name"/>
+
+                                                    </t>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div t-attf-class="form-group #{error.get('company_name') and 'o_has_error' or ''}">
+                                                    <label for="">Company (Optional)</label>
+                                                    <input type="text" t-attf-class="form-control #{error.get('company_name') and 'is-invalid' or ''}" name="company_name"
+                                                           t-att-value="company_name or partner.commercial_company_name"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div t-attf-class="form-group #{error.get('country_id') and 'o_has_error' or ''}">
+                                                    <label for="">Country <span class="text-danger">*</span></label>
+                                                    <div class="select">
+                                                        <select name="country_id" t-attf-class="form-control #{error.get('country_id') and 'is-invalid' or ''}">
+                                                            <option value="">Country...</option>
+                                                            <t t-foreach="countries or []" t-as="country">
+                                                                <t t-set="country_external_id" t-value="country.get_external_id().get(country.id, '')"/>
+                                                                <option t-att-value="country.id"
+                                                                        t-att-selected="country.id == int(country_id) if country_id else country.id == partner.country_id.id or country_external_id == 'base.vn'">
+                                                                    <t t-esc="country.name" />
+                                                                </option>
+                                                            </t>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div t-attf-class="form-group #{error.get('state_id') and 'o_has_error' or ''}">
+                                                    <label for="">State</label>
+                                                    <div class="select">
+                                                        <select name="state_id" t-attf-class="form-control #{error.get('state_id') and 'is-invalid' or ''}">
+                                                            <option value="">select...</option>
+                                                            <t t-foreach="states or []" t-as="state">
+                                                                <option t-att-value="state.id" style="display:none;" t-att-data-country_id="state.country_id.id" t-att-selected="state.id == partner.state_id.id">
+                                                                    <t t-esc="state.name" />
+                                                                </option>
+                                                            </t>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div t-attf-class="form-group #{error.get('city') and 'o_has_error' or ''}">
+                                                    <label for="">City</label>
+                                                    <input type="text" name="city" t-attf-class="form-control #{error.get('city') and 'is-invalid' or ''}"  t-att-value="city or partner.city"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="">District</label>
+                                                    <div class="select">
+                                                        <select name="district_id" class="form-control">
+                                                            <t t-if="districts">
+                                                                <t t-foreach="districts" t-as="d">
+                                                                    <option t-att-value="d.id" t-att-selected="d.id == partner.district_id.id if partner.district_id else False">
+                                                                        <t t-esc="d.name"/>
+                                                                    </option>
+                                                                </t>
+                                                            </t>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="">Township</label>
+                                                    <div class="select">
+                                                        <select class="form-control" name="township_id">
+                                                            <t t-if="townships">
+                                                                <t t-foreach="townships" t-as="t">
+                                                                    <option t-att-value="t.id" t-att-selected="t.id == partner.township_id.id if partner.township_id else False">
+                                                                        <t t-esc="t.name"/>
+                                                                    </option>
+                                                                </t>
+                                                            </t>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div t-attf-class="form-group #{error.get('street') and 'o_has_error' or ''}">
+                                                    <label for="">Detailed Address <span class="text-danger">*</span></label>
+                                                    <input type="text" name="street" t-attf-class="form-control #{error.get('street') and 'is-invalid' or ''}" t-att-value="street or partner.street"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div t-attf-class="form-group #{error.get('phone') and 'o_has_error' or ''}">
+                                                    <label for="">Phone <span class="text-danger">*</span></label>
+                                                    <input name="phone" type="text" t-attf-class="form-control #{error.get('phone') and 'is-invalid' or ''}"
+                                                           t-att-value="phone or partner.phone"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div t-attf-class="form-group #{error.get('email') and 'o_has_error' or ''}">
+                                                    <label for="">Email <span class="text-danger">*</span></label>
+                                                    <input type="text" name="email" t-attf-class="form-control #{error.get('email') and 'is-invalid' or ''}"
+                                                           t-att-value="email or partner.email"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label for="">ZIP / Postal Code</label>
+                                                    <input type="text" class="form-control" name="zipcode"
+                                                           t-att-value="partner.zip"/>
+                                                </div>
+                                            </div>
+                                            <t t-if="not partner.vat">
+                                                <div class="col-lg-12">
+                                                    <div class="form-group">
+                                                        <label for="">TAX Number</label>
+                                                        <input type="text" class="form-control" name="vat"
+                                                               t-att-value="partner.vat"/>
+                                                    </div>
+                                                </div>
+                                            </t>
+                                        </div>
+                                        <div class="clearfix">
+                                            <button type="submit" class="btn btn-primary float-right mb32 profile-confirm-btn">
+                                                Update
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </xpath>
+        <xpath expr="//form" position="before">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="">
+                            <img src="/oristar_ecommerce_website/static/src/images/icons/Vector_3.png"
+                                 alt=""/>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="/">Homepage</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Details</li>
+                </ol>
+            </nav>
+        </xpath>
+    </template>
+</odoo>

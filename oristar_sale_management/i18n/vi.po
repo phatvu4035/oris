@@ -1,0 +1,1648 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oristar_sale_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-13 15:52+0000\n"
+"PO-Revision-Date: 2022-09-13 15:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/js/so_systray.js:0
+#, python-format
+msgid "%s has been created"
+msgstr "%s đã được tạo"
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/js/user_systray.js:0
+#, python-format
+msgid "%s has been registered"
+msgstr "%s đã được đăng ký"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order_line__milling_method__phay2f
+msgid "2 Faces"
+msgstr "2 Mặt"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order_line__milling_method__phay4f
+msgid "4 Faces"
+msgstr "4 Mặt"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order_line__milling_method__phay6f
+msgid "6 Faces"
+msgstr "6 Mặt"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_shipping_method__shipping_api
+msgid "API"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__api_link
+msgid "API Link"
+msgstr "Đường dẫn API"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__message_needaction
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__message_needaction
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__activity_ids
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__activity_ids
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__activity_exception_decoration
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__activity_exception_decoration
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__activity_state
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__activity_state
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__activity_type_icon
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__activity_type_icon
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order__payment_method__advan
+msgid "Advance"
+msgstr "Trả trước"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__product_alloy_id
+msgid "Alloy"
+msgstr "Hợp kim"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__res_partner__address_type__apartment
+msgid "Apartment"
+msgstr "Chung cư"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_config_settings_view_form
+msgid ""
+"Apply manual discounts on sales order lines or display discounts computed "
+"from pricelists (option to activate in the pricelist configuration)."
+msgstr ""
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.view_order_form_inherit_sale_order_custom
+msgid "Are you sure want to calculate price for each order line?"
+msgstr "Bạn có muốn tính toán giá của mỗi dòng đơn hàng hay không?"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.view_order_form_inherit_sale_order_custom
+msgid "Are you sure want to calculate shipping price for each order line?"
+msgstr "Bạn có muốn tính toán giá vận chuyển của mỗi dòng đơn hàng hay không?"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__message_attachment_count
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__message_attachment_count
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_district__available_district_ids
+msgid "Available District"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_shipping_method__available_state_ids
+msgid "Available State"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_config_settings_view_form
+msgid "Base URL to connect to Pricing Engine."
+msgstr "URL cơ sở để kết nối đến Dịch vụ tính giá."
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_currency_rate__buy_rate
+msgid "Buy Rate"
+msgstr "Tỷ giá mua"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.view_order_form_inherit_sale_order_custom
+msgid "Calculate Price"
+msgstr "Tính giá"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.view_order_form_inherit_sale_order_custom
+msgid "Calculate Shipping Price"
+msgstr "Tính giá vận chuyển"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Calculated price is not valid. Please contact to administrator."
+msgstr "Giá được tính không hợp lệ. Vui lòng liên hệ quản trị viên."
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_partner__can_pay_by_cod
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_users__can_pay_by_cod
+msgid "Can Pay By COD"
+msgstr "Có thể thanh toán bằng COD"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Can not cancel order which already in processed."
+msgstr "Không thể hủy đơn hàng mà đã được thực hiện."
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Can't apply milling on this product."
+msgstr "Không thể áp dụng phay cho sản phẩm này."
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order__erp_order_status__cancel
+msgid "Canceled"
+msgstr "Đã Hủy"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__code
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_district__code
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_township__code
+msgid "Code"
+msgstr "Mã"
+
+#. module: oristar_sale_management
+#: model:ir.model,name:oristar_sale_management.model_res_company
+msgid "Companies"
+msgstr "Công ty"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__res_partner__address_type__company
+msgid "Company"
+msgstr "Công ty"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__computed_erp_order_status
+msgid "Computed ERP Order Status"
+msgstr "Trạng thái đơn hàng ERP được tính"
+
+#. module: oristar_sale_management
+#: model:ir.model,name:oristar_sale_management.model_res_config_settings
+msgid "Config Settings"
+msgstr "Thiết lập cấu hình"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order__erp_order_status__confirm
+msgid "Confirmed"
+msgstr "Xác nhận"
+
+#. module: oristar_sale_management
+#: model:ir.model,name:oristar_sale_management.model_res_partner
+msgid "Contact"
+msgstr "Liên hệ"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Could not find Viettel Post district for receiver."
+msgstr "Không tìm thấy thông tin Quận/Huyện quản lý bởi Viettel Post cho bên nhận."
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Could not find Viettel Post district for sender."
+msgstr "Không tìm thấy thông tin Quận/Huyện quản lý bởi Viettel Post cho bên gửi."
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Could not find Viettel Post province for receiver."
+msgstr "Không tìm thấy thông tin Tỉnh/Thành quản lý bởi Viettel Post cho bên nhận."
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Could not find Viettel Post province for sender."
+msgstr "Không tìm thấy thông tin Tỉnh/Thành quản lý bởi Viettel Post cho bên gửi."
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__country_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_province__country_id
+msgid "Country"
+msgstr "Quốc gia"
+
+#. module: oristar_sale_management
+#: model:ir.actions.act_window,name:oristar_sale_management.res_country_state_action
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_country_state_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_country_state_tree_view
+msgid "Country State"
+msgstr "Tỉnh/TP/Bang"
+
+#. module: oristar_sale_management
+#: model:ir.model,name:oristar_sale_management.model_res_country_state
+msgid "Country state"
+msgstr "Tỉnh/TP/Bang"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__create_custom_declaration
+msgid "Create Custom Declaration"
+msgstr "Tạo tờ khai hải quan"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__create_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__create_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__create_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__create_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_district__create_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_township__create_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_shipping_method__create_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_district__create_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_province__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__create_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__create_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__create_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__create_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_district__create_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_township__create_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_shipping_method__create_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_district__create_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_province__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__credit_limit
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.view_partner_form_inherit
+msgid "Credit Limit"
+msgstr "Hạn mức công nợ"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_partner__credit_time_days
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_users__credit_time_days
+msgid "Credit Time Days"
+msgstr "Số ngày công nợ"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__currency_id
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#. module: oristar_sale_management
+#: model:ir.model,name:oristar_sale_management.model_res_currency_rate
+msgid "Currency Rate"
+msgstr "Tỷ giá"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__credit
+msgid "Current Credit"
+msgstr "Công nợ hiện tại"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_config_settings_view_form
+msgid "Current folder, which contains price method files."
+msgstr "Thư mục hiện tại, chứa những tệp tin dùng để tính giá."
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__total_custom_declaration_amount
+msgid "Custom Declaration Amount"
+msgstr "Phí tờ khai hải quan"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__custom_declaration_unit_price
+msgid "Custom Declaration Unit Price"
+msgstr "Đơn giá tờ khai hải quan"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__partner_id
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: oristar_sale_management
+#: model:ir.actions.act_window,name:oristar_sale_management.customer_credit_limit_action
+#: model:ir.model,name:oristar_sale_management.model_customer_credit_limit
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.customer_credit_limit_form_view
+msgid "Customer Credit Limit"
+msgstr "Hạn mức công nợ khách hàng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_partner__customer_credit_limit_ids
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_users__customer_credit_limit_ids
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.customer_credit_limit_tree_view
+msgid "Customer Credit Limits"
+msgstr "Hạn mức công nợ khách hàng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__district_id
+msgid "Customer District"
+msgstr "Quận/huyện của Khách hàng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__customer_email
+msgid "Customer Email"
+msgstr "Địa chỉ email của Khách hàng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__customer_phone_number
+msgid "Customer Phone Number"
+msgstr "Số điện thoại của Khách hàng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__state_id
+msgid "Customer State"
+msgstr "Tỉnh của Khách hàng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__township_id
+msgid "Customer Township"
+msgstr "Phường/xã của Khách hàng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_partner__customer_type
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_users__customer_type
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__customer_type
+msgid "Customer Type"
+msgstr "Loại khách hàng"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Customer has more than 1 credit limit for currency %s."
+msgstr "Khách hàng có nhiều hơn 1 hạn mức công nợ cho tiền tệ %s."
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order_line.py:0
+#, python-format
+msgid ""
+"Customized size of %s must be smaller or equals to configured size in "
+"product"
+msgstr ""
+"Kích thước tùy chỉnh của %s phải nhỏ hơn hoặc bằng độ dày được cấu hình trên"
+" sản phẩm"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order__payment_method__debt
+msgid "Debt"
+msgstr "Nợ"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_partner__default_delivery_address
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_users__default_delivery_address
+msgid "Default Delivery Address"
+msgstr "Địa chỉ giao hàng mặc định"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,help:oristar_sale_management.field_inventory_management__uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr "Đơn vị mặc định sử dụng cho tất cả hoạt động kho."
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order__erp_order_status__delivered
+msgid "Delivered"
+msgstr "Đã giao"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__delivered_date
+msgid "Delivered Date"
+msgstr "Ngày giao"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order__erp_order_status__delivery
+msgid "Delivery"
+msgstr "Đang giao"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__delivery_type
+msgid "Delivery Type"
+msgstr "Loại giao hàng"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Delivery address doesn't have Vietstar state code."
+msgstr "Địa chỉ giao hàng không có mã tỉnh của Vietstar."
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#, python-format
+msgid "Detail"
+msgstr "Chi tiết"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__notes
+msgid "Detailed Notes"
+msgstr "Ghi chú chi tiết"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_product_product__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_product_template__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_country_state__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_currency_rate__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_district__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_partner__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_township__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_users__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_shipping_method__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_district__display_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_province__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: oristar_sale_management
+#: model:ir.actions.act_window,name:oristar_sale_management.res_district_action
+#: model:ir.model,name:oristar_sale_management.model_res_district
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_partner__district_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_township__district_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_users__district_id
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_district_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_district_tree_view
+msgid "District"
+msgstr "Quận/huyện"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_district__district_id
+msgid "District ID"
+msgstr "ID Quận/Huyện"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_district__name
+msgid "District Name"
+msgstr "Tên Quận/Huyện"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_district__value
+msgid "District Value"
+msgstr "Giá Trị Quận/Huyện"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__res_partner__customer_type__epe
+msgid "EPE"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__erp_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__erp_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__erp_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_product_product__erp_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_product_template__erp_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_partner__erp_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_users__erp_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__erp_id
+msgid "ERP ID"
+msgstr ""
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/customer_credit_limit.py:0
+#: code:addons/oristar_sale_management/models/inventory_management.py:0
+#: code:addons/oristar_sale_management/models/product_product.py:0
+#: code:addons/oristar_sale_management/models/product_template.py:0
+#: code:addons/oristar_sale_management/models/res_partner.py:0
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "ERP ID must be unique."
+msgstr "ERP ID phải duy nhất."
+
+#. module: oristar_sale_management
+#: model:ir.actions.act_window,name:oristar_sale_management.order_processing_status_action
+#: model:ir.model,name:oristar_sale_management.model_order_processing_status
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.order_processing_status_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.order_processing_status_tree_view
+msgid "ERP Order Processing Status"
+msgstr "Trạng thái đơn hàng ERP"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__erp_order_status
+msgid "ERP Order Status"
+msgstr "Trạng thái đơn hàng ERP"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/shipping_method.py:0
+#: code:addons/oristar_sale_management/models/shipping_method.py:0
+#, python-format
+msgid "Error when calling to Viettel Post API."
+msgstr "Lỗi khi gọi API của Viettel Post."
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Error when calling to pricing API."
+msgstr "Lỗi khi gọi API tính giá"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Error when calling to shipping API."
+msgstr "Lỗi khi gọi API tính giá vận chuyển."
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_partner__fax
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_users__fax
+msgid "Fax"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.inventory_management_search_view
+msgid "Filters"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__message_follower_ids
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__message_follower_ids
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__message_channel_ids
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__message_channel_ids
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__message_partner_ids
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__message_partner_ids
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,help:oristar_sale_management.field_customer_credit_limit__activity_type_icon
+#: model:ir.model.fields,help:oristar_sale_management.field_order_processing_status__activity_type_icon
+#: model:ir.model.fields,help:oristar_sale_management.field_oristar_warehouse__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Get shipping price from Viettel Post API failed. Detail error: %s"
+msgstr "Tính giá vận chuyển từ Viettel Post API lỗi. Chi tiết lỗi: %s"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.inventory_management_search_view
+msgid "Group by..."
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__res_partner__address_type__home
+msgid "Home"
+msgstr "Nhà riêng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_product_product__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_product_template__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_country_state__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_currency_rate__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_district__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_partner__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_township__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_users__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_shipping_method__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_district__id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_province__id
+msgid "ID"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__activity_exception_icon
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__activity_exception_icon
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,help:oristar_sale_management.field_customer_credit_limit__activity_exception_icon
+#: model:ir.model.fields,help:oristar_sale_management.field_order_processing_status__activity_exception_icon
+#: model:ir.model.fields,help:oristar_sale_management.field_oristar_warehouse__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,help:oristar_sale_management.field_customer_credit_limit__message_needaction
+#: model:ir.model.fields,help:oristar_sale_management.field_customer_credit_limit__message_unread
+#: model:ir.model.fields,help:oristar_sale_management.field_order_processing_status__message_needaction
+#: model:ir.model.fields,help:oristar_sale_management.field_order_processing_status__message_unread
+#: model:ir.model.fields,help:oristar_sale_management.field_oristar_warehouse__message_needaction
+#: model:ir.model.fields,help:oristar_sale_management.field_oristar_warehouse__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,help:oristar_sale_management.field_customer_credit_limit__message_has_error
+#: model:ir.model.fields,help:oristar_sale_management.field_customer_credit_limit__message_has_sms_error
+#: model:ir.model.fields,help:oristar_sale_management.field_order_processing_status__message_has_error
+#: model:ir.model.fields,help:oristar_sale_management.field_order_processing_status__message_has_sms_error
+#: model:ir.model.fields,help:oristar_sale_management.field_oristar_warehouse__message_has_error
+#: model:ir.model.fields,help:oristar_sale_management.field_oristar_warehouse__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,help:oristar_sale_management.field_sale_order_line__order_pricelist_id
+msgid "If you change the pricelist, only newly added lines will be affected."
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_product_product__inventory_available
+#: model:ir.model.fields,field_description:oristar_sale_management.field_product_template__inventory_available
+msgid "Inventory Available"
+msgstr "Tồn kho khả dụng"
+
+#. module: oristar_sale_management
+#: model:ir.actions.act_window,name:oristar_sale_management.inventory_management_action
+#: model:ir.model,name:oristar_sale_management.model_inventory_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.inventory_management_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.inventory_management_search_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.inventory_management_tree_view
+msgid "Inventory Management"
+msgstr "Quản lý kho"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__message_is_follower
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__message_is_follower
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order_line__milling_faces__kt1
+msgid "KT1"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order_line__milling_faces__kt1andkt2
+msgid "KT1 and KT2"
+msgstr "KT1 và KT2"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order_line__milling_faces__kt1andkt3
+msgid "KT1 and KT3"
+msgstr "KT1 và KT3"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order_line__milling_faces__kt2
+msgid "KT2"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order_line__milling_faces__kt2andkt3
+msgid "KT2 and KT3"
+msgstr "KT2 và KT3"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order_line__milling_faces__kt3
+msgid "KT3"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_product_product____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_product_template____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_country_state____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_currency_rate____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_district____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_partner____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_township____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_users____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_shipping_method____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_district____last_update
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_province____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__last_update_time
+msgid "Last Update"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__write_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__write_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__write_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__write_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_district__write_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_township__write_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_shipping_method__write_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_district__write_uid
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_province__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__write_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__write_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__write_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__write_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_district__write_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_township__write_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_shipping_method__write_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_district__write_date
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_province__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__located_district_id
+msgid "Located District"
+msgstr "Đặt tại Quận/Huyện"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__located_state_id
+msgid "Located State"
+msgstr "Đặt tại Tỉnh thành"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_partner__address_type
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_users__address_type
+msgid "Location Address Type"
+msgstr "Loại địa chỉ"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__lot
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.inventory_management_search_view
+msgid "Lot"
+msgstr "Lô"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__message_main_attachment_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__message_main_attachment_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_district__mapped_district_id
+msgid "Mapped District"
+msgstr "Quận/Huyện Tương Ứng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_province__mapped_state_id
+msgid "Mapped Province"
+msgstr "Tỉnh Thành Tương Ứng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__product_material_id
+msgid "Material"
+msgstr "Vật liệu"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__product_material_category_id
+msgid "Material Category"
+msgstr "Nhóm vật liệu"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company__milling_max_limit
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings__milling_max_limit
+msgid "Max Limit For Milling"
+msgstr "Giới hạn tối đa cho phay"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_config_settings_view_form
+msgid "Maximum limit for milling."
+msgstr "Giới hạn tối đa cho phay"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__message_has_error
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__message_has_error
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__message_ids
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__message_ids
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__milling_faces
+msgid "Milling Faces"
+msgstr "Mặt phay"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__milling_fee
+msgid "Milling Fee"
+msgstr "Phí phay"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__milling_method
+msgid "Milling Method"
+msgstr "Phương pháp phay"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company__milling_min_limit
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings__milling_min_limit
+msgid "Min Limit For Milling"
+msgstr "Giới hạn tối thiểu cho phay"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_config_settings_view_form
+msgid "Minimum limit for milling."
+msgstr "Giới hạn tối thiểu cho phay"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__my_activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__my_activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_district__name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_township__name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_shipping_method__name
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.oristar_warehouse_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_country_state_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_district_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_township_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.shipping_method_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.viettelpost_district_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.viettelpost_province_form_view
+msgid "Name"
+msgstr "Tên"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.inventory_management_search_view
+msgid "Negative Stock"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__activity_summary
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__activity_summary
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__activity_type_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__activity_type_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#, python-format
+msgid "No sale order found."
+msgstr "Không có đơn hàng nào."
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#, python-format
+msgid "No users found."
+msgstr "Không có tài khoản nào."
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__res_partner__customer_type__non-epe
+msgid "Non-EPE"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order_line__milling_method__no
+msgid "None"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company__sale_notification_reception_partner_ids
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings__sale_notification_reception_partner_ids
+msgid "Notification Reception Partners"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__message_needaction_counter
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__message_needaction_counter
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__no_of_custom_declaration
+msgid "Number of Custom Declaration"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__message_has_error_counter
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__message_has_error_counter
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,help:oristar_sale_management.field_customer_credit_limit__message_needaction_counter
+#: model:ir.model.fields,help:oristar_sale_management.field_order_processing_status__message_needaction_counter
+#: model:ir.model.fields,help:oristar_sale_management.field_oristar_warehouse__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,help:oristar_sale_management.field_customer_credit_limit__message_has_error_counter
+#: model:ir.model.fields,help:oristar_sale_management.field_order_processing_status__message_has_error_counter
+#: model:ir.model.fields,help:oristar_sale_management.field_oristar_warehouse__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,help:oristar_sale_management.field_customer_credit_limit__message_unread_counter
+#: model:ir.model.fields,help:oristar_sale_management.field_order_processing_status__message_unread_counter
+#: model:ir.model.fields,help:oristar_sale_management.field_oristar_warehouse__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company__offtime_delay_confirmation
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings__offtime_delay_confirmation
+msgid "Off-Time Delay Confirmation"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__res_partner__address_type__office
+msgid "Office"
+msgstr "Văn phòng"
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#, python-format
+msgid "Order"
+msgstr "Đơn hàng"
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#, python-format
+msgid "Order Date:"
+msgstr "Ngây tạo:"
+
+#. module: oristar_sale_management
+#: model:ir.actions.act_window,name:oristar_sale_management.oristar_warehouse_action
+#: model:ir.model,name:oristar_sale_management.model_oristar_warehouse
+msgid "Oristar Warehouse"
+msgstr "Kho Oristar"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.oristar_warehouse_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.oristar_warehouse_tree_view
+msgid "Oristar Warehouses"
+msgstr "Kho Oristar"
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/js/crash_manager.js:0
+#, python-format
+msgid "Out of Service"
+msgstr ""
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order_line.py:0
+#, python-format
+msgid "PHAY2F doesn't allow %s faces"
+msgstr "PHAY2F không cho phép %s mặt"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order_line.py:0
+#, python-format
+msgid "PHAY4F doesn't allow %s faces"
+msgstr "PHAY4F không cho phép %s mặt"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,help:oristar_sale_management.field_res_company__tolerance_standard_table
+#: model:ir.model.fields,help:oristar_sale_management.field_res_config_settings__tolerance_standard_table
+msgid ""
+"Paste the link here\n"
+"Ex: https://drive.google.com/file/d/1BaBe7VwHgp3H5tYQt7y4H9IA7fkQ7de9/view"
+msgstr ""
+"Nhập đường dẫn ở đây\n"
+"Ex: https://drive.google.com/file/d/1BaBe7VwHgp3H5tYQt7y4H9IA7fkQ7de9/view"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order__payment_method__pay
+msgid "Pay"
+msgstr "Trả hết"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__payment_method
+msgid "Payment method"
+msgstr "Hình thức thanh toán"
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#, python-format
+msgid "Phone:"
+msgstr "Số điện thoại:"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.inventory_management_search_view
+msgid "Positive Stock"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company__price_method_folder
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings__price_method_folder
+msgid "Price Method Folder"
+msgstr "Thư mục chứa phương thức tính giá"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__price_method_group
+msgid "Price Method Group"
+msgstr "Nhóm phương pháp tính giá"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company__price_service_url
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings__price_service_url
+msgid "Price Service URL"
+msgstr "URL Dịch vụ tính giá"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__order_pricelist_id
+msgid "Pricelist"
+msgstr "Bảng giá"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order__erp_order_status__produce
+msgid "Produce"
+msgstr "Đang sản xuất"
+
+#. module: oristar_sale_management
+#: model:ir.model,name:oristar_sale_management.model_product_product
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__product_id
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.inventory_management_search_view
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: oristar_sale_management
+#: model:ir.model,name:oristar_sale_management.model_product_template
+msgid "Product Template"
+msgstr "Mẫu sản phẩm"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_province__code
+msgid "Province Code"
+msgstr "Mã Tỉnh Thành"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_province__province_id
+msgid "Province ID"
+msgstr "ID Tỉnh Thành"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_province__name
+msgid "Province Name"
+msgstr "Tên Tỉnh Thành"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__quantity
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__quantity_kg
+msgid "Quantity Kg"
+msgstr "Số lượng theo Kg"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company__quotation_file
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings__quotation_file
+msgid "Quotation File"
+msgstr "File báo giá"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_config_settings_view_form
+msgid "Quotation file."
+msgstr "File báo giá"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order__erp_order_status__quote
+msgid "Quote"
+msgstr "Báo giá"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order__delivery_type__receive_at_customer_warehosue
+msgid "Receive at Customer Warehouse"
+msgstr "Nhận hàng tại kho khách hàng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__sale_order__delivery_type__receive_at_manufactory
+msgid "Receive at Manufactory"
+msgstr "Nhận hàng tại nhà máy"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__activity_user_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__activity_user_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__message_has_sms_error
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__message_has_sms_error
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__so_erp
+msgid "SO ERP"
+msgstr "Đơn hàng ERP"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "SO doesn't have valid total weight."
+msgstr "Đơn hàng không có tổng số kg hợp lệ."
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#, python-format
+msgid "Sale Order"
+msgstr "Đơn hàng"
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#, python-format
+msgid "Sale Orders"
+msgstr "Đơn hàng"
+
+#. module: oristar_sale_management
+#: model:ir.model,name:oristar_sale_management.model_sale_order
+msgid "Sales Order"
+msgstr "Đơn bán hàng"
+
+#. module: oristar_sale_management
+#: model:ir.model,name:oristar_sale_management.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Chi tiết đơn hàng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_partner__seller_in_charge
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_users__seller_in_charge
+msgid "Seller in Charge"
+msgstr "Nhân viên phụ trách bán hàng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__shipping_amount
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__shipping_amount
+msgid "Shipping Amount"
+msgstr "Phí vận chuyển"
+
+#. module: oristar_sale_management
+#: model:ir.actions.act_window,name:oristar_sale_management.shipping_method_action
+#: model:ir.model,name:oristar_sale_management.model_shipping_method
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__shipping_method_id
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.shipping_method_form_view
+msgid "Shipping Method"
+msgstr "Phương thức vận chuyển"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.shipping_method_tree_view
+msgid "Shipping Methods"
+msgstr "Phương thức vẫnj chuyển"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Shipping amount from Viettel Post API is invalid"
+msgstr "Chi phí vận chuyển từ Viettel Post API không hợp lệ"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__product_thickness
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__product_thickness
+msgid "Size 1"
+msgstr "KT1"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__product_width
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__product_width
+msgid "Size 2"
+msgstr "KT2"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Size 2 and Size 3 are required."
+msgstr "Kích thước 2 và Kích thước 3 là bắt buộc."
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__product_long
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__product_long
+msgid "Size 3"
+msgstr "KT3"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__specfic_for_customer
+msgid "Specfic For Customer"
+msgstr "Dành riêng cho khách hàng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_district__state_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_district__state_id
+msgid "State"
+msgstr "Tỉnh"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__status_code
+msgid "Status Code"
+msgstr "Mã tỉnh"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__status_name
+msgid "Status Name"
+msgstr "Tên trạng thái"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,help:oristar_sale_management.field_customer_credit_limit__activity_state
+#: model:ir.model.fields,help:oristar_sale_management.field_order_processing_status__activity_state
+#: model:ir.model.fields,help:oristar_sale_management.field_oristar_warehouse__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__product_stiffness_id
+msgid "Stiffness"
+msgstr "Độ cứng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__street
+msgid "Street"
+msgstr "Đường"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_shipping_method__state_ids
+msgid "Supplied State"
+msgstr "Tỉnh thành hỗ trợ"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__supplied_state_ids
+msgid "Supplied States"
+msgstr "Tỉnh thành hỗ trợ"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.shipping_method_form_view
+msgid "Sync Master Data"
+msgstr "Đồng Bộ Dữ Liệu"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "The price method type of product %s is invalid"
+msgstr "Phương thức tính giá của sản phẩm %s không hợp lệ"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "The pricelist item %s for pp3 missing LME market"
+msgstr "Mục bảng giá %s cho pp3 bị thiếu thị trường LME"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "The pricelist item %s for pp3 missing N average"
+msgstr "Mục bảng giá %s cho pp3 bị thiếu N trung bình"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "The product %s missing internal reference"
+msgstr "Sản phẩm %s thiếu mã nội bộ"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "There is not default pricelist item defined for product %s"
+msgstr "Không có bảng giá mặc định định nghĩa cho sản phẩm %s"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "There is not setting for LME price"
+msgstr "Không có cấu hình cho giá LME"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "There is not shape category for detailed shape %s."
+msgstr "Không có loại hình dạng cho hình dạng chi tiết %s. "
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,help:oristar_sale_management.field_sale_order_line__product_weight
+msgid "This will be calculated by pricing engine"
+msgstr "Nó sẽ được tính bởi Dich vụ tính giá"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company__tolerance_standard_table
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings__tolerance_standard_table
+msgid "Tolerance Standard Table Link"
+msgstr "Đường dẫn đến bảng dung sai tiêu chuẩn"
+
+#. module: oristar_sale_management
+#: model:ir.actions.act_window,name:oristar_sale_management.res_township_action
+#: model:ir.model,name:oristar_sale_management.model_res_township
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_partner__township_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_users__township_id
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_township_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.res_township_tree_view
+msgid "Township"
+msgstr "Phường/xã"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,help:oristar_sale_management.field_customer_credit_limit__activity_exception_decoration
+#: model:ir.model.fields,help:oristar_sale_management.field_order_processing_status__activity_exception_decoration
+#: model:ir.model.fields,help:oristar_sale_management.field_oristar_warehouse__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__price_unit_with_shipping
+msgid "Unit Price With Shipping"
+msgstr "Đơn giá với giá vận chuyển"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__uom_id
+msgid "Unit of Measure"
+msgstr "Đơn vị tính"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__message_unread
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__message_unread
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__message_unread_counter
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__message_unread_counter
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__updated_time
+msgid "Updated Time"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_district__urban_zone
+msgid "Urban Zone"
+msgstr ""
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#, python-format
+msgid "User"
+msgstr "Tài khoản"
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#: model:ir.model,name:oristar_sale_management.model_res_users
+#, python-format
+msgid "Users"
+msgstr "Người dùng"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__vnd_usd_currency_rate_buy
+msgid "VND-USD Currency Buy Rate"
+msgstr "Tỷ giá mua VND-USD"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__vnd_usd_currency_rate
+msgid "VND-USD Currency Sell Rate"
+msgstr "Tỷ giá bán VND-USD"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__shipping_method__shipping_api__vietstar
+msgid "Vietstar"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_country_state__vietstar_id_sg
+msgid "Vietstar Code HCM"
+msgstr "Mã HCM Vietstar"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_country_state__vietstar_id
+msgid "Vietstar Code Hanoi"
+msgstr "Mã HN Vietstar"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields.selection,name:oristar_sale_management.selection__shipping_method__shipping_api__viettel
+msgid "Viettel Post"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company__viettelpost_password
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings__viettelpost_password
+msgid "Viettel Post API Password"
+msgstr "Mật khẩu Viettel Post API"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company__viettelpost_api_url
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings__viettelpost_api_url
+msgid "Viettel Post API URL"
+msgstr "URL Viettel Post API"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#: code:addons/oristar_sale_management/models/shipping_method.py:0
+#, python-format
+msgid "Viettel Post API URL is not set."
+msgstr "Viettel Post API URL chưa được thiết lập."
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company__viettelpost_user_name
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings__viettelpost_user_name
+msgid "Viettel Post API UserName"
+msgstr "Tên người dùng Viettel Post API"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Viettel Post API authentication failed."
+msgstr "Xác thực thông tin người dùng trên Viettel Post API thất bại."
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Viettel Post API username/password is not set."
+msgstr "Thông tin đăng nhập/mật khẩu kết nối đến Viettel Post API chưa được thiết lập."
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_country_state__viettel_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_district__viettel_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_township__viettel_id
+msgid "Viettel Post Code"
+msgstr "Mã Viettel Post"
+
+#. module: oristar_sale_management
+#: model:ir.actions.act_window,name:oristar_sale_management.viettelpost_district_action
+#: model:ir.model,name:oristar_sale_management.model_viettelpost_district
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.viettelpost_district_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.viettelpost_district_tree_view
+msgid "Viettel Post District"
+msgstr "Quản lý Quận/Huyện Viettel Post"
+
+#. module: oristar_sale_management
+#: model:ir.actions.act_window,name:oristar_sale_management.viettelpost_province_action
+#: model:ir.model,name:oristar_sale_management.model_viettelpost_province
+#: model:ir.model.fields,field_description:oristar_sale_management.field_viettelpost_district__province_id
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.viettelpost_province_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.viettelpost_province_tree_view
+msgid "Viettel Post Province"
+msgstr "Quản lý Tỉnh Thành Viettel Post"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_inventory_management__warehouse_id
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order__oristar_warehouse_id
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.inventory_management_search_view
+msgid "Warehouse"
+msgstr "Kho"
+
+#. module: oristar_sale_management
+#: model_terms:ir.ui.view,arch_db:oristar_sale_management.oristar_warehouse_form_view
+msgid "Warehouse Name"
+msgstr "Tên kho"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order.py:0
+#, python-format
+msgid "Warehouse located in state, which is not supported by system."
+msgstr "Kho nằm trên tỉnh thành mà không hỗ trợ trên hệ thống."
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_customer_credit_limit__website_message_ids
+#: model:ir.model.fields,field_description:oristar_sale_management.field_order_processing_status__website_message_ids
+#: model:ir.model.fields,field_description:oristar_sale_management.field_oristar_warehouse__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,help:oristar_sale_management.field_customer_credit_limit__website_message_ids
+#: model:ir.model.fields,help:oristar_sale_management.field_order_processing_status__website_message_ids
+#: model:ir.model.fields,help:oristar_sale_management.field_oristar_warehouse__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__product_weight
+msgid "Weight (kg)"
+msgstr "Khối lượng (kg)"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_sale_order_line__weight_per_roll
+msgid "Weight per Roll"
+msgstr "Khối lượng cho từng cuộn"
+
+#. module: oristar_sale_management
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_company__working_time_delay_confirmation
+#: model:ir.model.fields,field_description:oristar_sale_management.field_res_config_settings__working_time_delay_confirmation
+msgid "Working-Time Delay Confirmation"
+msgstr ""
+"Cấu hình độ trễ cho phép của việc xác nhận đơn hàng trong thời gian làm việc"
+
+#. module: oristar_sale_management
+#: code:addons/oristar_sale_management/models/sale_order_line.py:0
+#, python-format
+msgid "You don't need to select %s face"
+msgstr "Bạn không cần phải chọn %s mặt"
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#, python-format
+msgid "has been created"
+msgstr "đã được tạo"
+
+#. module: oristar_sale_management
+#. openerp-web
+#: code:addons/oristar_sale_management/static/src/xml/systray.xml:0
+#, python-format
+msgid "has been registered"
+msgstr "đã được đăng ký"

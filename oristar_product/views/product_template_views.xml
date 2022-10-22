@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record model="ir.ui.view" id="product_template_form_view">
+        <field name="name">product.template.product.oristar.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+        	<xpath expr="//div[hasclass('oe_title')]//div[@name='options']" position="inside">
+        		<div>
+                    <field name="featured_product"/>
+                    <label for="featured_product"/>
+                </div>
+        	</xpath>
+        	<xpath expr="//page[@name='general_information']//group//group[@name='group_general']" position="inside">
+        		<field name="available_product_material_ids" invisible="1"/>
+        		<field name="available_product_detailed_shape_ids" invisible="1"/>
+        		<field name="available_product_alloy_ids" invisible="1"/>
+        		<field name="available_product_stiffness_ids" invisible="1"/>
+        		<field name="product_material_category_id"/>
+        		<field name="product_material_id"/>
+        		<field name="product_basic_shape_id"/>
+        		<field name="product_detailed_shape_id"/>
+        		<field name="product_alloy_id"/>
+        		<field name="product_stiffness_id"/>
+        		<field name="product_surface"/>
+        	</xpath>
+        	<xpath expr="//page[@name='general_information']//group//group[@name='group_standard_price']" position="inside">
+        		<field name="specific_customer_id"/>
+        		<field name="price_method_type"/>
+        		<field name="product_origin"/>
+        		<field name="short_description"/>
+        	</xpath>
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="product_normal_form_view">
+        <field name="name">product.product.product.oristar.form</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+        	<field name="product_surface" position="after">
+        		<field name="product_thickness"/>
+        		<field name="product_width"/>
+        		<field name="product_long"/>
+        	</field>
+        	<field name="short_description" position="after">
+        		<field name="product_weight"/>
+        	</field>
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="product_variant_easy_edit_view">
+        <field name="name">product.product.product.oristar.form</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_variant_easy_edit_view"/>
+        <field name="arch" type="xml">
+        	<field name="standard_price" position="after">
+        		<field name="product_thickness"/>
+        		<field name="product_width"/>
+        		<field name="product_long"/>
+        		<field name="product_weight"/>
+        	</field>
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="product_template_tree_view">
+        <field name="name">product.template.product.oristar.tree</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
+        <field name="arch" type="xml">
+        	<field name="name" position="after">
+        		<field name="featured_product"/>
+        	</field>
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="product_template_search_view">
+        <field name="name">product.template.product.oristar.search</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view"/>
+        <field name="arch" type="xml">
+        	<field name="categ_id" position="after">
+        		<field name="product_material_category_id"/>
+        		<field name="product_material_id"/>
+        		<field name="product_basic_shape_id"/>
+        		<field name="product_detailed_shape_id"/>
+        		<field name="product_alloy_id"/>
+        		<field name="product_stiffness_id"/>
+        		<field name="product_surface"/>
+        		<field name="specific_customer_id"/>
+        	</field>
+        	<filter name="consumable" position="after">
+        		<filter string="2B Surface" name="2b_surface" domain="[('product_surface','=','2b')]"/>
+        		<filter string="BA Surface" name="ba_surface" domain="[('product_surface','=','ba')]"/>
+        		<filter string="Featured Product" name="featured_product" domain="[('featured_product','=',True)]"/>
+        	</filter>
+        	<xpath expr="group//filter[@name='categ_id']" position="after">
+        		<filter string="Product Material Category" name="product_material_category_id" 
+        			context="{'group_by':'product_material_category_id'}"/>
+        		<filter string="Product Material" name="product_material_id" 
+        			context="{'group_by':'product_material_id'}"/>
+        		<filter string="Product Basic Shape" name="product_basic_shape_id" 
+        			context="{'group_by':'product_basic_shape_id'}"/>
+        		<filter string="Product Detailed Shape" name="product_detailed_shape_id" 
+        			context="{'group_by':'product_detailed_shape_id'}"/>
+        		<filter string="Product Grades" name="product_alloy_id"
+        			context="{'group_by':'product_alloy_id'}"/>
+        		<filter string="Product Temper" name="product_stiffness_id"
+        			context="{'group_by':'product_stiffness_id'}"/>
+        	</xpath>
+        </field>
+    </record>
+</odoo>

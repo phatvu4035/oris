@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="oristar_ecommerce_website.list">
+      <field name="name">oristar_ecommerce_website list</field>
+      <field name="model">oristar_ecommerce_website.oristar_ecommerce_website</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="oristar_ecommerce_website.action_window">
+      <field name="name">oristar_ecommerce_website window</field>
+      <field name="res_model">oristar_ecommerce_website.oristar_ecommerce_website</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="oristar_ecommerce_website.action_server">
+      <field name="name">oristar_ecommerce_website server</field>
+      <field name="model_id" ref="model_oristar_ecommerce_website_oristar_ecommerce_website"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="oristar_ecommerce_website" id="oristar_ecommerce_website.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="oristar_ecommerce_website.menu_1" parent="oristar_ecommerce_website.menu_root"/>
+    <menuitem name="Menu 2" id="oristar_ecommerce_website.menu_2" parent="oristar_ecommerce_website.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="oristar_ecommerce_website.menu_1_list" parent="oristar_ecommerce_website.menu_1"
+              action="oristar_ecommerce_website.action_window"/>
+    <menuitem name="Server to list" id="oristar_ecommerce_website" parent="oristar_ecommerce_website.menu_2"
+              action="oristar_ecommerce_website.action_server"/>
+-->
+  </data>
+</odoo>

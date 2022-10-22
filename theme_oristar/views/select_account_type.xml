@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="select_account_type" name="Account Type">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Choose an account type</t>
+            <t t-set="no_footer" t-value="True"/>
+            <div class="full">
+                <div class="container">
+                    <div class="back">
+                        <a href=""><img src="/theme_oristar/static/src/images/icons/Vector_16.png" alt="" />Go back to the homepage
+                        </a>
+                    </div>
+                    <div class="logins">
+                        <div class="title text-center pb30">
+                            <h3>Registration</h3>
+                            <p>Please choose your account type</p>
+                        </div>
+                        <div class="dk">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="things">
+                                        <a href="/web/signup?account_type=individual">
+                                            <div class="img">
+                                                <img src="/theme_oristar/static/src/images/icons/Vector_17.png" alt="" />
+                                            </div>
+                                            <p>Individual</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="things">
+                                        <a href="/web/signup?account_type=organization">
+                                            <div class="img">
+                                                <img src="/theme_oristar/static/src/images/icons/Vector_18.png" alt="" />
+                                            </div>
+                                            <p>Organization</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-center">Already have an account? Log in <a href="/web/login">here</a></p>
+                    </div>
+                    <div class="all">
+                        @2021 Oristar. All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

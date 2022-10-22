@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="oristar_warehouse_tree_view" model="ir.ui.view">
+		<field name="name">oristar.warehouse.tree</field>
+		<field name="model">oristar.warehouse</field>
+		<field name="arch" type="xml">
+			<tree string="Oristar Warehouses">
+				<field name="name"/>
+				<field name="code"/>
+				<field name="street"/>
+				<field name="located_state_id"/>
+				<field name="located_district_id"/>
+			</tree>
+		</field>
+	</record>
+	
+	<record id="oristar_warehouse_form_view" model="ir.ui.view">
+		<field name="name">oristar.warehouse.form</field>
+		<field name="model">oristar.warehouse</field>
+		<field name="arch" type="xml">
+			<form string="Oristar Warehouses">
+				<header></header>
+				<sheet>
+					<div class="oe_title">
+                        <label class="oe_edit_only" for="name" string="Name"/>
+                        <h1><field name="name" placeholder="Warehouse Name"/></h1>
+                    </div>
+                    <group name="detail">
+                    	<group name="detail_left">
+                    		<field name="code"></field>
+                    		<field name="country_id"/>
+                    		<field name="located_state_id"/>
+                    		<field name="located_district_id"/>
+                    		<field name="street"/>
+                    	</group>
+                    	<group name="detail_right">
+                    		<field name="supplied_state_ids" widget="many2many_tags"></field>
+                    	</group>
+                    </group>
+				</sheet>
+				<div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+			</form>
+		</field>
+	</record>
+	
+	<record id="oristar_warehouse_action" model="ir.actions.act_window">
+        <field name="name">Oristar Warehouse</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">oristar.warehouse</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

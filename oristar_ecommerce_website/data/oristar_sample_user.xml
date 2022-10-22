@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="example_company_1" model="res.partner">
+            <field name="name">Example Company1</field>
+            <field name="company_name">ExampleCompany1</field>
+            <field name="street">250 Executive Park Blvd, Suite 3400</field>
+            <field name="city">Ha Noi</field>
+            <field name="zip">94134</field>
+            <field name='country_id' ref='base.vn'/>
+            <field name='state_id' ref='base.state_vn_VN-HN'/>
+            <field name="phone">+1 (650) 555-0111 </field>
+            <field name="email">info@example_1.com</field>
+            <field name="website">www.example_1.com</field>
+        </record>
+        <record id="oristar_sample_example_company_1_user_1" model="res.users">
+            <field name="login">example_user1</field>
+            <field name="name">Example User1</field>
+            <field name="password">123456</field>
+            <field name="signature" type="xml"><span>-- <br/>+User 1 - EC1</span></field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="oristar_sample_example_company_1_user_2" model="res.users">
+            <!--<field name="partner_id" ref="base.partner_demo"/>-->
+            <field name="login">example_user2</field>
+            <field name="name">Example User2</field>
+            <field name="password">123456</field>
+            <field name="signature" type="xml"><span>-- <br/>+User 2 - EC1</span></field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+
+        <record id="partner_example_user_1" model="res.partner">
+            <field name="name">User 1 - EC1</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref="example_company_1"/>
+            <field name="company_name">Example 1</field>
+            <field name="street">Duy Tan</field>
+            <field name="city">Ha noi</field>
+            <field name="state_id"  ref="base.state_vn_VN-HN"/>
+            <field name="user_ids" eval="[(4, ref('oristar_sample_example_company_1_user_1'))]"/>
+            <field name="zip">97401</field>
+            <field name="country_id" ref="base.vn"/>
+            <field name="tz">Europe/Brussels</field>
+            <field name="email">example_user1@example.com</field>
+            <field name="phone">(084)-695-9999</field>
+        </record>
+        <record id="partner_example_user_2" model="res.partner">
+            <field name="name">User 2 - EC1</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="parent_id" ref="example_company_1"/>
+            <field name="company_name">Example 2</field>
+            <field name="street">Duy Tan</field>
+            <field name="city">Ha noi</field>
+            <field name="state_id"  ref="base.state_vn_VN-HN"/>
+            <field name="user_ids" eval="[(4, ref('oristar_sample_example_company_1_user_2'))]"/>
+            <field name="zip">97401</field>
+            <field name="country_id" ref="base.vn"/>
+            <field name="tz">Europe/Brussels</field>
+            <field name="email">example_user2@example.com</field>
+            <field name="phone">(084)-695-888</field>
+        </record>
+
+        <record id="thaibao_cao" model="res.users">
+            <field name="login">thaibao.cao@oristar.vn</field>
+            <field name="name">CAO THÁI BẢO</field>
+            <field name="password">389608806</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'),  ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="ngocchinh_pham" model="res.users">
+            <field name="login">ngocchinh.pham@oristar.vn</field>
+            <field name="name">PHẠM NGỌC CHÍNH</field>
+            <field name="password">538111433</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="giabinh_duong" model="res.users">
+            <field name="login">giabinh.duong@oristar.vn</field>
+            <field name="name">DƯƠNG GIA BÌNH</field>
+            <field name="password">460113173</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="tri_ho" model="res.users">
+            <field name="login">tri.ho@oristar.vn</field>
+            <field name="name">HỒ HỮU TRÍ</field>
+            <field name="password">778528829</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="thanhhuyen_nguyen" model="res.users">
+            <field name="login">thanhhuyen.nguyen@oristar.vn</field>
+            <field name="name">NGUYỄN THANH HUYỀN</field>
+            <field name="password">764608059</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="hainam_nguyen" model="res.users">
+            <field name="login">hainam.nguyen@oristar.vn</field>
+            <field name="name">NGUYỄN HẢI NAM</field>
+            <field name="password">431490268</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="haiyen_lai" model="res.users">
+            <field name="login">haiyen.lai@oristar.vn</field>
+            <field name="name">LẠI HẢI YẾN</field>
+            <field name="password">372574058</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="hongyen_le" model="res.users">
+            <field name="login">hongyen.le@oristar.vn</field>
+            <field name="name">LÊ HỒNG YẾN</field>
+            <field name="password">275931125</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="minhquan_le" model="res.users">
+            <field name="login">minhquan.le@oristar.vn</field>
+            <field name="name">LÊ MINH QUÂN</field>
+            <field name="password">604930047</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="ngoctram_le" model="res.users">
+            <field name="login">ngoctram.le@oristar.vn</field>
+            <field name="name">LÊ THỊ NGỌC TRÂM</field>
+            <field name="password">288428267</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="xuancuong_luong" model="res.users">
+            <field name="login">xuancuong.luong@oristar.vn</field>
+            <field name="name">LƯƠNG XUÂN CƯỜNG</field>
+            <field name="password">407320428</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="hoanghuy_nguyen" model="res.users">
+            <field name="login">hoanghuy.nguyen@oristar.vn</field>
+            <field name="name">NGUYỄN HOÀNG HUY</field>
+            <field name="password">885754603</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="thanhhai_nguyen" model="res.users">
+            <field name="login">thanhhai.nguyen@oristar.vn</field>
+            <field name="name">NGUYỄN THANH HẢI</field>
+            <field name="password">426595856</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="anhdat_nguyen" model="res.users">
+            <field name="login">anhdat.nguyen@oristar.vn</field>
+            <field name="name">NGUYỄN ANH ĐẠT</field>
+            <field name="password">776003484</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="hung_ngo" model="res.users">
+            <field name="login">hung.ngo@oristar.vn</field>
+            <field name="name">NGÔ VĂN HƯNG</field>
+            <field name="password">124528839</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="thanhtuan_tran" model="res.users">
+            <field name="login">thanhtuan.tran@oristar.vn</field>
+            <field name="name">TRẦN THÀNH TUẤN</field>
+            <field name="password">234203603</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="phuocluat_nguyen" model="res.users">
+            <field name="login">phuocluat.nguyen@oristar.vn</field>
+            <field name="name">NGUYỄN PHƯỚC LUẬT</field>
+            <field name="password">315135261</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="quochung_pham" model="res.users">
+            <field name="login">quochung.pham@oristar.vn</field>
+            <field name="name">PHẠM QUỐC HÙNG</field>
+            <field name="password">790922479</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="thuylinh_pha" model="res.users">
+            <field name="login">thuylinh.pham@oristar.vn</field>
+            <field name="name">PHẠM THUỲ LINH</field>
+            <field name="password">662492782</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="duythanh_phan" model="res.users">
+            <field name="login">duythanh.phan@oristar.vn</field>
+            <field name="name">PHAN DUY THÀNH</field>
+            <field name="password">830103911</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="vu_pham" model="res.users">
+            <field name="login">vu.pham@oristar.vn</field>
+            <field name="name">PHẠM VŨ</field>
+            <field name="password">754024065</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="quynhluong_dam" model="res.users">
+            <field name="login">quynhluong.dam@oristar.vn</field>
+            <field name="name">ĐÀM THỊ QUỲNH LƯƠNG</field>
+            <field name="password">518074699</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="hoanghieu_tran" model="res.users">
+            <field name="login">hoanghieu.tran@oristar.vn</field>
+            <field name="name">TRẦN THỊ HOÀNG HIẾU</field>
+            <field name="password">841633210</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="hue_tran" model="res.users">
+            <field name="login">hue.tran@oristar.vn</field>
+            <field name="name">TRẦN THỊ HUỆ</field>
+            <field name="password">312211149</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="tiendung_tran" model="res.users">
+            <field name="login">tiendung.tran@oristar.vn</field>
+            <field name="name">TRẦN TIẾN DŨNG</field>
+            <field name="password">125043646</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="thuytrang_nguyen" model="res.users">
+            <field name="login">thuytrang.nguyen@oristar.vn</field>
+            <field name="name">NGUYỄN THUỴ TRANG</field>
+            <field name="password">724100649</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="thanhloan_vo" model="res.users">
+            <field name="login">thanhloan.vo@oristar.vn</field>
+            <field name="name">VÕ NGỌC THANH LOAN</field>
+            <field name="password">145592647</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="tritoan_vu" model="res.users">
+            <field name="login">tritoan.vu@oristar.vn</field>
+            <field name="name">VŨ TRÍ TOÀN</field>
+            <field name="password">282960878</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+        <record id="ding_nguyen" model="res.users">
+            <field name="login">ding.nguyen@oristar.vn</field>
+            <field name="name">NGUYỄN THỊ DING</field>
+            <field name="password">209884677</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export'), ref('account.group_account_invoice'), ref('sales_team.group_sale_salesman'), ref('sale.group_delivery_invoice_address')])]"/>
+            <field name="image_1920" type="base64" file="base/static/img/user_demo-image.jpg"/>
+        </record>
+
+    </data>
+</odoo>

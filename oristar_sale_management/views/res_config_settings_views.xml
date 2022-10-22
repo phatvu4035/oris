@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="res_config_settings_view_form" model="ir.ui.view">
+		<field name="name">res.config.settings.view.form.inherit.sale.oristar</field>
+		<field name="model">res.config.settings</field>
+		<field name="priority" eval="55" />
+		<field name="inherit_id" ref="sale.res_config_settings_view_form" />
+		<field name="arch" type="xml">
+			<div id="pricing_setting_container" position="inside">
+				<div class="col-12 col-lg-6 o_setting_box"
+                     id="pricing_engine_settings"
+                     title="Apply manual discounts on sales order lines or display discounts computed from pricelists (option to activate in the pricelist configuration).">
+                     
+                     <div class="o_setting_right_pane">
+                        <label for="price_service_url" />
+						<div class="text-muted">
+							Base URL to connect to Pricing Engine.
+						</div>
+						<div class="mt16">
+							<field name="price_service_url" class="oe_inline" />
+						</div>
+						<label for="price_method_folder" />
+						<div class="text-muted">
+							Current folder, which contains price method files.
+						</div>
+						<div class="mt16">
+							<field name="price_method_folder" class="oe_inline" />
+						</div>
+						<label for="quotation_file" />
+						<div class="text-muted">
+							Quotation file.
+						</div>
+						<div class="mt16">
+							<field name="quotation_file" class="oe_inline" />
+						</div>
+						
+						<label for="milling_min_limit" />
+						<div class="text-muted">
+							Minimum limit for milling.
+						</div>
+						<div class="mt16">
+							<field name="milling_min_limit" class="oe_inline" />
+						</div>
+						
+						<label for="milling_max_limit" />
+						<div class="text-muted">
+							Maximum limit for milling.
+						</div>
+						<div class="mt16">
+							<field name="milling_max_limit" class="oe_inline" />
+						</div>
+                     </div>
+                 </div>
+			</div>
+		</field>
+	</record>
+</odoo>

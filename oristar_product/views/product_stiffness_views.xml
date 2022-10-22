@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="product_stiffness_tree_view" model="ir.ui.view">
+		<field name="name">product.stiffness.tree</field>
+		<field name="model">product.stiffness</field>
+		<field name="arch" type="xml">
+			<tree string="Product Temper">
+				<field name="name"/>
+				<field name="description"/>
+				<field name="product_material_id"/>
+				<field name="product_alloy_id"/>
+			</tree>
+		</field>
+	</record>
+	
+	<record id="product_stiffness_form_view" model="ir.ui.view">
+		<field name="name">product.stiffness.form</field>
+		<field name="model">product.stiffness</field>
+		<field name="arch" type="xml">
+			<form string="Product Temper">
+				<header></header>
+				<sheet>
+					<div class="oe_title">
+                        <label class="oe_edit_only" for="name" string="Name"/>
+                        <h1><field name="name" placeholder="Temper Name"/></h1>
+                    </div>
+                    <group name="detail">
+                    	<group name="detail_left">
+                    		<field name="available_product_alloy_ids" invisible="1"/>
+                    		<field name="product_material_id"/>
+                    		<field name="product_alloy_id"/>
+                    		<field name="description"/>
+                    	</group>
+                    	<group name="detail_right"></group>
+                    </group>
+				</sheet>
+				<div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+			</form>
+		</field>
+	</record>
+	
+	<record id="product_stiffness_action" model="ir.actions.act_window">
+        <field name="name">Product Temper</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.stiffness</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

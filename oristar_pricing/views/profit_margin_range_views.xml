@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="profit_margin_range_tree_view" model="ir.ui.view">
+		<field name="name">profit.margin.range.tree</field>
+		<field name="model">profit.margin.range</field>
+		<field name="arch" type="xml">
+			<tree string="Profit Margin Ranges">
+				<field name="name"/>
+				<field name="profit_margin"/>
+				<field name="size1_min"/>
+				<field name="size1_max"/>
+			</tree>
+		</field>
+	</record>
+	
+	<record id="profit_margin_range_form_view" model="ir.ui.view">
+		<field name="name">profit.margin.range.form</field>
+		<field name="model">profit.margin.range</field>
+		<field name="arch" type="xml">
+			<form string="Profit Margin Range">
+				<header></header>
+				<sheet>
+                    <group name="detail">
+                    	<group name="detail_left">
+                    		<field name="name"/>
+                    		<field name="description"/>
+                    	</group>
+                    	<group name="detail_right">
+                    		<field name="profit_margin"/>
+                    		<field name="size1_min"/>
+							<field name="size1_max"/>
+                    	</group>
+                    </group>
+				</sheet>
+				<div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+			</form>
+		</field>
+	</record>
+	
+	<record id="profit_margin_range_action" model="ir.actions.act_window">
+        <field name="name">Profit Margin Range</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">profit.margin.range</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

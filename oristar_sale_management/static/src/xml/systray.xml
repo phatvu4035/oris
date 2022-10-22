@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="or.systray.ActivityUser.Previews">
+        <t t-if="_.isEmpty(users)">
+            <div class="dropdown-item-text text-center o_no_activity">
+                <span>No users found.</span>
+            </div>
+        </t>
+        <t t-foreach="users" t-as="activity">
+            <div class="o_mail_preview o_systray_activity">
+                <div class="o_mail_preview_image o_mail_preview_app">
+                    <img src="/oristar_sale_management/static/src/img/icons/businessman.png" alt="Sale Order"/>
+                </div>
+                <div class="o_preview_info">
+                    <div class="o_preview_title">
+                        <span class="o_preview_name">
+                            User <t t-esc="activity.email"/> has been registered
+                        </span>
+                    </div>
+                    <div>
+                        <span class="small">Phone: <t t-esc="activity.phone"/></span>
+                        <a class="float-right small open-detail"
+                           t-att-data-res_model="activity.res_model"
+                           t-att-data-res_id="activity.id"
+                        >Detail</a>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </t>
+    <t t-name="or.systray.ActivitySaleOrder.Previews">
+        <t t-if="_.isEmpty(orders)">
+            <div class="dropdown-item-text text-center o_no_activity">
+                <span>No sale order found.</span>
+            </div>
+        </t>
+        <t t-foreach="orders" t-as="activity">
+            <div class="o_mail_preview o_systray_activity">
+                <div class="o_mail_preview_image o_mail_preview_app">
+                    <img src="/sale/static/description/icon.png" alt="Sale Order"/>
+                </div>
+                <div class="o_preview_info">
+                    <div class="o_preview_title">
+                        <span class="o_preview_name">
+                            Order <t t-esc="activity.name"/> has been created
+                        </span>
+                    </div>
+                    <div>
+                        <span class="small">Order Date: <t t-esc="activity.date_order"/></span>
+                        <a class="float-right small open-detail"
+                           t-att-data-res_model="activity.res_model"
+                           t-att-data-res_id="activity.id"
+                        >Detail</a>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </t>
+    <t t-name="oris.systray.Users">
+        <li class="o_mail_systray_item">
+            <a class="dropdown-toggle o-no-caret read-user-noti" data-toggle="dropdown" data-display="static" aria-expanded="false" title="Users" href="#" role="button">
+                <i class="fa fa-user" role="img" aria-label="Users"/> <span class="o_notification_counter badge badge-pill"/>
+            </a>
+            <div class="o_mail_systray_dropdown dropdown-menu dropdown-menu-right" role="menu">
+                <div class="o_mail_systray_dropdown_items"/>
+            </div>
+        </li>
+    </t>
+    <t t-name="oris.systray.SaleOrders">
+        <li class="o_mail_systray_item">
+            <a class="dropdown-toggle o-no-caret read-so-noti" data-toggle="dropdown" data-display="static" aria-expanded="false" title="Sale Orders" href="#" role="button">
+                <i class="fa fa-cart-arrow-down" role="img" aria-label="Sale Order"/> <span class="o_notification_counter badge badge-pill"/>
+            </a>
+            <div class="o_mail_systray_dropdown dropdown-menu dropdown-menu-right" role="menu">
+                <div class="o_mail_systray_dropdown_items"/>
+            </div>
+        </li>
+    </t>
+</templates>

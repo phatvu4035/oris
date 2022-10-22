@@ -1,0 +1,41 @@
+<odoo>
+    <record model="ir.ui.view" id="view_approve_list">
+        <field name="name">res.users.oristar.tree</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_tree"/>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="need_approval"/>
+            </tree>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_totp_form">
+        <field name="name">res.users.oristar.form</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button string="Approve User"
+                	confirm="Are you sure want to approve for this user?"
+	                type="object" name="action_approve_user"
+	                attrs="{'invisible': [('need_approval', '!=', True)]}"/>
+                
+            </xpath>
+            
+            <field name="email" position="after">
+            	<field name="need_approval" invisible="1"></field>
+            </field>
+        </field>
+    </record>
+    <record id="view_users_search" model="ir.ui.view">
+        <field name="name">res.users.oristar.search</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_search"/>
+        <field name="arch" type="xml">
+        	<xpath expr="filter[@name='no_share']" position="after">
+        		<filter string="Need Approval" name="need_approve" 
+        			domain="[('need_approval','=',True)]"/>
+        	</xpath>
+        </field>
+    </record>
+</odoo>

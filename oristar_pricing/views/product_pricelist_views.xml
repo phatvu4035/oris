@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record model="ir.ui.view" id="product_pricelist_form_view">
+        <field name="name">product.pricelist.oristar.form</field>
+        <field name="model">product.pricelist</field>
+        <field name="inherit_id" ref="product.product_pricelist_view"/>
+        <field name="arch" type="xml">
+        	<xpath expr="//field[@name='item_ids']//tree//field[@name='min_quantity']" position="before">
+        		<field name="price_file_id" />
+        	</xpath>
+        	
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="product_pricelist_item_form_view">
+        <field name="name">product.pricelist.item.oristar.form</field>
+        <field name="model">product.pricelist.item</field>
+        <field name="inherit_id" ref="product.product_pricelist_item_form_view"/>
+        <field name="arch" type="xml">
+        	<group name="pricelist_rule_limits">
+        		<field name="tsln" />
+        		<field name="profit_margin_ids" widget="many2many_tags"/>
+        	</group>
+        	<group name="pricelist_rule_base">
+        		<field name="price_file_id" attrs="{'invisible':[('compute_price', '!=', 'api')],
+        											'required': [('compute_price', '=', 'api')]}"/>
+        		<field name="price_method_code" invisible="1"/>
+        		<field name="n_average"
+        			attrs="{'required': [('price_method_code', '=', 'pp3'), ('compute_price', '=', 'api')], 
+        					'invisible': ['|', ('price_method_code', '!=', 'pp3'), ('compute_price', '!=', 'api')]}">
+        		</field>
+        		<field name="lme_market_id" 
+        			attrs="{'required': [('price_method_code', '=', 'pp3'), ('compute_price', '=', 'api')], 
+        					'invisible':['|', ('price_method_code', '!=', 'pp3'), ('compute_price', '!=', 'api')]}">
+        		</field>
+        	</group>
+        </field>
+    </record>
+</odoo>

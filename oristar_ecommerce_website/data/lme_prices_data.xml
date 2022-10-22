@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="lme_price_date08" model="lme.price">
+            <field name="record_datetime" eval="time.strftime('2022-01-08')"/>
+            <field name="lme_market_id" ref="oristar_ecommerce_website.lme_market_lme" />
+            <field name="product_material_id" ref="oristar_product.product_material_00" />
+            <field name="close_price">230000000</field>
+        </record>
+        <record id="lme_price_date09" model="lme.price">
+            <field name="record_datetime" eval="time.strftime('2022-01-09')"/>
+            <field name="lme_market_id" ref="oristar_ecommerce_website.lme_market_lme" />
+            <field name="product_material_id" ref="oristar_product.product_material_00" />
+            <field name="close_price">210000000</field>
+        </record>
+        <record id="lme_price_date10" model="lme.price">
+            <field name="record_datetime" eval="time.strftime('2022-01-10')"/>
+            <field name="lme_market_id" ref="oristar_ecommerce_website.lme_market_lme" />
+            <field name="product_material_id" ref="oristar_product.product_material_00" />
+            <field name="close_price">205000000</field>
+        </record>
+        <record id="lme_price_date11" model="lme.price">
+            <field name="record_datetime" eval="time.strftime('2022-01-11')"/>
+            <field name="lme_market_id" ref="oristar_ecommerce_website.lme_market_lme" />
+            <field name="product_material_id" ref="oristar_product.product_material_00" />
+            <field name="close_price">225000000</field>
+        </record>
+        <record id="lme_price_date12" model="lme.price">
+            <field name="record_datetime" eval="time.strftime('2022-01-12')"/>
+            <field name="lme_market_id" ref="oristar_ecommerce_website.lme_market_lme" />
+            <field name="product_material_id" ref="oristar_product.product_material_00" />
+            <field name="close_price">215000000</field>
+        </record>
+        <record id="lme_price_date13" model="lme.price">
+            <field name="record_datetime" eval="time.strftime('2022-01-13')"/>
+            <field name="lme_market_id" ref="oristar_ecommerce_website.lme_market_lme" />
+            <field name="product_material_id" ref="oristar_product.product_material_00" />
+            <field name="close_price">215000000</field>
+        </record>
+        <record id="lme_price_date14" model="lme.price">
+            <field name="record_datetime" eval="time.strftime('2022-01-14')"/>
+            <field name="lme_market_id" ref="oristar_ecommerce_website.lme_market_lme" />
+            <field name="product_material_id" ref="oristar_product.product_material_00" />
+            <field name="close_price">215000000</field>
+        </record>
+        <record id="lme_price_date15" model="lme.price">
+            <field name="record_datetime" eval="time.strftime('2022-01-15')"/>
+            <field name="lme_market_id" ref="oristar_ecommerce_website.lme_market_lme" />
+            <field name="product_material_id" ref="oristar_product.product_material_00" />
+            <field name="close_price">217000000</field>
+        </record>
+    </data>
+</odoo>

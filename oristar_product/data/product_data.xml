@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="product_00" model="product.product">
+            <field name="default_code">DBCC1720NHATH2</field>
+            <field name="name">Đồng hợp kim Beryllium cuộn, C1720 - 1/2H</field>
+            <field name="product_material_category_id" ref="product_material_category_00"/>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_basic_shape_id" ref="product_basic_shape_00"/>
+            <field name="product_alloy_id" ref="product_alloy_00"/>
+            <field name="product_stiffness_id" ref="product_stiffness_03"/>
+            <field name="product_origin" ref="jp"/>
+        </record>
+        <record id="product_00" model="product.product">
+            <field name="default_code">DBDCC17200NHATH2</field>
+            <field name="name">Đồng hợp kim dây Beryllium cuộn, C17200 - 1/2H</field>
+            <field name="product_material_category_id" ref="product_material_category_00"/>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_basic_shape_id" ref="product_basic_shape_00"/>
+            <field name="product_alloy_id" ref="product_alloy_00"/>
+            <field name="product_stiffness_id" ref="product_stiffness_03"/>
+            <field name="product_origin" ref="jp"/>
+        </record>
+        <record id="product_00" model="product.product">
+            <field name="default_code">DBTAMMoldmaxMYHH</field>
+            <field name="name">Đồng hợp kim Beryllium tấm, Moldmax - HH</field>
+            <field name="product_material_category_id" ref="product_material_category_00"/>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_basic_shape_id" ref="product_basic_shape_01"/>
+            <field name="product_alloy_id" ref="product_alloy_01"/>
+            <field name="product_stiffness_id" ref="product_stiffness_06"/>
+            <field name="product_origin" ref="us"/>
+        </record>
+        <record id="product_00" model="product.product">
+            <field name="default_code">DBTAMMoldmaxMYLH</field>
+            <field name="name">Đồng hợp kim Beryllium tấm, Moldmax - LH</field>
+            <field name="product_material_category_id" ref="product_material_category_00"/>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_basic_shape_id" ref="product_basic_shape_01"/>
+            <field name="product_alloy_id" ref="product_alloy_01"/>
+            <field name="product_stiffness_id" ref="product_stiffness_07"/>
+            <field name="product_origin" ref="us"/>
+        </record>
+        <record id="product_00" model="product.product">
+            <field name="default_code">DBTAMMoldmaxMYSC</field>
+            <field name="name">Đồng hợp kim Beryllium tấm, Moldmax - SC</field>
+            <field name="product_material_category_id" ref="product_material_category_00"/>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_basic_shape_id" ref="product_basic_shape_01"/>
+            <field name="product_alloy_id" ref="product_alloy_01"/>
+            <field name="product_stiffness_id" ref="product_stiffness_08"/>
+            <field name="product_origin" ref="us"/>
+        </record>
+        <record id="product_00" model="product.product">
+            <field name="default_code">DBTHMoldmaxMYHH</field>
+            <field name="name">Đồng hợp kim Beryllium thanh, Moldmax - HH</field>
+            <field name="product_material_category_id" ref="product_material_category_00"/>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_basic_shape_id" ref="product_basic_shape_02"/>
+            <field name="product_detailed_shape_id" ref="product_detailed_shape_00"/>
+            <field name="product_alloy_id" ref="product_alloy_01"/>
+            <field name="product_stiffness_id" ref="product_stiffness_06"/>
+            <field name="product_origin" ref="us"/>
+        </record>
+        <record id="product_00" model="product.product">
+            <field name="default_code">DBTRAlloy 25MYH1</field>
+            <field name="name">Đồng hợp kim Beryllium thanh tròn, Grades 25 - H</field>
+            <field name="product_material_category_id" ref="product_material_category_00"/>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_basic_shape_id" ref="product_basic_shape_02"/>
+            <field name="product_detailed_shape_id" ref="product_detailed_shape_01"/>
+            <field name="product_alloy_id" ref="product_alloy_02"/>
+            <field name="product_stiffness_id" ref="product_stiffness_10"/>
+            <field name="product_origin" ref="us"/>
+        </record>
+        <record id="product_00" model="product.product">
+            <field name="default_code">DBTRBeCu25NHATH1</field>
+            <field name="name">Đồng hợp kim Beryllium thanh tròn, Alloy 25 - H</field>
+            <field name="product_material_category_id" ref="product_material_category_00"/>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_basic_shape_id" ref="product_basic_shape_02"/>
+            <field name="product_detailed_shape_id" ref="product_detailed_shape_01"/>
+            <field name="product_alloy_id" ref="product_alloy_02"/>
+            <field name="product_stiffness_id" ref="product_stiffness_10"/>
+            <field name="product_origin" ref="us"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,1271 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oristar_product
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-07 13:05+0000\n"
+"PO-Revision-Date: 2022-10-07 13:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__product_surface__2b
+msgid "2B"
+msgstr ""
+
+#. module: oristar_product
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_template_search_view
+msgid "2B Surface"
+msgstr "Mặt cắt 2B"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__message_needaction
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__message_needaction
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__message_needaction
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__message_needaction
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__message_needaction
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__message_needaction
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__message_needaction
+msgid "Action Needed"
+msgstr "Hành động cần thiết"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__activity_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__activity_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__activity_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__activity_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__activity_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__activity_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__activity_ids
+msgid "Activities"
+msgstr "Hành động"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__activity_exception_decoration
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__activity_exception_decoration
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__activity_exception_decoration
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__activity_exception_decoration
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__activity_exception_decoration
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__activity_exception_decoration
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Ngoại lệ hành động"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__activity_state
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__activity_state
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__activity_state
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__activity_state
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__activity_state
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__activity_state
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__activity_state
+msgid "Activity State"
+msgstr "Trạng thái hành động"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__activity_type_icon
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__activity_type_icon
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__activity_type_icon
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__activity_type_icon
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__activity_type_icon
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__activity_type_icon
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Biểu tượng kiểu hành động"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__message_attachment_count
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__message_attachment_count
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__message_attachment_count
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__message_attachment_count
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__message_attachment_count
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__message_attachment_count
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__message_attachment_count
+msgid "Attachment Count"
+msgstr "Số lượng đính kèm"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__available_product_alloy_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__available_product_alloy_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__available_product_alloy_ids
+msgid "Available Product Alloy"
+msgstr "Hợp kim khả dụng"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__available_product_detailed_shape_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__available_product_detailed_shape_ids
+msgid "Available Product Detailed Shape"
+msgstr "Hình dạng chi tiết khả dụng"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__available_product_material_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__available_product_material_ids
+msgid "Available Product Material"
+msgstr "Vật liệu khả dụng"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__available_product_stiffness_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__available_product_stiffness_ids
+msgid "Available Product Stiffness"
+msgstr "Độ cứng khả dụng"
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__product_surface__ba
+msgid "BA"
+msgstr ""
+
+#. module: oristar_product
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_template_search_view
+msgid "BA Surface"
+msgstr "Mặt cắt BA"
+
+#. module: oristar_product
+#: model:product.shape.type,name:oristar_product.product_shape_type_bi
+msgid "Ball"
+msgstr "Bi"
+
+#. module: oristar_product
+#: model:product.shape.type,name:oristar_product.product_shape_type_thanh
+msgid "Bar"
+msgstr "Thanh"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__product_basic_shape_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__product_basic_shape_id
+msgid "Basic Shape"
+msgstr "Hình dạng cơ bản"
+
+#. module: oristar_product
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_basic_shape_form_view
+msgid "Basic Shape Name"
+msgstr "Tên hình dạng cơ bản"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__product_basic_shape_ids
+msgid "Basic Shapes"
+msgstr "Hình dạng cơ bản"
+
+#. module: oristar_product
+#: model:product.basic.shape,name:oristar_product.product_basic_shape_05
+msgid "Bi"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material,name:oristar_product.product_material_17
+msgid "Carbide"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.detailed.shape,name:oristar_product.product_detailed_shape_00
+msgid "Chữ Nhật"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_detailed_shape__shape_category__circle
+#: model:product.shape.type,name:oristar_product.product_shape_type_tron
+msgid "Circle"
+msgstr "Tròn"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__create_uid
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__create_uid
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__create_uid
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__create_uid
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__create_uid
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__create_uid
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__create_date
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__create_date
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__create_date
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__create_date
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__create_date
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__create_date
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__create_date
+msgid "Created on"
+msgstr "Được tạo khi"
+
+#. module: oristar_product
+#: model:product.basic.shape,name:oristar_product.product_basic_shape_00
+msgid "Cuộn"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__description
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__description
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__description
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__description
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__description
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__description
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__description
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__product_detailed_shape_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__product_detailed_shape_id
+msgid "Detailed Shape"
+msgstr "Hình dạng chi tiết"
+
+#. module: oristar_product
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_detailed_shape_form_view
+msgid "Detailed Shape Name"
+msgstr "Tên hình dạng chi tiết"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__product_detailed_shape_ids
+msgid "Detailed Shapes"
+msgstr "Hình dạng chi tiết"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__display_name
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__display_name
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__display_name
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__display_name
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__display_name
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__display_name
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__display_name
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__display_name
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: oristar_product
+#: model:product.basic.shape,name:oristar_product.product_basic_shape_06
+msgid "Dây"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__featured_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__featured_product
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_template_search_view
+msgid "Featured Product"
+msgstr "Sản phẩm đặc trưng"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__message_follower_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__message_follower_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__message_follower_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__message_follower_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__message_follower_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__message_follower_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__message_follower_ids
+msgid "Followers"
+msgstr "Người theo dõi"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__message_channel_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__message_channel_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__message_channel_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__message_channel_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__message_channel_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__message_channel_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Người theo dõi (kênh)"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__message_partner_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__message_partner_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__message_partner_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__message_partner_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__message_partner_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__message_partner_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Người theo dõi (đối tác)"
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_alloy__activity_type_icon
+#: model:ir.model.fields,help:oristar_product.field_product_basic_shape__activity_type_icon
+#: model:ir.model.fields,help:oristar_product.field_product_detailed_shape__activity_type_icon
+#: model:ir.model.fields,help:oristar_product.field_product_material__activity_type_icon
+#: model:ir.model.fields,help:oristar_product.field_product_material_category__activity_type_icon
+#: model:ir.model.fields,help:oristar_product.field_product_shape_type__activity_type_icon
+#: model:ir.model.fields,help:oristar_product.field_product_stiffness__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__product_alloy_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__product_alloy_id
+msgid "Grades"
+msgstr "Hợp kim"
+
+#. module: oristar_product
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_alloy_form_view
+msgid "Grades Name"
+msgstr "Tên hợp kim"
+
+#. module: oristar_product
+#: model:product.detailed.shape,name:oristar_product.product_detailed_shape_06
+msgid "Góc L"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__has_size1
+msgid "Has Size 1"
+msgstr "Có KT1"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__has_size2
+msgid "Has Size 2"
+msgstr "Có KT2"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__has_size3
+msgid "Has Size 3"
+msgstr "Có KT3"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__has_weight
+msgid "Has Weight"
+msgstr "Có khối lượng"
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_detailed_shape__shape_category__lg
+#: model:product.shape.type,name:oristar_product.product_shape_type_luc_giac
+msgid "Hexagon"
+msgstr "Lục giác"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__id
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__id
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__id
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__id
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__id
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__id
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__id
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__id
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__id
+msgid "ID"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__activity_exception_icon
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__activity_exception_icon
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__activity_exception_icon
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__activity_exception_icon
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__activity_exception_icon
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__activity_exception_icon
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__activity_exception_icon
+msgid "Icon"
+msgstr "Biểu tượng"
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_alloy__activity_exception_icon
+#: model:ir.model.fields,help:oristar_product.field_product_basic_shape__activity_exception_icon
+#: model:ir.model.fields,help:oristar_product.field_product_detailed_shape__activity_exception_icon
+#: model:ir.model.fields,help:oristar_product.field_product_material__activity_exception_icon
+#: model:ir.model.fields,help:oristar_product.field_product_material_category__activity_exception_icon
+#: model:ir.model.fields,help:oristar_product.field_product_shape_type__activity_exception_icon
+#: model:ir.model.fields,help:oristar_product.field_product_stiffness__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_alloy__message_needaction
+#: model:ir.model.fields,help:oristar_product.field_product_alloy__message_unread
+#: model:ir.model.fields,help:oristar_product.field_product_basic_shape__message_needaction
+#: model:ir.model.fields,help:oristar_product.field_product_basic_shape__message_unread
+#: model:ir.model.fields,help:oristar_product.field_product_detailed_shape__message_needaction
+#: model:ir.model.fields,help:oristar_product.field_product_detailed_shape__message_unread
+#: model:ir.model.fields,help:oristar_product.field_product_material__message_needaction
+#: model:ir.model.fields,help:oristar_product.field_product_material__message_unread
+#: model:ir.model.fields,help:oristar_product.field_product_material_category__message_needaction
+#: model:ir.model.fields,help:oristar_product.field_product_material_category__message_unread
+#: model:ir.model.fields,help:oristar_product.field_product_shape_type__message_needaction
+#: model:ir.model.fields,help:oristar_product.field_product_shape_type__message_unread
+#: model:ir.model.fields,help:oristar_product.field_product_stiffness__message_needaction
+#: model:ir.model.fields,help:oristar_product.field_product_stiffness__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_alloy__message_has_error
+#: model:ir.model.fields,help:oristar_product.field_product_basic_shape__message_has_error
+#: model:ir.model.fields,help:oristar_product.field_product_detailed_shape__message_has_error
+#: model:ir.model.fields,help:oristar_product.field_product_material__message_has_error
+#: model:ir.model.fields,help:oristar_product.field_product_material_category__message_has_error
+#: model:ir.model.fields,help:oristar_product.field_product_shape_type__message_has_error
+#: model:ir.model.fields,help:oristar_product.field_product_stiffness__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__image_1920
+msgid "Image"
+msgstr "Ảnh"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__image_1024
+msgid "Image 1024"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__image_128
+msgid "Image 128"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__image_256
+msgid "Image 256"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__image_512
+msgid "Image 512"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__is_compact
+msgid "Is Compact"
+msgstr "Đặc"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__message_is_follower
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__message_is_follower
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__message_is_follower
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__message_is_follower
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__message_is_follower
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__message_is_follower
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__message_is_follower
+msgid "Is Follower"
+msgstr "Là người theo dõi"
+
+#. module: oristar_product
+#: model:product.shape.type,name:oristar_product.product_shape_type_goc_l
+msgid "L Angle"
+msgstr "Góc L"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy____last_update
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape____last_update
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape____last_update
+#: model:ir.model.fields,field_description:oristar_product.field_product_material____last_update
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category____last_update
+#: model:ir.model.fields,field_description:oristar_product.field_product_product____last_update
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type____last_update
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness____last_update
+#: model:ir.model.fields,field_description:oristar_product.field_product_template____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__write_uid
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__write_uid
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__write_uid
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__write_uid
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__write_uid
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__write_uid
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__write_date
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__write_date
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__write_date
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__write_date
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__write_date
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__write_date
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: oristar_product
+#: model:product.detailed.shape,name:oristar_product.product_detailed_shape_03
+msgid "Lục giác"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__machinable_size1
+msgid "Machinable Size 1"
+msgstr "Có thể gia công KT1"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__machinable_size2
+msgid "Machinable Size 2"
+msgstr "Có thể gia công KT2"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__machinable_size3
+msgid "Machinable Size 3"
+msgstr "Có thể gia công KT3"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__message_main_attachment_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__message_main_attachment_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__message_main_attachment_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__message_main_attachment_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__message_main_attachment_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__message_main_attachment_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Đính kèm chính"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__product_material_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__product_material_id
+msgid "Material"
+msgstr "Vật liệu"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__product_material_category_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__product_material_category_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__product_material_category_id
+msgid "Material Category"
+msgstr "Loại vật liệu"
+
+#. module: oristar_product
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_material_category_form_view
+msgid "Material Category Name"
+msgstr "Tên loại vật liệu"
+
+#. module: oristar_product
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_material_form_view
+msgid "Material Name"
+msgstr "Tên vật liệu"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__message_has_error
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__message_has_error
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__message_has_error
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__message_has_error
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__message_has_error
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__message_has_error
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__message_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__message_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__message_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__message_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__message_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__message_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__message_ids
+msgid "Messages"
+msgstr "Thông báo"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__my_activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__my_activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__my_activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__my_activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__my_activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__my_activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__name
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__name
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__name
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__name
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__name
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__name
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__name
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_alloy_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_basic_shape_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_detailed_shape_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_material_category_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_material_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_shape_type_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_stiffness_form_view
+msgid "Name"
+msgstr "Tên"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__activity_date_deadline
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__activity_summary
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__activity_summary
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__activity_summary
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__activity_summary
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__activity_summary
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__activity_summary
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__activity_type_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__activity_type_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__activity_type_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__activity_type_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__activity_type_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__activity_type_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material.category,name:oristar_product.product_material_category_01
+msgid "Nhôm"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__nhom_hop_kim
+#: model:product.material,name:oristar_product.product_material_04
+msgid "Nhôm hợp kim"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__nhom_hop_kim_cuon
+msgid "Nhôm hợp kim cuộn"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__nhom_hop_kim_day
+msgid "Nhôm hợp kim dày"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__nhom_hop_kim_mong
+msgid "Nhôm hợp kim mỏng"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__nhom_khong_hop_kim
+#: model:product.material,name:oristar_product.product_material_05
+msgid "Nhôm không hợp kim"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__nhom_khong_hop_kim_cuon
+msgid "Nhôm không hợp kim cuộn"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material,name:oristar_product.product_material_06
+msgid "Nhôm phản quang"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__nhom_thanh
+msgid "Nhôm thanh"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__message_needaction_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__message_needaction_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__message_needaction_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__message_needaction_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__message_needaction_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__message_needaction_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__message_has_error_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__message_has_error_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__message_has_error_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__message_has_error_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__message_has_error_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__message_has_error_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_alloy__message_needaction_counter
+#: model:ir.model.fields,help:oristar_product.field_product_basic_shape__message_needaction_counter
+#: model:ir.model.fields,help:oristar_product.field_product_detailed_shape__message_needaction_counter
+#: model:ir.model.fields,help:oristar_product.field_product_material__message_needaction_counter
+#: model:ir.model.fields,help:oristar_product.field_product_material_category__message_needaction_counter
+#: model:ir.model.fields,help:oristar_product.field_product_shape_type__message_needaction_counter
+#: model:ir.model.fields,help:oristar_product.field_product_stiffness__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_alloy__message_has_error_counter
+#: model:ir.model.fields,help:oristar_product.field_product_basic_shape__message_has_error_counter
+#: model:ir.model.fields,help:oristar_product.field_product_detailed_shape__message_has_error_counter
+#: model:ir.model.fields,help:oristar_product.field_product_material__message_has_error_counter
+#: model:ir.model.fields,help:oristar_product.field_product_material_category__message_has_error_counter
+#: model:ir.model.fields,help:oristar_product.field_product_shape_type__message_has_error_counter
+#: model:ir.model.fields,help:oristar_product.field_product_stiffness__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_alloy__message_unread_counter
+#: model:ir.model.fields,help:oristar_product.field_product_basic_shape__message_unread_counter
+#: model:ir.model.fields,help:oristar_product.field_product_detailed_shape__message_unread_counter
+#: model:ir.model.fields,help:oristar_product.field_product_material__message_unread_counter
+#: model:ir.model.fields,help:oristar_product.field_product_material_category__message_unread_counter
+#: model:ir.model.fields,help:oristar_product.field_product_shape_type__message_unread_counter
+#: model:ir.model.fields,help:oristar_product.field_product_stiffness__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__product_origin
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__product_origin
+msgid "Origin"
+msgstr "Xuất xứ"
+
+#. module: oristar_product
+#: model:product.shape.type,name:oristar_product.product_shape_type_tam
+msgid "Plate"
+msgstr "Tấm"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__price_method_group
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__price_method_group
+msgid "Price Method Group"
+msgstr "Nhóm phương pháp tính giá"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__price_method_type
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__price_method_type
+msgid "Price Method Type"
+msgstr "Phương pháp tính giá"
+
+#. module: oristar_product
+#: code:addons/oristar_product/models/product_product.py:0
+#, python-format
+msgid "Pricelist for current user is invalid."
+msgstr "Bảng giá cho người dùng hiện tại không hợp lệ."
+
+#. module: oristar_product
+#: model:ir.model,name:oristar_product.model_product_product
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: oristar_product
+#: model:ir.model,name:oristar_product.model_product_alloy
+msgid "Product Alloy"
+msgstr "Hợp kim"
+
+#. module: oristar_product
+#: model:ir.actions.act_window,name:oristar_product.product_alloy_action
+msgid "Product Alloys"
+msgstr "Hợp kim"
+
+#. module: oristar_product
+#: model:ir.model,name:oristar_product.model_product_basic_shape
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_basic_shape_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_template_search_view
+msgid "Product Basic Shape"
+msgstr "Hình dạng cơ bản"
+
+#. module: oristar_product
+#: model:ir.actions.act_window,name:oristar_product.product_basic_shape_action
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_basic_shape_tree_view
+msgid "Product Basic Shapes"
+msgstr "Hình dạng cơ bản"
+
+#. module: oristar_product
+#: model:ir.model,name:oristar_product.model_product_detailed_shape
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_detailed_shape_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_template_search_view
+msgid "Product Detailed Shape"
+msgstr "Hình dạng chi tiết"
+
+#. module: oristar_product
+#: model:ir.actions.act_window,name:oristar_product.product_detailed_shape_action
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_detailed_shape_tree_view
+msgid "Product Detailed Shapes"
+msgstr "Hình dạng chi tiết"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__product_alloy_ids
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__product_alloy_id
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_alloy_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_alloy_tree_view
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_template_search_view
+msgid "Product Grades"
+msgstr "Hợp kim"
+
+#. module: oristar_product
+#: model:ir.model,name:oristar_product.model_product_material
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__product_material_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__product_material_id
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_material_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_template_search_view
+msgid "Product Material"
+msgstr "Vật liệu"
+
+#. module: oristar_product
+#: model:ir.actions.act_window,name:oristar_product.product_material_category_action
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_material_category_tree_view
+msgid "Product Material Categories"
+msgstr "Nhóm vật liệu"
+
+#. module: oristar_product
+#: model:ir.model,name:oristar_product.model_product_material_category
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_material_category_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_template_search_view
+msgid "Product Material Category"
+msgstr "Nhóm vật liệu"
+
+#. module: oristar_product
+#: model:ir.actions.act_window,name:oristar_product.product_material_action
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__product_material_ids
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_material_tree_view
+msgid "Product Materials"
+msgstr "Vật liệu"
+
+#. module: oristar_product
+#: model:ir.model,name:oristar_product.model_product_shape_type
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__product_shape_type_id
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_shape_type_form_view
+msgid "Product Shape Type"
+msgstr "Nhóm Hình Dạng"
+
+#. module: oristar_product
+#: model:ir.actions.act_window,name:oristar_product.product_shape_type_action
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_shape_type_tree_view
+msgid "Product Shape Types"
+msgstr "Nhóm Hình Dạng"
+
+#. module: oristar_product
+#: model:ir.actions.act_window,name:oristar_product.product_stiffness_action
+#: model:ir.model,name:oristar_product.model_product_stiffness
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_stiffness_form_view
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_stiffness_tree_view
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_template_search_view
+msgid "Product Temper"
+msgstr "Độ cứng"
+
+#. module: oristar_product
+#: model:ir.model,name:oristar_product.model_product_template
+msgid "Product Template"
+msgstr "Mẫu sản phẩm"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__product_weight
+msgid "Product Weight"
+msgstr "Khối lượng"
+
+#. module: oristar_product
+#: model:product.shape.type,name:oristar_product.product_shape_type_chu_nhat
+msgid "Rectangle"
+msgstr "Thanh chữ nhật "
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_detailed_shape__shape_category__cnvct
+msgid "Rectangle Round Edge"
+msgstr "Chữ nhật cạnh tròn"
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_detailed_shape__shape_category__cnvcv
+msgid "Rectangle Square Edge"
+msgstr "Chữ nhật cạnh vuông"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__activity_user_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__activity_user_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__activity_user_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__activity_user_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__activity_user_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__activity_user_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__activity_user_id
+msgid "Responsible User"
+msgstr "Người chịu trách nhiệm"
+
+#. module: oristar_product
+#: model:product.shape.type,name:oristar_product.product_shape_type_cuon
+msgid "Roll"
+msgstr "Cuộn"
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_detailed_shape__shape_category__ot
+msgid "Round Pipe"
+msgstr "Ống tròn"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__shape_category
+msgid "Shape Category"
+msgstr "Loại hình dạng"
+
+#. module: oristar_product
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_shape_type_form_view
+msgid "Shape Type"
+msgstr "Nhóm Hình Dạng"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__short_description
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__short_description
+msgid "Short Description"
+msgstr "Mô tả ngắn gọn"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__show_on_website
+msgid "Show On Website"
+msgstr "Hiển thị trên Website"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__product_thickness
+msgid "Size 1"
+msgstr "KT1"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__product_width
+msgid "Size 2"
+msgstr "KT2"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__product_long
+msgid "Size 3"
+msgstr "KT3"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__specific_customer_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__specific_customer_id
+msgid "Specific Customer"
+msgstr "Dành riêng khách hàng"
+
+#. module: oristar_product
+#: model:product.shape.type,name:oristar_product.product_shape_type_vuong
+msgid "Square"
+msgstr "Thanh vuông"
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_detailed_shape__shape_category__ov
+msgid "Square Pipe"
+msgstr "Ống vuông"
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_alloy__activity_state
+#: model:ir.model.fields,help:oristar_product.field_product_basic_shape__activity_state
+#: model:ir.model.fields,help:oristar_product.field_product_detailed_shape__activity_state
+#: model:ir.model.fields,help:oristar_product.field_product_material__activity_state
+#: model:ir.model.fields,help:oristar_product.field_product_material_category__activity_state
+#: model:ir.model.fields,help:oristar_product.field_product_shape_type__activity_state
+#: model:ir.model.fields,help:oristar_product.field_product_stiffness__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__product_surface
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__product_surface
+msgid "Surface"
+msgstr "Mặt cắt"
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_product__available_product_alloy_ids
+#: model:ir.model.fields,help:oristar_product.field_product_template__available_product_alloy_ids
+msgid "Technical field to filter alloy based on selected material"
+msgstr "Trường kỹ thuật để lọc hợp kim dựa trên vật liệu được chọn"
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_product__available_product_detailed_shape_ids
+#: model:ir.model.fields,help:oristar_product.field_product_template__available_product_detailed_shape_ids
+msgid "Technical field to filter detailed shape based on selected basic shape"
+msgstr ""
+"Trường kỹ thuật để lọc hình dạng chi tiết dựa trên hình dạng cơ bản được "
+"chọn"
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_product__available_product_material_ids
+#: model:ir.model.fields,help:oristar_product.field_product_template__available_product_material_ids
+msgid ""
+"Technical field to filter material based on selected material category."
+msgstr "Trường kỹ thuật để lock vật liệu dựa trên nhóm vật liệu được chọn."
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_stiffness__available_product_alloy_ids
+msgid "Technical field to filter product grades based on selected material."
+msgstr "Trường kỹ thuật để lọc độ cứng dựa trên vật liệu được chọn."
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_template__available_product_stiffness_ids
+msgid "Technical field to filter temper based on selected grades and material"
+msgstr "Technical field to filter stiffness based on selected alloy and material"
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_product__available_product_stiffness_ids
+msgid "Technical field to filter temper based on selectedgrades and material"
+msgstr "Trường kỹ thuật để lọc độ cứng dựa trên hợp kim và vật liệu được chọn"
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_product__product_stiffness_id
+#: model:ir.model.fields,field_description:oristar_product.field_product_template__product_stiffness_id
+msgid "Temper"
+msgstr "Độ cứng"
+
+#. module: oristar_product
+#: model_terms:ir.ui.view,arch_db:oristar_product.product_stiffness_form_view
+msgid "Temper Name"
+msgstr "Tên độ cứng"
+
+#. module: oristar_product
+#: model:product.basic.shape,name:oristar_product.product_basic_shape_03
+msgid "Thanh rỗng"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.basic.shape,name:oristar_product.product_basic_shape_02
+msgid "Thanh đặc vuông"
+msgstr "Thanh đặc vuông, chữ nhật"
+
+#. module: oristar_product
+#: model:product.basic.shape,name:oristar_product.product_basic_shape_04
+msgid "Thanh định hình"
+msgstr ""
+
+#. module: oristar_product
+#: code:addons/oristar_product/models/product_stiffness.py:0
+#, python-format
+msgid "The alloy %s is not in alloy's list of material %s"
+msgstr "Độ cứng %s không nằm trong danh sách độ cứng của vật liệu %s"
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__by_priceunit_and_weight
+msgid "Theo đơn giá và khối lượng"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material.category,name:oristar_product.product_material_category_02
+msgid "Thép"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material,name:oristar_product.product_material_16
+msgid "Thép chế tạo máy"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__thep_dung_cu
+msgid "Thép dụng cụ"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material,name:oristar_product.product_material_15
+msgid "Thép dụng cụ cacbon"
+msgstr "Thép dụng cụ"
+
+#. module: oristar_product
+#: model:product.material,name:oristar_product.product_material_14
+msgid "Thép dụng cụ không gỉ"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material,name:oristar_product.product_material_10
+msgid "Thép gia công nguội"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material,name:oristar_product.product_material_12
+msgid "Thép gia công nóng"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material,name:oristar_product.product_material_13
+msgid "Thép gió (HSS)"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material,name:oristar_product.product_material_09
+msgid "Thép hợp kim"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material,name:oristar_product.product_material_11
+msgid "Thép khuôn nhựa"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material,name:oristar_product.product_material_07
+msgid "Thép không gỉ"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material,name:oristar_product.product_material_08
+msgid "Thép không hợp kim"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__thep_la_cuon
+msgid "Thép lá cuộn"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__thep_thanh
+msgid "Thép thanh"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__thep_tam
+msgid "Thép tấm"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__thep_tam_day
+msgid "Thép tấm dày"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__thep_tam_la
+msgid "Thép tấm lá"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material.category,name:oristar_product.product_material_category_03
+msgid "Thép đặc biệt"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.detailed.shape,name:oristar_product.product_detailed_shape_01
+msgid "Tròn"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.shape.type,name:oristar_product.product_shape_type_ong
+msgid "Tubular"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,help:oristar_product.field_product_alloy__activity_exception_decoration
+#: model:ir.model.fields,help:oristar_product.field_product_basic_shape__activity_exception_decoration
+#: model:ir.model.fields,help:oristar_product.field_product_detailed_shape__activity_exception_decoration
+#: model:ir.model.fields,help:oristar_product.field_product_material__activity_exception_decoration
+#: model:ir.model.fields,help:oristar_product.field_product_material_category__activity_exception_decoration
+#: model:ir.model.fields,help:oristar_product.field_product_shape_type__activity_exception_decoration
+#: model:ir.model.fields,help:oristar_product.field_product_stiffness__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: oristar_product
+#: model:product.basic.shape,name:oristar_product.product_basic_shape_01
+msgid "Tấm"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__message_unread
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__message_unread
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__message_unread
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__message_unread
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__message_unread
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__message_unread
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields,field_description:oristar_product.field_product_alloy__message_unread_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_basic_shape__message_unread_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_detailed_shape__message_unread_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_material__message_unread_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_material_category__message_unread_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_shape_type__message_unread_counter
+#: model:ir.model.fields,field_description:oristar_product.field_product_stiffness__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.detailed.shape,name:oristar_product.product_detailed_shape_02
+msgid "Vuông"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material.category,name:oristar_product.product_material_category_00
+msgid "Đồng"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material,name:oristar_product.product_material_00
+msgid "Đồng Bery"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__dong_bery
+msgid "Đồng bery"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__dong_bery_thanh
+msgid "Đồng bery thanh"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__dong_hop_kim
+#: model:product.material,name:oristar_product.product_material_02
+msgid "Đồng hợp kim"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__dong_hop_kim_thanh
+msgid "Đồng hợp kim thanh"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__dong_hop_kim_tam_day
+msgid "Đồng hợp kim tấm dày"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__dong_hop_kim_tam_la
+msgid "Đồng hợp kim tấm lá"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__dong_thanh
+msgid "Đồng thanh"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__dong_tinh_che
+#: model:product.material,name:oristar_product.product_material_01
+msgid "Đồng tinh chế"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__dong_tinh_che_tam_la
+msgid "Đồng tinh chế tấm lá"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__dong_tam_day
+msgid "Đồng tấm dày"
+msgstr ""
+
+#. module: oristar_product
+#: model:ir.model.fields.selection,name:oristar_product.selection__product_template__price_method_type__dong_tam_la
+msgid "Đồng tấm lá"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.material,name:oristar_product.product_material_03
+msgid "Đồng xi mạ"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.detailed.shape,name:oristar_product.product_detailed_shape_04
+msgid "Ống Tròn"
+msgstr ""
+
+#. module: oristar_product
+#: model:product.detailed.shape,name:oristar_product.product_detailed_shape_05
+msgid "Ống Vuông"
+msgstr ""

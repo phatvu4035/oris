@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="webclient_bootstrap" inherit_id="web.webclient_bootstrap">
+        <xpath expr="//t[@t-call-assets='web.assets_backend'][@t-css='false']" position="after">
+            <t t-call-assets="oristar_sale_management.assets_sale_management" groups="sales_team.group_sale_salesman"/>
+        </xpath>
+    </template>
+    <template id="oristar_sale_management.assets_sale_management" name="Oris Sale Management Assets">
+        <script type="text/javascript" src="/oristar_sale_management/static/src/js/so_systray.js" />
+        <script type="text/javascript" src="/oristar_sale_management/static/src/js/user_systray.js" />
+    </template>
+    <template id="assets_common" inherit_id="web.assets_common">
+        <xpath expr="link[last()]" position="after">
+            <script type="text/javascript" src="/oristar_sale_management/static/src/js/crash_manager.js"></script>
+        </xpath>
+    </template>
+</odoo>

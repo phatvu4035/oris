@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="price_file_tree_view" model="ir.ui.view">
+		<field name="name">price.file.tree</field>
+		<field name="model">price.file</field>
+		<field name="arch" type="xml">
+			<tree string="Price Files">
+				<field name="name"/>
+				<field name="description"/>
+			</tree>
+		</field>
+	</record>
+	
+	<record id="price_file_form_view" model="ir.ui.view">
+		<field name="name">price.file.form</field>
+		<field name="model">price.file</field>
+		<field name="arch" type="xml">
+			<form string="Price File">
+				<header></header>
+				<sheet>
+                    <div class="oe_title">
+                        <label class="oe_edit_only" for="name" string="File Name"/>
+                        <h1><field name="name" placeholder="File Name"/></h1>
+                    </div>
+                    <group name="detail">
+                    	<group name="detail_left">
+                    		<field name="description"/>
+                    	</group>
+                    	<group name="detail_right"></group>
+                    </group>
+				</sheet>
+				<div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+			</form>
+		</field>
+	</record>
+	
+	<record id="price_file_action" model="ir.actions.act_window">
+        <field name="name">Price Files</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">price.file</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

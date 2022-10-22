@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Material Category -->
+        <record id="product_material_category_00" model="product.material.category">
+            <field name="name">Đồng</field>
+        </record>
+        <record id="product_material_category_01" model="product.material.category">
+            <field name="name">Nhôm</field>
+        </record>
+        <record id="product_material_category_02" model="product.material.category">
+            <field name="name">Thép</field>
+        </record>
+        <record id="product_material_category_03" model="product.material.category">
+            <field name="name">Thép đặc biệt</field>
+        </record>
+
+        <!-- Material -->
+        <record id="product_material_00" model="product.material">
+            <field name="name">Đồng Bery</field>
+            <field name="product_material_category_id" ref="product_material_category_00"/>
+        </record>
+        <record id="product_material_category_00" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_00'))]"/>
+        </record>
+
+        <record id="product_material_01" model="product.material">
+            <field name="name">Đồng tinh chế</field>
+            <field name="product_material_category_id" ref="product_material_category_00"/>
+        </record>
+        <record id="product_material_category_00" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_01'))]"/>
+        </record>
+
+        <record id="product_material_02" model="product.material">
+            <field name="name">Đồng hợp kim</field>
+            <field name="product_material_category_id" ref="product_material_category_00"/>
+        </record>
+        <record id="product_material_category_00" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_02'))]"/>
+        </record>
+
+        <record id="product_material_03" model="product.material">
+            <field name="name">Đồng xi mạ</field>
+            <field name="product_material_category_id" ref="product_material_category_00"/>
+        </record>
+        <record id="product_material_category_00" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_03'))]"/>
+        </record>
+
+
+        <record id="product_material_04" model="product.material">
+            <field name="name">Nhôm hợp kim</field>
+            <field name="product_material_category_id" ref="product_material_category_01"/>
+        </record>
+        <record id="product_material_category_01" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_04'))]"/>
+        </record>
+
+        <record id="product_material_05" model="product.material">
+            <field name="name">Nhôm không hợp kim</field>
+            <field name="product_material_category_id" ref="product_material_category_01"/>
+        </record>
+        <record id="product_material_category_01" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_05'))]"/>
+        </record>
+
+        <record id="product_material_06" model="product.material">
+            <field name="name">Nhôm phản quang</field>
+            <field name="product_material_category_id" ref="product_material_category_01"/>
+        </record>
+        <record id="product_material_category_01" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_06'))]"/>
+        </record>
+
+
+        <record id="product_material_07" model="product.material">
+            <field name="name">Thép không gỉ</field>
+            <field name="product_material_category_id" ref="product_material_category_02"/>
+        </record>
+        <record id="product_material_category_02" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_07'))]"/>
+        </record>
+
+        <record id="product_material_08" model="product.material">
+            <field name="name">Thép không hợp kim</field>
+            <field name="product_material_category_id" ref="product_material_category_02"/>
+        </record>
+        <record id="product_material_category_02" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_08'))]"/>
+        </record>
+
+        <record id="product_material_09" model="product.material">
+            <field name="name">Thép hợp kim</field>
+            <field name="product_material_category_id" ref="product_material_category_02"/>
+        </record>
+        <record id="product_material_category_02" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_09'))]"/>
+        </record>
+
+
+        <record id="product_material_10" model="product.material">
+            <field name="name">Thép gia công nguội</field>
+            <field name="product_material_category_id" ref="product_material_category_03"/>
+        </record>
+        <record id="product_material_category_03" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_10'))]"/>
+        </record>
+
+        <record id="product_material_11" model="product.material">
+            <field name="name">Thép khuôn nhựa</field>
+            <field name="product_material_category_id" ref="product_material_category_03"/>
+        </record>
+        <record id="product_material_category_03" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_11'))]"/>
+        </record>
+
+        <record id="product_material_12" model="product.material">
+            <field name="name">Thép gia công nóng</field>
+            <field name="product_material_category_id" ref="product_material_category_03"/>
+        </record>
+        <record id="product_material_category_03" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_12'))]"/>
+        </record>
+
+        <record id="product_material_13" model="product.material">
+            <field name="name">Thép gió (HSS)</field>
+            <field name="product_material_category_id" ref="product_material_category_03"/>
+        </record>
+        <record id="product_material_category_03" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_13'))]"/>
+        </record>
+
+        <record id="product_material_14" model="product.material">
+            <field name="name">Thép dụng cụ không gỉ</field>
+            <field name="product_material_category_id" ref="product_material_category_03"/>
+        </record>
+        <record id="product_material_category_03" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_01'))]"/>
+        </record>
+
+        <record id="product_material_15" model="product.material">
+            <field name="name">Thép dụng cụ cacbon</field>
+            <field name="product_material_category_id" ref="product_material_category_03"/>
+        </record>
+        <record id="product_material_category_00" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_15'))]"/>
+        </record>
+
+        <record id="product_material_16" model="product.material">
+            <field name="name">Thép chế tạo máy</field>
+            <field name="product_material_category_id" ref="product_material_category_03"/>
+        </record>
+        <record id="product_material_category_03" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_16'))]"/>
+        </record>
+
+        <record id="product_material_17" model="product.material">
+            <field name="name">Carbide</field>
+            <field name="product_material_category_id" ref="product_material_category_03"/>
+        </record>
+        <record id="product_material_category_03" model="product.material.category">
+            <field name="product_material_ids" eval="[(4, ref('product_material_17'))]"/>
+        </record>
+
+
+    </data>
+</odoo>

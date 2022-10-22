@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="viettelpost_province_tree_view" model="ir.ui.view">
+		<field name="name">viettelpost.province.tree</field>
+		<field name="model">viettelpost.province</field>
+		<field name="arch" type="xml">
+			<tree string="Viettel Post Province">
+				<field name="name"/>
+				<field name="province_id"/>
+				<field name="code"/>
+				<field name="mapped_state_id"/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="viettelpost_province_form_view" model="ir.ui.view">
+		<field name="name">viettelpost.province.form</field>
+		<field name="model">viettelpost.province</field>
+		<field name="arch" type="xml">
+			<form string="Viettel Post Province">
+				<header></header>
+				<sheet>
+					<div class="oe_title">
+                        <label class="oe_edit_only" for="name" string="Name"/>
+                        <h1><field name="name" placeholder="Viettel Post Province"/></h1>
+                    </div>
+                    <group name="detail">
+                    	<group name="detail_left">
+                    		<field name="province_id"/>
+                    		<field name="code"/>
+                    	</group>
+                    	<group name="detail_right">
+                    		<field name="country_id"/>
+                    		<field name="mapped_state_id"/>
+                        </group>
+                    </group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record id="viettelpost_province_action" model="ir.actions.act_window">
+        <field name="name">Viettel Post Province</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">viettelpost.province</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

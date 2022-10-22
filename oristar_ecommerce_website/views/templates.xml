@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- /shop product listing -->
+    <template id="products" name="Products">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Shop</t>
+            <div id="wrap" class="js_sale">
+                <div class="breadcrumb-top">
+                    <div class="container">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="">
+                                    <img src="/oristar_ecommerce_website/static/src/images/icons/Vector_3.png" alt="" />
+                                </a>
+                                </li>
+                                <li class="breadcrumb-item"><a href="/">Homepage</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Product portfolio</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="category-product p-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 pt15">
+                                <div class="title">
+                                    <h4>Search Filters</h4>
+                                </div>
+                                <div id="homepage_product_category_filter" class="shop-filter">
+
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-4 col-md-4 col-6">
+                                        <div class="title p-0">
+                                            <h4>Search result ( <t t-esc="search_count"/> )</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-6 smnn">
+                                        <div class="d-flex align-items-center justify-content-end">
+                                            <p>Hiển thị <t t-esc="len(products)"/>/<t t-esc="search_count"/> sản phẩm</p>
+                                            <div class="d-flex pr20 pl30 none">
+                                                <img id="col-6" class="pr20" src="/oristar_ecommerce_website/static/src/images/icons/Vector_5.png" alt="" />
+                                                <img id="col-4" src="/oristar_ecommerce_website/static/src/images/icons/Vector_6.png" alt="" />
+                                            </div>
+                                            <select name="shop_order" id="shop_order" class="sxt">
+                                                <option value="">Order by</option>
+                                                <option value="product_name_asc">Product Name (A-Z)</option>
+                                                <option value="product_name_desc">Product Name (Z-A)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt20 or_product_list">
+                                    <t t-if="products">
+                                        <t t-foreach="products" t-as="product">
+                                            <t t-call="oristar_ecommerce_website.products_item" />
+                                        </t>
+                                    </t>
+                                </div>
+                                <t t-call="oristar_ecommerce_website.pager"/>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-body"></div>
+                <div class="sp-lq category-product">
+                    <div class="container">
+                        <t t-if="optional_products">
+                            <div class="title">
+                                <h3>Related Products</h3>
+                            </div>
+                        </t>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <t t-if="optional_products">
+                                    <t t-foreach="optional_products" t-as="optional">
+                                        <t t-set="optional_href" t-value="keep(optional.website_url, page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))" />
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="box-thumbnail scale" style="padding-top: 79.25%;">
+                                                    <div class="thumbnail-lazy border-0">
+                                                        <a t-att-href="optional_href">
+                                                            <span t-field="optional.image_256" t-options="{'widget': 'image'}"
+                                                                class="d-flex h-100 justify-content-center align-items-center"/>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="text">
+                                                    <p class="msp"><t t-esc="optional.default_code" /></p>
+                                                    <h3><a t-att-href="optional_href"><t t-esc="optional.name" /></a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </t>
+                                </t>
+                            </div>
+                            <t t-if="optional_products">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="pager" name="Pager">
+        <ul t-if="pager['page_count'] > 1" class="pagination">
+            <t t-if="pager['page']['num'] - 1 &gt; 3">
+               <li class="page-item">
+                   <a t-att-href="pager['page_first']['url'].replace('/shop', '/shop/page/1')" class="page-link">1</a>
+               </li>
+                <li>
+                    <a href="javascript:void(0)">...</a>
+                </li>
+            </t>
+            <t t-set="t" t-value="4"/>
+            <t t-set="i" t-value="0"/>
+            <t t-foreach="pager['pages']" t-as="page">
+                <t t-if="page['num'] &gt;= pager['page']['num'] - 2 and page['num'] &lt;= pager['page']['num'] + 2 and i &lt;= t">
+                    <li t-attf-class="page-item #{'active' if page['num'] == pager['page']['num'] else ''}">
+                        <a t-att-href="page['url']" class="page-link" t-raw="page['num']"></a>
+                    </li>
+                    <t t-set="i" t-value="i + 1"/>
+                </t>
+            </t>
+            <t t-if="pager['page_count'] - pager['page']['num'] &gt; 3">
+                <li>
+                    <a href="javascript:void(0)">...</a>
+                </li>
+                <li class="page-item">
+                   <a t-att-href="pager['page_first']['url'].replace('/shop', '/shop/page/%s' % (pager['page_count'],))" class="page-link"><t t-esc="pager['page_count']"/></a>
+               </li>
+            </t>
+        </ul>
+    </template>
+    <template id="products_item" name="Products item">
+        <t t-set="product_href" t-value="keep(product.website_url)" />
+        <t t-set="combination_info" t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)"/>
+        <div class="col-lg-4 col-md-6 sumale">
+            <div class="item">
+                <div class="box-thumbnail scale" style="padding-top: 79.25%;">
+                    <div class="thumbnail-lazy border-0">
+                        <a t-att-href="product_href" t-att-content="product.name">
+                            <span t-field="product.image_256" t-options="{'widget': 'image'}"
+                                  class="d-flex h-100 justify-content-center align-items-center"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="text">
+                    <p class="msp"><t t-esc="product.default_code" /></p>
+                    <div class="t-tr">
+                        <p>Status
+                            <span t-att-class="'red blue' if product.sudo().inventory_available else 'red'">:
+                                <t t-if="product.sudo().inventory_available">
+                                    Availability
+                                </t>
+                                <t t-else="">
+                                    <a href="/contactus" style="color: #F43034">Contact</a>
+                                </t>
+                            </span>
+                        </p>
+                    </div>
+                    <h3><a t-att-href="product_href" t-att-content="product.name" t-att-title="product.name"><t t-esc="product.name" /></a></h3>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="product" name="Product detail" inherit_id="website_sale.product">
+        <xpath expr="//div[@id='wrap']" position="replace">
+             <t t-set="additional_title" t-value="product.name" />
+             <div itemscope="itemscope" itemtype="http://schema.org/Product" id="wrap" class="js_sale">
+                <t t-set="partner" t-value="request.env.user.partner_id"/>
+                <div class="bg-body"></div>
+                <div class="breadcrumb-top">
+                    <div class="container">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/"><img src="/oristar_ecommerce_website/static/src/images/icons/Vector_3.png" alt="" /></a>
+                                </li>
+                                <li class="breadcrumb-item"><a href="/">Home page</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Product details</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="ct-product">
+                    <div class="container oe_website_sale" id="product_details">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <t t-set="product_images" t-value="product_variant._get_images() if product_variant else product._get_images()"/>
+                                <div class="owl-carousel product-deta">
+                                    <t t-foreach="product_images" t-as="product_image">
+                                        <t t-if="product_image._name == 'product.image' and product_image.embed_code">
+                                            <div class="item">
+                                                <div class="box-thumbnail" style="padding-top: 83%;">
+                                                    <div  class="thumbnail-lazy">
+                                                        <t t-raw="product_image.embed_code"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+                                        <t t-else="">
+                                            <div class="item">
+                                                <div class="box-thumbnail" style="padding-top: 83%;">
+                                                    <div  t-field="product_image.image_1920" class="thumbnail-lazy"  t-options='{"widget": "image", "preview_image": "image_1024", "alt-field": "name", "itemprop": "image"}' />
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </t>
+                                    <div class="item">
+                                        <div class="box-thumbnail" style="padding-top: 83%;">
+                                            <div class="thumbnail-lazy">
+                                                <t t-if="product.product_basic_shape_id and product.product_basic_shape_id.get_external_id().get(product.product_basic_shape_id.id) == 'oristar_product.product_basic_shape_00'">
+                                                    <img src="/oristar_ecommerce_website/static/src/images/cuon.png" alt="" />
+                                                </t>
+                                                <t t-elif="product.product_basic_shape_id and product.product_basic_shape_id.get_external_id().get(product.product_basic_shape_id.id) == 'oristar_product.product_basic_shape_01'">
+                                                    <img src="/oristar_ecommerce_website/static/src/images/tam.png" alt="" />
+                                                </t>
+                                                <t t-elif="product.product_basic_shape_id and product.product_basic_shape_id.get_external_id().get(product.product_basic_shape_id.id) == 'oristar_product.product_basic_shape_03'">
+                                                    <t t-if="product.product_detailed_shape_id and product.product_detailed_shape_id.get_external_id().get(product.product_detailed_shape_id.id) == 'oristar_product.product_detailed_shape_04'">
+                                                        <img src="/oristar_ecommerce_website/static/src/images/ong_tron.png" alt="" />
+                                                    </t>
+                                                    <t t-if="product.product_detailed_shape_id and product.product_detailed_shape_id.get_external_id().get(product.product_detailed_shape_id.id) == 'oristar_product.product_detailed_shape_05'">
+                                                        <img src="/oristar_ecommerce_website/static/src/images/ong_vuong.png" alt="" />
+                                                    </t>
+                                                </t>
+                                                <t t-elif="product.product_basic_shape_id and product.product_basic_shape_id.get_external_id().get(product.product_basic_shape_id.id) == 'oristar_product.product_basic_shape_02'">
+                                                    <t t-if="product.product_detailed_shape_id and product.product_detailed_shape_id.get_external_id().get(product.product_detailed_shape_id.id) == 'oristar_product.product_detailed_shape_01'">
+                                                        <img src="/oristar_ecommerce_website/static/src/images/thanh_tron.png" alt="" />
+                                                    </t>
+                                                    <t t-if="product.product_detailed_shape_id and product.product_detailed_shape_id.get_external_id().get(product.product_detailed_shape_id.id) == 'oristar_product.product_detailed_shape_00'">
+                                                        <img src="/oristar_ecommerce_website/static/src/images/thanh_chu_nhat.png" alt="" />
+                                                    </t>
+                                                    <t t-if="product.product_detailed_shape_id and product.product_detailed_shape_id.get_external_id().get(product.product_detailed_shape_id.id) == 'oristar_product.product_detailed_shape_02'">
+                                                        <img src="/oristar_ecommerce_website/static/src/images/thanh_vuong.png" alt="" />
+                                                    </t>
+                                                    <t t-if="product.product_detailed_shape_id and product.product_detailed_shape_id.get_external_id().get(product.product_detailed_shape_id.id) == 'oristar_product.product_detailed_shape_03'">
+                                                        <img src="/oristar_ecommerce_website/static/src/images/thanh_luc_giac.png" alt="" />
+                                                    </t>
+                                                </t>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <t t-set="combination" t-value="product._get_first_possible_combination()"/>
+                                <t t-set="combination_info" t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+                                <t t-set="list_price" t-value="product_variant.get_list_price_product_tmpl_by_pricelist(partner, pricelist)"/>
+                                <script>
+                                    <t t-set="basic_shape" t-value="product_variant.product_basic_shape_id if product.product_basic_shape_id else False"/>
+                                    var price_method_group = '<t t-esc="product.price_method_group"/>';
+                                    var product_thickness = <t t-esc="product_variant.product_thickness if product_variant.product_thickness else 0"/>;
+                                    var product_long = <t t-esc="product_variant.product_long if product_variant.product_long else 0"/>;
+                                    var product_width = <t t-esc="product_variant.product_width if product_variant.product_width else 0"/>;
+                                    var product_price = <t t-esc="combination_info['price'] if combination_info['price'] else 0"/>;
+                                    var product_weight = <t t-esc="product_variant.product_weight if product_variant.product_weight else 0"/>;
+                                    var specific_customer_id = <t t-esc="product.specific_customer_id.id if product.specific_customer_id else 0"/>;
+                                    var list_price = <t t-esc="list_price"/>;
+                                    var basic_shape_external_id = '<t t-esc="basic_shape.get_external_id().get(basic_shape.id) if basic_shape else 0"/>';
+                                    var size_variants = <t t-esc="product.parse_size_variants()"/>;
+                                    var data_variants = <t t-esc="product._get_data_variants(partner, pricelist)" />;
+                                    var milling_min_limit = <t t-esc="request.env.company.milling_min_limit" />;
+                                    var milling_max_limit = <t t-esc="request.env.company.milling_max_limit" />;
+                                    var machinable_size1 = false;
+                                    <t t-if="product.product_basic_shape_id and product.product_basic_shape_id.machinable_size1 and product.price_method_group != 'base'">
+                                        machinable_size1 = true;
+                                    </t>
+                                    var machinable_size2 = false;
+                                    <t t-if="product.product_basic_shape_id and product.product_basic_shape_id.machinable_size2 and product.price_method_group != 'base'">
+                                        machinable_size2 = true;
+                                    </t>
+                                    var machinable_size3 = false;
+                                    <t t-if="product.product_basic_shape_id and product.product_basic_shape_id.machinable_size2 and product.price_method_group != 'base'">
+                                        machinable_size3 = true;
+                                    </t>
+                                    var editable_weight = false;
+                                    <t t-if="product.price_method_group != 'base'">
+                                        editable_weight = true;
+                                    </t>
+                                </script>
+                                <t t-call-assets="oristar_ecommerce_website.detail_product" lazy_load="True"/>
+                                <div class="msp">
+                                    <t t-esc="product.default_code"/>
+                                </div>
+                                <div class="title">
+                                    <h3><t t-esc="additional_title"/></h3>
+                                </div>
+                                <div class="ht-gia">
+                                    <t t-if="list_price > 0">
+                                        <p class="d-none">Please select the required attributes to display the price</p>
+                                        <h3><span
+                                              t-esc="list_price" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"
+                                          /></h3>
+                                         <p class="d-none text-help-annealing">
+                                            The above price does not include the cost of annealing
+                                         </p>
+                                    </t>
+                                    <t t-else="">
+                                        <p><small>The above price does not include the cost of annealing</small></p>
+                                        <h3 class="d-none"></h3>
+                                    </t>
+                                </div>
+                                <div class="shape">
+                                    <p class="t-link">Size: <span style="text-decoration: none;font-weight: 500; font-size: 14px;">KT1</span></p>
+                                    <form action="">
+                                        <div class="select">
+                                            <select name="kt1_selection" id="kt1_selection">
+                                                <option value="choose_size">Choose size</option>
+                                                <t t-foreach="product.parse_size_variants().get('kt1_sizes')" t-as="kt1">
+                                                    <option t-att-value="kt1"><t t-esc="kt1"/></option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="shape">
+                                    <div class="box">
+                                        <t t-foreach="product.parse_size_variants().get('kt1_sizes')" t-as="kt1">
+                                            <t t-set="k" t-value="0"/>
+                                            <t t-foreach="product.parse_size_variants().get('kt1_sizes').get(kt1)" t-as="val">
+                                                <span class="item size-variant" t-att-kt1-attribute="kt1"
+                                                t-att-data-product-id="product.parse_size_variants().get('kt1_product_ids').get(kt1)[k]">
+                                                    <t t-esc="val"/>
+                                                </span>
+                                                <t t-set="k" t-value="k+1"/>
+                                            </t>
+                                        </t>
+                                    </div>
+                                    <form action="">
+                                        <div class="title pt15 pb5">
+                                            <input type="checkbox" name="dimension_type" value="custom" />
+                                            <label for="">Size customization
+                                                <span class="sizes-lst" style="text-decoration: none;font-weight: 500; font-size: 14px;">KT1
+                                                    <t t-if="product.product_basic_shape_id and product.product_basic_shape_id.has_size2"> x KT2</t>
+                                                    <t t-if="product.product_basic_shape_id and product.product_basic_shape_id.has_size3"> x KT3</t>
+                                                    <t t-if="product.product_basic_shape_id and product.product_basic_shape_id.has_weight"> x Weight</t>
+                                                </span>
+                                                <t t-if="product.product_basic_shape_id and product.product_basic_shape_id.has_weight">
+                                                    (mm,Kg)
+                                                </t>
+                                                <t t-else="">
+                                                    (mm)
+                                                </t>
+                                            </label>
+                                        </div>
+                                        <div class="form or_call_price">
+                                            <div t-if="product.product_basic_shape_id and product.product_basic_shape_id.has_size1" class="item">
+                                                <input type="text" placeholder="KT1" id="or_calc_price_height" name="height"
+                                                       t-att-readonly="0 if product.product_basic_shape_id.machinable_size1 and product.price_method_group != 'base'  else 1"
+                                                       t-att-value="product_variant.product_thickness if product_variant.product_thickness else False"/>
+                                            </div>
+                                            <div t-if="product.product_basic_shape_id and product.product_basic_shape_id.has_size2" class="item">
+                                                <input type="text" placeholder="KT2" id="or_calc_price_width" name="width"
+                                                       t-att-readonly="0 if product.product_basic_shape_id.machinable_size2 and product.price_method_group != 'base' else 1"
+                                                    t-att-value="product_variant.product_width if product_variant.product_width else False" />
+                                            </div>
+                                            <div t-if="product.product_basic_shape_id and product.product_basic_shape_id.has_size3" class="item">
+                                                <input type="text" placeholder="KT3" id="or_calc_price_longs" name="longs"
+                                                       t-att-readonly="0 if product.product_basic_shape_id.machinable_size3 and product.price_method_group != 'base' else 1"
+                                                       t-att-value="product_variant.product_long if product_variant.product_long else False" />
+                                            </div>
+                                            <div t-if="product.product_basic_shape_id and product.product_basic_shape_id.has_weight" class="item">
+                                                <input type="text" placeholder="Khối lượng" id="or_calc_price_weight" name="width"
+                                                       t-att-readonly="0 if product.price_method_group != 'base' else 1"
+                                                t-att-value="product_variant.product_weight if product_variant.product_weight else 0" />
+                                            </div>
+                                            <input name="max_height" type="hidden" t-att-value="product_variant.product_thickness" />
+                                        </div>
+                                    </form>
+                                    <div class="tab-summary">
+                                        <p>Link: <span id="referenceLink"></span></p>
+                                        <span class="indicator-ajax hide"><img src="/oristar_ecommerce_website/static/src/images/icons/cupertino_activity_indicator_square_medium.gif"/></span>
+                                    </div>
+                                </div>
+                                <div class="shape machine-method machine-phay d-none">
+                                    <t t-set="default_standard_table" t-value="'https://drive.google.com/file/d/1BaBe7VwHgp3H5tYQt7y4H9IA7fkQ7de9/view'"/>
+                                    <p>Processing method <a target="_blank" class="btc"
+                                                            t-att-href="request.env.company.tolerance_standard_table if request.env.company.tolerance_standard_table else default_standard_table">
+                                        Standard table
+                                    </a></p>
+                                    <t t-if="product.should_display_surf2() or product.should_display_surf46()">
+                                        <div class="title pb10 d-flex align-items-center p-method">
+                                            <input class="sass" type="checkbox" id="phay" name="radio_phay" value="1" />
+                                            <label class="mb-0 pl10" for="phay">Milling</label>
+                                        </div>
+                                    </t>
+                                    <div class="def smaless milling-sfs d-none">
+                                        <div class="box ">
+                                            <ul class="nav nav-tabs border-0">
+                                                <t t-if="product.should_display_surf2()">
+                                                    <li class="nav-item border-0">
+                                                        <a class="nav-link item active"
+                                                           data-toggle="tab" href="#home" data-surface="2surfs" data-milling_method="PHAY2F">2 surface</a>
+                                                    </li>
+                                                </t>
+                                                <t t-if="product.should_display_surf46()">
+                                                    <li class="nav-item border-0">
+                                                        <a class="nav-link item"
+                                                           data-toggle="tab" href="#menu1" data-surface="4surfs" data-milling_method="PHAY4F">4 surface</a>
+                                                    </li>
+                                                    <li class="nav-item border-0">
+                                                        <a class="nav-link item"
+                                                           data-toggle="tab" href="#menu2" data-surface="6surfs" data-milling_method="PHAY6F">6 surface</a>
+                                                    </li>
+                                                </t>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content">
+                                            <p>Surface Standard</p>
+                                            <t t-if="product.should_display_surf2()">
+                                                <div id="home" class="tab-pane active">
+                                                    <div class="box-img">
+                                                        <span class="item active 1surf" data-kt1="1" data-kt2="0" data-kt3="0" data-milling_face="KT1">
+                                                            <img
+                                                                src="/oristar_ecommerce_website/static/src/images/z3474393018537_1c49892190bc6dd6fc216e4a5ca9c10a.jpg"
+                                                                alt="" />
+                                                            <span>KT1</span>
+                                                        </span>
+                                                        <span class="item 1surf" data-kt1="0" data-kt2="1" data-kt3="0" data-milling_face="KT2">
+                                                            <img src="/oristar_ecommerce_website/static/src/images/Group_86s1.png" alt="" />
+                                                            <span>KT2</span>
+                                                        </span>
+                                                        <span class="item 1surf" data-kt1="0" data-kt2="0" data-kt3="1" data-milling_face="KT3">
+                                                            <img src="/oristar_ecommerce_website/static/src/images/Group_860.png" alt="" />
+                                                            <span>KT3</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </t>
+                                            <t t-if="product.should_display_surf46()">
+                                                <div id="menu1" class=" tab-pane fade">
+                                                    <div class="box-img">
+                                                        <span class="item active 2surf" data-kt1="1" data-kt2="1" data-kt3="0" data-milling_face="KT1andKT2">
+                                                            <img src="/oristar_ecommerce_website/static/src/images/z3474400961521_c6d3998a7c5521751eed273bee9f79bf.jpg"/>
+                                                            <span>KT1&amp;KT2</span>
+                                                        </span>
+                                                        <span class="item 2surf" data-kt1="1" data-kt2="0" data-kt3="1" data-milling_face="KT1andKT3">
+                                                            <img src="/oristar_ecommerce_website/static/src/images/z3474400505252_ec341ad2316db03c50e8ffa0a7868e2f.jpg" />
+                                                            <span>KT1&amp;KT3</span>
+                                                        </span>
+                                                        <span class="item 2surf" data-kt1="0" data-kt2="1" data-kt3="1" data-milling_face="KT2andKT3">
+                                                            <img src="/oristar_ecommerce_website/static/src/images/z3474392459534_b9b299a1b31d6bb77794c262d6bc63f5.jpg"
+                                                                alt="" />
+                                                            <span>KT2&amp;KT3</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div id="menu2" class=" tab-pane fade">
+                                                    <div class="box-img">
+                                                        <span class="item active 3surf" data-kt1="1" data-kt2="1" data-kt3="1">
+                                                            <img src="/oristar_ecommerce_website/static/src/images/z3474407154965_a1fdbc7ab7bb5964c948b03023d86ba7.jpg" alt="" />
+                                                            <span>KT1&amp;KT2&amp;KT3</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </t>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divs machine-nhietluyen">
+                                    <t t-if="product.should_display_annealing()">
+                                        <div class="title pb15 align-items-center machine-method annealing p-method d-none">
+                                            <input class="sass" type="checkbox" id="nhiet" name="radio_nhietluyen" value="1" />
+                                            <label class="mb-0 pl10" for="nhiet">Annealing</label>
+                                        </div>
+                                    </t>
+                                    <div class="smalesss def">
+                                        <t t-if="product.should_display_annealing()">
+                                            <div class="shape d-none purpose-note d-none">
+                                                <p>Uses</p>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" name="purpose" cols="43" rows="3"
+                                                        placeholder="Purpose of use"></textarea>
+                                                </div>
+                                            </div>
+                                        </t>
+                                        <div class="shape text-note">
+                                            <p>Notes</p>
+                                            <div class="form-group">
+                                                <textarea class="form-control" name="notes" cols="30" rows="2"
+                                                    placeholder="Notes"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form t-if="product._is_add_to_cart_possible()">
+                                    <div class="sl pb20">
+                                        <p>Quantity</p>
+                                        <div class="quantity">
+                                            <input class="minus is-form" type="button" value="-" />
+                                            <input aria-label="quantity" class="input-qty" min="1" name="add_qty" type="number" id="or_calc_price_quantity"
+                                                   value="1" />
+                                            <input class="plus is-form" type="button" value="+" />
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                        <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id" />
+                                        <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id" />
+                                        <input type="hidden" id="or_calc_price_standard_price" name="standard_price" t-att-value="product_variant.standard_price" />
+                                        <input type="hidden" id="height_cart_val" name="height_cart_val" value="0"/>
+                                        <input type="hidden" id="long_cart_val" name="long_cart_val" value="0"/>
+                                        <input type="hidden" id="width_cart_val" name="width_cart_val" value="0"/>
+                                        <input type="hidden" id="price_unit_cart_val" name="price_unit_cart_val" t-att-value="product_variant.get_list_price_product_tmpl_by_pricelist(partner, pricelist)" />
+                                        <t t-if="product.product_basic_shape_id and product.product_basic_shape_id.has_weight">
+                                            <input type="hidden" id="weight_per_roll" name="weight_per_roll" t-att-value="product_variant.product_weight if product_variant.product_weight else 0"/>
+                                        </t>
+                                        <input type="hidden" id="weight_cart_val" name="weight_cart_val" t-att-value="product_variant.product_weight if product_variant.product_weight else 0"/>
+                                        <input type="hidden" id="subtotal_price_cart_val" name="subtotal_price_cart_val" value="0"/>
+                                        <input type="hidden" id="milling_method_val" name="milling_method_val"/>
+                                        <input type="hidden" id="milling_faces_val" name="milling_faces_val"/>
+                                        <input type="hidden" id="is_custom_dim_val" name="is_custom_dim_val" value="0"/>
+                                        <t t-if="len(product_variant.specific_customer_id) == 0">
+                                            <a class="btn-primary pricing-btn" href="javascript:void(0)">
+                                                Pricing
+                                            </a>
+                                        </t>
+                                        <t t-if="product_variant.sudo().inventory_available">
+                                            <a href="javascript:void(0)" class="tvgh" id="add_to_cart">
+                                                <span>Add to Cart</span>
+                                                <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                                                    <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+                                                </svg>
+                                            </a>
+                                            <button class="mns" id="buy_now" >Buy now</button>
+                                        </t>
+                                        <t t-else="">
+                                            <a href="/contactus" class="mns mns-contact" >Contact</a>
+                                        </t>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                <h3>DESCRIPTION</h3>
+                            </div>
+                            <div t-field="product.description_sale" class="oe_structure oe_empty mt16" id="product_full_description"/>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <t t-if="optional_products">
+                <div class="bg-body"></div>
+                <div class="sp-lq category-product">
+                    <div class="title">
+                        <h3>Related Product</h3>
+                    </div>
+
+                    <div class="container">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <t t-if="optional_products">
+                                    <t t-foreach="optional_products" t-as="optional">
+                                        <t t-set="optional_href" t-value="keep(optional.website_url)" />
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="box-thumbnail scale" style="padding-top: 79.25%;">
+                                                    <div class="thumbnail-lazy border-0">
+                                                        <a t-att-href="optional_href">
+                                                            <span t-field="optional.image_256" t-options="{'widget': 'image'}"
+                                                                class="d-flex h-100 justify-content-center align-items-center"/>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="text">
+                                                    <p class="msp"><t t-esc="optional.default_code" /></p>
+                                                    <h3><a t-att-href="optional_href"><t t-esc="optional.name" /></a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </t>
+                                </t>
+                            </div>
+                            <t t-if="optional_products">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </t>
+
+        </xpath>
+    </template>
+    <template id="waiting_content" name="Waiting Content">
+        <t t-call="website.layout">
+            <div id="wrap" class="js_sale">
+                <t t-set="additional_title">Nội dung đang cập nhật</t>
+                <div class="breadcrumb-top">
+                    <div class="container">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="">
+                                    <img src="/oristar_ecommerce_website/static/src/images/icons/Vector_3.png" alt="" />
+                                </a>
+                                </li>
+                                <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><t t-esc="page_title"/></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="container mb64">
+                    <p class="mt40">Rất tiếc, chúng tôi đang cập nhật nội dung cho trang này...Vui lòng quay lại sau</p>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="or_portal_my_security" name="Oristar Change Password" inherit_id="portal.portal_my_security">
+        <xpath expr="//div[@class='o_portal_security_body']" position="replace">
+            <div class="o_portal_security_body">
+                <t t-set="additional_title">Security</t>
+                <t t-set="partner" t-value="request.env.user.partner_id"/>
+                <div class="breadcrumb-top">
+                    <div class="container">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href=""><img src="/oristar_ecommerce_website/static/src/images/icons/Vector_3.png" alt="" /></a>
+                                </li>
+                                <li class="breadcrumb-item"><a href="">Home page</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Change Password</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="title">
+                                <h3><t t-esc="partner.name"/></h3>
+                                <p>ID: <t t-esc="partner.id"/></p>
+                                <p>Email: <t t-esc="partner.email"/></p>
+                                <p>Phone: <t t-esc="partner.phone"/></p>
+                            </div>
+                            <div class="category-profile">
+                                <ul>
+                                    <li>
+                                        <a href="/my/account"><img src="/oristar_ecommerce_website/static/src/images/icons/Vectordaf.png"
+                                                 alt=""/>
+                                            My account
+                                        </a>
+                                    </li>
+                                    <li><a href="/my/security"><img src="/oristar_ecommerce_website/static/src/images/icons/Vectoadsfr.png"
+                                                 alt=""/>
+                                            Change password
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/my/address-book/delivery">
+                                            <img src="/oristar_ecommerce_website/static/src/images/icons/Vedafdctor.png"
+                                                 alt=""/>
+                                            Address book
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/my/orders">
+                                            <img src="/oristar_ecommerce_website/static/src/images/icons/Vectaasdor.png"
+                                                 alt=""/>
+                                            My orders
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/my/address-book/invoice">
+                                        <img src="/oristar_ecommerce_website/static/src/images/icons/Vectorsdfsd.png" alt="" />
+                                            Invoice address
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="content">
+                                <div class="title">
+                                    <h4>Change password</h4>
+                                    <p>Manage passwords for account security</p>
+                                </div>
+                                <t t-set="path">password</t>
+                                <div class="alert alert-success" role="alert" t-if="success and success.get('password')">
+                                    Password Updated!
+                                </div>
+                                <div class="alert alert-danger" role="alert" t-if="get_error(errors, 'password')">
+                                    <t t-if="errors['password'].strip() == 'Access Denied'">
+                                        The old password you provided is incorrect, your password was not changed.
+                                    </t>
+                                    <t t-else="">
+                                        <t t-esc="errors['password']"/>
+                                    </t>
+                                </div>
+                                <form action="/my/security" method="post" class="oe_reset_password_form">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                    <input type="hidden" name="op" value="password"/>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label for="">Current password</label>
+                                                <div class="showpw">
+                                                    <input id="current" name="old" type="password"
+                                                    t-attf-class="form-control form-control-sm {{ 'is-invalid' if get_error(errors, 'password.old') else '' }}"
+                                                    autocomplete="current-password" required="required" />
+                                                    <img type="button" onclick="myFunction()"
+                                                        src="/oristar_ecommerce_website/static/src/images/icons/aaapw.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label for="">New password</label>
+                                                <div class="showpw">
+                                                    <input id="new" name="new1" type="password"
+                                                    t-attf-class="form-control form-control-sm {{ 'is-invalid' if get_error(errors, 'password.new1') else '' }}"
+                                                    autocomplete="new-password" required="required" />
+                                                    <img type="button" onclick="myFunction2()"
+                                                        src="/oristar_ecommerce_website/static/src/images/icons/aaapw.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label for="">Confirm new password</label>
+                                                <div class="showpw">
+                                                    <input id="new2" name="new2" type="password"
+                                                       t-attf-class="form-control form-control-sm {{ 'is-invalid' if get_error(errors, 'password.new2') else '' }}"
+                                                       autocomplete="new-password" required="required"
+                                                    />
+                                                    <img type="button" onclick="myFunction3()"
+                                                        src="/oristar_ecommerce_website/static/src/images/icons/aaapw.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <button class="btn-luu">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("current");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                };
+                function myFunction2() {
+                    var x = document.getElementById("new");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                };
+                function myFunction3() {
+                    var x = document.getElementById("new2");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                };
+            </script>
+        </xpath>
+    </template>
+</odoo>

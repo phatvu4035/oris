@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="res_district_tree_view" model="ir.ui.view">
+		<field name="name">res.district.tree</field>
+		<field name="model">res.district</field>
+		<field name="arch" type="xml">
+			<tree string="District" editable="bottom">
+				<field name="name"/>
+				<field name="code"/>
+				<field name="state_id"/>
+				<field name="urban_zone"/>
+				<field name="viettel_id"/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="res_district_form_view" model="ir.ui.view">
+		<field name="name">res.district.form</field>
+		<field name="model">res.district</field>
+		<field name="arch" type="xml">
+			<form string="District">
+				<header></header>
+				<sheet>
+					<div class="oe_title">
+                        <label class="oe_edit_only" for="name" string="Name"/>
+                        <h1><field name="name" placeholder="District"/></h1>
+                    </div>
+                    <group name="detail">
+                    	<group name="detail_left">
+                    		<field name="code"/>
+                    	</group>
+                    	<group name="detail_right">
+                    		<field name="state_id"/>
+                    		<field name="urban_zone"/>
+                    		<field name="viettel_id"/>
+                        </group>
+                    </group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record id="res_district_action" model="ir.actions.act_window">
+        <field name="name">District</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.district</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

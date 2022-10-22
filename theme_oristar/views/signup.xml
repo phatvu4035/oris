@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="oristar_sign_up" name="signup form" inherit_id="auth_signup.signup">
+        <xpath expr="//form[@class='oe_signup_form']" position="replace">
+            <div class="title text-center pb30">
+                <t t-if="account_type == 'organization'">
+                    <h3>Organization account registration</h3>
+                </t>
+                <t t-else="">
+                    <h3>Individual account registration</h3>
+                </t>
+
+                <p>Register to become a customer and
+                    receive offers from Oristar</p>
+            </div>
+            <p class="alert alert-success" t-if="message" role="alert">
+                <t t-esc="message"/>
+            </p>
+            <form class="oe_signup_form" role="form" method="post" t-if="not message">
+                <p class="alert alert-danger" t-if="error" role="alert">
+                    <t t-esc="error"/>
+                </p>
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <input type="hidden" name="redirect" t-att-value="redirect"/>
+                <input type="hidden" name="token" t-att-value="token"/>
+                <t t-set="only_passwords" t-value="bool(token and not invalid_token)"/>
+                <div class="form-group">
+                    <label for="login">Email <span class="s_website_form_mark"> *</span></label>
+                    <input type="text" name="login" t-att-value="login" id="login" class="form-control" autofocus="autofocus"
+                    autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phone" name="phone" t-att-value="phone"/>
+                </div>
+                <div t-if="not account_type or account_type != 'organization'" class="form-group">
+                    <label for="name">Full Name <span class="s_website_form_mark"> *</span></label>
+                    <input type="text" name="name" t-att-value="name" id="name" class="form-control"
+                    required="required" t-att-readonly="'readonly' if only_passwords else None"
+                    t-att-autofocus="'autofocus' if login and not only_passwords else None" />
+                </div>
+                <div t-if="account_type and account_type == 'organization'" class="form-group">
+                    <label for="name">Company <span class="s_website_form_mark"> *</span></label>
+                    <input type="text" name="name" t-att-value="name" id="name" class="form-control"
+                    required="required" t-att-readonly="'readonly' if only_passwords else None"
+                    t-att-autofocus="'autofocus' if login and not only_passwords else None" />
+                </div>
+                <div t-if="account_type and account_type == 'organization'" class="form-group">
+                    <label for="vat">TAX Number<span class="s_website_form_mark"> *</span></label>
+                    <input type="text" name="vat" t-att-value="vat" id="vat" class="form-control"
+                    required="required" t-att-readonly="'readonly' if only_passwords else None"
+                    t-att-autofocus="'autofocus' if login and not only_passwords else None" />
+                </div>
+                <div class="form-group">
+                    <label for="">Password<span class="s_website_form_mark"> *</span></label>
+                    <input type="password" name="password" id="password" class="form-control"
+                    required="required" t-att-autofocus="'autofocus' if only_passwords else None"/>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm password</label>
+                    <input type="password" name="confirm_password" id="confirm_password" class="form-control" required="required"/>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group form-check ">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" /> Remember Password
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-luu">Register</button>
+                <div class="o_login_auth"/>
+                <p class="text-center">Already have an account? Log in <a href="/web/login">here</a></p>
+            </form>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!--variant attribute -->
+        <record id="kt1_variant_attr" model="product.attribute">
+            <field name="name">Size variants</field>
+            <field name="display_type">radio</field>
+            <field name="create_variant">always</field>
+        </record>
+    </data>
+</odoo>

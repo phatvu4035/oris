@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="price_file_pp1" model="price.file">
+            <field name="name">_pp1_sale.xlsx</field>
+            <field name="description">PP1 price file</field>
+        </record>
+        <record id="price_file_pp2" model="price.file">
+            <field name="name">pp2_cmc.xlsx</field>
+            <field name="description">PP2 price file</field>
+        </record>
+        <record id="price_file_pp3" model="price.file">
+            <field name="name">pp3_cmc.xlsx</field>
+            <field name="description">PP3 price file</field>
+        </record>
+    </data>
+</odoo>

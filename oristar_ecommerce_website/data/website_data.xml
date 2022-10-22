@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!--menu -->
+        <record id="menu_brass" model="website.menu">
+            <field name="name">Đồng</field>
+            <field name="url" eval="'/shop?material_category=' + str(ref('oristar_product.product_material_category_00'))" />
+            <field name="sequence" type="int">60</field>
+        </record>
+        <record id="menu_aluminum" model="website.menu">
+            <field name="name">Nhôm</field>
+            <field name="url" eval="'/shop?material_category=' + str(ref('oristar_product.product_material_category_01'))" />
+            <field name="sequence" type="int">61</field>
+        </record>
+        <record id="menu_steel" model="website.menu">
+            <field name="name">Thép</field>
+            <field name="url" eval="'/shop?material_category=' + str(ref('oristar_product.product_material_category_02'))" />
+            <field name="sequence" type="int">62</field>
+        </record>
+        <record id="oristar_ecommerce_website.menu_special_steel" model="website.menu">
+            <field name="name">Thép đặc biệt</field>
+            <field name="url" eval="'/shop?material_category=' + str(ref('oristar_product.product_material_category_03'))" />
+            <field name="sequence" type="int">63</field>
+        </record>
+
+        <!--Submenu-->
+        <record id="menu_product_material_00" model="website.menu">
+            <field name="name">Đồng Bery</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_00'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_brass"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="menu_product_material_01" model="website.menu">
+            <field name="name">Đồng tinh chế</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_01'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_brass"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="menu_product_material_02" model="website.menu">
+            <field name="name">Đồng hợp kim</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_02'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_brass"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="menu_product_material_03" model="website.menu">
+            <field name="name">Đồng xi mạ</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_03'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_brass"/>
+        </record>
+        <record id="menu_product_material_04" model="website.menu">
+            <field name="name">Nhôm hợp kim</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_04'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_brass"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_product_material_05" model="website.menu">
+            <field name="name">Nhôm hợp kim</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_05'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_aluminum"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="menu_product_material_06" model="website.menu">
+            <field name="name">Nhôm phản quang</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_06'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_aluminum"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_product_material_07" model="website.menu">
+            <field name="name">Thép không gỉ</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_07'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_steel"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="menu_product_material_08" model="website.menu">
+            <field name="name">Thép không hợp kim</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_08'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_steel"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="menu_product_material_09" model="website.menu">
+            <field name="name">Thép hợp kim</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_09'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_steel"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_product_material_10" model="website.menu">
+            <field name="name">Thép gia công nguội</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_10'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_special_steel"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="menu_product_material_11" model="website.menu">
+            <field name="name">Thép khuôn nhựa</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_11'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_special_steel"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="product_material_12" model="website.menu">
+            <field name="name">Thép gia công nóng</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_12'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_special_steel"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="menu_product_material_13" model="website.menu">
+            <field name="name">Thép gió (HSS)</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_13'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_special_steel"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="menu_product_material_14" model="website.menu">
+            <field name="name">Thép dụng cụ không gỉ</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_14'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_special_steel"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="product_material_15" model="website.menu">
+            <field name="name">Thép dụng cụ cacbon</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_15'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_special_steel"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="menu_product_material_16" model="website.menu">
+            <field name="name">Thép chế tạo máy</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_16'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_special_steel"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+        <record id="menu_product_material_17" model="website.menu">
+            <field name="name">Carbide</field>
+            <field name="url" eval="'/shop?material=' + str(ref('oristar_product.product_material_17'))" />
+            <field name="parent_id" ref="oristar_ecommerce_website.menu_special_steel"/>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+    </data>
+</odoo>

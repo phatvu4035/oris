@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="view_partner_form_inherit" model="ir.ui.view">
+		<field name="name">res.partner.oristar.form</field>
+		<field name="model">res.partner</field>
+		<field name="inherit_id" ref="base.view_partner_form"></field>
+		<field name="arch" type="xml">
+			<field name="vat" position="before">
+				<field name="township_id"/>
+				<field name="district_id"/>
+				<field name="default_delivery_address" attrs="{'invisible': ['|', ('type', '!=', 'delivery'), ('company_type', '=', 'company')]}"/>
+				<field name="address_type"/>
+			</field>
+			<field name="vat" position="after">
+				<field name="customer_type"/>
+				<field name="seller_in_charge"/>
+				<field name="erp_id"/>
+				<field name="credit_time_days"/>
+			</field>
+			<field name="website" position="after">
+				<field name="fax"/>
+			</field>
+			<page name='internal_notes' position="after">
+				<page name='customer_credit_limit' string="Credit Limit">
+					<group>
+						<field name="can_pay_by_cod"/>
+					</group>
+					<group>
+						<group name='customer_credit_limit'>
+							<field name="customer_credit_limit_ids" nolabel="1">
+								<tree>
+									<field name="currency_id"/>
+									<field name="credit_limit"/>
+									<field name="credit"/>
+								</tree>
+							</field>
+						</group>
+					</group>
+				</page>
+			</page>
+		</field>
+	</record>
+</odoo>

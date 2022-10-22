@@ -1,0 +1,63 @@
+id,name,vietstar_id,vietstar_id_sg
+base.state_vn_VN-HN,"Thành phố Hà Nội",A,F
+base.state_vn_VN-03,"Tỉnh Hà Giang",I,I
+base.state_vn_VN-04,"Tỉnh Cao Bằng",I,C
+base.state_vn_VN-53,"Tỉnh Bắc Kạn",I,D
+base.state_vn_VN-07,"Tỉnh Tuyên Quang",I,I
+base.state_vn_VN-02,"Tỉnh Lào Cai",I,I
+base.state_vn_VN-71,"Tỉnh Điện Biên",I,I
+base.state_vn_VN-01,"Tỉnh Lai Châu",I,D
+base.state_vn_VN-05,"Tỉnh Sơn La",I,I
+base.state_vn_VN-06,"Tỉnh Yên Bái",H,H
+base.state_vn_VN-14,"Tỉnh Hoà Bình",F,H
+base.state_vn_VN-69,"Tỉnh Thái Nguyên",H,H
+base.state_vn_VN-09,"Tỉnh Lạng Sơn",H,H
+base.state_vn_VN-13,"Tỉnh Quảng Ninh",D,H
+base.state_vn_VN-54,"Tỉnh Bắc Giang",C,G
+base.state_vn_VN-68,"Tỉnh Phú Thọ",D,G
+base.state_vn_VN-70,"Tỉnh Vĩnh Phúc",C,G
+base.state_vn_VN-56,"Tỉnh Bắc Ninh",C,F
+base.state_vn_VN-61,"Tỉnh Hải Dương",B,G
+base.state_vn_VN-HP,"Thành phố Hải Phòng",B,G
+base.state_vn_VN-66,"Tỉnh Hưng Yên",A,F
+base.state_vn_VN-20,"Tỉnh Thái Bình",C,G
+base.state_vn_VN-63,"Tỉnh Hà Nam",D,G
+base.state_vn_VN-67,"Tỉnh Nam Định",C,G
+base.state_vn_VN-18,"Tỉnh Ninh Bình",D,G
+base.state_vn_VN-21,"Tỉnh Thanh Hóa",D,G
+base.state_vn_VN-22,"Tỉnh Nghệ An",D,F
+base.state_vn_VN-23,"Tỉnh Hà Tĩnh",D,F
+base.state_vn_VN-24,"Tỉnh Quảng Bình",G,Hbase.state_vn_VN-25,"Tỉnh Quảng Trị",F,H
+base.state_vn_VN-26,"Tỉnh Thừa Thiên Huế",E,E
+base.state_vn_VN-DN,"Thành phố Đà Nẵng",E,E
+base.state_vn_VN-27,"Tỉnh Quảng Nam",F,E
+base.state_vn_VN-29,"Tỉnh Quảng Ngãi",F,F
+base.state_vn_VN-31,"Tỉnh Bình Định",G,B
+base.state_vn_VN-32,"Tỉnh Phú Yên",I,E
+base.state_vn_VN-34,"Tỉnh Khánh Hòa",F,D
+base.state_vn_VN-36,"Tỉnh Ninh Thuận",I,C
+base.state_vn_VN-40,"Tỉnh Bình Thuận",I,C
+base.state_vn_VN-28,"Tỉnh Kon Tum",I,E
+base.state_vn_VN-30,"Tỉnh Gia Lai",I,E
+base.state_vn_VN-33,"Tỉnh Đắk Lắk",I,C
+base.state_vn_VN-72,"Tỉnh Đắk Nông",I,C
+base.state_vn_VN-35,"Tỉnh Lâm Đồng",I,H
+base.state_vn_VN-58,"Tỉnh Bình Phước",I,C
+base.state_vn_VN-37,"Tỉnh Tây Ninh",I,C
+base.state_vn_VN-57,"Tỉnh Bình Dương",I,E
+base.state_vn_VN-39,"Tỉnh Đồng Nai",G,B
+base.state_vn_VN-43,"Tỉnh Bà Rịa - Vũng Tàu",G,B
+base.state_vn_VN-SG,"Thành phố Hồ Chí Minh",H,A
+base.state_vn_VN-41,"Tỉnh Long An",I,C
+base.state_vn_VN-46,"Tỉnh Tiền Giang",I,C
+base.state_vn_VN-50,"Tỉnh Bến Tre",I,C
+base.state_vn_VN-51,"Tỉnh Trà Vinh",I,D
+base.state_vn_VN-49,"Tỉnh Vĩnh Long",I,C
+base.state_vn_VN-45,"Tỉnh Đồng Tháp",I,C
+base.state_vn_VN-44,"Tỉnh An Giang",I,C
+base.state_vn_VN-47,"Tỉnh Kiên Giang",I,D
+base.state_vn_VN-CT,"Thành phố Cần Thơ",I,I
+base.state_vn_VN-73,"Tỉnh Hậu Giang",I,D
+base.state_vn_VN-52,"Tỉnh Sóc Trăng",I,C
+base.state_vn_VN-55,"Tỉnh Bạc Liêu",I,I
+base.state_vn_VN-59,"Tỉnh Cà Mau",I,D

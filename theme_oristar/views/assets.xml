@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_frontend" inherit_id="website.assets_frontend">
+        <xpath expr="link[last()]" position="after">
+            <script type="text/javascript" src="/web/static/src/js/owl_compatibility.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/translate_help.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/libs/swiper/swiper-bundle.min.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/libs/OwlCarousel/owl.carousel.min.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/search_panel/saerch_product_shape_type.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/search_panel/search_product_alloy.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/search_panel/search_product_detail_shape.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/search_panel/search_product_material.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/search_panel/search_product_material_cat.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/search_panel/search_product_stiffness.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/search_panel/search_product_origin.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/search_panel/search_product.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/main.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/menu.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/product_list.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/website_sale.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/profile.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/so_form.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/order.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/partner_address_form.js"></script>
+            <script type="text/javascript" src="/theme_oristar/static/src/js/address_book.js"></script>
+
+            <link rel="stylesheet" type="text/scss" href="/theme_oristar/static/libs/swiper/swiper-bundle.min.css" />
+            <link rel="stylesheet" type="text/scss" href="/theme_oristar/static/libs/OwlCarousel/owl.carousel.min.css" />
+            <link rel="stylesheet" type="text/scss" href="/theme_oristar/static/libs/OwlCarousel/owl.theme.default.min.css" />
+            <link rel="stylesheet" type="text/scss" href="/theme_oristar/static/src/scss/common.scss" />
+            <link rel="stylesheet" type="text/scss" href="/theme_oristar/static/src/scss/styles.scss" />
+            <link rel="stylesheet" type="text/scss" href="/theme_oristar/static/src/scss/portal.scss" />
+            <link rel="stylesheet" type="text/scss" href="/theme_oristar/static/src/scss/product.scss" />
+            <link rel="stylesheet" type="text/scss" href="/theme_oristar/static/src/scss/detail_product.scss" />
+            <link rel="stylesheet" type="text/scss" href="/theme_oristar/static/src/scss/contact.scss" />
+            <link rel="stylesheet" type="text/scss" href="/theme_oristar/static/src/scss/login.scss" />
+            <link rel="stylesheet" type="text/scss" href="/theme_oristar/static/src/scss/cart.scss" />
+            <link rel="stylesheet" type="text/scss" href="/theme_oristar/static/src/scss/orders.scss" />
+            <link rel="stylesheet" type="text/scss" href="/theme_oristar/static/src/scss/menu.scss" />
+            <link rel="stylesheet" type="text/scss" href="/theme_oristar/static/src/scss/responsive.scss" />
+        </xpath>
+    </template>
+    <template id="detail_product" name="Asset for detail product">
+        <script type="text/javascript" src="/theme_oristar/static/src/js/product.js"></script>
+    </template>
+    <template id="oris_cart_page" name="Asset for cart page">
+        <script type="text/javascript" src="/theme_oristar/static/src/js/cart_components.js"></script>
+        <script type="text/javascript" src="/theme_oristar/static/src/js/cart.js"></script>
+    </template>
+</odoo>

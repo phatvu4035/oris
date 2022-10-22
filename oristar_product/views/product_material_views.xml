@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="product_material_tree_view" model="ir.ui.view">
+		<field name="name">product.material.tree</field>
+		<field name="model">product.material</field>
+		<field name="arch" type="xml">
+			<tree string="Product Materials">
+				<field name="name"/>
+				<field name="description"/>
+				<field name="product_material_category_id"/>
+				<field name="show_on_website"/>
+			</tree>
+		</field>
+	</record>
+	
+	<record id="product_material_form_view" model="ir.ui.view">
+		<field name="name">product.material.form</field>
+		<field name="model">product.material</field>
+		<field name="arch" type="xml">
+			<form string="Product Material">
+				<header></header>
+				<sheet>
+					<div class="oe_title">
+                        <label class="oe_edit_only" for="name" string="Name"/>
+                        <h1><field name="name" placeholder="Material Name"/></h1>
+                    </div>
+                    <group name="detail">
+                    	<group name="detail_left">
+                    		<field name="product_material_category_id"/>
+                    		<field name="description"/>
+                    	</group>
+                    	<group name="detail_right">
+                    		<field name="show_on_website"/>
+                    	</group>
+                    </group>
+				</sheet>
+				<div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+			</form>
+		</field>
+	</record>
+	
+	<record id="product_material_action" model="ir.actions.act_window">
+        <field name="name">Product Materials</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.material</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Email template for new users that just created and wait for approval -->
+        <record id="new_order_notification" model="mail.template">
+            <field name="name">Sale Order Created</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="subject">Sale order ${object.name} has been created.</field>
+            <field name="email_from">"${object.company_id.name | safe}" &lt;${(object.company_id.email or user.email) | safe}&gt;</field>
+            <field name="email_to">${object.partner_id.seller_in_charge.email | safe}</field>
+            <field name="body_html" type="html">
+                <div>
+                    <p>The order ${object.name} from ${object.partner_id.name} has been created.</p>
+                    <p>Please check that in Order. Thank you!</p>
+                </div>
+            </field>
+            <field name="lang">vi_VN</field>
+            <field name="auto_delete" eval="True"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_lme_price_public,lme.price.public,model_lme_price,,1,0,0,0
+access_lme_spot_price_public,lme.spot.price.public,model_lme_spot_price,,1,0,0,0
+access_lme_market_public,lme.market.public,model_lme_market,,1,0,0,0
+access_price_file_public,price.file.public,model_price_file,,1,0,0,0
+access_profit_margin_range_public,profit.margin.range.public,model_profit_margin_range,,1,0,0,0
+access_lme_price_user,lme.price.user,model_lme_price,base.group_user,1,0,0,0
+access_lme_spot_price_user,lme.spot.price.user,model_lme_spot_price,base.group_user,1,0,0,0
+access_lme_market_user,lme.market.user,model_lme_market,base.group_user,1,0,0,0
+access_price_file_user,price.file.user,model_price_file,base.group_user,1,0,0,0
+access_profit_margin_range_user,profit.margin.range.user,model_profit_margin_range,base.group_user,1,0,0,0
+access_lme_price_manager,lme.price.manager,model_lme_price,base.group_system,1,1,1,1
+access_lme_spot_price_manager,lme.spot.price.manager,model_lme_spot_price,base.group_system,1,1,1,1
+access_lme_market_manager,lme.market.manager,model_lme_market,base.group_system,1,1,1,1
+access_price_file_manager,price.file.manager,model_price_file,base.group_system,1,1,1,1
+access_profit_margin_range_manager,profit.margin.range.manager,model_profit_margin_range,base.group_system,1,1,1,1

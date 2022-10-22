@@ -1,0 +1,52 @@
+#chitiet .modal-dialog .modal-content h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2159A3;
+}
+
+#chitiet .modal-dialog .modal-content h3 a {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: #F43034;
+}
+
+#chitiet .modal-dialog .modal-content .top p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #787878;
+    margin-bottom: 10px;
+}
+
+#chitiet .modal-dialog .modal-content .top span {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2159A3;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+#chitiet .modal-dialog .modal-content .top p span {
+  color: #333;
+}
+
+#chitiet .modal-dialog {
+  max-width: 1000px;
+}
+
+#chitiet .modal-dialog .modal-content .table thead tr th {
+  text-align: left;
+  padding: 0.75rem;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #787878;
+}
+
+#chitiet .modal-dialog .modal-content .table thead tr th:first-child {
+  width: 200px;
+}

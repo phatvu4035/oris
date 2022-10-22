@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="lme_spot_price_tree_view" model="ir.ui.view">
+		<field name="name">lme.spot.price.tree</field>
+		<field name="model">lme.spot.price</field>
+		<field name="arch" type="xml">
+			<tree string="LME Spot Prices">
+				<field name="record_datetime"/>
+				<field name="lme_market_id"/>
+				<field name="product_material_category_id"/>
+				<field name="price"/>
+				<field name="currency_id"/>
+			</tree>
+		</field>
+	</record>
+	
+	<record id="lme_spot_price_form_view" model="ir.ui.view">
+		<field name="name">lme.spot.price.form</field>
+		<field name="model">lme.spot.price</field>
+		<field name="arch" type="xml">
+			<form string="LME Spot Price">
+				<header></header>
+				<sheet>
+                    <group name="detail">
+                    	<group name="detail_left">
+                    		<field name="record_datetime"/>
+                    		<field name="lme_market_id"/>
+                    	</group>
+                    	<group name="detail_right">
+                    		<field name="product_material_category_id"/>
+                    		<field name="price"/>
+                    		<field name="currency_id"/>
+                    	</group>
+                    </group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	
+	<record id="lme_spot_price_action" model="ir.actions.act_window">
+        <field name="name">LME Spot Prices</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">lme.spot.price</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

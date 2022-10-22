@@ -1,0 +1,446 @@
+.product-deta {
+    position: relative;
+    max-width: 627px;
+}
+
+.product-deta .thumbnail-lazy {
+    border: 0;
+}
+
+.product-deta .owl-dots {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.product-deta .owl-dots .owl-dot {
+    width: 92px;
+    height: 92px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.product-deta .owl-dots .owl-dot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ct-product {
+    padding: 0 0 30px 0;
+}
+
+.ct-product .title h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #333333;
+    margin-top: 4px;
+    margin-bottom: 30px;
+}
+
+.ct-product .content .title h3 {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.ct-product .comment .title h3 {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.ct-product .content p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 35px;
+    color: #777777;
+}
+
+.ct-product .content {
+    padding: 100px 0 30px 0;
+}
+
+.ct-product .col-lg-5 {
+    padding: 0;
+}
+
+.ct-product .shape {
+    padding-bottom: 18px;
+}
+
+.ct-product .shape label {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #787878;
+}
+
+.ct-product .shape p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.ct-product .shape p span.btc {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #2159A3;
+    cursor: pointer;
+}
+
+.ct-product .shape .t-link span, .ct-product .sizes-lst {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #2159A3;
+    cursor: pointer;
+}
+
+.ct-product .shape p .ccprice {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #2159A3;
+    cursor: pointer;
+}
+
+.ct-product .shape .select::before {
+    position: absolute;
+    content: '';
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../images/icons/dsa.png);
+    width: 10px;
+    height: 6px;
+    background-size: 100%;
+    z-index: 1;
+}
+
+.ct-product .shape .box .item.active {
+    background-color: rgba(33, 89, 163, 0.16);
+    color: rgba(33, 89, 163, 1);
+    border: 0.5px solid rgba(33, 89, 163, 1);
+}
+
+.ct-product .shape .box .item {
+    padding: 12px 14px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #787878;
+    border: 0.5px solid hsla(0, 0%, 87%, 0.50);
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.ct-product .shape .box-img {
+    display: flex;
+}
+
+.ct-product .shape .box-img .item {
+    padding: 10px 12px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #787878;
+    border: 0.5px solid hsla(0, 0%, 87%, 0.50);
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.ct-product .shape .box-img .item.active {
+    color: rgba(33, 89, 163, 1);
+    border: 0.5px solid rgba(33, 89, 163, 1);
+}
+
+.ct-product .shape .box-img .item img {
+    width: 83px;
+    height: 53px;
+    object-fit: contain;
+}
+
+.ct-product .shape .form {
+    display: flex;
+    align-items: center;
+}
+
+.ct-product label {
+    font-size: 14px;
+    line-height: 17px;
+    color: #787878;
+}
+
+.ct-product .shape form .item {
+    width: 33%;
+    margin-right: 20px;
+}
+
+.ct-product .shape form .or_call_price {
+    margin-bottom: 10px;
+}
+
+.ct-product .shape form .item input {
+    padding: 12px 8px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #787878;
+    border: 0.5px solid hsla(0, 0%, 87%, 0.50);
+    border-radius: 4px;
+    display: inline-block;
+    outline: 0;
+    width: 100%;
+}
+
+.ct-product .shape form .item input::placeholder {
+    color: #DFDFDF;
+    font-weight: normal;
+}
+
+.ct-product .shape form .item:nth-child(3) {
+    margin-right: 10px;
+}
+
+.ct-product .shape form .item:nth-child(2) {
+    position: relative;
+}
+
+.ct-product .shape form .item:nth-child(2)::after {
+    position: absolute;
+    content: '';
+    background-image: url(../img/Vector.png);
+    background-size: 100%;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+}
+
+.ct-product .shape form .item:nth-child(2)::before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/Vector.png);
+    background-size: 100%;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+}
+
+.ct-product .shape form .item p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+
+.ct-product .shape .select {
+    position: relative;
+    width: 180px;
+    height: 40px;
+}
+
+.ct-product .shape .select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 0 12px;
+    height: 100%;
+    border: 1px solid hsla(0, 0%, 87%, 0.5);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #787878;
+    outline: 0;
+}
+
+.ct-product .ht-gia {
+    margin-bottom: 20px;
+}
+
+.ct-product .ht-gia p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #F43034;
+}
+
+.ct-product .ht-gia h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F43034;
+}
+
+.ct-product .sl {
+    display: flex;
+    align-items: center;
+}
+
+.ct-product .sl p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    padding-right: 40px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity .is-form {
+    overflow: hidden;
+    position: relative;
+    background-color: hsla(0, 0%, 87%, 0.5);
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    color: #7878787a;
+    font-size: 23px;
+    line-height: 19px;
+}
+
+.quantity .is-form:focus, .input-text:focus {
+    outline: none;
+}
+
+.quantity .input-qty {
+    background-color: #fff;
+    height: 25px;
+    text-align: center;
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+.quantity .input-qty::-webkit-outer-spin-button, .input-qty::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.tvgh {
+    background: #2159A3;
+    padding: 17px 0px;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF !important;
+    width: 50%;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.mns {
+    background: #F43034;
+    padding: 17px 0px;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    width: 50%;
+    text-align: center;
+    border: none;
+
+}
+
+.ct-product .comment .col-lg-3 {
+    display: flex;
+    align-items: center;
+}
+
+.ct-product .comment .img {
+    width: 38px;
+    height: 38px;
+}
+
+.ct-product .comment .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ct-product .comment .text {
+    padding-left: 15px;
+}
+
+.ct-product .comment .text p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2159A3;
+}
+
+.ct-product .comment .text span {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #787878;
+}
+
+.ct-product .comment .item-cm {
+    border-bottom: 0.4px solid hsla(0, 0%, 87%, 0.39);
+    padding: 20px 0;
+}
+
+.ct-product .comment .btn-modal {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background-color: var(--blue);
+    border-radius: 4px;
+    display: inline-block;
+    padding: 14px 32px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.ccprice {
+    font-weight: normal;
+}
+
+.item input[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}

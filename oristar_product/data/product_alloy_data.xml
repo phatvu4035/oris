@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!--Đồng Bery-->
+        <record id="product_alloy_00" model="product.alloy">
+            <field name="name">C1720</field>
+            <field name="product_material_id" ref="product_material_00"/>
+        </record>
+        <record id="product_material_00" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_00'))]"/>
+        </record>
+
+        <record id="product_alloy_01" model="product.alloy">
+            <field name="name">Moldmax</field>
+            <field name="product_material_id" ref="product_material_00"/>
+        </record>
+        <record id="product_material_00" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_01'))]"/>
+        </record>
+
+        <record id="product_alloy_02" model="product.alloy">
+            <field name="name">Alloy 25</field>
+            <field name="product_material_id" ref="product_material_00"/>
+        </record>
+        <record id="product_material_00" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_02'))]"/>
+        </record>
+
+        <record id="product_alloy_03" model="product.alloy">
+            <field name="name">BeCu25</field>
+            <field name="product_material_id" ref="product_material_00"/>
+        </record>
+        <record id="product_material_00" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_03'))]"/>
+        </record>
+
+        <!--Đồng tinh chế-->
+        <record id="product_alloy_04" model="product.alloy">
+            <field name="name">C1100</field>
+            <field name="product_material_id" ref="product_material_01"/>
+        </record>
+        <record id="product_material_01" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_04'))]"/>
+        </record>
+
+        <record id="product_alloy_05" model="product.alloy">
+            <field name="name">C1220</field>
+            <field name="product_material_id" ref="product_material_01"/>
+        </record>
+        <record id="product_material_01" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_05'))]"/>
+        </record>
+
+        <record id="product_alloy_06" model="product.alloy">
+            <field name="name">C19210</field>
+            <field name="product_material_id" ref="product_material_01"/>
+        </record>
+        <record id="product_material_01" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_06'))]"/>
+        </record>
+
+        <!--Đồng hợp kim-->
+        <record id="product_alloy_07" model="product.alloy">
+            <field name="name">C2600</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_07'))]"/>
+        </record>
+
+        <record id="product_alloy_08" model="product.alloy">
+            <field name="name">C2680</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_08'))]"/>
+        </record>
+
+        <record id="product_alloy_09" model="product.alloy">
+            <field name="name">C2700</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_09'))]"/>
+        </record>
+
+        <record id="product_alloy_10" model="product.alloy">
+            <field name="name">C2720</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_10'))]"/>
+        </record>
+
+        <record id="product_alloy_11" model="product.alloy">
+            <field name="name">C2801</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_11'))]"/>
+        </record>
+
+        <record id="product_alloy_12" model="product.alloy">
+            <field name="name">C36000</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_12'))]"/>
+        </record>
+
+        <record id="product_alloy_13" model="product.alloy">
+            <field name="name">C3602</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_12'))]"/>
+        </record>
+
+        <record id="product_alloy_14" model="product.alloy">
+            <field name="name">C3604</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_14'))]"/>
+        </record>
+
+        <record id="product_alloy_15" model="product.alloy">
+            <field name="name">C3604BD</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_15'))]"/>
+        </record>
+
+        <record id="product_alloy_16" model="product.alloy">
+            <field name="name">C3604BE</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_16'))]"/>
+        </record>
+
+        <record id="product_alloy_17" model="product.alloy">
+            <field name="name">C5191</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_17'))]"/>
+        </record>
+
+        <record id="product_alloy_18" model="product.alloy">
+            <field name="name">C5210</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_18'))]"/>
+        </record>
+
+        <record id="product_alloy_19" model="product.alloy">
+            <field name="name">C6801BD</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_19'))]"/>
+        </record>
+
+        <record id="product_alloy_20" model="product.alloy">
+            <field name="name">Cr</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_19'))]"/>
+        </record>
+
+        <record id="product_alloy_21" model="product.alloy">
+            <field name="name">CW713R</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_21'))]"/>
+        </record>
+
+        <record id="product_alloy_22" model="product.alloy">
+            <field name="name">H65</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_22'))]"/>
+        </record>
+
+        <record id="product_alloy_23" model="product.alloy">
+            <field name="name">KHP109</field>
+            <field name="product_material_id" ref="product_material_02"/>
+        </record>
+        <record id="product_material_02" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_23'))]"/>
+        </record>
+
+        <!--Đồng xi mạ-->
+        <record id="product_alloy_24" model="product.alloy">
+            <field name="name">C1220</field>
+            <field name="product_material_id" ref="product_material_03"/>
+        </record>
+        <record id="product_material_03" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_24'))]"/>
+        </record>
+
+        <record id="product_alloy_25" model="product.alloy">
+            <field name="name">C1020</field>
+            <field name="product_material_id" ref="product_material_03"/>
+        </record>
+        <record id="product_material_03" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_25'))]"/>
+        </record>
+
+        <!--Nhôm hợp kim-->
+        <record id="product_alloy_26" model="product.alloy">
+            <field name="name">A2017</field>
+            <field name="product_material_id" ref="product_material_04"/>
+        </record>
+        <record id="product_material_04" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_26'))]"/>
+        </record>
+
+        <record id="product_alloy_27" model="product.alloy">
+            <field name="name">A2024</field>
+            <field name="product_material_id" ref="product_material_04"/>
+        </record>
+        <record id="product_material_04" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_27'))]"/>
+        </record>
+
+        <record id="product_alloy_28" model="product.alloy">
+            <field name="name">A5052</field>
+            <field name="product_material_id" ref="product_material_04"/>
+        </record>
+        <record id="product_material_04" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_28'))]"/>
+        </record>
+
+        <record id="product_alloy_29" model="product.alloy">
+            <field name="name">A5056</field>
+            <field name="product_material_id" ref="product_material_04"/>
+        </record>
+        <record id="product_material_04" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_29'))]"/>
+        </record>
+
+        <record id="product_alloy_30" model="product.alloy">
+            <field name="name">A5056BD</field>
+            <field name="product_material_id" ref="product_material_04"/>
+        </record>
+        <record id="product_material_04" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_30'))]"/>
+        </record>
+
+        <record id="product_alloy_31" model="product.alloy">
+            <field name="name">A5056BE</field>
+            <field name="product_material_id" ref="product_material_04"/>
+        </record>
+        <record id="product_material_04" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_31'))]"/>
+        </record>
+
+        <record id="product_alloy_32" model="product.alloy">
+            <field name="name">A6061</field>
+            <field name="product_material_id" ref="product_material_04"/>
+        </record>
+        <record id="product_material_04" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_32'))]"/>
+        </record>
+
+        <record id="product_alloy_33" model="product.alloy">
+            <field name="name">A6063</field>
+            <field name="product_material_id" ref="product_material_04"/>
+        </record>
+        <record id="product_material_04" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_33'))]"/>
+        </record>
+
+        <record id="product_alloy_34" model="product.alloy">
+            <field name="name">A6063BE</field>
+            <field name="product_material_id" ref="product_material_04"/>
+        </record>
+        <record id="product_material_04" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_34'))]"/>
+        </record>
+
+        <record id="product_alloy_35" model="product.alloy">
+            <field name="name">A7003</field>
+            <field name="product_material_id" ref="product_material_04"/>
+        </record>
+        <record id="product_material_04" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_35'))]"/>
+        </record>
+
+        <record id="product_alloy_36" model="product.alloy">
+            <field name="name">A7075</field>
+            <field name="product_material_id" ref="product_material_04"/>
+        </record>
+        <record id="product_material_04" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_36'))]"/>
+        </record>
+
+        <record id="product_alloy_37" model="product.alloy">
+            <field name="name">Alumec99</field>
+            <field name="product_material_id" ref="product_material_04"/>
+        </record>
+        <record id="product_material_04" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_37'))]"/>
+        </record>
+
+        <!--Nhôm không hợp kim-->
+        <record id="product_alloy_38" model="product.alloy">
+            <field name="name">A1050</field>
+            <field name="product_material_id" ref="product_material_05"/>
+        </record>
+        <record id="product_material_05" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_38'))]"/>
+        </record>
+
+        <record id="product_alloy_39" model="product.alloy">
+            <field name="name">A1100</field>
+            <field name="product_material_id" ref="product_material_05"/>
+        </record>
+        <record id="product_material_05" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_39'))]"/>
+        </record>
+
+        <!--Nhôm phản quang-->
+        <record id="product_alloy_40" model="product.alloy">
+            <field name="name">320G</field>
+            <field name="product_material_id" ref="product_material_06"/>
+        </record>
+        <record id="product_material_06" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_40'))]"/>
+        </record>
+
+        <record id="product_alloy_41" model="product.alloy">
+            <field name="name">A3103</field>
+            <field name="product_material_id" ref="product_material_06"/>
+        </record>
+        <record id="product_material_06" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_41'))]"/>
+        </record>
+
+        <record id="product_alloy_42" model="product.alloy">
+            <field name="name">A6063</field>
+            <field name="product_material_id" ref="product_material_06"/>
+        </record>
+        <record id="product_material_06" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_42'))]"/>
+        </record>
+
+        <!--Thép không gỉ-->
+        <record id="product_alloy_43" model="product.alloy">
+            <field name="name">S50C</field>
+            <field name="product_material_id" ref="product_material_07"/>
+        </record>
+        <record id="product_material_07" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_43'))]"/>
+        </record>
+
+        <record id="product_alloy_44" model="product.alloy">
+            <field name="name">SUS301CSP</field>
+            <field name="product_material_id" ref="product_material_07"/>
+        </record>
+        <record id="product_material_07" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_44'))]"/>
+        </record>
+
+        <record id="product_alloy_45" model="product.alloy">
+            <field name="name">SUS303</field>
+            <field name="product_material_id" ref="product_material_07"/>
+        </record>
+        <record id="product_material_07" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_45'))]"/>
+        </record>
+
+        <record id="product_alloy_46" model="product.alloy">
+            <field name="name">SUS304</field>
+            <field name="product_material_id" ref="product_material_07"/>
+        </record>
+        <record id="product_material_07" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_46'))]"/>
+        </record>
+
+        <record id="product_alloy_47" model="product.alloy">
+            <field name="name">SUS304CSP</field>
+            <field name="product_material_id" ref="product_material_07"/>
+        </record>
+        <record id="product_material_07" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_47'))]"/>
+        </record>
+
+        <record id="product_alloy_48" model="product.alloy">
+            <field name="name">SUS304WPBS-Co</field>
+            <field name="product_material_id" ref="product_material_07"/>
+        </record>
+        <record id="product_material_07" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_48'))]"/>
+        </record>
+
+        <record id="product_alloy_49" model="product.alloy">
+            <field name="name">SUS410</field>
+            <field name="product_material_id" ref="product_material_07"/>
+        </record>
+        <record id="product_material_07" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_49'))]"/>
+        </record>
+
+        <record id="product_alloy_50" model="product.alloy">
+            <field name="name">SUS316</field>
+            <field name="product_material_id" ref="product_material_07"/>
+        </record>
+        <record id="product_material_07" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_50'))]"/>
+        </record>
+
+        <record id="product_alloy_51" model="product.alloy">
+            <field name="name">SUS416</field>
+            <field name="product_material_id" ref="product_material_07"/>
+        </record>
+        <record id="product_material_07" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_51'))]"/>
+        </record>
+
+        <record id="product_alloy_52" model="product.alloy">
+            <field name="name">SUS430</field>
+            <field name="product_material_id" ref="product_material_07"/>
+        </record>
+        <record id="product_material_07" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_52'))]"/>
+        </record>
+
+        <record id="product_alloy_53" model="product.alloy">
+            <field name="name">SUS440C</field>
+            <field name="product_material_id" ref="product_material_07"/>
+        </record>
+        <record id="product_material_07" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_53'))]"/>
+        </record>
+
+        <!--Thép không hợp kim-->
+        <record id="product_alloy_54" model="product.alloy">
+            <field name="name">SWC</field>
+            <field name="product_material_id" ref="product_material_08"/>
+        </record>
+        <record id="product_material_08" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_54'))]"/>
+        </record>
+
+        <record id="product_alloy_55" model="product.alloy">
+            <field name="name">SWP-B</field>
+            <field name="product_material_id" ref="product_material_08"/>
+        </record>
+        <record id="product_material_08" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_55'))]"/>
+        </record>
+
+        <record id="product_alloy_56" model="product.alloy">
+            <field name="name">SK85</field>
+            <field name="product_material_id" ref="product_material_08"/>
+        </record>
+        <record id="product_material_08" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_56'))]"/>
+        </record>
+
+        <record id="product_alloy_57" model="product.alloy">
+            <field name="name">S45C</field>
+            <field name="product_material_id" ref="product_material_08"/>
+        </record>
+        <record id="product_material_08" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_57'))]"/>
+        </record>
+
+        <!--Thép hợp kim-->
+        <record id="product_alloy_58" model="product.alloy">
+            <field name="name">S45CR</field>
+            <field name="product_material_id" ref="product_material_09"/>
+        </record>
+        <record id="product_material_09" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_58'))]"/>
+        </record>
+
+        <!--Thép gia công nguội -->
+        <record id="product_alloy_59" model="product.alloy">
+            <field name="name">K100</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_59'))]"/>
+        </record>
+
+        <record id="product_alloy_60" model="product.alloy">
+            <field name="name">K105</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_60'))]"/>
+        </record>
+
+        <record id="product_alloy_61" model="product.alloy">
+            <field name="name">K105</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_61'))]"/>
+        </record>
+
+        <record id="product_alloy_61" model="product.alloy">
+            <field name="name">K107</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_61'))]"/>
+        </record>
+
+        <record id="product_alloy_62" model="product.alloy">
+            <field name="name">K110</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_62'))]"/>
+        </record>
+
+        <record id="product_alloy_63" model="product.alloy">
+            <field name="name">K245</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_63'))]"/>
+        </record>
+
+        <record id="product_alloy_64" model="product.alloy">
+            <field name="name">K340 ECOSTAR</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_64'))]"/>
+        </record>
+
+        <record id="product_alloy_65" model="product.alloy">
+            <field name="name">K340 ISODUR</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_65'))]"/>
+        </record>
+
+        <record id="product_alloy_66" model="product.alloy">
+            <field name="name">K353</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_66'))]"/>
+        </record>
+
+        <record id="product_alloy_67" model="product.alloy">
+            <field name="name">K360 ISODUR</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_67'))]"/>
+        </record>
+
+        <record id="product_alloy_68" model="product.alloy">
+            <field name="name">K390 MICROCLEAN</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_68'))]"/>
+        </record>
+
+        <record id="product_alloy_69" model="product.alloy">
+            <field name="name">K455</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_69'))]"/>
+        </record>
+
+        <record id="product_alloy_70" model="product.alloy">
+            <field name="name">K460</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_70'))]"/>
+        </record>
+
+        <record id="product_alloy_71" model="product.alloy">
+            <field name="name">K490 MICROCLEAN</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_71'))]"/>
+        </record>
+
+        <record id="product_alloy_72" model="product.alloy">
+            <field name="name">K890 MICROCLEAN</field>
+            <field name="product_material_id" ref="product_material_10"/>
+        </record>
+        <record id="product_material_10" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_72'))]"/>
+        </record>
+
+
+        <!--Thép khuôn nhựa-->
+        <record id="product_alloy_73" model="product.alloy">
+            <field name="name">M200</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_73'))]"/>
+        </record>
+
+        <record id="product_alloy_74" model="product.alloy">
+            <field name="name">M201</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_74'))]"/>
+        </record>
+
+        <record id="product_alloy_75" model="product.alloy">
+            <field name="name">M238 EXTRA</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_75'))]"/>
+        </record>
+
+        <record id="product_alloy_76" model="product.alloy">
+            <field name="name">M238 HIGH HARD</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_76'))]"/>
+        </record>
+
+        <record id="product_alloy_77" model="product.alloy">
+            <field name="name">M261 EXTRA</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_77'))]"/>
+        </record>
+
+        <record id="product_alloy_78" model="product.alloy">
+            <field name="name">M303 EXTRA</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_78'))]"/>
+        </record>
+
+        <record id="product_alloy_79" model="product.alloy">
+            <field name="name">M303 HIGH HARD</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_79'))]"/>
+        </record>
+
+        <record id="product_alloy_80" model="product.alloy">
+            <field name="name">M310 ISOPLAST</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_80'))]"/>
+        </record>
+
+        <record id="product_alloy_81" model="product.alloy">
+            <field name="name">M461 EXTRA</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_81'))]"/>
+        </record>
+
+        <record id="product_alloy_82" model="product.alloy">
+            <field name="name">M315 EXTRA</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_82'))]"/>
+        </record>
+
+        <record id="product_alloy_83" model="product.alloy">
+            <field name="name">M333 ISOPLAST</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_83'))]"/>
+        </record>
+
+        <record id="product_alloy_84" model="product.alloy">
+            <field name="name">M340 ISOPLAST</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_84'))]"/>
+        </record>
+
+        <record id="product_alloy_85" model="product.alloy">
+            <field name="name">M368 MICROCLEAN</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_85'))]"/>
+        </record>
+
+        <record id="product_alloy_86" model="product.alloy">
+            <field name="name">M390 MICROCLEAN</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_86'))]"/>
+        </record>
+
+        <record id="product_alloy_87" model="product.alloy">
+            <field name="name">M398 MICROCLEAN</field>
+            <field name="product_material_id" ref="product_material_11"/>
+        </record>
+        <record id="product_material_11" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_87'))]"/>
+        </record>
+
+
+        <!--Thép gia công nóng-->
+        <record id="product_alloy_88" model="product.alloy">
+            <field name="name">W300 ISOBLOC</field>
+            <field name="product_material_id" ref="product_material_12"/>
+        </record>
+        <record id="product_material_12" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_88'))]"/>
+        </record>
+
+        <record id="product_alloy_89" model="product.alloy">
+            <field name="name">W302 ISODISC</field>
+            <field name="product_material_id" ref="product_material_12"/>
+        </record>
+        <record id="product_material_12" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_89'))]"/>
+        </record>
+
+        <record id="product_alloy_90" model="product.alloy">
+            <field name="name">W302 ISOBLOC</field>
+            <field name="product_material_id" ref="product_material_12"/>
+        </record>
+        <record id="product_material_12" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_90'))]"/>
+        </record>
+
+        <record id="product_alloy_91" model="product.alloy">
+            <field name="name">W303 ISODISC</field>
+            <field name="product_material_id" ref="product_material_12"/>
+        </record>
+        <record id="product_material_12" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_91'))]"/>
+        </record>
+
+        <record id="product_alloy_92" model="product.alloy">
+            <field name="name">W320 ISOBLOC</field>
+            <field name="product_material_id" ref="product_material_12"/>
+        </record>
+        <record id="product_material_12" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_92'))]"/>
+        </record>
+
+        <record id="product_alloy_93" model="product.alloy">
+            <field name="name">W350 ISOBLOC</field>
+            <field name="product_material_id" ref="product_material_12"/>
+        </record>
+        <record id="product_material_12" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_93'))]"/>
+        </record>
+
+        <record id="product_alloy_94" model="product.alloy">
+            <field name="name">W360 ISOBLOC</field>
+            <field name="product_material_id" ref="product_material_12"/>
+        </record>
+        <record id="product_material_12" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_94'))]"/>
+        </record>
+
+        <record id="product_alloy_95" model="product.alloy">
+            <field name="name">W400 VMR</field>
+            <field name="product_material_id" ref="product_material_12"/>
+        </record>
+        <record id="product_material_12" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_95'))]"/>
+        </record>
+
+        <record id="product_alloy_96" model="product.alloy">
+            <field name="name">W403 VMR</field>
+            <field name="product_material_id" ref="product_material_12"/>
+        </record>
+        <record id="product_material_12" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_96'))]"/>
+        </record>
+
+        <!--Thép gió (HSS)-->
+        <record id="product_alloy_97" model="product.alloy">
+            <field name="name">S500</field>
+            <field name="product_material_id" ref="product_material_13"/>
+        </record>
+        <record id="product_material_13" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_97'))]"/>
+        </record>
+
+        <record id="product_alloy_98" model="product.alloy">
+            <field name="name">S600</field>
+            <field name="product_material_id" ref="product_material_13"/>
+        </record>
+        <record id="product_material_13" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_98'))]"/>
+        </record>
+
+        <record id="product_alloy_99" model="product.alloy">
+            <field name="name">S705</field>
+            <field name="product_material_id" ref="product_material_13"/>
+        </record>
+        <record id="product_material_13" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_99'))]"/>
+        </record>
+
+        <record id="product_alloy_100" model="product.alloy">
+            <field name="name">S290 MICROCLEAN</field>
+            <field name="product_material_id" ref="product_material_13"/>
+        </record>
+        <record id="product_material_13" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_100'))]"/>
+        </record>
+
+        <record id="product_alloy_101" model="product.alloy">
+            <field name="name">S390 MICROCLEAN</field>
+            <field name="product_material_id" ref="product_material_13"/>
+        </record>
+        <record id="product_material_13" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_101'))]"/>
+        </record>
+
+        <record id="product_alloy_102" model="product.alloy">
+            <field name="name">S590 MICROCLEAN</field>
+            <field name="product_material_id" ref="product_material_13"/>
+        </record>
+        <record id="product_material_13" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_102'))]"/>
+        </record>
+
+        <record id="product_alloy_103" model="product.alloy">
+            <field name="name">S690 MICROCLEAN</field>
+            <field name="product_material_id" ref="product_material_13"/>
+        </record>
+        <record id="product_material_13" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_103'))]"/>
+        </record>
+
+        <record id="product_alloy_104" model="product.alloy">
+            <field name="name">S790 MICROCLEAN</field>
+            <field name="product_material_id" ref="product_material_13"/>
+        </record>
+        <record id="product_material_13" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_104'))]"/>
+        </record>
+
+
+        <!--Thép dụng cụ không gỉ-->
+        <record id="product_alloy_105" model="product.alloy">
+            <field name="name">N100</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_105'))]"/>
+        </record>
+
+        <record id="product_alloy_106" model="product.alloy">
+            <field name="name">N200</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_106'))]"/>
+        </record>
+
+        <record id="product_alloy_107" model="product.alloy">
+            <field name="name">N310</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_107'))]"/>
+        </record>
+
+        <record id="product_alloy_108" model="product.alloy">
+            <field name="name">N320</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_108'))]"/>
+        </record>
+
+        <record id="product_alloy_109" model="product.alloy">
+            <field name="name">N335</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_109'))]"/>
+        </record>
+
+        <record id="product_alloy_110" model="product.alloy">
+            <field name="name">N350</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_110'))]"/>
+        </record>
+
+        <record id="product_alloy_111" model="product.alloy">
+            <field name="name">N352</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_111'))]"/>
+        </record>
+
+        <record id="product_alloy_112" model="product.alloy">
+            <field name="name">N360</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_112'))]"/>
+        </record>
+
+        <record id="product_alloy_113" model="product.alloy">
+            <field name="name">N403</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_113'))]"/>
+        </record>
+
+        <record id="product_alloy_114" model="product.alloy">
+            <field name="name">N404</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_114'))]"/>
+        </record>
+
+        <record id="product_alloy_115" model="product.alloy">
+            <field name="name">N540</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_115'))]"/>
+        </record>
+
+        <record id="product_alloy_116" model="product.alloy">
+            <field name="name">N685</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_116'))]"/>
+        </record>
+
+        <record id="product_alloy_117" model="product.alloy">
+            <field name="name">N690</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_117'))]"/>
+        </record>
+
+        <record id="product_alloy_118" model="product.alloy">
+            <field name="name">N695</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_118'))]"/>
+        </record>
+
+        <record id="product_alloy_119" model="product.alloy">
+            <field name="name">N700</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_119'))]"/>
+        </record>
+
+        <record id="product_alloy_120" model="product.alloy">
+            <field name="name">N701</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_120'))]"/>
+        </record>
+
+        <record id="product_alloy_121" model="product.alloy">
+            <field name="name">N709</field>
+            <field name="product_material_id" ref="product_material_14"/>
+        </record>
+        <record id="product_material_14" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_121'))]"/>
+        </record>
+
+        <!--Thép dụng cụ cacbon-->
+        <record id="product_alloy_122" model="product.alloy">
+            <field name="name">S45C</field>
+            <field name="product_material_id" ref="product_material_15"/>
+        </record>
+        <record id="product_material_15" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_122'))]"/>
+        </record>
+
+        <record id="product_alloy_123" model="product.alloy">
+            <field name="name">S50C</field>
+            <field name="product_material_id" ref="product_material_15"/>
+        </record>
+        <record id="product_material_15" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_123'))]"/>
+        </record>
+
+        <record id="product_alloy_124" model="product.alloy">
+            <field name="name">S55C</field>
+            <field name="product_material_id" ref="product_material_15"/>
+        </record>
+        <record id="product_material_15" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_124'))]"/>
+        </record>
+
+
+        <!--Thép chế tạo máy-->
+        <record id="product_alloy_125" model="product.alloy">
+            <field name="name">SS400</field>
+            <field name="product_material_id" ref="product_material_16"/>
+        </record>
+        <record id="product_material_16" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_125'))]"/>
+        </record>
+
+        <record id="product_alloy_126" model="product.alloy">
+            <field name="name">SCM415</field>
+            <field name="product_material_id" ref="product_material_16"/>
+        </record>
+        <record id="product_material_16" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_126'))]"/>
+        </record>
+
+        <record id="product_alloy_127" model="product.alloy">
+            <field name="name">SCM420</field>
+            <field name="product_material_id" ref="product_material_16"/>
+        </record>
+        <record id="product_material_16" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_127'))]"/>
+        </record>
+
+        <record id="product_alloy_128" model="product.alloy">
+            <field name="name">SCM430</field>
+            <field name="product_material_id" ref="product_material_16"/>
+        </record>
+        <record id="product_material_16" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_128'))]"/>
+        </record>
+
+        <record id="product_alloy_129" model="product.alloy">
+            <field name="name">SCM435</field>
+            <field name="product_material_id" ref="product_material_16"/>
+        </record>
+        <record id="product_material_16" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_129'))]"/>
+        </record>
+
+        <record id="product_alloy_130" model="product.alloy">
+            <field name="name">SCM440</field>
+            <field name="product_material_id" ref="product_material_16"/>
+        </record>
+        <record id="product_material_16" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_130'))]"/>
+        </record>
+
+        <record id="product_alloy_131" model="product.alloy">
+            <field name="name">SCM445</field>
+            <field name="product_material_id" ref="product_material_16"/>
+        </record>
+        <record id="product_material_16" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_131'))]"/>
+        </record>
+
+        <record id="product_alloy_132" model="product.alloy">
+            <field name="name">SCM520</field>
+            <field name="product_material_id" ref="product_material_16"/>
+        </record>
+        <record id="product_material_16" model="product.material">
+            <field name="product_alloy_ids" eval="[(4, ref('product_alloy_132'))]"/>
+        </record>
+    </data>
+</odoo>

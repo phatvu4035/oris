@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Material Category -->
+        <record id="product_shape_type_cuon" model="product.shape.type">
+            <field name="name">Roll</field>
+        </record>
+        <record id="product_shape_type_tam" model="product.shape.type">
+            <field name="name">Plate</field>
+        </record>
+        <record id="product_shape_type_thanh" model="product.shape.type">
+            <field name="name">Bar</field>
+        </record>
+        <record id="product_shape_type_bi" model="product.shape.type">
+            <field name="name">Ball</field>
+        </record>
+        <record id="product_shape_type_chu_nhat" model="product.shape.type">
+            <field name="name">Rectangle</field>
+        </record>
+        <record id="product_shape_type_tron" model="product.shape.type">
+            <field name="name">Circle</field>
+        </record>
+        <record id="product_shape_type_vuong" model="product.shape.type">
+            <field name="name">Square</field>
+        </record>
+        <record id="product_shape_type_luc_giac" model="product.shape.type">
+            <field name="name">Hexagon</field>
+        </record>
+        <record id="product_shape_type_luc_giac" model="product.shape.type">
+            <field name="name">Hexagon</field>
+        </record>
+        <record id="product_shape_type_ong" model="product.shape.type">
+            <field name="name">Tubular</field>
+        </record>
+        <record id="product_shape_type_goc_l" model="product.shape.type">
+            <field name="name">L Angle</field>
+        </record>
+    </data>
+</odoo>

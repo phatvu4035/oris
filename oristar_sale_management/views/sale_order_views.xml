@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="view_order_form_inherit_sale_order_custom" model="ir.ui.view">
+		<field name="name">sale.order.oristar.form</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view_order_form"></field>
+		<field name="arch" type="xml">
+			<button name="action_cancel" position="before">
+				<button name="action_calculate_price" type="object" string="Calculate Price"
+					confirm="Are you sure want to calculate price for each order line?"/>
+				<button name="action_calculate_shipping_price" type="object" string="Calculate Shipping Price"
+					confirm="Are you sure want to calculate shipping price for each order line?"/>
+			</button>
+			
+			<field name="payment_term_id" position="attributes">
+				<attribute name="invisible">True</attribute>
+			</field>
+			<field name="partner_shipping_id" position="after">
+				<field name="state_id"/>
+				<field name="district_id"/>
+				<field name="township_id"/>
+				<field name="customer_email"/>
+				<field name="customer_phone_number"/>
+				<field name="oristar_warehouse_id"/>
+			</field>
+			<field name="payment_term_id" position="after">
+				<field name="vnd_usd_currency_rate"/>
+				<field name="vnd_usd_currency_rate_buy"/>
+				<field name="delivery_type"/>
+				<field name="shipping_method_id"/>
+				<field name="delivered_date"/>
+				<field name="shipping_amount"/>
+				<field name="payment_method"/>
+				<field name="customer_type" invisible="1"/>
+				<field name="create_custom_declaration" attrs="{'invisible': [('customer_type', '!=', 'epe')]}"/>
+				<field name="custom_declaration_unit_price" attrs="{'invisible': [('create_custom_declaration', '!=', True)]}"/>
+				<field name="no_of_custom_declaration" attrs="{'invisible': [('create_custom_declaration', '!=', True)]}"/>
+				<field name="so_erp"/>
+				<field name="erp_id"/>
+				<field name="computed_erp_order_status" invisible="1"/>
+				<field name="erp_order_status"/>
+			</field>
+			<field name="amount_tax" position="after">
+				<field name="total_custom_declaration_amount" widget='monetary' options="{'currency_field': 'currency_id'}"
+					attrs="{'invisible': [('create_custom_declaration', '!=', True)]}"/>
+			</field>
+			
+			<xpath
+				expr="//field[@name='order_line']//tree//field[@name='name']"
+				position="after">
+				<field name="notes"/>
+				<field name="product_thickness" />
+				<field name="product_width"/>
+				<field name="product_long"/>
+				
+				<field name="specfic_for_customer" invisible="1"/>
+				<field name="price_method_group" invisible="1"/>
+				
+				<field name="milling_method" attrs="{'readonly': [('price_method_group', '=', 'roll')]}"/>
+				<field name="milling_faces" attrs="{'readonly': [('price_method_group', '=', 'roll')]}"/>
+				<field name="milling_fee"/>
+				<field name="weight_per_roll"/>
+				<!-- <field name="product_weight" attrs="{'readonly': ['|', ('price_method_group', '!=', 'roll'), ('specfic_for_customer', '=', True)]}"/> -->
+				<field name="product_weight" />
+			</xpath>
+			<xpath
+				expr="//field[@name='order_line']//tree//field[@name='price_unit']"
+				position="after">
+				<field name="shipping_amount"/>
+				<field name="price_unit_with_shipping"/>
+			</xpath>
+			<xpath
+				expr="//field[@name='order_line']//form//field[@name='price_unit']"
+				position="before">
+				<field name="product_thickness"/>
+				<field name="product_width"/>
+				<field name="product_long"/>
+				
+				<field name="specfic_for_customer" invisible="1"/>
+				<field name="price_method_group" invisible="1"/>
+				
+				<field name="milling_method" attrs="{'readonly': [('price_method_group', '=', 'roll')]}"/>
+				<field name="milling_faces" attrs="{'readonly': [('price_method_group', '=', 'roll')]}"/>
+				<field name="milling_fee"/>
+				<!-- <field name="product_weight" attrs="{'readonly': ['|', ('price_method_group', '!=', 'roll'), ('specfic_for_customer', '=', True)]}"/> -->
+				<field name="product_weight" />
+				<field name="weight_per_roll"/>
+				<field name="shipping_amount"/>
+				<field name="price_unit_with_shipping"/>
+			</xpath>
+			<xpath
+				expr="//field[@name='order_line']//form//field[@name='analytic_tag_ids']"
+				position="before">
+				<field name="notes"/>
+				<field name="api_link"/>
+			</xpath>
+		</field>
+	</record>
+</odoo>

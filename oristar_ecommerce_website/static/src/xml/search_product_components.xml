@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template">
+    <t t-name="ShapeTypeComponent">
+        <div class="form-group">
+            <label><t t-esc="translate_help('Basic shape')"/></label>
+            <t t-if="props.page == 'shop'">
+                <div class="select">
+                    <select name="shape_type" type="text" class="form-control" t-on-change="selectShapeType">
+                        <option value=""><t t-esc="translate_help('Select basic shape')"/></option>
+                        <t t-foreach="props.shape_types" t-as="shape" t-key="shape.id">
+                            <option t-att-value="shape.id" t-att-selected="props.val == shape.id"><t t-esc="shape.name" /></option>
+                        </t>
+                    </select>
+                </div>
+            </t>
+            <t t-else="">
+                <select name="shape_type" type="text" class="form-control" t-on-change="selectShapeType">
+                    <option value=""><t t-esc="translate_help('Select basic shape')"/></option>
+                    <t t-foreach="props.shape_types" t-as="shape" t-key="shape.id">
+                        <option t-att-value="shape.id" t-att-selected="props.val == shape.id"><t t-esc="shape.name" /></option>
+                    </t>
+                </select>
+            </t>
+        </div>
+    </t>
+    <t t-name="AlloyComponent">
+        <div class="form-group">
+            <label><t t-esc="translate_help('Grades')"/></label>
+            <t t-if="props.page == 'shop'">
+                <div class="select">
+                    <select name="alloy" type="text" class="form-control" t-on-change="selectAlloy">
+                        <option value=""><t t-esc="translate_help('Select grades')"/></option>
+                        <t t-foreach="props.alloys" t-as="alloy" t-key="alloy.id">
+                            <option t-att-value="alloy.id"  t-att-selected="props.val == alloy.id"><t t-esc="alloy.name"/></option>
+                        </t>
+                    </select>
+                </div>
+            </t>
+            <t t-else="">
+                <select name="alloy" type="text" class="form-control" t-on-change="selectAlloy">
+                    <option value=""><t t-esc="translate_help('Select grades')"/></option>
+                    <t t-foreach="props.alloys" t-as="alloy" t-key="alloy.id">
+                        <option t-att-value="alloy.id"  t-att-selected="props.val == alloy.id"><t t-esc="alloy.name"/></option>
+                    </t>
+                </select>
+            </t>
+        </div>
+    </t>
+    <t t-name="DetailShapeComponent">
+        <div class="form-group">
+            <label><t t-esc="translate_help('Detailed shape')"/></label>
+            <t t-if="props.page == 'shop'">
+                <div class="select">
+                    <select name="detail_shape" t-on-change="selectDetailShape" class="form-control">
+                        <option value=""><t t-esc="translate_help('Select detailed shape')"/></option>
+                        <t t-foreach="props.detail_shapes" t-as="shape" t-key="shape.id">
+                            <option t-att-value="shape.id" t-att-selected="props.val == shape.id"><t t-esc="shape.name"/></option>
+                        </t>
+                    </select>
+                </div>
+            </t>
+            <t t-else="">
+                <select name="detail_shape" t-on-change="selectDetailShape" class="form-control">
+                    <option value=""><t t-esc="translate_help('Select detailed shape')"/></option>
+                    <t t-foreach="props.detail_shapes" t-as="shape" t-key="shape.id">
+                        <option t-att-value="shape.id" t-att-selected="props.val == shape.id"><t t-esc="shape.name"/></option>
+                    </t>
+                </select>
+            </t>
+        </div>
+    </t>
+    <t t-name="MaterialComponent">
+        <div class="form-group">
+            <label><t t-esc="translate_help('Material')"/></label>
+            <t t-if="props.page == 'shop'">
+                <div class="select">
+                    <select name="material" type="text" class="form-control" t-on-change="selectMaterial">
+                        <option value=""><t t-esc="translate_help('Select material')"/></option>
+                        <t t-foreach="props.materials" t-as="material" t-key="material.id">
+                            <option t-att-value="material.id" t-att-selected="props.val == material.id"><t t-esc="material.name" /></option>
+                        </t>
+                    </select>
+                </div>
+            </t>
+            <t t-else="">
+                <select name="material" type="text" class="form-control" t-on-change="selectMaterial">
+                    <option value=""><t t-esc="translate_help('Select material')"/></option>
+                    <t t-foreach="props.materials" t-as="material" t-key="material.id">
+                        <option t-att-value="material.id" t-att-selected="props.val == material.id"><t t-esc="material.name" /></option>
+                    </t>
+                </select>
+            </t>
+        </div>
+    </t>
+    <t t-name="MaterialCatComponent">
+        <div class="form-group">
+            <label><t t-esc="translate_help('Material category')"/></label>
+            <t t-if="props.page == 'shop'">
+                <div class="select">
+                    <select name="material_category" type="text" class="form-control" t-on-change="selectMaterialCategory">
+                        <option value=""><t t-esc="translate_help('Select material category')"/></option>
+                        <t t-foreach="props.material_categories" t-as="material" t-key="material.id">
+                            <option t-att-value="material.id" t-att-selected="material.id == props.val"><t t-esc="material.name" /></option>
+                        </t>
+                    </select>
+                </div>
+            </t>
+            <t t-else="">
+                <select name="material_category" type="text" class="form-control" t-on-change="selectMaterialCategory">
+                    <option value=""><t t-esc="translate_help('Select material category')"/></option>
+                    <t t-foreach="props.material_categories" t-as="material" t-key="material.id">
+                        <option t-att-value="material.id" t-att-selected="material.id == props.val"><t t-esc="material.name" /></option>
+                    </t>
+                </select>
+            </t>
+        </div>
+    </t>
+    <t t-name="OriginComponent">
+        <div class="form-group">
+            <label><t t-esc="translate_help('Origin')"/></label>
+            <t t-if="props.page == 'shop'">
+                <div class="select">
+                    <select name="origin" type="text" class="form-control" t-on-change="selectOrigin">
+                        <option value=""><t t-esc="translate_help('Select origin')"/></option>
+                        <t t-foreach="props.origins" t-as="origin" t-key="origin.id">
+                            <option t-att-value="origin.id" t-att-selected="props.val == origin.id"><t t-esc="origin.name" /></option>
+                        </t>
+                    </select>
+                </div>
+            </t>
+            <t t-else="">
+                <select name="origin" type="text" class="form-control" t-on-change="selectOrigin">
+                    <option value=""><t t-esc="translate_help('Select origin')"/></option>
+                    <t t-foreach="props.origins" t-as="origin" t-key="origin.id">
+                        <option t-att-value="origin.id" t-att-selected="props.val == origin.id"><t t-esc="origin.name" /></option>
+                    </t>
+                </select>
+            </t>
+        </div>
+    </t>
+    <t t-name="StiffnessComponent">
+        <div class="form-group">
+            <label><t t-esc="translate_help('Temper')"/></label>
+            <t t-if="props.page == 'shop'">
+                <div class="select">
+                    <select name="stiffness" type="text" class="form-control" t-on-change="selectStiffness">
+                        <option value=""><t t-esc="translate_help('Select temper')"/></option>
+                        <t t-foreach="props.stiffness" t-as="v" t-key="v.id">
+                            <option t-att-value="v.id" t-att-selected="props.val == v.id"><t t-esc="v.name"/></option>
+                        </t>
+                    </select>
+                </div>
+            </t>
+            <t t-else="">
+                <select name="stiffness" type="text" class="form-control" t-on-change="selectStiffness">
+                    <option value=""><t t-esc="translate_help('Select temper')"/></option>
+                    <t t-foreach="props.stiffness" t-as="v" t-key="v.id">
+                        <option t-att-value="v.id" t-att-selected="props.val == v.id"><t t-esc="v.name"/></option>
+                    </t>
+                </select>
+            </t>
+        </div>
+    </t>
+    <t t-name="ProductSearchTemp0">
+        <form id="auto-product-filter" action="/shop" method="GET">
+            <MaterialCategory material_categories="search_product.material_categories" t-on-select-material-category.stop="_onSelectMaterialCategory2" val="search_product.search_value.material_category" page="'shop'"/>
+            <Material materials="search_product.materials" t-on-select-material.stop="_onSelectMaterial2" val="search_product.search_value.material" page="'shop'"/>
+            <ShapeType shape_types="search_product.shape_types" t-on-select-shape-type.stop="_onSelectShapeType2" val="search_product.search_value.shape_type" page="'shop'"/>
+            <Alloy alloys="search_product.alloys" t-on-select-alloy.stop="_onSelectAlloy2" val="search_product.search_value.alloy" page="'shop'"/>
+            <Stiffness stiffness="search_product.stiffness" t-on-select-stiffness.stop="_onSelectStiffness2" val="search_product.search_value.stiffness" page="'shop'" />
+            <DetailShape detail_shapes="search_product.detail_shapes" t-on-select-detail-shape.stop="_onSelectDetailShape2" val="search_product.search_value.detail_shape" page="'shop'"/>
+            <Origin origins="search_product.origins" t-on-select-origin.stop="_onSelectOrigin2" val="search_product.search_value.origin" page="'shop'"/>
+        </form>
+    </t>
+    <t t-name="ProductSearchTemp1">
+        <form action="/shop" method="GET">
+            <div class="search">
+                <input name="search" type="text" t-att-placeholder="translate_help('Enter product name')" id="search-product-input"/>
+                <button t-on-click="onSearch">
+                    <img src="/oristar_ecommerce_website/static/src/images/icons/search.png" alt="" />
+                </button>
+                <img src="oristar_ecommerce_website/static/src/images/icons/loc.png" alt="" class="locs" />
+            </div>
+            <div class="loc">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <MaterialCategory material_categories="search_product.material_categories" t-on-select-material-category.stop="_onSelectMaterialCategory" val="search_product.search_value.material_category"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <Material materials="search_product.materials" t-on-select-material.stop="_onSelectMaterial" val="search_product.search_value.material"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <ShapeType shape_types="search_product.shape_types" t-on-select-shape-type.stop="_onSelectShapeType" val="search_product.search_value.shape_type"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <Alloy alloys="search_product.alloys" t-on-select-alloy.stop="_onSelectAlloy" val="search_product.search_value.alloy"/>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <Stiffness stiffness="search_product.stiffness" t-on-select-stiffness.stop="_onSelectStiffness" val="search_product.search_value.stiffness" />
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <Origin origins="search_product.origins" val="search_product.search_value.origin" />
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="search-btn"><t t-esc="translate_help('Search')"/></button>
+                </div>
+            </div>
+        </form>
+    </t>
+    <t t-name="OrSaleOrderForm">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">
+                <img
+                        src="/oristar_ecommerce_website/static/src/images/icons/x.png" alt="" />
+            </button>
+            <div class="top">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <h3>
+                            <t t-esc="translate_help('Order Code')"/>: <t t-esc="props.order_data.website_sale_order.name"/>
+                        </h3>
+                        <span><t t-esc="props.order_data.website_sale_order.date_order"/></span>
+                        <p><t t-esc="translate_help('Receiver')"/> :
+                            <span><t t-esc="props.order_data.partner_shipping.name"/></span>
+                        </p>
+                        <p><t t-esc="translate_help('Phone')"/> :
+                            <span><t t-esc="props.order_data.partner_shipping.phone"/></span>
+                        </p>
+                        <p><t t-esc="translate_help('Address')"/> :
+                            <span><t t-esc="props.order_data.partner_shipping.full_address"/></span>
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <span class="mr30 float-right"></span>
+                        <t t-if="props.order_data.website_sale_order.state != 'cancel' &amp;&amp; props.order_data.website_sale_order.state != 'done'">
+                            <a href="/shop/order/cancel" class="cancel-order-btn ml-20 btn-danger-2 float-right ml20"
+                               t-att-data-order-id="props.order_data.website_sale_order.id">
+                                <t t-esc="translate_help('Cancel Order')"/></a>
+                        </t>
+                        <a href="/my/orders/clone" class="clone-order-btn btn-primary-2 float-right"
+                               t-att-data-order-id="props.order_data.website_sale_order.id">
+                                <t t-esc="translate_help('Repurchase')"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabless" style="overflow-x:auto;">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th><t t-esc="translate_help('Product')"/></th>
+                            <th><t t-esc="translate_help('Quantity')"/></th>
+                            <th style="width: 100px;"><t t-esc="translate_help('Notes')"/></th>
+                            <th><t t-esc="translate_help('Weight (kg)')"/></th>
+                            <th><t t-esc="translate_help('Unit price / kg')"/>
+                                <br />
+                                <t t-esc="translate_help('(Shipping is not included)')"/>
+                            </th>
+                            <th><t t-esc="translate_help('Unit price / kg')"/>
+                                <br />
+                                <t t-esc="translate_help('(Shipping included)')"/>
+                            </th>
+                            <th><t t-esc="translate_help('Total')"/></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="props.order_data.order_lines" t-as="line">
+                            <tr>
+                                <td>
+                                    <div class="informations">
+                                        <h6><t t-esc="line.name_short"/></h6>
+                                        <p><t t-esc="line.product_alloy"/> - <t t-esc="line.product_stiffness"/> - <t t-esc="line.product_stiffness"/></p>
+                                        <p>
+                                        <t t-esc="line.product_thickness"/>
+                                        <t t-if="line.product_long">
+                                        x <t t-esc="line.product_long"/>
+                                        </t>
+                                        <t t-if="line.product_width">
+                                        x <t t-esc="line.product_width"/>
+                                        </t>
+                                        </p>
+                                        <p><t t-esc="translate_help('Basic shape', 1)"/> : <t t-esc="line.basic_shape || ''"/></p>
+                                        <t t-if="line.milling_faces">
+                                            <p><t t-esc="translate_help('Milling')"/> : <t t-esc="line.milling_faces"/></p>
+                                        </t>
+                                        <p><t t-esc="translate_help('Origin')"/> : <t t-esc="line.product_origin || ''"/></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <t t-esc="line.product_uom_qty"/>
+                                </td>
+                                <td>
+                                    <t t-esc="line.notes"/>
+                                </td>
+                                <td>
+                                    <span><t t-esc="formatCurrency(line.product_weight.toFixed(2))"/> kg</span>
+                                </td>
+                                <td>
+                                    <span><t t-esc="formatCurrency(line.price_unit.toFixed(2))"/> VNĐ</span>
+                                </td>
+                                <td>
+                                    <span><t t-esc="formatCurrency(line.price_unit_with_shipping.toFixed(2))"/> VNĐ</span>
+                                </td>
+                                <td>
+                                    <span class="do"><t t-esc="formatCurrency(line.price_subtotal.toFixed(2))"/> VNĐ</span>
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart">
+                <div class="thanh-toan">
+                    <div class="tt-thanh-toan">
+                        <div class="d-flex align-items-center">
+                            <p><t t-esc="translate_help('Order date')"/></p>
+                            <p><t t-esc="props.order_data.website_sale_order.date_order"/></p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p><t t-esc="translate_help('Estimated delivery time')"/></p>
+                            <p>Trước 25/02/2022</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p><t t-esc="translate_help('Amount untaxed')"/></p>
+                            <p class="do">
+                                <t t-esc="formatCurrency(props.order_data.website_sale_order.amount_untaxed.toFixed(2))"/> VNĐ
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p>VAT(10%)</p>
+                            <p class="do">
+                             <t t-esc="formatCurrency(props.order_data.website_sale_order.amount_tax.toFixed(2))"/> VNĐ
+                             </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <h4><t t-esc="translate_help('Amount total')"/> :</h4>
+                            <p class="dos">
+                            <t t-esc="formatCurrency(props.order_data.website_sale_order.amount_total.toFixed(2))"/> VNĐ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

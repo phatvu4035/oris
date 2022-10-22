@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="product_material_category_tree_view" model="ir.ui.view">
+		<field name="name">product.material.category.tree</field>
+		<field name="model">product.material.category</field>
+		<field name="arch" type="xml">
+			<tree string="Product Material Categories">
+				<field name="name"/>
+				<field name="description"/>
+			</tree>
+		</field>
+	</record>
+	
+	<record id="product_material_category_form_view" model="ir.ui.view">
+		<field name="name">product.material.category.form</field>
+		<field name="model">product.material.category</field>
+		<field name="arch" type="xml">
+			<form string="Product Material Category">
+				<header></header>
+				<sheet>
+					<div class="oe_title">
+                        <label class="oe_edit_only" for="name" string="Name"/>
+                        <h1><field name="name" placeholder="Material Category Name"/></h1>
+                    </div>
+                    <group name="detail">
+                    	<group name="detail_left">
+                    		<field name="description"></field>
+                    	</group>
+                    	<group name="detail_right">
+                    		<field name="image_1920" widget="image"/>
+                    	</group>
+                    </group>
+				</sheet>
+				<div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+			</form>
+		</field>
+	</record>
+	
+	<record id="product_material_category_action" model="ir.actions.act_window">
+        <field name="name">Product Material Categories</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.material.category</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

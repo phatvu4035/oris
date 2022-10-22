@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<menuitem id="menu_product_material_category" name="Product Material Categories"
+        action="oristar_product.product_material_category_action"
+        parent="website_sale.menu_product_settings" sequence="10"/>
+    <menuitem id="menu_product_material" name="Product Materials"
+        action="oristar_product.product_material_action"
+        parent="website_sale.menu_product_settings" sequence="11"/>
+    <menuitem id="menu_product_basic_shape" name="Product Basic Shape"
+        action="oristar_product.product_basic_shape_action"
+        parent="website_sale.menu_product_settings" sequence="12"/>
+    <menuitem id="menu_product_detailed_shape" name="Product Detailed Shape"
+        action="oristar_product.product_detailed_shape_action"
+        parent="website_sale.menu_product_settings" sequence="13"/>
+    <menuitem id="menu_product_alloy" name="Product Grades"
+        action="oristar_product.product_alloy_action"
+        parent="website_sale.menu_product_settings" sequence="14"/>
+    <menuitem id="menu_product_stiffness" name="Product Temper"
+        action="oristar_product.product_stiffness_action"
+        parent="website_sale.menu_product_settings" sequence="15"/>
+    <menuitem id="menu_product_shape_type" name="Product Shape Type"
+        action="oristar_product.product_shape_type_action"
+        parent="website_sale.menu_product_settings" sequence="16"/>
+    
+    <menuitem id="menu_price_settings" name="Pricing" sequence="80"
+        parent="website.menu_website_global_configuration"/>
+    <menuitem id="menu_lme_market" name="LME Markets"
+        action="oristar_pricing.lme_market_action"
+        parent="menu_price_settings" sequence="0"/>
+    <menuitem id="menu_lme_price" name="LME Prices"
+        action="oristar_pricing.lme_price_action"
+        parent="menu_price_settings" sequence="1"/>
+    <menuitem id="menu_lme_spot_price" name="LME Spot Prices"
+        action="oristar_pricing.lme_spot_price_action"
+        parent="menu_price_settings" sequence="2"/>
+    <menuitem id="menu_price_file" name="Price Files"
+        action="oristar_pricing.price_file_action"
+        parent="menu_price_settings" sequence="3"/>
+    <menuitem id="menu_profit_margin_range" name="Profit Margin Ranges"
+        action="oristar_pricing.profit_margin_range_action"
+        parent="menu_price_settings" sequence="4"/>
+        
+    <menuitem id="menu_customer_settings" name="Customers" sequence="81"
+        parent="website.menu_website_global_configuration"/>
+    <menuitem id="menu_customer_balance" name="Customer Credit Limit"
+        action="oristar_sale_management.customer_credit_limit_action"
+        parent="menu_customer_settings" sequence="0"/>
+        
+    <menuitem id="menu_address_settings" name="Address" sequence="82"
+        parent="website.menu_website_global_configuration"/>
+    <menuitem id="menu_res_country_state" name="Country State"
+        action="oristar_sale_management.res_country_state_action"
+        parent="menu_address_settings" sequence="0"/>
+    <menuitem id="menu_res_district" name="District"
+        action="oristar_sale_management.res_district_action"
+        parent="menu_address_settings" sequence="1"/>
+    <menuitem id="menu_res_township" name="Township"
+        action="oristar_sale_management.res_township_action"
+        parent="menu_address_settings" sequence="2"/>
+        
+    <menuitem id="menu_warehouse_settings" name="Warehouse" sequence="83"
+        parent="website.menu_website_global_configuration"/>
+    <menuitem id="menu_oristar_warehouse" name="Oristar Warehouse"
+        action="oristar_sale_management.oristar_warehouse_action"
+        parent="menu_warehouse_settings" sequence="0"/>
+        
+    <menuitem id="menu_shipping_settings" name="Shipping" sequence="84"
+        parent="website.menu_website_global_configuration"/>
+    <menuitem id="menu_shipping_method" name="Shipping Method"
+        action="oristar_sale_management.shipping_method_action"
+        parent="menu_shipping_settings" sequence="0"/>
+    <menuitem id="menu_viettelpost_province" name="Viettel Post Province"
+        action="oristar_sale_management.viettelpost_province_action"
+        parent="menu_shipping_settings" sequence="1"/>
+    <menuitem id="menu_viettelpost_district" name="Viettel Post District"
+        action="oristar_sale_management.viettelpost_district_action"
+        parent="menu_shipping_settings" sequence="2"/>  
+      
+   	<menuitem id="menu_catalog_inventory_management" name="Inventory Management"
+        action="oristar_sale_management.inventory_management_action"
+        parent="website_sale.menu_catalog" sequence="10"/>
+    <menuitem id="menu_catalog_erp_order_status" name="ERP Order Processing Status"
+        action="oristar_sale_management.order_processing_status_action"
+        parent="website_sale.menu_orders" sequence="10"/>
+</odoo>

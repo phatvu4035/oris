@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="product_basic_shape_tree_view" model="ir.ui.view">
+		<field name="name">product.basic.shape.tree</field>
+		<field name="model">product.basic.shape</field>
+		<field name="arch" type="xml">
+			<tree string="Product Basic Shapes">
+				<field name="name"/>
+				<field name="description"/>
+				<field name="product_shape_type_id"/>
+				<field name="product_detailed_shape_ids" widget="many2many_tags"/>
+				<field name="has_size1"></field>
+           		<field name="has_size2"></field>
+           		<field name="has_size3"></field>
+           		<field name="has_weight"></field>
+           		<field name="is_compact"></field>
+           		<field name="machinable_size1"></field>
+           		<field name="machinable_size2"></field>
+           		<field name="machinable_size3"></field>
+			</tree>
+		</field>
+	</record>
+	
+	<record id="product_basic_shape_form_view" model="ir.ui.view">
+		<field name="name">product.basic.shape.form</field>
+		<field name="model">product.basic.shape</field>
+		<field name="arch" type="xml">
+			<form string="Product Basic Shape">
+				<header></header>
+				<sheet>
+					<div class="oe_title">
+                        <label class="oe_edit_only" for="name" string="Name"/>
+                        <h1><field name="name" placeholder="Basic Shape Name"/></h1>
+                    </div>
+                    <group name="detail">
+                    	<group name="detail_left">
+                    		<field name="product_shape_type_id"/>
+                    		<field name="product_detailed_shape_ids" widget="many2many_tags"/>
+                    		<field name="description"></field>
+                    		<field name="has_weight"></field>
+                    		<field name="is_compact"></field>
+                    	</group>
+                    	<group name="detail_right">
+                    		<field name="has_size1"></field>
+                    		<field name="has_size2"></field>
+                    		<field name="has_size3"></field>
+                    		<field name="machinable_size1"></field>
+                    		<field name="machinable_size2"></field>
+                    		<field name="machinable_size3"></field>
+                    	</group>
+                    </group>
+				</sheet>
+				<div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+			</form>
+		</field>
+	</record>
+	
+	<record id="product_basic_shape_action" model="ir.actions.act_window">
+        <field name="name">Product Basic Shapes</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.basic.shape</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

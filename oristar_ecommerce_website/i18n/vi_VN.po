@@ -1,0 +1,3340 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oristar_ecommerce_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-08 15:32+0000\n"
+"PO-Revision-Date: 2022-10-08 15:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/website_sale.js:0
+#, python-format
+msgid ""
+"\n"
+"Purpose: \n"
+msgstr ""
+"\n"
+"Mục đích: \n"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "&amp;nbsp;"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "(mm)"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "(mm,Kg)"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_contact_form
+msgid "+0284 969 468"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "- Account Number:"
+msgstr "- Tài khoản số"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "- Full size goods:"
+msgstr "- Hàng nguyên khối:"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid ""
+"- Oristar Corp guarantees the quality and quantity of the goods within 30 days from the date of\n"
+"                    receipt with the specific conditions in the economic contract or Oristar Corp's principle contract."
+msgstr ""
+"- Oristar Corp bảo hành chất lượng và số lượng của hàng hóa trong vòng 30 ngày kể từ ngày\n"
+"                    nhận hàng kèm theo các điều kiện cụ thể trong hợp đồng kinh tế hoặc hợp đồng nguyên tắc của Oristar Corp."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "- Payment:"
+msgstr "- Thanh toán:"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "- Processed goods:"
+msgstr "- Hàng gia công:"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "- Shipping address:"
+msgstr "- Địa chỉ giao hàng:"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "- Shipping:"
+msgstr "- Giao hàng:"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#, python-format
+msgid "110002873105"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#, python-format
+msgid "119002873119"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_contact_form
+msgid "120 Dương Đình Nghệ, Duy Tân, Hà Nội"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "2 surface"
+msgstr "2 mặt"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "2.Quotation valid:"
+msgstr "2.Hiệu lực báo giá:"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "3.Payment"
+msgstr "3.Thanh toán"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "4 surface"
+msgstr "4 mặt"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "4.Shipping"
+msgstr "4.Giao hàng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "5.Quality Standard"
+msgstr "5. Tiêu chuẩn chất lượng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "6 surface"
+msgstr "6 mặt"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "6. Time to complain:"
+msgstr "6. Thời gian khiếu nại:"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "7. Notes"
+msgstr "7. Ghi chú khác"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid ""
+"9th floor Detech Tower No. 8 Ton That Thuyet street, My Dinh 2 ward, Nam Tu "
+"Liem district, Hanoi"
+msgstr ""
+"Tầng 9 Detech Tower số 8 đường Tôn Thất Thuyết, phường Mỹ Đình 2, Quận Nam Từ"
+"Liêm, Hà Nội"
+
+#. module: oristar_ecommerce_website
+#: model:mail.template,body_html:oristar_ecommerce_website.new_order_notification
+msgid ""
+"<div>\n"
+"                    <p>The order ${object.name} from ${object.partner_id.name} has been created.</p>\n"
+"                    <p>Please check that in Order. Thank you!</p>\n"
+"                </div>\n"
+"            "
+msgstr ""
+"<div>\n"
+"                    <p>Đơn hàng ${object.name} từ ${object.partner_id.name} đã được tạo.</p>\n"
+"                    <p>Vui lòng kiểm tra trong Đơn hàng. Xin cám ơn!</p>\n"
+"                </div>\n"
+"            "
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "<small>The above price does not include the cost of annealing</small>"
+msgstr "<small>Giá trên chưa bao gồm chi phí nhiệt luyện</small>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "<span class=\"font-weight-bold float-right mr-50\">Monetary: VND</span>"
+msgstr "<span class=\"font-weight-bold float-right mr-50\">ĐVTT:VND</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "<span class=\"font-weight-bold\"> month </span>"
+msgstr "<span class=\"font-weight-bold\"> tháng </span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "<span class=\"font-weight-bold\"> year </span>"
+msgstr "<span class=\"font-weight-bold\"> năm </span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "<span class=\"font-weight-bold\">1. Detail</span>"
+msgstr "<span class=\"font-weight-bold\">1. Chi tiết</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid ""
+"<span class=\"font-weight-bold\">Hà Nội</span>,\n"
+"                            <span class=\"font-weight-bold\"> date </span>"
+msgstr ""
+"<span class=\"font-weight-bold\">Hà Nội</span>,\n"
+"                            <span class=\"font-weight-bold\"> ngày </span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "<span style=\"opacity: 0.5; font-size: 13px\">Oristar Warehouse</span>"
+msgstr "<span style=\"opacity: 0.5; font-size: 13px\">Kho Oristar</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "<span>Add to Cart</span>"
+msgstr "<span>Thêm vào giỏ hàng</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "<span>KT1&amp;KT2&amp;KT3</span>"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "<span>KT1&amp;KT2</span>"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "<span>KT1&amp;KT3</span>"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "<span>KT1</span>"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "<span>KT2&amp;KT3</span>"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "<span>KT2</span>"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "<span>KT3</span>"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "<span>Receive at Customer Warehouse</span>"
+msgstr "<span>Nhận hàng tại kho khách hàng</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "<span>Receive at Manufactory</span>"
+msgstr "<span>Nhận hàng tại nhà máy</span>"
+
+#. module: oristar_ecommerce_website
+#: model:mail.template,body_html:oristar_ecommerce_website.mail_template_user_signup_account_approved
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\"><tr><td align=\"center\">\n"
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"<tbody>\n"
+"    <!-- HEADER -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"middle\">\n"
+"                    <span style=\"font-size: 10px;\">Your Account</span><br/>\n"
+"                    <span style=\"font-size: 20px; font-weight: bold;\">\n"
+"                        ${object.name}\n"
+"                    </span>\n"
+"                </td><td valign=\"middle\" align=\"right\">\n"
+"                    <img src=\"/logo.png?company=${object.company_id.id}\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"${object.company_id.name}\"/>\n"
+"                </td></tr>\n"
+"                <tr><td colspan=\"2\" style=\"text-align:center;\">\n"
+"                  <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"    <!-- CONTENT -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                    <div>\n"
+"                        Dear ${object.name},<br/><br/>\n"
+"                        Your account has been approved!<br/>\n"
+"                        Your login is <strong>${object.email}</strong><br/>\n"
+"                        To gain access to your account, you can use the following link:\n"
+"                        <div style=\"margin: 16px 0px 16px 0px;\">\n"
+"                            <a href=\"/web/login?auth_login=${object.email}\" style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">\n"
+"                                Go to My Account\n"
+"                            </a>\n"
+"                        </div>\n"
+"                        Thanks,<br/>\n"
+"                        % if user.signature:\n"
+"                            <br/>\n"
+"                            ${user.signature | safe}\n"
+"                        % endif\n"
+"                    </div>\n"
+"                </td></tr>\n"
+"                <tr><td style=\"text-align:center;\">\n"
+"                  <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"    <!-- FOOTER -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"middle\" align=\"left\">\n"
+"                    ${object.company_id.name}\n"
+"                </td></tr>\n"
+"                <tr><td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                    ${object.company_id.phone}\n"
+"                    % if object.company_id.email\n"
+"                        | <a href=\"'mailto:%s' % ${object.company_id.email}\" style=\"text-decoration:none; color: #454748;\">${object.company_id.email}</a>\n"
+"                    % endif\n"
+"                    % if object.company_id.website\n"
+"                        | <a href=\"'%s' % ${object.company_id.website}\" style=\"text-decoration:none; color: #454748;\">\n"
+"                        ${object.company_id.website}\n"
+"                    </a>\n"
+"                    % endif\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"</tbody>\n"
+"</table>\n"
+"</td></tr>\n"
+"<!-- POWERED BY -->\n"
+"<tr><td align=\"center\" style=\"min-width: 590px;\">\n"
+"    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:separate;\">\n"
+"      <tr><td style=\"text-align: center; font-size: 13px;\">\n"
+"        Powered by <a target=\"_blank\" href=\"https://www.odoo.com?utm_source=db&amp;utm_medium=auth\" style=\"color: #875A7B;\">Odoo</a>\n"
+"      </td></tr>\n"
+"    </table>\n"
+"</td></tr>\n"
+"</table>"
+msgstr ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\"><tr><td align=\"center\">\n"
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"<tbody>\n"
+"    <!-- HEADER -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"middle\">\n"
+"                    <span style=\"font-size: 10px;\">Thông tin tài khoản</span><br/>\n"
+"                    <span style=\"font-size: 20px; font-weight: bold;\">\n"
+"                        ${object.name}\n"
+"                    </span>\n"
+"                </td><td valign=\"middle\" align=\"right\">\n"
+"                    <img src=\"/logo.png?company=${object.company_id.id}\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"${object.company_id.name}\"/>\n"
+"                </td></tr>\n"
+"                <tr><td colspan=\"2\" style=\"text-align:center;\">\n"
+"                  <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"    <!-- CONTENT -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                    <div>\n"
+"                        Xin chào ${object.name},<br/><br/>\n"
+"                        Tài khoản của bạn đã được phê duyệt!<br/>\n"
+"                        Tài khoản đăng nhập của bạn là <strong>${object.email}</strong><br/>\n"
+"                        Để truy cập bằng tài khoản của bạn, bạn có thể sử dụng đường dẫn liên kết sau:\n"
+"                        <div style=\"margin: 16px 0px 16px 0px;\">\n"
+"                            <a href=\"/web/login?auth_login=${object.email}\" style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">\n"
+"                                Đến tài khoản của tôi\n"
+"                            </a>\n"
+"                        </div>\n"
+"                        Xin cảm ơn,<br/>\n"
+"                        % if user.signature:\n"
+"                            <br/>\n"
+"                            ${user.signature | safe}\n"
+"                        % endif\n"
+"                    </div>\n"
+"                </td></tr>\n"
+"                <tr><td style=\"text-align:center;\">\n"
+"                  <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"    <!-- FOOTER -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"middle\" align=\"left\">\n"
+"                    ${object.company_id.name}\n"
+"                </td></tr>\n"
+"                <tr><td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                    ${object.company_id.phone}\n"
+"                    % if object.company_id.email\n"
+"                        | <a href=\"'mailto:%s' % ${object.company_id.email}\" style=\"text-decoration:none; color: #454748;\">${object.company_id.email}</a>\n"
+"                    % endif\n"
+"                    % if object.company_id.website\n"
+"                        | <a href=\"'%s' % ${object.company_id.website}\" style=\"text-decoration:none; color: #454748;\">\n"
+"                        ${object.company_id.website}\n"
+"                    </a>\n"
+"                    % endif\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"</tbody>\n"
+"</table>\n"
+"</td></tr>\n"
+"<!-- POWERED BY -->\n"
+"<tr><td align=\"center\" style=\"min-width: 590px;\">\n"
+"    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:separate;\">\n"
+"      <tr><td style=\"text-align: center; font-size: 13px;\">\n"
+"        Powered by <a target=\"_blank\" href=\"https://www.odoo.com?utm_source=db&amp;utm_medium=auth\" style=\"color: #875A7B;\">Odoo</a>\n"
+"      </td></tr>\n"
+"    </table>\n"
+"</td></tr>\n"
+"</table>"
+
+#. module: oristar_ecommerce_website
+#: model:mail.template,body_html:oristar_ecommerce_website.mail_template_user_signup_account_created_wait_for_approve
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\"><tr><td align=\"center\">\n"
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"<tbody>\n"
+"    <!-- HEADER -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"middle\">\n"
+"                    <span style=\"font-size: 10px;\">Your Account</span><br/>\n"
+"                    <span style=\"font-size: 20px; font-weight: bold;\">\n"
+"                        ${object.name}\n"
+"                    </span>\n"
+"                </td><td valign=\"middle\" align=\"right\">\n"
+"                    <img src=\"/logo.png?company=${object.company_id.id}\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"${object.company_id.name}\"/>\n"
+"                </td></tr>\n"
+"                <tr><td colspan=\"2\" style=\"text-align:center;\">\n"
+"                  <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"    <!-- CONTENT -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                    <div>\n"
+"                        Dear ${object.name},<br/><br/>\n"
+"                        Your account has been successfully created!<br/>\n"
+"                        Your login is <strong>${object.email}</strong><br/>\n"
+"                        We are checking and verifying your account before use can access to our system.\n"
+"                        Approval result will be sent to you soon. \n"
+"                        Please wait us a moment!\n"
+"                        \n"
+"                        Thanks,<br/>\n"
+"                        % if user.signature:\n"
+"                            <br/>\n"
+"                            ${user.signature | safe}\n"
+"                        % endif\n"
+"                    </div>\n"
+"                </td></tr>\n"
+"                <tr><td style=\"text-align:center;\">\n"
+"                  <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"    <!-- FOOTER -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"middle\" align=\"left\">\n"
+"                    ${object.company_id.name}\n"
+"                </td></tr>\n"
+"                <tr><td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                    ${object.company_id.phone}\n"
+"                    % if object.company_id.email\n"
+"                        | <a href=\"'mailto:%s' % ${object.company_id.email}\" style=\"text-decoration:none; color: #454748;\">${object.company_id.email}</a>\n"
+"                    % endif\n"
+"                    % if object.company_id.website\n"
+"                        | <a href=\"'%s' % ${object.company_id.website}\" style=\"text-decoration:none; color: #454748;\">\n"
+"                        ${object.company_id.website}\n"
+"                    </a>\n"
+"                    % endif\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"</tbody>\n"
+"</table>\n"
+"</td></tr>\n"
+"<!-- POWERED BY -->\n"
+"<tr><td align=\"center\" style=\"min-width: 590px;\">\n"
+"    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:separate;\">\n"
+"      <tr><td style=\"text-align: center; font-size: 13px;\">\n"
+"        Powered by <a target=\"_blank\" href=\"https://www.odoo.com?utm_source=db&amp;utm_medium=auth\" style=\"color: #875A7B;\">Odoo</a>\n"
+"      </td></tr>\n"
+"    </table>\n"
+"</td></tr>\n"
+"</table>"
+msgstr ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\"><tr><td align=\"center\">\n"
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"<tbody>\n"
+"    <!-- HEADER -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"middle\">\n"
+"                    <span style=\"font-size: 10px;\">Thông tin tài khoản</span><br/>\n"
+"                    <span style=\"font-size: 20px; font-weight: bold;\">\n"
+"                        ${object.name}\n"
+"                    </span>\n"
+"                </td><td valign=\"middle\" align=\"right\">\n"
+"                    <img src=\"/logo.png?company=${object.company_id.id}\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"${object.company_id.name}\"/>\n"
+"                </td></tr>\n"
+"                <tr><td colspan=\"2\" style=\"text-align:center;\">\n"
+"                  <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"    <!-- CONTENT -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                    <div>\n"
+"                        Xin chào ${object.name},<br/><br/>\n"
+"                        Tài khoản của bạn đã được tạo thành công!<br/>\n"
+"                        Tài khoản đăng nhập của bạn là <strong>${object.email}</strong><br/>\n"
+"                        Chúng tôi đang thực hiện kiểm tra lại thông tin tài khoàn của bạn trước khi bạn có thể sử dụng nó.\n"
+"                        Thông tin phê duyệt sẽ được gửi đến bạn sớm nhất có thể. \n"
+"                        Xin vui lòng đợi trong giây lát!\n"
+"                        \n"
+"                        Xin cảm ơn,<br/>\n"
+"                        % if user.signature:\n"
+"                            <br/>\n"
+"                            ${user.signature | safe}\n"
+"                        % endif\n"
+"                    </div>\n"
+"                </td></tr>\n"
+"                <tr><td style=\"text-align:center;\">\n"
+"                  <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"    <!-- FOOTER -->\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tr><td valign=\"middle\" align=\"left\">\n"
+"                    ${object.company_id.name}\n"
+"                </td></tr>\n"
+"                <tr><td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                    ${object.company_id.phone}\n"
+"                    % if object.company_id.email\n"
+"                        | <a href=\"'mailto:%s' % ${object.company_id.email}\" style=\"text-decoration:none; color: #454748;\">${object.company_id.email}</a>\n"
+"                    % endif\n"
+"                    % if object.company_id.website\n"
+"                        | <a href=\"'%s' % ${object.company_id.website}\" style=\"text-decoration:none; color: #454748;\">\n"
+"                        ${object.company_id.website}\n"
+"                    </a>\n"
+"                    % endif\n"
+"                </td></tr>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"</tbody>\n"
+"</table>\n"
+"</td></tr>\n"
+"<!-- POWERED BY -->\n"
+"<tr><td align=\"center\" style=\"min-width: 590px;\">\n"
+"    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:separate;\">\n"
+"      <tr><td style=\"text-align: center; font-size: 13px;\">\n"
+"        Powered by <a target=\"_blank\" href=\"https://www.odoo.com?utm_source=db&amp;utm_medium=auth\" style=\"color: #875A7B;\">Odoo</a>\n"
+"      </td></tr>\n"
+"    </table>\n"
+"</td></tr>\n"
+"</table>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "================= ORDER &amp; ORDER CONFIRMATION ================="
+msgstr "================= ĐẶT HÀNG &amp; XÁC NHẬN ĐẶT HÀNG ================="
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_login_form
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.select_account_type
+msgid "@2021 Oristar. All Rights Reserved"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/cart_components.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart_components.js:0
+#, python-format
+msgid "ADVANCE"
+msgstr "TRẢ TRƯỚC"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "About Oristar"
+msgstr "GIỚI THIỆU VỀ ORISTAR"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Add"
+msgstr "Thêm mới"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Add delivery address"
+msgstr "Thêm địa chỉ giao hàng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Add invoice address"
+msgstr "Thêm địa chỉ xuất hóa đơn"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+msgid "Add new address"
+msgstr "Thêm địa chỉ mới"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/product.js:0
+#, python-format
+msgid "Add to Cart"
+msgstr "Thêm vào giỏ hàng"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_address_settings
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Address"
+msgstr "Địa chỉ"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_home_sale
+msgid "Address Book"
+msgstr "Sổ địa chỉ"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#, python-format
+msgid "Address Type"
+msgstr "Loại địa chỉ"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Address book"
+msgstr "Sổ địa chỉ"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#, python-format
+msgid "Address has been deleted."
+msgstr "Địa chỉ đã được xóa."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Address:"
+msgstr "Địa chỉ :"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_sign_up
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.select_account_type
+msgid "Already have an account? Log in"
+msgstr "Đã có tài khoản? Đăng nhập"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "An email has been sent with credentials to reset your password"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Annealing"
+msgstr "Nhiệt luyện"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "Another user is already registered using this email address."
+msgstr "Email này đã được đăng ký."
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "Another user is already registered using this phone number."
+msgstr "Số điện thoại đã được sử dụng."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Applicable according to Supplier's standards"
+msgstr "Áp dụng theo tiêu chuẩn của Nhà cung cấp"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.res_config_settings_view_form
+msgid ""
+"Apply manual discounts on sales order lines or display discounts computed "
+"from pricelists (option to activate in the pricelist configuration)."
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Applying according to Oristar Factory's machining standards"
+msgstr "Áp dụng theo tiêu chuẩn gia công của Nhà máy Oristar"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.view_totp_form
+msgid "Approve User"
+msgstr "Phê duyệt người dùng"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/order.js:0
+#, python-format
+msgid "Are you sure to cancel this order ?"
+msgstr "Bạn chắc chắn muốn hủy đơn hàng này ?"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#, python-format
+msgid "Are you sure to delete this address?"
+msgstr "Bạn chắc chắn muốn xóa địa chỉ này"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/order.js:0
+#, python-format
+msgid "Are you sure to repurchase this order?"
+msgstr "Bạn có muốn mua lại đơn hàng này?"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.view_totp_form
+msgid "Are you sure want to approve for this user?"
+msgstr "Bạn chắc chắn muốn phê duyệt user này"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products_item
+msgid "Availability"
+msgstr "Còn hàng"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#, python-format
+msgid "Back"
+msgstr "Quay lại"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.res_config_settings_view_form
+msgid "Base URL to connect to Pricing Engine."
+msgstr "URL cơ sở đề kết nối đến Dịch vụ tính giá."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.res_config_settings_view_form
+msgid "Base URL to connect to Viettel Post API."
+msgstr "URL cơ sở để kết nối đến Viettel Post API."
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#, python-format
+msgid "Before 25/02/2022"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Branch"
+msgstr "Chi nhánh"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/product.js:0
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+#, python-format
+msgid "Buy now"
+msgstr "Mua ngay"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Buying Agent"
+msgstr "Đại diện mua hàng"
+
+#. module: oristar_ecommerce_website
+#: model:product.pricelist,name:oristar_ecommerce_website.list_example_user1
+msgid "CMC Pricelist"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "COD (Advanced)"
+msgstr "COD (Trả trước)"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "Can not cancel order since it has been done."
+msgstr "Không thể hủy đơn hàng này vì nó đã được hoàn thành."
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#, python-format
+msgid "Can not delete the address."
+msgstr "Không thể xóa địa chỉ"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#, python-format
+msgid "Can not delete this address."
+msgstr "Không thể xóa địa chỉ"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/order.js:0
+#, python-format
+msgid "Can not repurchase this order."
+msgstr "Không thể mua lại đơn hàng này."
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#, python-format
+msgid "Can not set as default"
+msgstr "Không thể đặt làm mặc định"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "Cancel ("
+msgstr "Đã hủy ("
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_17
+msgid "Carbide"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart_lines
+msgid "Cart"
+msgstr "Giỏ hàng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Change"
+msgstr "Thay đổi"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+msgid "Change Password"
+msgstr "Thay đổi mật khẩu"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Change password"
+msgstr "Thay đổi mật khẩu"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.select_account_type
+msgid "Choose an account type"
+msgstr "Chọn lọai tài khoản"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Choose size"
+msgstr "Chọn kích thước"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "City"
+msgstr "Thành phố"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Click here"
+msgstr "Click tại đây"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/order.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/order.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/order.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/partner_address_form.js:0
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+#, python-format
+msgid "Close"
+msgstr "Đóng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Company"
+msgstr "Công ty"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Company (Optional)"
+msgstr "Công ty (Tùy chọn)"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_sign_up
+msgid "Company <span class=\"s_website_form_mark\"> *</span>"
+msgstr "Công ty <span class=\"s_website_form_mark\"> *</span>"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#, python-format
+msgid "Company Name"
+msgstr "Tên công ty"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Company Name <span class=\"text-danger\">*</span>"
+msgstr "Tên công ty <span class=\"text-danger\">*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+msgid "Company Name<span class=\"text-danger\">*</span>"
+msgstr "Tên công <span class=\"text-danger\">*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Company Name<span>*</span>"
+msgstr "Tên công ty<span>*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Company:"
+msgstr "Công ty"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+msgid "Confirm new password"
+msgstr "Xác nhận mật khẩu mới"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_sign_up
+msgid "Confirm password"
+msgstr "Xác nhận mật khẩu"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "Confirmed ("
+msgstr "Đã xác nhận ("
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid ""
+"Congratulations on your successful registration. Please wait for "
+"confirmation!"
+msgstr "Chúc mừng bạn đã đăng ký thành công. Vui lòng chờ xác nhận!"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Connect with us"
+msgstr "Kết nối với chúng tôi"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/product.js:0
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.header_top
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products_item
+#, python-format
+msgid "Contact"
+msgstr "Liên hệ"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_contact_form
+msgid "Contact Us"
+msgstr "Liên hệ với chúng tôi"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid ""
+"Copyright 2007 Oristar. Oristar Corporation - 9th Floor, Detech Tower No. 8 Ton That\n"
+"                                Thuyet street, My Dinh 2 ward, Nam Tu Liem district, Hanoi. Represented by: Mr. Pham\n"
+"                                Quoc Hung. Tax code: 0101205758 issued at the business registration office of Hanoi\n"
+"                                Department of Planning and Investment"
+msgstr ""
+"Copyright 2007 Oristar. Oristar Corporation - Tầng 9, Tòa nhà Detech, số 8 đường Tôn Thất \ n"
+"Thuyết, phường Mỹ Đình 2, quận Nam Từ Liêm, Hà Nội. Người đại diện: Ông Phạm \ n"
+"Quốc Hùng. Mã số thuế: 0101205758 cấp tại phòng đăng ký kinh doanh Hà Nội \ n"
+"Sở Kế hoạch và Đầu tư"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "Could not create a new account."
+msgstr "Không thể tạo tài khoản mới."
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "Could not reset your password"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/partner_address_form.js:0
+#, python-format
+msgid "Country"
+msgstr "Quốc gia"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Country <span class=\"text-danger\">*</span>"
+msgstr "Quốc gia <span class=\"text-danger\">*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Country <span>*</span>"
+msgstr "Quốc gia <span>*</span>"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_res_country_state
+msgid "Country State"
+msgstr "Tỉnh"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Country..."
+msgstr "Quốc gia ..."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+msgid "Country<span class=\"text-danger\">*</span>"
+msgstr "Quốc gia<span class=\"text-danger\">*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Create Custom Declaration"
+msgstr "Tạo tờ khai"
+
+#. module: oristar_ecommerce_website
+#: model:ir.model,name:oristar_ecommerce_website.model_res_currency_rate
+msgid "Currency Rate"
+msgstr "Tỷ giá"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.res_config_settings_view_form
+msgid "Current folder, which contains price method files."
+msgstr "Thư mục hiện tại, chứa những tệp tin dùng để tính giá."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+msgid "Current password"
+msgstr "Mật khẩu hiện tại"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#, python-format
+msgid "Custom declaration created."
+msgstr "Đã tạo tờ khai."
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_customer_balance
+msgid "Customer Credit Limit"
+msgstr "Công nợ khách hàng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Customer Name:"
+msgstr "Tên khách hàng :"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_customer_settings
+msgid "Customers"
+msgstr "Khách hàng"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#, python-format
+msgid "Công ty Cổ Phần Oristar"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/cart_components.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart_components.js:0
+#, python-format
+msgid "DEBT"
+msgstr "GHI NỢ"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "DESCRIPTION"
+msgstr "THÔNG TIN CƠ BẢN"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_login
+msgid "Database"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "Debit"
+msgstr "Nợ"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+msgid "Default"
+msgstr "Mặc định"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.res_config_settings_view_form
+msgid ""
+"Delay time (hour) for notification in off time when sale order is not "
+"confirmed timely."
+msgstr ""
+"Thời gian (theo giờ) cho việc thông báo ngoài thời gian làm việc khi đơn "
+"hàng không được xác nhận trong thời gian cho phép."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.res_config_settings_view_form
+msgid ""
+"Delay time (hour) for notification in working time when sale order is not "
+"confirmed timely."
+msgstr ""
+"Thời gian (theo giờ) cho việc thông báo ngoài thời gian làm việc khi đơn "
+"hàng không được xác nhận trong thời gian cho phép."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+msgid "Delete"
+msgstr "Xóa"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "Delivered ("
+msgstr "Giao hàng thành công ("
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "Delivering ("
+msgstr "Đang vận chuyển ("
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Delivery Address"
+msgstr "Địa chỉ giao hàng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Delivery to this address"
+msgstr "Giao đến địa chỉ này"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "Detail"
+msgstr "Chi tiết"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/partner_address_form.js:0
+#, python-format
+msgid "Detailed Address"
+msgstr "Địa chỉ chi tiết"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Detailed Address <span class=\"text-danger\">*</span>"
+msgstr "Địa chỉ chi tiết <span class=\"text-danger\">*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Detailed Address <span>*</span>"
+msgstr "Địa chỉ chi tiết <span class=\"text-danger\">*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+msgid "Detailed Address<span class=\"text-danger\">*</span>"
+msgstr "Địa chỉ chi tiết<span class=\"text-danger\">*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Details"
+msgstr "Chi tiết"
+
+#. module: oristar_ecommerce_website
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_ir_http__display_name
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_lme_spot_price__display_name
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_mail_thread__display_name
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_res_currency_rate__display_name
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_res_users__display_name
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_sale_order__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/partner_address_form.js:0
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_res_district
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+#, python-format
+msgid "District"
+msgstr "Quận/huyện"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "District <span>*</span>"
+msgstr "Quận/huyện <span>*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "District..."
+msgstr "Quận/huyện..."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+msgid "District<span class=\"text-danger\">*</span>"
+msgstr "Quận Huyện<span class=\"text-danger\">*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_reset_password
+msgid "Don't worry! We will help you on how to reset your password"
+msgstr "Đừng lo lắng! Chúng tôi sẽ giúp bạn lấy lại mật khẩu"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Download quotation"
+msgstr "Tải về báo giá"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_catalog_erp_order_status
+msgid "ERP Order Processing Status"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+msgid "Edit"
+msgstr "Sửa"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_login
+msgid "Email"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_contact_form
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_sign_up
+msgid "Email <span class=\"s_website_form_mark\"> *</span>"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Email <span class=\"text-danger\">*</span>"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:ir.model,name:oristar_ecommerce_website.model_mail_thread
+msgid "Email Thread"
+msgstr "Luồng Email"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "Email is invalid."
+msgstr "Email không hợp lệ."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Email:"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Email: support@oristar.vn"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid ""
+"Email<span class=\"be\">  Please enter correct email format. Ex: "
+"haianhzz123@gmail.com</span>"
+msgstr ""
+"Email<span class=\"be\">  Vui lòng nhập đúng định dạng email . Ví dụ : "
+"haianhzz123@gmail.com</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_website_search_box
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.website_menu
+msgid "Enter product"
+msgstr "Nhập sản phẩm"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Export"
+msgstr "Xuất khẩu"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.header_top
+msgid "FAQ"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Factory"
+msgstr "Nhà máy"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/order.js:0
+#, python-format
+msgid "Failed"
+msgstr "Thất bại"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "Failed to send email. Please try again later!"
+msgstr "Không thể gửi email. Vui lòng thử lại sau!"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Fax: +84 124123 124"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/partner_address_form.js:0
+#, python-format
+msgid "Field %s is required."
+msgstr "Trường %s là bắt buộc."
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/product.js:0
+#, python-format
+msgid "Field quantity is required."
+msgstr "Trường số lượng là bắt buộc"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/profile.js:0
+#, python-format
+msgid "File upload"
+msgstr "Tải tệp lên"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "For un-logged in user, customer is allowed to add only one address"
+msgstr "Đối với người dùng chưa đăng ký, chỉ được thêm một địa chỉ"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_login
+msgid "Forget password"
+msgstr "Quên mật khẩu"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_reset_password
+msgid "Forgot Password!"
+msgstr "Quên mật khẩu"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Frequently asked questions"
+msgstr "Câu hỏi thường gặp"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/partner_address_form.js:0
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#, python-format
+msgid "Full Name"
+msgstr "Họ và tên"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_contact_form
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_sign_up
+msgid "Full Name <span class=\"s_website_form_mark\"> *</span>"
+msgstr "Họ và tên <span class=\"s_website_form_mark\"> *</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Full Name <span class=\"text-danger\">*</span>"
+msgstr "Họ và tên <span class=\"text-danger\">*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+msgid "Full Name<span class=\"text-danger\">*</span>"
+msgstr "Họ và tên <span class=\"text-danger\">*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Full Name<span>*</span>"
+msgstr "Họ và tên<span>*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_login_form
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.select_account_type
+msgid "Go back to the homepage"
+msgstr "Quay lại trang chủ"
+
+#. module: oristar_ecommerce_website
+#: model:ir.model,name:oristar_ecommerce_website.model_ir_http
+msgid "HTTP Routing"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Headquarters"
+msgstr "Trụ sở chính"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products
+msgid "Hiển thị"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Home page"
+msgstr "Trang chủ"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products
+msgid "Homepage"
+msgstr "Trang chủ"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.header_top
+msgid "Hotline: 0285 825 475"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#, python-format
+msgid "ICBVVNVX"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_ir_http__id
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_lme_spot_price__id
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_mail_thread__id
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_res_currency_rate__id
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_res_users__id
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_sale_order__id
+msgid "ID"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "ID:"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.select_account_type
+msgid "Individual"
+msgstr "Cá nhân"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_sign_up
+msgid "Individual account registration"
+msgstr "Đăng ký tài khoản cá nhân"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/product.js:0
+#, python-format
+msgid "Invalid KT1 value"
+msgstr "KT1 không hợp lệ"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/product.js:0
+#, python-format
+msgid "Invalid KT2 value"
+msgstr "KT2 không hợp lệ"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/product.js:0
+#, python-format
+msgid "Invalid KT3 value"
+msgstr "KT3 không hợp lệ"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/partner_address_form.js:0
+#, python-format
+msgid "Invalid email address."
+msgstr "Địa chỉ email không hợp lệ"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/profile.js:0
+#, python-format
+msgid "Invalid phone number."
+msgstr "Số điện thoại không hợp lệ."
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/product.js:0
+#, python-format
+msgid "Invalid quantity value."
+msgstr "Số lượng không hợp lệ."
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/product.js:0
+#, python-format
+msgid "Invalid weight value"
+msgstr "Khối lượng không hợp lệ"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_catalog_inventory_management
+msgid "Inventory Management"
+msgstr "Quản lý tồn kho"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Invoice Address"
+msgstr "Địa chỉ xuất hóa đơn"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid ""
+"Invoice Email<span class=\"be\">  Please enter correct email format. Ex: "
+"haianhzz123@gmail.com</span>"
+msgstr ""
+"Email nhận hóa đơn<span class=\"be\">  Vui lòng nhập theo mẫu sau. Ex: "
+"haianhzz123@gmail.com</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+msgid "Invoice address"
+msgstr "Địa chỉ xuất hóa đơn"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid ""
+"Joint Stock Company Oristar (Oristar Corp.) Sincerely send you the quotation"
+msgstr ""
+"Công ty Cổ phần Oristar (Oristar Corp.) Xin gửi đến Qúy công ty bảng báo giá"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "KCN Tân Quang, Văn Lâm, Hưng Yên"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.attribute,name:oristar_ecommerce_website.kt1_variant_attr
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "KT1"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "KT2"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "KT3"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Khối lượng"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_lme_market
+msgid "LME Markets"
+msgstr "Thị trường LME"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_lme_price
+msgid "LME Prices"
+msgstr "Giá LME"
+
+#. module: oristar_ecommerce_website
+#: model:ir.model,name:oristar_ecommerce_website.model_lme_spot_price
+msgid "LME Spot Price"
+msgstr "Giá LME Thời điểm"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_lme_spot_price
+msgid "LME Spot Prices"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_ir_http____last_update
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_lme_spot_price____last_update
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_mail_thread____last_update
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_res_currency_rate____last_update
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_res_users____last_update
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Link: <span id=\"referenceLink\"/>"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.header_top
+msgid "Log out"
+msgstr "Đăng xuất"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.header_top
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_login
+msgid "Login"
+msgstr "Đăng nhập"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.website_menu
+msgid "Logout"
+msgstr "Đăng xuất"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid ""
+"Lot I-4B N3 road, Hi-Tech Industrial Park, Long Thach My ward, Thu Duc city,"
+" Ho Chi Minh"
+msgstr ""
+"Lô I-4B đường N3, Khu công nghiệp Công nghệ cao, phường Long Thạch Mỹ, thành phố Thủ Đức,"
+" Hồ Chí Minh"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Machining"
+msgstr "Gia công"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "Manage Orders"
+msgstr "Quản lý đơn hàng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+msgid "Manage address book"
+msgstr "Quản lý sổ địa chỉ"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+msgid "Manage passwords for account security"
+msgstr "Quản lý mật khẩu để bảo vệ tài khoản"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Manage personal profiles for account security"
+msgstr "Quản lý tài khoản cá nhân để bảo vệ tài khoản"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "Manage your order information and state"
+msgstr "Quản lý thông tin và trạng thái đơn hàng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.res_config_settings_view_form
+msgid "Maximum limit (mm) for milling."
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_contact_form
+msgid "Message"
+msgstr "Lời nhắn "
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Milling"
+msgstr "Phay"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Milling:"
+msgstr "Phay"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.res_config_settings_view_form
+msgid "Minimum limit (mm) for milling."
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.website_menu
+msgid ""
+"My\n"
+"                                        Account"
+msgstr "Tài khoản"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/menu.js:0
+#, python-format
+msgid "My Cart"
+msgstr "Giỏ hàng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "My account"
+msgstr "Tài khoản của tôi"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "My orders"
+msgstr "Đơn hàng của tôi"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.view_users_search
+msgid "Need Approval"
+msgstr "Cần được phê duyệt"
+
+#. module: oristar_ecommerce_website
+#: model:ir.model.fields,field_description:oristar_ecommerce_website.field_res_users__need_approval
+msgid "Need Approve"
+msgstr "Cần được phê duyệt"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+msgid "New password"
+msgstr "Mật khẩu mới"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Nguyễn Văn A"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_aluminum
+msgid "Nhôm"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_04
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_05
+msgid "Nhôm hợp kim"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_187
+msgid "Nhôm hợp kim thanh tròn, (61S) A6061 - T6"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_184
+#: model:product.template,name:oristar_ecommerce_website.product_template_185
+#: model:product.template,name:oristar_ecommerce_website.product_template_188
+msgid "Nhôm hợp kim thanh tròn, A6061 - T6"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_189
+msgid "Nhôm hợp kim thanh tròn, A7075 - T6"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_169
+msgid "Nhôm hợp kim thanh, A7003 - T6"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_170
+msgid "Nhôm hợp kim thanh, A7075 - T651"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_123
+msgid "Nhôm không hợp kim cuộn, A1050 - H14"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_124
+msgid "Nhôm không hợp kim cuộn, A1050 - H16"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_125
+msgid "Nhôm không hợp kim cuộn, A1050 - H24"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_126
+msgid "Nhôm không hợp kim tấm, A1050 - H14"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_127
+msgid "Nhôm không hợp kim tấm, A1050 - H16"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_128
+msgid "Nhôm không hợp kim tấm, A1050 - H18"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_129
+msgid "Nhôm không hợp kim tấm, A1050 - H24"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_06
+msgid "Nhôm phản quang"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_login
+msgid "No account? Registration"
+msgstr "Không có tài khoản ? Đăng ký"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "No cancel order yet"
+msgstr "Không có đơn hàng hủy nào"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "No confirmed order yet"
+msgstr "Chưa có đơn hàng nào được xác nhận."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "No delivered order yet"
+msgstr "Không có đơn hàng nào đã được giao"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "No delivering order yet"
+msgstr "Không có đơn hàng nào đang giao"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "No login provided."
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "No producing order yet"
+msgstr "Không có đơn hàng đang gia công nào"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/controllers.py:0
+#, python-format
+msgid "No product exist!"
+msgstr "Sản phẩm không tồn tại"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "No quotation yet"
+msgstr "Không có báo giá nào"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/website_sale.js:0
+#, python-format
+msgid "Note: \n"
+msgstr "Ghi chú: \n"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Notes"
+msgstr "Ghi chú"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.waiting_content
+msgid "Nội dung đang cập nhật"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "ORDER CODE"
+msgstr "MÃ ĐƠN HÀNG"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "ORDER DATE"
+msgstr "NGÀY ĐẶT HÀNG"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "ORISTAR CORP."
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#, python-format
+msgid "ORISTAR CORPORATION"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/portal.py:0
+#, python-format
+msgid "Order Date"
+msgstr "Ngày đặt hàng"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "Order belongs to another user."
+msgstr "Đơn hàng thuộc về người khác"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products
+msgid "Order by"
+msgstr "Sắp xếp theo"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/order.js:0
+#, python-format
+msgid "Order has been cancelled successfully."
+msgstr "ĐƠn hàng đã được hủy thành công"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Ordering guide"
+msgstr "Hướng dẫn đặt hàng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.select_account_type
+msgid "Organization"
+msgstr "Tổ chức"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_sign_up
+msgid "Organization account registration"
+msgstr "Đăng ký tài khoản tổ chức"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Origin"
+msgstr "Xuất xứ"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Oristar"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Oristar Corp."
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_oristar_warehouse
+msgid "Oristar Warehouse"
+msgstr "Kho Oristar"
+
+#. module: oristar_ecommerce_website
+#: model:ir.actions.server,name:oristar_ecommerce_website.cron_get_lme_spot_price_from_oriental_copper_ir_actions_server
+#: model:ir.cron,cron_name:oristar_ecommerce_website.cron_get_lme_spot_price_from_oriental_copper
+#: model:ir.cron,name:oristar_ecommerce_website.cron_get_lme_spot_price_from_oriental_copper
+msgid "Oristar: Auto get oriental copper spot price"
+msgstr "Oristar: Tự động lấy giá oriental copper spot"
+
+#. module: oristar_ecommerce_website
+#: model:ir.actions.server,name:oristar_ecommerce_website.cron_get_vietcombank_currency_rate_ir_actions_server
+#: model:ir.cron,cron_name:oristar_ecommerce_website.cron_get_vietcombank_currency_rate
+#: model:ir.cron,name:oristar_ecommerce_website.cron_get_vietcombank_currency_rate
+msgid "Oristar: Auto get vietcombank currency rate"
+msgstr "Oristar: Tự động lấy tỉ giá vietcombank"
+
+#. module: oristar_ecommerce_website
+#: model:ir.actions.server,name:oristar_ecommerce_website.cron_check_non_confirmed_sale_order_ir_actions_server
+#: model:ir.cron,cron_name:oristar_ecommerce_website.cron_check_non_confirmed_sale_order
+#: model:ir.cron,name:oristar_ecommerce_website.cron_check_non_confirmed_sale_order
+msgid ""
+"Oristar: Periodically check non-confirmed sale order and notify to PiC if "
+"necessary"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/cart_components.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart_components.js:0
+#, python-format
+msgid "PAY"
+msgstr "TRẢ TOÀN BỘ"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "PAYMENT"
+msgstr "THANH TOÁN"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_login
+msgid "Password"
+msgstr "Mật khẩu"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+msgid "Password Updated!"
+msgstr "Cập nhật mật khẩu!"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.res_config_settings_view_form
+msgid "Password used to connect to Viettel Post API."
+msgstr "Mật khẩu dùng để kết nối đến Viettel Post API."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_sign_up
+msgid "Password<span class=\"s_website_form_mark\"> *</span>"
+msgstr "Mật khẩu<span class=\"s_website_form_mark\"> *</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "Pay"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Payment Privacy Policy"
+msgstr "Chính sách bảo mật thanh toán"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/partner_address_form.js:0
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_sign_up
+#, python-format
+msgid "Phone"
+msgstr "Số điện thoại"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Phone <span class=\"text-danger\">*</span>"
+msgstr "Số điện thoại <span class=\"text-danger\">*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Phone <span>*</span>"
+msgstr "Số điện thoại <span>*</span>"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/partner_address_form.js:0
+#, python-format
+msgid "Phone is invalid!"
+msgstr "Số điện thoại không hợp lệ!"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "Phone number is invalid."
+msgstr "Số điện thoại không hợp lệ"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Phone:"
+msgstr "Số điện thoại :"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Phone: 0221.379 1661 -FAX: 0221.3791607"
+msgstr "SĐT: 0221.379 1661 -FAX: 0221.3791607"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Phone: 024.3972 0120 - FAX: 024.3972 0124"
+msgstr "SĐT: 024.3972 0120 - FAX: 024.3972 0124"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Phone: 028.7108 8838 -FAX: 028.7108 8538"
+msgstr "SĐT: 028.7108 8838 -FAX: 028.7108 8538"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+msgid "Phone<span class=\"text-danger\">*</span>"
+msgstr "Số điện thoại<span class=\"text-danger\">*</span>"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/website_sale.js:0
+#, python-format
+msgid "Please calculate price before add to cart!"
+msgstr "Vui lòng tính giá trước khi thêm vào giỏ hàng!"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.select_account_type
+msgid "Please choose your account type"
+msgstr "Vui lòng chọn loại tài khoản"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Please proceed your current cart."
+msgstr "Vui lòng thanh toán giỏ hàng hiện tại của bạn"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Please select the required attributes to display the price"
+msgstr "Vui lòng chọn các thuộc tính cần thiết để hiển thị giá"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_contact_form
+msgid ""
+"Please share your questions with us.\n"
+"                                            Oristar will respond to you within 2-4 hours"
+msgstr ""
+"Hãy chia sẻ thắc mắc của bạn với chúng tôi .\n"
+"                                            Oristar sẽ phản hồi bạn trong vòng 2-4 giờ"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.header_top
+msgid "Policy"
+msgstr "Chính sách"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Position:"
+msgstr "Chức vụ:"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_price_file
+msgid "Price Files"
+msgstr "Tệp tinh dùng để tính giá"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Price Unit /Kg"
+msgstr "Đơn giá /Kg"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_price_settings
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Pricing"
+msgstr "Tính giá"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Processing copper and steel"
+msgstr "Gia công đồng và thép"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Processing method"
+msgstr "Phương pháp gia công"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "Producing ("
+msgstr "Đang gia công ("
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_product_basic_shape
+msgid "Product Basic Shape"
+msgstr "Hình dạng cơ bản"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_product_detailed_shape
+msgid "Product Detailed Shape"
+msgstr "Hình dạng chi tiết"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_product_alloy
+msgid "Product Grades"
+msgstr "Hợp kim"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_product_material_category
+msgid "Product Material Categories"
+msgstr "Nhóm vật liệu"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_product_material
+msgid "Product Materials"
+msgstr "Vật liệu"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products
+msgid "Product Name (A-Z)"
+msgstr "Tên sản phẩm (A-Z)"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products
+msgid "Product Name (Z-A)"
+msgstr "Tên sản phẩm (Z-A)"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_product_shape_type
+msgid "Product Shape Type"
+msgstr "Nhóm Hình Dạng"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_product_stiffness
+msgid "Product Temper"
+msgstr "Độ cứng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Product details"
+msgstr "Chi tiết sản phẩm"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/controllers.py:0
+#, python-format
+msgid "Product not found"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.homepage
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products
+msgid "Product portfolio"
+msgstr "Danh mục sản phẩm"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Profile"
+msgstr "Hồ sơ"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_profit_margin_range
+msgid "Profit Margin Ranges"
+msgstr "Khoảng Tỉ suất lợi nhuận"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Purpose of use"
+msgstr "Mục đích sử dụng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Quantity (Pcs)"
+msgstr "Số lượng (Pcs)"
+
+#. module: oristar_ecommerce_website
+#: model:ir.actions.report,name:oristar_ecommerce_website.quotation_so_report
+msgid "Quotation"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "Quotation ("
+msgstr "Báo giá ("
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.res_config_settings_view_form
+msgid "Quotation file."
+msgstr "Tệp báo giá"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.homepage
+msgid "Read more"
+msgstr "Xem thêm"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Recruitment"
+msgstr "Tuyển dụng"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/portal.py:0
+#, python-format
+msgid "Reference"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_sign_up
+msgid "Register"
+msgstr "Đăng ký"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_sign_up
+msgid ""
+"Register to become a customer and\n"
+"                    receive offers from Oristar"
+msgstr "Đăng ký để trờ thành khách hàng và nhận những ưu đãi từ Oristar"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.select_account_type
+msgid "Registration"
+msgstr "Đăng ký"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Related Product"
+msgstr "Sản phẩm liên quan"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products
+msgid "Related Products"
+msgstr "Sản phẩm liên quan"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_sign_up
+msgid "Remember Password"
+msgstr "Lưu mật khẩu"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_login
+msgid "Remember password"
+msgstr "Lưu mật khẩu"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Remove image"
+msgstr "Xóa ảnh"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Representative:"
+msgstr "Đại diện:"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_reset_password
+msgid "Reset Password"
+msgstr "Lấy lại mật khẩu"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Resource Center"
+msgstr "Trung tâm tài nguyên"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.res_config_settings_view_form
+msgid ""
+"Responsible users, who will receive notification of sale in case of there is"
+" no assigned PiC."
+msgstr ""
+"Người chịu trách nhiệm sẽ nhận được thông báo của đơn hàng trong trường hợp "
+"không có nhân viên bán hàng phụ trách."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.waiting_content
+msgid ""
+"Rất tiếc, chúng tôi đang cập nhật nội dung cho trang này...Vui lòng quay lại"
+" sau"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "STT"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:mail.template,subject:oristar_ecommerce_website.new_order_notification
+msgid "Sale order ${object.name} has been created."
+msgstr "Đơn hàng ${object.name} đã được tạo."
+
+#. module: oristar_ecommerce_website
+#: model:ir.model,name:oristar_ecommerce_website.model_sale_order
+msgid "Sales Order"
+msgstr "Đơn bán hàng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Sales Representatives"
+msgstr "Đại diện bán hàng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+msgid "Save"
+msgstr "Lưu"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#, python-format
+msgid "Save address successfully."
+msgstr "Lưu địa chỉ thành công."
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#, python-format
+msgid "Save order successfully."
+msgstr "Đã lưu đơn hàng thành công."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_website_search_box
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products
+msgid "Search Filters"
+msgstr "Bộ lọc sản phẩm"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "Search for order code"
+msgstr "Tìm kiếm theo mã đơn hàng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products
+msgid "Search result ("
+msgstr "Kết quả tìm kiếm ("
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+msgid "Security"
+msgstr "Bảo mật"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_login
+msgid ""
+"Select <i class=\"fa fa-database\" role=\"img\" aria-label=\"Database\" "
+"title=\"Database\"/>"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Select this invoice address"
+msgstr "Chọn địa chỉ xuất hoá đơn này"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart_lines
+msgid "Selected"
+msgstr "Đã chọn"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Service"
+msgstr "Dịch vụ"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#, python-format
+msgid "Set as default"
+msgstr "Đặt làm mặc định"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_shipping_settings
+msgid "Shipping"
+msgstr "Giao hàng"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_shipping_method
+msgid "Shipping Method"
+msgstr "Phương pháp giao hàng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products
+msgid "Shop"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Size (mm)"
+msgstr "Kích thước (mm)"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Size customization"
+msgstr "Kích thước tùy chọn"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid ""
+"Size: <span style=\"text-decoration: none;font-weight: 500; font-size: "
+"14px;\">KT1</span>"
+msgstr ""
+"Kích thước: <span style=\"text-decoration: none;font-weight: 500; font-size:"
+" 14px;\">KT1</span>"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/order.js:0
+#, python-format
+msgid "Something wrong happen."
+msgstr "Đã có lỗi xảy ra."
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#, python-format
+msgid "Something wrong happend."
+msgstr "Đã có lỗi xảy ra."
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/portal.py:0
+#, python-format
+msgid "Stage"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Standard table"
+msgstr "Bảng tiêu chuẩn"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/partner_address_form.js:0
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+#, python-format
+msgid "State"
+msgstr "Tỉnh/thành phố"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "State ..."
+msgstr "Tỉnh/thành phố ..."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "State <span>*</span>"
+msgstr "Tỉnh/thành phố <span>*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+msgid "State<span class=\"text-danger\">*</span>"
+msgstr "Tỉnh/thành phố<span class=\"text-danger\">*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products_item
+msgid "Status"
+msgstr "Tình trạng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_contact_form
+msgid "Submit"
+msgstr "Gửi"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Subtotal"
+msgstr "Thành tiền"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/address_book.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/order.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/order.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/partner_address_form.js:0
+#, python-format
+msgid "Success"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Surface Standard"
+msgstr "Mặt tiêu chuẩn"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Số 8 Tôn Thất Thuyết, Hà Nội"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Số.:.../BG/HN-17 Oristar. 2017"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "TAX Number"
+msgstr "Mã số thuế"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "TAX Number <span>*</span>"
+msgstr "Mã số thuế <span>*</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_sign_up
+msgid "TAX Number<span class=\"s_website_form_mark\"> *</span>"
+msgstr "Mã số thuế<span class=\"s_website_form_mark\"> *</span>"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#, python-format
+msgid "TMCP Công Thương Việt Nam- chi nhánh Đô Thành (Vietinbank)"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "TOTAL"
+msgstr "Tổng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid ""
+"Tan Quang Industrial Park, Chi Trung hamlet, Tan Quang commune, Van Lam "
+"district, Hung Yen province"
+msgstr ""
+"Khu công nghiệp Tân Quang, ấp Chí Trung, xã Tân Quang, huyện Văn Lâm"
+", tỉnh Hưng Yên"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Tel/Fax:"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.footer
+msgid "Tex: +84 124123 124"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "The above price does not include the cost of annealing"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "The account is waiting for confirmation!"
+msgstr "Tài khoản đang chờ xác nhận!"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#, python-format
+msgid "The address has been added."
+msgstr "Đã thêm địa chỉ."
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/partner_address_form.js:0
+#, python-format
+msgid "The address has been updated successful."
+msgstr "Địa chỉ đã được cập nhật thành công"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "The address is invalid!"
+msgstr "ĐỊa chỉ không hợp lệ"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "The country value is required."
+msgstr "Trường quốc gia là bắt buộc."
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "The district value is required."
+msgstr "Trường quận huyện là bắt buộc."
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/models/sale_order.py:0
+#: code:addons/oristar_ecommerce_website/models/sale_order.py:0
+#, python-format
+msgid "The following sale orders are not confirmed: %s. Please check them!"
+msgstr "Đơn hàng sau không được xác nhận: %s. Xin hãy kiểm tra lại chúng!"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/models/sale_order.py:0
+#, python-format
+msgid ""
+"The given combination does not exist therefore it cannot be added to cart."
+msgstr "Sản phẩm không tồn tại do đó không thể thêm vào giỏ hàng"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/models/sale_order.py:0
+#, python-format
+msgid "The given product does not exist therefore it cannot be added to cart."
+msgstr "Sản phẩm không tồn tại do đó không thể thêm vào giỏ hàng"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "The name is required."
+msgstr "Trường tên là bắt buộc."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+msgid ""
+"The old password you provided is incorrect, your password was not changed."
+msgstr ""
+"Mật khẩu hiện tại bạn cung cấp không đúng, mật khẩu không được thay đổi."
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/order.js:0
+#, python-format
+msgid "The order has been repurchased."
+msgstr "Đơn hàng đã được thêm vào giỏ hàng. Vui lòng kiểm tra và đặt hàng."
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "The phone value is required."
+msgstr "Trường số điện thoại là bắt buộc."
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/profile.js:0
+#, python-format
+msgid "The selected file exceed the maximum file size of %s."
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/website.py:0
+#, python-format
+msgid "The state value is required."
+msgstr "Trường tỉnh thành là bắt buộc."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid ""
+"The weight (in Kg) above is provisional. Customers will pay based on the "
+"actual weight between the two parties."
+msgstr ""
+"Trọng lượng (theo Kg) trên là tạm tính. Khách hàng sẽ thanh toán dựa vào "
+"trọng lượng cân thực tế giữa hai bên."
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/profile.js:0
+#, python-format
+msgid "There was a problem while uploading your file"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "This is your current cart."
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_steel
+msgid "Thép"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_16
+msgid "Thép chế tạo máy"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.product_material_15
+msgid "Thép dụng cụ cacbon"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_14
+msgid "Thép dụng cụ không gỉ"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_10
+msgid "Thép gia công nguội"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.product_material_12
+msgid "Thép gia công nóng"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_13
+msgid "Thép gió (HSS)"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_09
+msgid "Thép hợp kim"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_11
+msgid "Thép khuôn nhựa"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_07
+msgid "Thép không gỉ"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_192
+msgid "Thép không gỉ cuộn, SUS 301 CSP - 1/2H"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_191
+msgid "Thép không gỉ cuộn, SUS 301 CSP - H"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_246
+msgid "Thép không gỉ thanh tròn, SUS 303"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_242
+msgid "Thép không gỉ tấm lá, SUS 301 CSP - 1/2H"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_241
+msgid "Thép không gỉ tấm lá, SUS 301 CSP - 3/4H"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_245
+msgid "Thép không gỉ tấm lá, SUS 304 CSP - H"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_08
+msgid "Thép không hợp kim"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_special_steel
+msgid "Thép đặc biệt"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_contact_form
+msgid "Title <span class=\"s_website_form_mark\"> *</span>"
+msgstr "Tiêu đề <span class=\"s_website_form_mark\"> *</span>"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Total"
+msgstr "Tổng"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_res_township
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Township"
+msgstr "Xã/phường"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Township..."
+msgstr "Xã/phường..."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.waiting_content
+msgid "Trang chủ"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/search_product_components.xml:0
+#, python-format
+msgid "Trước 25/02/2022"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "Tìm"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#, python-format
+msgid "USD:"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_11
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_12
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_123
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_124
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_125
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_126
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_127
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_128
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_129
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_13
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_169
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_170
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_184
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_185
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_187
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_188
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_189
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_191
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_192
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_241
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_242
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_245
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_246
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_52
+#: model:product.template,uom_name:oristar_ecommerce_website.product_template_53
+msgid "Units"
+msgstr "Đơn vị"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Untaxed Amount:"
+msgstr "Tổng cộng:"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Update"
+msgstr "Cập nhật"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "Upload image"
+msgstr "Tải ảnh lên"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/controllers.py:0
+#, python-format
+msgid "User credential is invalid."
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.res_config_settings_view_form
+msgid "Username used to connect to Viettel Post API."
+msgstr "Tên đăng nhập dùng để kết nối đến Viettel Post API."
+
+#. module: oristar_ecommerce_website
+#: model:ir.model,name:oristar_ecommerce_website.model_res_users
+msgid "Users"
+msgstr "Người dùng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "Uses"
+msgstr "Mục đích sử dụng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "VAT %"
+msgstr "Thuế GTGT VAT %"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/search_product_components.xml:0
+#, python-format
+msgid "VAT(10%)"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#, python-format
+msgid "VIETNAM JOINT STOCK COMMERCIAL BANK- DO THANH BRANCH"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#, python-format
+msgid "VND:"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/search_product_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/search_product_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/search_product_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/search_product_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/search_product_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/search_product_components.xml:0
+#, python-format
+msgid "VNĐ"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_viettelpost_district
+msgid "Viettel Post District"
+msgstr "Quản lý Quận/Huyện Viettel Post"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_viettelpost_province
+msgid "Viettel Post Province"
+msgstr "Quản lý Tỉnh Thành Viettel Post"
+
+#. module: oristar_ecommerce_website
+#: model:ir.ui.menu,name:oristar_ecommerce_website.menu_warehouse_settings
+msgid "Warehouse"
+msgstr "Kho"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "We will deliver to the address:"
+msgstr "Chúng tôi sẽ giao đến địa chỉ"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Weight (Kg)"
+msgstr "Khối lượng (Kg)"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_login
+msgid "Welcome back"
+msgstr "Chào mừng bạn quay trở lại"
+
+#. module: oristar_ecommerce_website
+#: model:mail.template,subject:oristar_ecommerce_website.mail_template_user_signup_account_approved
+#: model:mail.template,subject:oristar_ecommerce_website.mail_template_user_signup_account_created_wait_for_approve
+msgid "Welcome to ${object.company_id.name}!"
+msgstr "Chào mừng đến với ${object.company_id.name}!"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.my_orders
+msgid "You currently have no orders."
+msgstr "Hiện tại không có đơn hàng nào"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "You don't have a invoice address yet? ?"
+msgstr "Bạn chưa có địa chỉ xuất hóa đơn ?"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "You don't have a shipping address yet ?"
+msgstr "Bạn chưa có địa chỉ giao hàng ?"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/controllers/controllers.py:0
+#, python-format
+msgid "You have to provide the shipping address"
+msgstr "Bạn phải cung cấp địa chỉ giao hàng"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#, python-format
+msgid "You must select delivery address before order."
+msgstr "Bạn phải chọn địa chỉ giao hàng trước khi đặt hàng."
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/js/cart.js:0
+#, python-format
+msgid "You need to select payment method in order to order."
+msgstr "Bạn phải chọn phương thức thanh toán để đặt hàng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_reset_password
+msgid "Your Email"
+msgstr "Email của bạn"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#, python-format
+msgid "Your cart is empty!"
+msgstr "Giỏ hàng của bạn đang trống!"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "Your previous cart has already been completed."
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "ZIP / Postal Code"
+msgstr "Mã bưu chính"
+
+#. module: oristar_ecommerce_website
+#: code:addons/oristar_ecommerce_website/models/sale_order.py:0
+#: code:addons/oristar_ecommerce_website/models/sale_order.py:0
+#, python-format
+msgid "[IMPORTANR] Sale orders are not confirmed timely!"
+msgstr "[QUAN TRỌNG] Đơn hàng không được xác nhận kịp thời!"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.address_book
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.waiting_content
+msgid "breadcrumb"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_contact_form
+msgid "hello@oristar.com.vn"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_login
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_sign_up
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.select_account_type
+msgid "here"
+msgstr "tại đây"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid "if you want to merge your previous cart into current cart."
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart
+msgid ""
+"if you want to restore your previous cart. Your current cart will be "
+"replaced with your previous cart."
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: code:addons/oristar_ecommerce_website/static/src/xml/search_product_components.xml:0
+#, python-format
+msgid "kg"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.header_top
+msgid "offical@oristar.com.vn"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.or_portal_my_security
+msgid "password"
+msgstr "mật khẩu"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.oristar_cart_lines
+msgid "products"
+msgstr "sản phẩm"
+
+#. module: oristar_ecommerce_website
+#. openerp-web
+#: code:addons/oristar_ecommerce_website/static/src/xml/cart_components.xml:0
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+#, python-format
+msgid "quantity"
+msgstr "số lượng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.portal_my_details
+msgid "select..."
+msgstr "Chọn..."
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.products
+msgid "sản phẩm"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "x KT2"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "x KT3"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.product
+msgid "x Weight"
+msgstr "x Khối lượng"
+
+#. module: oristar_ecommerce_website
+#: model_terms:ir.ui.view,arch_db:oristar_ecommerce_website.quotation_data_report
+msgid "Đường N3, KCN cao Sài Gòn, P. Long Thạnh Mỹ, Q. 9, HCM"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_brass
+msgid "Đồng"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_00
+msgid "Đồng Bery"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_02
+msgid "Đồng hợp kim"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_01
+msgid "Đồng tinh chế"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_11
+msgid "Đồng tinh chế cuộn, C1100 - 0"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_13
+msgid "Đồng tinh chế cuộn, C1100 - 1/2H"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_12
+msgid "Đồng tinh chế cuộn, C1100 - H"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_52
+msgid "Đồng tinh chế thanh, C1100 - 1/2H"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:product.template,name:oristar_ecommerce_website.product_template_53
+msgid "Đồng tinh chế tấm lá, C1100 - 0"
+msgstr ""
+
+#. module: oristar_ecommerce_website
+#: model:website.menu,name:oristar_ecommerce_website.menu_product_material_03
+msgid "Đồng xi mạ"
+msgstr ""

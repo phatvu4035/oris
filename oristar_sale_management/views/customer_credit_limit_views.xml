@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="customer_credit_limit_tree_view" model="ir.ui.view">
+		<field name="name">customer.credit.limit.tree</field>
+		<field name="model">customer.credit.limit</field>
+		<field name="arch" type="xml">
+			<tree string="Customer Credit Limits">
+				<field name="partner_id"/>
+				<field name="credit_limit"/>
+				<field name="credit"/>
+				<field name="currency_id"/>
+			</tree>
+		</field>
+	</record>
+	
+	<record id="customer_credit_limit_form_view" model="ir.ui.view">
+		<field name="name">customer.credit.limit.form</field>
+		<field name="model">customer.credit.limit</field>
+		<field name="arch" type="xml">
+			<form string="Customer Credit Limit">
+				<header></header>
+				<sheet>
+                    <group name="detail">
+                    	<group name="detail_left">
+                    		<field name="partner_id"/>
+                    		<field name="currency_id"/>
+                    	</group>
+                    	<group name="detail_right">
+                    		<field name="credit_limit"/>
+                    		<field name="credit"/>
+                    		<field name="erp_id"/>
+                    	</group>
+                    </group>
+				</sheet>
+				<div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+			</form>
+		</field>
+	</record>
+	
+	<record id="customer_credit_limit_action" model="ir.actions.act_window">
+        <field name="name">Customer Credit Limit</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">customer.credit.limit</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

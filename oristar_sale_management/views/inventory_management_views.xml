@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="inventory_management_tree_view" model="ir.ui.view">
+		<field name="name">inventory.management.tree</field>
+		<field name="model">inventory.management</field>
+		<field name="arch" type="xml">
+			<tree string="Inventory Management">
+				<field name="product_id"/>
+				<field name="warehouse_id"/>
+				<field name="product_thickness"/>
+				<field name="product_long"/>
+				<field name="product_width"/>
+				<field name="uom_id"/>
+				<field name="quantity"/>
+				<field name="quantity_kg"/>
+			</tree>
+		</field>
+	</record>
+	
+	<record id="inventory_management_form_view" model="ir.ui.view">
+		<field name="name">inventory.management.form</field>
+		<field name="model">inventory.management</field>
+		<field name="arch" type="xml">
+			<form string="Inventory Management">
+				<header></header>
+				<sheet>
+                    <group name="detail">
+                    	<group name="detail_left">
+                    		<field name="product_id"/>
+                    		<field name="product_material_category_id"/>
+                    		<field name="product_material_id"/>
+                    		<field name="product_alloy_id"/>
+                    		<field name="product_stiffness_id"/>
+                    		<field name="warehouse_id"/>
+                    		<field name="uom_id"/>
+                    		<field name="lot"/>
+                    		<field name="erp_id"/>
+                    	</group>
+                    	<group name="detail_right">
+                    		<field name="product_thickness"/>
+							<field name="product_long"/>
+							<field name="product_width"/>
+							<field name="quantity"/>
+							<field name="quantity_kg"/>
+							<field name="last_update_time"/>
+                    	</group>
+                    </group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	
+	<record id="inventory_management_search_view" model="ir.ui.view">
+        <field name="name">inventory.management.search</field>
+        <field name="model">inventory.management</field>
+        <field name="arch" type="xml">
+            <search string="Inventory Management">
+                <field name="product_id"/>
+                <field name="warehouse_id"/>
+                <field name="lot"/>
+                
+                <group expand='0' string='Filters'>
+                    <filter name="negative" string="Negative Stock" domain="[('quantity', '&lt;', 0.0)]"/>
+                    <filter name="positive" string="Positive Stock" domain="[('quantity', '&gt;', 0.0)]"/>
+                </group>
+                <group expand='0' string='Group by...'>
+                    <filter string='Product' name="productgroup" context="{'group_by': 'product_id'}"/>
+                    <filter string='Warehouse' name="locationgroup" domain="[]" context="{'group_by': 'warehouse_id'}"/>
+                    <filter string='Lot' name="Lot" context="{'group_by': 'lot'}"/>
+               </group>
+            </search>
+        </field>
+    </record>
+	
+	<record id="inventory_management_action" model="ir.actions.act_window">
+        <field name="name">Inventory Management</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">inventory.management</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="inventory_management_search_view"/>
+    </record>
+</odoo>

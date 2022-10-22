@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="homepage" name="Homepage" inherit_id="website.homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="banner-search">
+                    <div class="container">
+                        <div class="content" id="homepage_product_category_filter">
+
+                        </div>
+                    </div>
+                </section>
+                <div class="category-product">
+                    <div class="container">
+                        <div class="title text-center">
+                            <h3>Product portfolio</h3>
+                        </div>
+                        <div class="row">
+                            <t t-foreach="material_categories" t-as="cat">
+                                <div class="col-lg-3 col-md-6 things">
+                                    <a t-att-href="'/shop?material_category=' + str(cat.id)" class="box-thumbnail"
+                                       style="padding-top: 46%;">
+                                        <div class="thumbnail-lazy">
+                                            <span t-field="cat.image_256" t-options="{'widget': 'image'}"
+                                                  class="d-flex h-100 justify-content-center align-items-center"/>
+                                            <div class="title-category">
+                                                <h3>
+                                                    <t t-esc="cat.name"/>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <t t-set="i" t-value="1"/>
+                                    <ul class="category">
+                                        <t t-foreach="cat.product_material_ids" t-as="mat">
+                                            <t t-if="i &lt; 5">
+                                                <li>
+                                                    <a t-att-href="'/shop?material=' + str(mat.id)">
+                                                        <t t-esc="mat.name"/>
+                                                    </a>
+                                                </li>
+                                            </t>
+                                            <t t-set="i" t-value="i+1"/>
+                                        </t>
+                                        <li>
+                                            <a class="l14t" t-if="i &gt; 4" t-att-href="'/shop?material_category=' + str(cat.id)">
+                                                Read more
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template">
+    <t t-name="orisCartOrderLine">
+        <t t-if="order_lines.length &gt; 0">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th><t t-esc="translate_help('Product')"/></th>
+                        <th style="width: 100px;"><t t-esc="translate_help('Notes')"/></th>
+                        <th><t t-esc="translate_help('Quantity')"/></th>
+                        <th><t t-esc="translate_help('Weight (kg)')"/></th>
+                        <th><t t-esc="translate_help('Unit price / kg')"/><br />
+                            <t t-esc="translate_help('(Shipping is not included)')"/></th>
+                        <th><t t-esc="translate_help('Unit price / kg')"/> <br />
+                            <t t-esc="translate_help('(Shipping included)')"/></th>
+                        <th><t t-esc="translate_help('Total')"/></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-foreach="order_lines" t-as="line">
+                        <tr class="optional_product info">
+                            <td>
+                                <div class="informations">
+                                    <h6><a t-att-href="line.product_website_url"><t t-esc="line.name_short"/></a></h6>
+                                    <p>
+                                        <t t-esc="line.product_alloy || ''"/><t t-esc="line.product_alloy || ''"/>
+                                        <t t-if="line.product_stiffness">
+                                            <t t-esc="'-' + line.product_stiffness"/>
+                                        </t>
+                                    </p>
+                                    <p>
+                                        <t t-esc="line.product_thickness" />
+                                        <t t-if="line.product_long">
+                                            <t t-esc=" 'x' + line.product_long"/>
+                                        </t>
+                                        <t t-if="line.product_width">
+                                            <t t-esc=" 'x' + line.product_width"/>
+                                        </t>
+                                    </p>
+                                    <p><t t-esc="translate_help('Basic shape', 1)"/> : <t t-esc="line.basic_shape || ''" /></p>
+                                    <t t-if="line.milling_faces">
+                                        <p><t t-esc="translate_help('Milling')"/> : <t t-esc="line.milling_faces"/></p>
+                                    </t>
+                                    <p><t t-esc="translate_help('Origin')"/> : <t t-esc="line.product_origin || ''"/></p>
+                                    <div class="dlete js_delete_product">
+                                        <t t-esc="translate_help('Remove product')"/>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <t t-esc="line.notes"/>
+                            </td>
+                            <td>
+                                <div class="quantity">
+                                    <input class="minus is-form" type="button" value="-" />
+                                    <input aria-label="quantity" class="input-qty js_quantity" max="20" min="1" name="" t-att-data-line-id="line.id"
+                                           t-att-data-product-id="line.product_id"
+                                        type="number" t-att-value="line.product_uom_qty" />
+                                    <input class="plus is-form" type="button" value="+" />
+                                </div>
+                            </td>
+                            <td class="line_product_weight">
+                                <span><t t-esc="formatCurrency(line.product_weight.toFixed(2))"/> kg</span>
+                            </td>
+                            <td class="line_price_unit">
+                                <span><t t-esc="formatCurrency(line.price_unit.toFixed(2))"/> VNĐ</span>
+                            </td>
+                            <td class="price_unit_with_shipping">
+                                <span><t t-esc="formatCurrency(line.price_unit_with_shipping.toFixed(2))"/> VNĐ</span>
+                            </td>
+                            <td class="line_subtotal">
+                                <span><t t-esc="formatCurrency(line.price_subtotal.toFixed(2))"/> VNĐ</span>
+                            </td>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+        </t>
+        <t t-else="order_lines.length &lt; 1">
+            <div class="js_cart_lines alert alert-info">
+              Your cart is empty!
+            </div>
+        </t>
+    </t>
+    <t t-name="orisOrderInfoSummary">
+        <div class="tt-thanh-toan">
+            <div class="d-flex align-items-center">
+                <p><t t-esc="translate_help('Order date')"/></p>
+                <t t-set="date_order_date" t-value="new Date(website_sale_order.date_order)"/>
+                <t t-set="date_order_timestamp" t-value="date_order_date.getTime()"/>
+                <t t-set="timezone_offset" t-value="date_order_date.getTimezoneOffset()"/>
+                <t t-set="date_order_timestamp" t-value="date_order_timestamp - timezone_offset * 60 * 1000"/>
+                <t t-set="date_order_date" t-value="new Date(date_order_timestamp)"/>
+                <p><t t-esc="moment(date_order_date).format('YYYY-MM-DD HH:mm:ss')"/></p>
+            </div>
+            <div class="d-flex align-items-center">
+                <p><t t-esc="translate_help('Estimated delivery time')"/></p>
+                <p>Before 25/02/2022</p>
+            </div>
+            <div class="d-flex align-items-center order_amount_untaxed">
+                <p><t t-esc="translate_help('Amount untaxed')"/></p>
+                <p t-att-data-amount="website_sale_order.amount_untaxed">
+                    <span class="do" style="white-space: nowrap;"/>
+                    <t t-esc="formatCurrency(website_sale_order.amount_untaxed.toFixed(2))"/> VNĐ
+                </p>
+            </div>
+            <div class="d-flex align-items-center order_amount_tax">
+                <p>VAT(10%)</p>
+                <p t-att-data-amount="website_sale_order.amount_tax"  class="do" style="white-space: nowrap;">
+                    <t t-esc="formatCurrency(website_sale_order.amount_tax.toFixed(2))"/> VNĐ
+                </p>
+            </div>
+            <div t-if="website_sale_order.create_custom_declaration" class="d-flex align-items-center order_amount_tax">
+                <p><t t-esc="translate_help('Number Custom Declaration')"/></p>
+                <p t-att-data-amount="website_sale_order.no_of_custom_declaration" style="white-space: nowrap;">
+                    <t t-esc="website_sale_order.no_of_custom_declaration"/>
+                </p>
+            </div>
+            <div t-if="website_sale_order.create_custom_declaration" class="d-flex align-items-center order_amount_tax">
+                <p><t t-esc="translate_help('Total Custom Declaration')"/></p>
+                <p t-att-data-amount="website_sale_order.total_custom_declaration_amount"  class="do" style="white-space: nowrap;">
+                    <t t-esc="formatCurrency(website_sale_order.total_custom_declaration_amount.toFixed(2))"/> VNĐ
+                </p>
+            </div>
+            <div class="d-flex align-items-center order_amount_total">
+                <h4><t t-esc="translate_help('Amount total')"/></h4>
+                <p t-att-data-amount="website_sale_order.amount_total" class="do">
+                    <t t-esc="formatCurrency(website_sale_order.amount_total.toFixed(2))"/> VNĐ
+                </p>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="orisCheckout">
+        <div class="modal fade" id="thanhtoan">
+            <t t-set="tt" t-value="translate_help('Payment Amount')"/>
+            <t t-if="payment_method == 'debt'">
+                <t t-set="tt" t-value="translate_help('Debit Amount')"/>
+            </t>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="logo">
+                        <img src="/oristar_ecommerce_website/static/src/images/icons/logo_v2.png" alt=""/>
+                    </div>
+                    <h4><t t-esc="translate_help('Order confirmation')"/></h4>
+                    <p><t t-esc="translate_help('Receiver')"/>: <t t-esc="partner_shipping.partner_shipping_name || ''"/></p>
+                    <p><t t-esc="translate_help('Phone')"/>: <t t-esc="partner_shipping.phone || ''"/></p>
+                    <p><t t-esc="translate_help('Email')"/>: <t t-esc="partner_shipping.email || ''"/></p>
+                    <p><t t-esc="translate_help('Address')"/>: <t t-esc="partner_shipping.full_address || ''"/></p>
+                    <div class="tthd">
+                        <h4><t t-esc="translate_help('Invoice information')"/></h4>
+                        <p><t t-esc="translate_help('Order code')"/>:<span> <t t-esc="website_sale_order.name"/></span></p>
+                        <p><t t-esc="translate_help('Order date')"/>:
+                            <t t-set="date_order_date" t-value="new Date(website_sale_order.date_order)"/>
+                            <t t-set="date_order_timestamp" t-value="date_order_date.getTime()"/>
+                            <t t-set="timezone_offset" t-value="date_order_date.getTimezoneOffset()"/>
+                            <t t-set="date_order_timestamp" t-value="date_order_timestamp - timezone_offset * 60 * 1000"/>
+                            <t t-set="date_order_date" t-value="new Date(date_order_timestamp)"/>
+                            <span><t t-esc="moment(date_order_date).format('YYYY-MM-DD HH:mm:ss')"/></span>
+                        </p>
+                        <p><t t-esc="tt"/>:
+                            <span class="do"><t t-esc="formatCurrency(website_sale_order.amount_total.toFixed(2), payment_method)"/> VNĐ
+                            </span></p>
+                        <t t-if="payment_method != 'debt'">
+                            <p><t t-esc="translate_help('Payment method')"/> : <span><t t-esc="payment_method_label[payment_method]"/></span></p>
+                        </t>
+                    </div>
+                    <t t-if="payment_method == 'pay'">
+                        <p><t t-esc="translate_help('tku_for_pay')"/>
+                            <span><t t-esc="formatCurrency(website_sale_order.amount_total.toFixed(2), 'pay')"/> VNĐ
+                            </span>  <t t-esc="translate_help('acc_syntax')"/>:</p>
+                    </t>
+                    <t t-if="payment_method == 'advan'">
+                        <p><t t-esc="translate_help('tku_for_advan')"/>
+                            <span><t t-esc="formatCurrency(website_sale_order.amount_total.toFixed(2), 'advan')"/> VNĐ
+                            </span><span>( <t t-esc="translate_help('70_per_order')"/> )</span>  <t t-esc="translate_help('acc_syntax')"/> :</p>
+                    </t>
+                    <t t-if="payment_method != 'debt'">
+                        <h3><t t-esc="translate_help('cp_ck')"/></h3>
+                        <div class="tttk">
+                            <h4><t t-esc="translate_help('acc_inf')"/></h4>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p><b>VND:</b></p>
+                                    <p><t t-esc="translate_help('bank_name')"/>:<span>TMCP Công Thương Việt Nam- chi nhánh Đô Thành (Vietinbank)</span></p>
+                                    <p><t t-esc="translate_help('bank_num')"/>:<span> 110002873105</span></p>
+                                    <p><t t-esc="translate_help('acc_own')"/>:<span> Công ty Cổ Phần Oristar</span></p>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <p><b>USD:</b></p>
+                                    <p><t t-esc="translate_help('bank_name')"/>:<span> VIETNAM JOINT STOCK COMMERCIAL BANK- DO THANH BRANCH</span></p>
+                                    <p><t t-esc="translate_help('Swift Code')"/>:<span> ICBVVNVX</span></p>
+                                    <p><t t-esc="translate_help('bank_num')"/>:<span>  119002873119</span></p>
+                                    <p><t t-esc="translate_help('Beneficiary')"/>:<span> ORISTAR CORPORATION</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                    <div class="text-center pt10">
+                        <a href="javascript:void(0);" class="btn-tt closeThanhtoan"><t t-esc="translate_help('Back')"/></a>
+                        <a class="btn-do" t-att-data-address-id="partner_shipping.partner_shipping_id"
+                          t-att-data-invoice-address-id="partner_shipping.partner_invoice_id"
+                          t-att-data-order-id="website_sale_order.id" id="thanhcongs" type="button" data-toggle="modal">
+                            <t t-esc="translate_help('Order')"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    <t t-name="orisSuccessfulCheckout">
+        <div class="modal fade" id="thanhcong">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="logo">
+                        <img src="/oristar_ecommerce_website/static/src/images/icons/logo_v2.png" alt="" />
+                    </div>
+                    <h4><t t-esc="translate_help('Order confirmation')"/></h4>
+                    <p>
+                        <t t-esc="translate_help('submit_success_msg')"/>
+                    </p>
+                    <p><t t-esc="translate_help('tku_or_service')"/></p>
+                    <div class="text-center pt10">
+                        <a href="/" class="btn-tt"><t t-esc="translate_help('back_to_hp')"/></a>
+                        <a href="/shop" class="btn-do">
+                            <t t-esc="translate_help('continue_shopping')"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    <t t-name="orisCreditPayment">
+        <div class="modal fade" id="thanhtoan">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="logo">
+                        <img src="/oristar_ecommerce_website/static/src/images/icons/logo_v2.png" alt=""/>
+                    </div>
+                    <h4><t t-esc="translate_help('Order confirmation')"/></h4>
+                    <p><t t-esc="translate_help('Receiver')"/>: <t t-esc="partner_shipping.partner_shipping_name || ''"/></p>
+                    <p><t t-esc="translate_help('Phone')"/>: <t t-esc="partner_shipping.phone || ''"/></p>
+                    <p><t t-esc="translate_help('Email')"/>: <t t-esc="partner_shipping.email || ''"/></p>
+                    <p><t t-esc="translate_help('Address')"/>: <t t-esc="partner_shipping.full_address || ''"/></p>
+                    <div class="tthd">
+                        <h4><t t-esc="translate_help('Invoice information')"/></h4>
+                        <p><t t-esc="translate_help('Order code')"/>:<span><t t-esc="website_sale_order.name"/></span></p>
+                        <p><t t-esc="translate_help('Order date')"/>:
+                            <t t-set="date_order_date" t-value="new Date(website_sale_order.date_order)"/>
+                            <t t-set="date_order_timestamp" t-value="date_order_date.getTime()"/>
+                            <t t-set="timezone_offset" t-value="date_order_date.getTimezoneOffset()"/>
+                            <t t-set="date_order_timestamp" t-value="date_order_timestamp - timezone_offset * 60 * 1000"/>
+                            <t t-set="date_order_date" t-value="new Date(date_order_timestamp)"/>
+                            <span><t t-esc="moment(date_order_date).format('YYYY-MM-DD HH:mm:ss')"/></span>
+                        </p>
+                        <p class="order_amount_total_2"><t t-esc="translate_help('Payment Amount')"/> : <span class="do"><t t-esc="formatCurrency(amount_to_pay.toFixed(2))"/></span></p>
+                        <p><t t-esc="translate_help('Payment method')"/>: <span><t t-esc="translate_help('PAY')"/></span></p>
+                    </div>
+                    <p><t t-esc="translate_help('tku_for_pay')"/> <span>
+                        <t t-esc="formatCurrency(website_sale_order.amount_total.toFixed(2), 'pay')"/>
+                    </span>VNĐ <t t-esc="translate_help('acc_syntax')"/>:</p>
+                    <h3><t t-esc="translate_help('cp_ck')"/></h3>
+                    <div class="tttk">
+                        <h4><t t-esc="translate_help('acc_inf')"/></h4>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p><b>VND:</b></p>
+                                <p><t t-esc="translate_help('bank_name')"/>:<span>TMCP Công Thương Việt Nam- chi nhánh Đô Thành (Vietinbank)</span></p>
+                                <p><t t-esc="translate_help('bank_num')"/>:<span> 110002873105</span></p>
+                                <p><t t-esc="translate_help('acc_own')"/>:<span> Công ty Cổ Phần Oristar</span></p>
+
+                            </div>
+                            <div class="col-sm-6">
+                                <p><b>USD:</b></p>
+                                <p><t t-esc="translate_help('bank_name')"/>:<span> VIETNAM JOINT STOCK COMMERCIAL BANK- DO THANH BRANCH</span></p>
+                                <p><t t-esc="translate_help('Swift Code')"/>:<span> ICBVVNVX</span></p>
+                                <p><t t-esc="translate_help('bank_num')"/>:<span>  119002873119</span></p>
+                                <p><t t-esc="translate_help('Beneficiary')"/>:<span> ORISTAR CORPORATION</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center pt10">
+                        <a href="javascript:void(0);" class="btn-tt">Back</a>
+                        <a class="btn-do" t-att-data-address-id="partner_shipping.partner_shipping_id"
+                          t-att-data-order-id="website_sale_order.id" id="thanhcongs" type="button" data-toggle="modal">
+                            <t t-esc="translate_help('Order')"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    <t t-name="orisCreditInformation">
+        <p class="mb20"><t t-esc="translate_help('pay_credit')"/>:
+            <b class="text-danger"><t t-esc="formatCurrency(amount_to_pay.toFixed(2))"/> VNĐ</b>
+        </p>
+        <form action="">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="item">
+                        <input type="radio" name="drone" id="PAY" value="pay" checked="checked"/>
+                        <label for="PAY" value="PAY">
+                            <div class="text">
+                                <h4><t t-esc="translate_help('PAY')"/></h4>
+                                <p><t t-esc="translate_help('pay_entire')"/></p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="tt-thanh-toan">
+            <div class="d-flex align-items-center order_amount_total">
+                <h4><t t-esc="translate_help('Order Total')"/> :</h4>
+                <p t-att-data-amount="website_sale_order.amount_total" class="do"><t t-esc="formatCurrency(amount_to_pay.toFixed(2))"/> VNĐ</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="" class="btn-tt"><t t-esc="translate_help('continue_shopping')"/></a>
+            <a class="btn-do" type="button">
+                <t t-esc="translate_help('p_t_checkout')"/></a>
+        </div>
+        <t t-call="orisCreditPayment"/>
+        <t t-call="orisSuccessfulCheckout"/>
+    </t>
+    <t t-name="orisPaymentMethods">
+        <form action="">
+            <div class="row">
+                <t t-if="user_external_id != 'base.public_user' &amp;&amp; should_show_debt_method">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <input type="radio" name="drone" id="debt" value="debt" t-att-checked="payment_method == 'debt' ? true : null"/>
+                            <label for="debt" value="debt">
+                                <div class="text">
+                                    <h4><t t-esc="translate_help('DEBT')"/></h4>
+                                    <p><t t-esc="translate_help('d_debit')"/></p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </t>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <input type="radio" name="drone" id="PAY" value="pay" t-att-checked="payment_method == 'pay' ? true: null"/>
+                        <label for="PAY" value="PAY">
+                            <div class="text">
+                                <h4><t t-esc="translate_help('PAY')"/></h4>
+                                <p><t t-esc="translate_help('pay_entire')"/></p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <t t-if="can_pay_by_cod">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <input type="radio" name="drone" id="advan" value="advan" t-att-checked="payment_method == 'advan' ? true : null"/>
+                            <label for="advan" value="advan">
+                                <div class="text">
+                                    <h4><t t-esc="translate_help('ADVANCE')"/></h4>
+                                    <p><t t-esc="translate_help('d_advan')"/></p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </t>
+            </div>
+        </form>
+    </t>
+    <t t-name="orisCallToCheckoutProcess">
+        <t t-if="website_sale_order.amount_total">
+            <div class="title pb20">
+                <h3><t t-esc="translate_help('Payment method')"/></h3>
+            </div>
+            <t t-call="orisPaymentMethods"/>
+            <t t-call="orisOrderInfoSummary"/>
+            <div class="text-center">
+                <a href="" class="btn-tt"><t t-esc="translate_help('continue_shopping')"/></a>
+                <a class="btn-do" type="button">
+                    <t t-esc="translate_help('p_t_checkout')"/></a>
+            </div>
+            <t t-call="orisCheckout"/>
+            <t t-call="orisSuccessfulCheckout"/>
+        </t>
+        <t t-else="">
+            <div></div>
+        </t>
+    </t>
+</templates>

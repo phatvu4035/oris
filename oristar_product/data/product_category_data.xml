@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="product_category_aluminum" model="product.category">
+            <field name="parent_id" ref="product.product_category_all"/>
+            <field name="name">Nhôm</field>
+        </record>
+        <record id="product_category_copper" model="product.category">
+            <field name="parent_id" ref="product.product_category_all"/>
+            <field name="name">Đồng</field>
+        </record>
+        <record id="product_category_steel" model="product.category">
+            <field name="parent_id" ref="product.product_category_all"/>
+            <field name="name">Thép</field>
+        </record>
+        <record id="product_category_special_steel" model="product.category">
+            <field name="parent_id" ref="product.product_category_all"/>
+            <field name="name">Thép đặc biệt</field>
+        </record>
+
+        <record id="product_category_bery_copper" model="product.category">
+            <field name="parent_id" ref="product_category_copper"/>
+            <field name="name">Đồng bery</field>
+        </record>
+        <record id="product_category_alloy_copper" model="product.category">
+            <field name="parent_id" ref="product_category_copper"/>
+            <field name="name">Đồng hợp kim</field>
+        </record>
+        <record id="product_category_plating_copper" model="product.category">
+            <field name="parent_id" ref="product_category_copper"/>
+            <field name="name">Đồng xi mạ</field>
+        </record>
+        <record id="product_category_refined_copper" model="product.category">
+            <field name="parent_id" ref="product_category_copper"/>
+            <field name="name">Đồng tinh chế</field>
+        </record>
+
+        <record id="product_category_tool_carbon_steel" model="product.category">
+            <field name="parent_id" ref="product_category_steel"/>
+            <field name="name">Thép dụng cụ cacbon</field>
+        </record>
+        <record id="product_category_stainless_steel" model="product.category">
+            <field name="parent_id" ref="product_category_steel"/>
+            <field name="name">Thép không gỉ</field>
+        </record>
+        <record id="product_category_alloy_steel" model="product.category">
+            <field name="parent_id" ref="product_category_steel"/>
+            <field name="name">Thép hợp kim</field>
+        </record>
+        <record id="product_category_non_alloy_steel" model="product.category">
+            <field name="parent_id" ref="product_category_steel"/>
+            <field name="name">Thép không hợp kim</field>
+        </record>
+
+        <record id="product_category_machine_steel" model="product.category">
+            <field name="parent_id" ref="product_category_special_steel"/>
+            <field name="name">Thép chế tạo máy</field>
+        </record>
+        <record id="product_category_cool_machining_steel" model="product.category">
+            <field name="parent_id" ref="product_category_special_steel"/>
+            <field name="name">Thép gia công nguội</field>
+        </record>
+        <record id="product_category_cool_machining_steel" model="product.category">
+            <field name="parent_id" ref="product_category_special_steel"/>
+            <field name="name">Thép gia công nguội</field>
+        </record>
+        <record id="product_category_plastic_mold_steel" model="product.category">
+            <field name="parent_id" ref="product_category_special_steel"/>
+            <field name="name">Thép khuôn nhựa</field>
+        </record>
+        <record id="product_category_hot_machining_steel" model="product.category">
+            <field name="parent_id" ref="product_category_special_steel"/>
+            <field name="name">Thép gia công nóng</field>
+        </record>
+        <record id="product_category_high_speed_steel" model="product.category">
+            <field name="parent_id" ref="product_category_special_steel"/>
+            <field name="name">Thép gió (HSS)</field>
+        </record>
+        <record id="product_category_stainless_tool_steel" model="product.category">
+            <field name="parent_id" ref="product_category_special_steel"/>
+            <field name="name">Thép dụng cụ không gỉ</field>
+        </record>
+        <record id="product_category_carbide_steel" model="product.category">
+            <field name="parent_id" ref="product_category_special_steel"/>
+            <field name="name">Carbide</field>
+        </record>
+
+        <record id="product_category_reflective_aluminum" model="product.category">
+            <field name="parent_id" ref="product_category_aluminum"/>
+            <field name="name">Nhôm phản quang</field>
+        </record>
+        <record id="product_category_alloy_aluminum" model="product.category">
+            <field name="parent_id" ref="product_category_aluminum"/>
+            <field name="name">Nhôm hợp kim</field>
+        </record>
+        <record id="product_category_non_alloy_aluminum" model="product.category">
+            <field name="parent_id" ref="product_category_aluminum"/>
+            <field name="name">Nhôm không hợp kim</field>
+        </record>
+    </data>
+</odoo>

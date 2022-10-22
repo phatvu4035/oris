@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- list for user 1-->
+        <record id="list_example_user1" model="product.pricelist">
+            <field name="name">CMC Pricelist</field>
+            <field name="active">True</field>
+            <field name="item_ids" eval="[(4, ref('pricelist_item_pp2_all')), (4, ref('pricelist_item_01')), (4, ref('pricelist_item_02')), (4, ref('pricelist_item_03')), (4, ref('pricelist_item_04')), (4, ref('pricelist_item_05')), (4, ref('pricelist_item_06')), (4, ref('pricelist_item_07')), (4, ref('pricelist_item_08'))]"/>
+        </record>
+
+        <!--
+        <record id="list_example_user2" model="product.pricelist">
+            <field name="name">CMC Pricelist PP3</field>
+            <field name="active">True</field>
+            <field name="item_ids" eval="[(4, ref('pricelist_item_pp3_all')), (4, ref('pricelist_item_05')), (4, ref('pricelist_item_06')), (4, ref('pricelist_item_07')), (4, ref('pricelist_item_08'))]"/>
+        </record>
+        list for user 2-->
+    </data>
+</odoo>

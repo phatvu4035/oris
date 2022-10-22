@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="lme_market_lme" model="lme.market">
+            <field name="name">LME</field>
+            <field name="description">London Metal Exchange</field>
+        </record>
+        <record id="lme_market_oriental" model="lme.market">
+            <field name="name">Oriental</field>
+            <field name="description">Oriental Copper</field>
+        </record>
+    </data>
+</odoo>

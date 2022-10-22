@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="header_top" inherit_id="website.layout" name="Header Top">
+        <xpath expr="//header//nav" position="before">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 d-flex align-items-center">
+                            <div class="d-flex align-items-center pr40">
+                                <div class="header-img">
+                                    <img src="/oristar_ecommerce_website/static/src/images/icons/Vector.png" alt="" />
+                                </div>
+                                <p><a href="mailto: offical@oristar.com.vn">offical@oristar.com.vn</a></p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="header-img">
+                                    <img src="/oristar_ecommerce_website/static/src/images/icons/Vector_1.png" alt="" />
+                                </div>
+                                <p><a href="tel:0285825475">Hotline: 0285 825 475</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <ul class="justify-content-end d-flex">
+                                <li class="or-lang-selector">
+                                    <t id="language_selector_call" t-call="website.language_selector">
+                                        <t t-set="flags" t-value="True"/>
+                                        <t t-set="_div_classes" t-value="(_div_classes or '') + ' dropup'"/>
+                                    </t>
+                                </li>
+                                <li>
+                                    <a href="/oristar/policy">Policy</a>
+                                </li>
+                                <li>
+                                    <a href="/oristar/faq">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="/contactus">Contact</a>
+                                </li>
+                                <t t-set="user_external_id_dict" t-value="request.env.user.get_external_id()" />
+                                <t t-set="user_external_id" t-value="user_external_id_dict.get(request.env.user.id, None)" />
+                                <t t-if="user_external_id == 'base.public_user'">
+                                    <li>
+                                        <a href="/web/login">Login</a>
+                                    </li>
+                                </t>
+                                <t t-else="">
+                                    <li>
+                                        <a href="/web/session/logout?redirect=/">Log out</a>
+                                    </li>
+                                </t>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="or_website_search_box" name="Or Website Searchbox" inherit_id="website.website_search_box">
+        <xpath expr="//input[@name='search']" position="replace">
+            <input type="search" name="search" class="search-query form-control oe_search_box" placeholder="Enter product" t-att-value="search"/>
+        </xpath>
+        <xpath expr="//button[@type='submit']" position="replace">
+            <button type="submit" class="btn btn-primary oe_search_button" aria-label="Search" title="Search">
+                <img src="/oristar_ecommerce_website/static/src/images/icons/search.png"/>
+            </button>
+        </xpath>
+    </template>
+    <template id="or_website_sale_products_search_box" inherit_id="website_sale.website_sale_products_search_box">
+        <xpath expr="//input[@name='search']" position="attributes">
+            <attribute name="data-display-price">false</attribute>
+        </xpath>
+    </template>
+
+    <template id="website_menu" name="Website Menu" inherit_id="website.template_header_default">
+        <xpath expr="//div[@id='oe_structure_header_default_1']" position="replace">
+            <div class="oe_structure oe_structure_solo" id="oe_structure_header_default_1">
+                <div class="or-header-right">
+                    <div class="header-search">
+                        <t t-call="website_sale.website_sale_products_search_box">
+                            <t t-set="action" t-value="'/shop'"/>
+                            <t t-set="search_placeholder">Enter product</t>
+                            <t t-if="attrib_values">
+                                <t t-foreach="attrib_values" t-as="a">
+                                    <input type="hidden" name="attrib" t-att-value="'%s-%s' % (a[0], a[1])" />
+                                </t>
+                            </t>
+                        </t>
+                    </div>
+                    <div class="header-cart">
+                        <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
+                        <t t-set="show_cart" t-value="true"/>
+                        <ul class="nav navbar-nav flex-grow-1">
+                            <li t-attf-class="#{_item_class} divider d-none"/> <!-- Make sure the cart and related menus are not folded (see autohideMenu) -->
+                            <li t-attf-class="o_wsale_my_cart #{not show_cart and 'd-none'} #{_item_class}">
+                                <a href="/shop/cart" t-attf-class="nav-link #{_link_class}">
+                                    <img src="/oristar_ecommerce_website/static/src/images/icons/Group_22.png"/>
+                                    <sup class="my_cart_quantity badge badge-primary"
+                                         t-esc="website_sale_order and website_sale_order.cart_quantity or '0'"
+                                         t-att-data-order-id="website_sale_order and website_sale_order.id or ''"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-user">
+                        <ul class="nav navbar-nav flex-grow-1">
+                            <li class="nav-item dropdown ml-lg-auto o_no_autohide_item">
+                                <a href="#" role="button" data-toggle="dropdown"
+                                   class="dropdown-toggle nav-link font-weight-bold">
+                                    <span class="">
+                                        <t t-set="user_external_id_dict" t-value="request.env.user.get_external_id()" />
+                                        <t t-set="user_external_id" t-value="user_external_id_dict.get(request.env.user.id, None)" />
+                                        <t t-if="user_external_id != 'base.public_user'">
+                                            <t t-if="user_id.image_256" t-set="avatar_source" t-value="image_data_uri(user_id.image_256)"/>
+                                        </t>
+                                        <t t-else="" t-set="avatar_source" t-value="'/oristar_ecommerce_website/static/src/images/icons/user.png'"/>
+                                        <img t-att-src="avatar_source" t-attf-class="rounded-circle #{_avatar_class}" width="24" height="24" alt="" loading="eager"/>
+                                    </span>
+                                </a>
+                                <div role="menu" class="dropdown-menu js_usermenu">
+                                    <a t-if="user_external_id != 'base.public_user'" href="/my/home" role="menuitem" class="dropdown-item">My
+                                        Account
+                                    </a>
+                                    <div id="o_logout_divider" class="dropdown-divider"></div>
+                                    <a t-if="user_external_id != 'base.public_user'" role="menuitem" id="o_logout" class="dropdown-item"
+                                       href="/web/session/logout?redirect=/">Logout
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

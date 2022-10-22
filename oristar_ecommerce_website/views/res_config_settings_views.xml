@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="res_config_settings_view_form" model="ir.ui.view">
+		<field name="name">res.config.settings.view.form.inherit.sale.oristar</field>
+		<field name="model">res.config.settings</field>
+		<field name="priority" eval="55" />
+		<field name="inherit_id" ref="website_sale.res_config_settings_view_form" />
+		<field name="arch" type="xml">
+			<div id="sale_pricing_settings" position="inside">
+				<div class="col-12 col-lg-6 o_setting_box"
+                     id="pricing_engine_settings"
+                     title="Apply manual discounts on sales order lines or display discounts computed from pricelists (option to activate in the pricelist configuration).">
+                     
+                     <div class="o_setting_right_pane">
+                        <label for="price_service_url" />
+						<div class="text-muted">
+							Base URL to connect to Pricing Engine.
+						</div>
+						<div class="mt16">
+							<field name="price_service_url" class="oe_inline" />
+						</div>
+						
+						<label for="price_method_folder" />
+						<div class="text-muted">
+							Current folder, which contains price method files.
+						</div>
+						<div class="mt16">
+							<field name="price_method_folder" class="oe_inline" />
+						</div>
+						
+						<label for="quotation_file" />
+						<div class="text-muted">
+							Quotation file.
+						</div>
+						<div class="mt16">
+							<field name="quotation_file" class="oe_inline" />
+						</div>
+						
+						<label for="milling_min_limit" />
+						<div class="text-muted">
+							Minimum limit (mm) for milling.
+						</div>
+						<div class="mt16">
+							<field name="milling_min_limit" class="oe_inline" />
+						</div>
+						
+						<label for="milling_max_limit" />
+						<div class="text-muted">
+							Maximum limit (mm) for milling.
+						</div>
+						<div class="mt16">
+							<field name="milling_max_limit" class="oe_inline" />
+						</div>
+						
+						<label for="sale_notification_reception_partner_ids" />
+						<div class="text-muted">
+							Responsible users, who will receive notification of sale in case of there is no assigned PiC.
+						</div>
+						<div class="mt16">
+							<field name="sale_notification_reception_partner_ids" widget="many2many_tags" class="oe_inline" />
+						</div>
+						
+						<label for="working_time_delay_confirmation" />
+						<div class="text-muted">
+							Delay time (hour) for notification in working time when sale order is not confirmed timely.
+						</div>
+						<div class="mt16">
+							<field name="working_time_delay_confirmation" class="oe_inline" />
+						</div>
+						
+						<label for="offtime_delay_confirmation" />
+						<div class="text-muted">
+							Delay time (hour) for notification in off time when sale order is not confirmed timely.
+						</div>
+						<div class="mt16">
+							<field name="offtime_delay_confirmation" class="oe_inline" />
+						</div>
+						
+						<label for="viettelpost_api_url" />
+						<div class="text-muted">
+							Base URL to connect to Viettel Post API.
+						</div>
+						<div class="mt16">
+							<field name="viettelpost_api_url" class="oe_inline" />
+						</div>
+						
+						<label for="viettelpost_user_name" />
+						<div class="text-muted">
+							Username used to connect to Viettel Post API.
+						</div>
+						<div class="mt16">
+							<field name="viettelpost_user_name" class="oe_inline" />
+						</div>
+						
+						<label for="viettelpost_password" />
+						<div class="text-muted">
+							Password used to connect to Viettel Post API.
+						</div>
+						<div class="mt16">
+							<field name="viettelpost_password" class="oe_inline" />
+						</div>
+						
+                     </div>
+                 </div>
+			</div>
+		</field>
+	</record>
+</odoo>

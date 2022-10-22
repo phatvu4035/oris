@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!--Instant product to add to price list item because the rest of product is in csv file and will be load after
+            install module -->
+        <record id="product_template_241" model="product.template">
+            <field name="default_code">A6061-T6/4H</field>
+            <field name="name">Thép không gỉ tấm lá, SUS 301 CSP - 3/4H</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_02"/>
+            <field name="product_material_id" ref="oristar_product.product_material_07"/>
+            <!--<field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_00"/>-->
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_01"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_44"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_156"/>
+            <field name="product_origin" ref="base.tw"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">thep_tam_day</field>
+            <field name="list_price">25000</field>
+        </record>
+        <record id="product_template_245" model="product.template">
+            <field name="default_code">A6061-T6</field>
+            <field name="name">Thép không gỉ tấm lá, SUS 304 CSP - H</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_02"/>
+            <field name="product_material_id" ref="oristar_product.product_material_07"/>
+            <!--<field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_01"/>-->
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_01"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_47"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_163"/>
+            <field name="product_origin" ref="base.kr"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">thep_tam_la</field>
+            <field name="list_price">30000</field>
+        </record>
+        <record id="product_template_04" model="product.template">
+            <field name="default_code">A6061-T6</field>
+            <field name="name">Đồng hợp kim Beryllium tấm, Moldmax - SC</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_00"/>
+            <field name="product_material_id" ref="oristar_product.product_material_00"/>
+            <!--<field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_01"/>-->
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_01"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_01"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_08"/>
+            <field name="product_origin" ref="base.us"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">dong_bery</field>
+            <field name="list_price">35000</field>
+        </record>
+        <record id="product_template_242" model="product.template">
+            <field name="default_code">A6061-T6</field>
+            <field name="name">Thép không gỉ tấm lá, SUS 301 CSP - 1/2H</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_02"/>
+            <field name="product_material_id" ref="oristar_product.product_material_07"/>
+            <!--<field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_01"/>-->
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_01"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_44"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_157"/>
+            <field name="product_origin" ref="base.jp"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">thep_dung_cu</field>
+            <field name="list_price">40000</field>
+        </record>
+        <record id="product_template_11" model="product.template">
+            <field name="default_code">A6061-T6</field>
+            <field name="name">Đồng tinh chế cuộn, C1100 - 0</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_00"/>
+            <field name="product_material_id" ref="oristar_product.product_material_01"/>
+            <!--<field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_01"/>-->
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_00"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_04"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_25"/>
+            <field name="product_origin" ref="base.tw"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">dong_tam_la</field>
+            <field name="list_price">45000</field>
+        </record>
+        <record id="product_template_12" model="product.template">
+            <field name="default_code">A6061-T6</field>
+            <field name="name">Đồng tinh chế cuộn, C1100 - H</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_00"/>
+            <field name="product_material_id" ref="oristar_product.product_material_01"/>
+            <!--<field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_01"/>-->
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_00"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_04"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_22"/>
+            <field name="product_origin" ref="base.tw"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">dong_hop_kim_tam_day</field>
+            <field name="list_price">50000</field>
+        </record>
+        <record id="product_template_52" model="product.template">
+            <field name="default_code">A6061-T6</field>
+            <field name="name">Đồng tinh chế thanh, C1100 - 1/2H</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_00"/>
+            <field name="product_material_id" ref="oristar_product.product_material_01"/>
+            <!--<field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_01"/>-->
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_01"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_04"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_23"/>
+            <field name="product_origin" ref="base.de"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">dong_tam_day</field>
+            <field name="list_price">65000</field>
+        </record>
+        <record id="product_template_128" model="product.template">
+            <field name="default_code">A6061-T6</field>
+            <field name="name">Nhôm không hợp kim tấm, A1050 - H18</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_01"/>
+            <field name="product_material_id" ref="oristar_product.product_material_05"/>
+            <!--<field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_01"/>-->
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_01"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_38"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_147"/>
+            <field name="product_origin" ref="base.kr"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">nhom_hop_kim_day</field>
+            <field name="list_price">50000</field>
+        </record>
+        <record id="product_template_126" model="product.template">
+            <field name="default_code">A6061-T6</field>
+            <field name="name">Nhôm không hợp kim tấm, A1050 - H14</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_01"/>
+            <field name="product_material_id" ref="oristar_product.product_material_05"/>
+            <!--<field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_01"/>-->
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_01"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_38"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_145"/>
+            <field name="product_origin" ref="base.kr"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">nhom_hop_kim_mong</field>
+            <field name="list_price">25000</field>
+        </record>
+        <record id="product_template_05" model="product.template">
+            <field name="default_code">A0602-T1</field>
+            <field name="name">Đồng hợp kim Beryllium thanh, Moldmax - HH</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_00"/>
+            <field name="product_material_id" ref="oristar_product.product_material_00"/>
+            <field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_00"/>
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_02"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_01"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_06"/>
+            <field name="product_origin" ref="base.us"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">dong_thanh</field>
+            <field name="list_price">25000</field>
+        </record>
+        <record id="product_template_06" model="product.template">
+            <field name="default_code">A0602-T1</field>
+            <field name="name">Đồng hợp kim Beryllium thanh, Moldmax - HH</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_00"/>
+            <field name="product_material_id" ref="oristar_product.product_material_00"/>
+            <field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_01"/>
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_02"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_02"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_10"/>
+            <field name="product_origin" ref="base.us"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">dong_hop_kim_thanh</field>
+            <field name="list_price">40000</field>
+        </record>
+        <record id="product_template_169" model="product.template">
+            <field name="default_code">A0602-T1</field>
+            <field name="name">Nhôm hợp kim thanh, A7003 - T6</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_01"/>
+            <field name="product_material_id" ref="oristar_product.product_material_04"/>
+            <field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_00"/>
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_02"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_35"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_141"/>
+            <field name="product_origin" ref="base.kr"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">nhom_thanh</field>
+            <field name="list_price">100000</field>
+        </record>
+        <record id="product_template_06" model="product.template">
+            <field name="default_code">A6061-T6</field>
+            <field name="name">Đồng hợp kim Beryllium thanh tròn, Alloy 25 - H</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_00"/>
+            <field name="product_material_id" ref="oristar_product.product_material_00"/>
+            <field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_01"/>
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_02"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_03"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_16"/>
+            <field name="product_origin" ref="base.jp"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">dong_bery_thanh</field>
+        </record>
+        <record id="product_template_124" model="product.template">
+            <field name="default_code">A6061-T6</field>
+            <field name="name">Nhôm không hợp kim cuộn, A1050 - H16</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_01"/>
+            <field name="product_material_id" ref="oristar_product.product_material_05"/>
+            <field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_01"/>
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_00"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_38"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_146"/>
+            <field name="product_origin" ref="base.cn"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">nhom_khong_hop_kim_cuon</field>
+            <field name="list_price">25000</field>
+        </record>
+        <record id="product_template_13" model="product.template">
+            <field name="default_code">DCDC1100DLH2</field>
+            <field name="name">Đồng tinh chế cuộn, C1100 - 1/2H</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_00"/>
+            <field name="product_material_id" ref="oristar_product.product_material_01"/>
+            <!--<field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_01"/>-->
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_00"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_04"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_23"/>
+            <field name="product_origin" ref="base.tw"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">dong_tinh_che_tam_la</field>
+            <field name="list_price">25000</field>
+        </record>
+        <record id="product_template_191" model="product.template">
+            <field name="default_code">A6061-T6</field>
+            <field name="name">Thép không gỉ cuộn, SUS 301 CSP - H</field>
+            <field name="product_material_category_id" ref="oristar_product.product_material_category_02"/>
+            <field name="product_material_id" ref="oristar_product.product_material_07"/>
+            <!--<field name="product_detailed_shape_id" ref="oristar_product.product_detailed_shape_01"/>-->
+            <field name="product_basic_shape_id" ref="oristar_product.product_basic_shape_00"/>
+            <field name="product_alloy_id" ref="oristar_product.product_alloy_44"/>
+            <field name="product_stiffness_id" ref="oristar_product.product_stiffness_155"/>
+            <field name="product_origin" ref="base.tw"/>
+            <field name="is_published">True</field>
+            <field name="price_method_type">thep_la_cuon</field>
+            <field name="list_price">85000</field>
+        </record>
+
+        <!--2 product for pricing method 2-->
+        <record id="pricelist_item_pp2_all" model="product.pricelist.item">
+            <field name="tsln">10</field>
+            <field name="price_file_id" ref="price_file_pp1"/>
+            <field name="compute_price">api</field>
+            <field name="applied_on">3_global</field>
+            <field name="base">list_price</field>
+        </record>
+        <record id="pricelist_item_01" model="product.pricelist.item">
+            <field name="tsln">10</field>
+            <field name="price_file_id" ref="price_file_pp2"/>
+            <field name="product_tmpl_id" ref="product_template_241"/>
+            <field name="compute_price">api</field>
+            <field name="applied_on">1_product</field>
+            <field name="base">list_price</field>
+        </record>
+        <record id="pricelist_item_02" model="product.pricelist.item">
+            <field name="tsln">10</field>
+            <field name="price_file_id" ref="price_file_pp2"/>
+            <field name="product_tmpl_id" ref="product_template_52"/>
+            <field name="compute_price">api</field>
+            <field name="applied_on">1_product</field>
+            <field name="base">list_price</field>
+        </record>
+        <record id="pricelist_item_03" model="product.pricelist.item">
+            <field name="tsln">10</field>
+            <field name="price_file_id" ref="price_file_pp2"/>
+            <field name="product_tmpl_id" ref="product_template_128"/>
+            <field name="compute_price">api</field>
+            <field name="applied_on">1_product</field>
+            <field name="base">list_price</field>
+        </record>
+        <record id="pricelist_item_04" model="product.pricelist.item">
+            <field name="tsln">10</field>
+            <field name="price_file_id" ref="price_file_pp2"/>
+            <field name="product_tmpl_id" ref="product_template_191"/>
+            <field name="compute_price">api</field>
+            <field name="applied_on">1_product</field>
+            <field name="base">list_price</field>
+        </record>
+
+
+        <!--2 product for pricing method 3-->
+        <record id="pricelist_item_pp3_all" model="product.pricelist.item">
+            <field name="tsln">10</field>
+            <field name="price_file_id" ref="price_file_pp1"/>
+            <field name="compute_price">api</field>
+            <field name="applied_on">3_global</field>
+            <field name="base">list_price</field>
+        </record>
+        <record id="pricelist_item_05" model="product.pricelist.item">
+            <field name="tsln">10</field>
+            <field name="price_file_id" ref="price_file_pp3"/>
+            <field name="product_tmpl_id" ref="product_template_241"/>
+            <field name="compute_price">api</field>
+            <field name="applied_on">1_product</field>
+            <field name="base">list_price</field>
+        </record>
+        <record id="pricelist_item_06" model="product.pricelist.item">
+            <field name="tsln">10</field>
+            <field name="price_file_id" ref="price_file_pp3"/>
+            <field name="product_tmpl_id" ref="product_template_52"/>
+            <field name="compute_price">api</field>
+            <field name="applied_on">1_product</field>
+            <field name="base">list_price</field>
+        </record>
+        <record id="pricelist_item_07" model="product.pricelist.item">
+            <field name="tsln">10</field>
+            <field name="price_file_id" ref="price_file_pp3"/>
+            <field name="product_tmpl_id" ref="product_template_128"/>
+            <field name="compute_price">api</field>
+            <field name="applied_on">1_product</field>
+            <field name="base">list_price</field>
+        </record>
+        <record id="pricelist_item_08" model="product.pricelist.item">
+            <field name="tsln">10</field>
+            <field name="price_file_id" ref="price_file_pp3"/>
+            <field name="product_tmpl_id" ref="product_template_191"/>
+            <field name="compute_price">api</field>
+            <field name="applied_on">1_product</field>
+            <field name="base">list_price</field>
+        </record>
+    </data>
+</odoo>

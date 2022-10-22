@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!--Đồng Bery and C1720-->
+        <record id="product_stiffness_00" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_00"/>
+        </record>
+        <record id="product_stiffness_01" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_00"/>
+        </record>
+        <record id="product_stiffness_02" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_00"/>
+        </record>
+        <record id="product_stiffness_03" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_00"/>
+        </record>
+        <record id="product_stiffness_04" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_00"/>
+        </record>
+        <record id="product_stiffness_05" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_00"/>
+        </record>
+
+        <!--Đồng Bery and Moldmax-->
+        <record id="product_stiffness_06" model="product.stiffness">
+            <field name="name">HH</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_01"/>
+        </record>
+        <record id="product_stiffness_07" model="product.stiffness">
+            <field name="name">LH</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_01"/>
+        </record>
+        <record id="product_stiffness_08" model="product.stiffness">
+            <field name="name">SC</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_01"/>
+        </record>
+
+        <!--Đồng Bery and Alloy 25-->
+        <record id="product_stiffness_09" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_02"/>
+        </record>
+        <record id="product_stiffness_10" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_02"/>
+        </record>
+        <record id="product_stiffness_10" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_02"/>
+        </record>
+        <record id="product_stiffness_11" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_02"/>
+        </record>
+        <record id="product_stiffness_12" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_02"/>
+        </record>
+        <record id="product_stiffness_13" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_02"/>
+        </record>
+
+        <!--Đồng Bery and BeCu25-->
+        <record id="product_stiffness_14" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_03"/>
+        </record>
+        <record id="product_stiffness_15" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_03"/>
+        </record>
+        <record id="product_stiffness_16" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_03"/>
+        </record>
+        <record id="product_stiffness_17" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_03"/>
+        </record>
+        <record id="product_stiffness_18" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_03"/>
+        </record>
+        <record id="product_stiffness_19" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_00"/>
+            <field name="product_alloy_id" ref="product_alloy_03"/>
+        </record>
+
+        <!--Đồng tinh chế and C1100-->
+        <record id="product_stiffness_20" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_04"/>
+        </record>
+        <record id="product_stiffness_21" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_04"/>
+        </record>
+        <record id="product_stiffness_22" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_04"/>
+        </record>
+        <record id="product_stiffness_23" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_04"/>
+        </record>
+        <record id="product_stiffness_24" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_04"/>
+        </record>
+        <record id="product_stiffness_25" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_04"/>
+        </record>
+
+        <!--Đồng tinh chế and C1220-->
+        <record id="product_stiffness_26" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_05"/>
+        </record>
+        <record id="product_stiffness_27" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_05"/>
+        </record>
+        <record id="product_stiffness_28" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_05"/>
+        </record>
+        <record id="product_stiffness_29" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_05"/>
+        </record>
+        <record id="product_stiffness_30" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_05"/>
+        </record>
+        <record id="product_stiffness_31" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_05"/>
+        </record>
+
+        <!--Đồng tinh chế and C19210-->
+        <record id="product_stiffness_32" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_06"/>
+        </record>
+        <record id="product_stiffness_33" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_06"/>
+        </record>
+        <record id="product_stiffness_34" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_06"/>
+        </record>
+        <record id="product_stiffness_35" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_06"/>
+        </record>
+        <record id="product_stiffness_36" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_06"/>
+        </record>
+        <record id="product_stiffness_37" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_01"/>
+            <field name="product_alloy_id" ref="product_alloy_06"/>
+        </record>
+
+        <!--Đồng hợp kim and C2600-->
+        <record id="product_stiffness_38" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_07"/>
+        </record>
+        <record id="product_stiffness_39" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_07"/>
+        </record>
+        <record id="product_stiffness_40" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_07"/>
+        </record>
+        <record id="product_stiffness_41" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_07"/>
+        </record>
+        <record id="product_stiffness_42" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_07"/>
+        </record>
+        <record id="product_stiffness_43" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_07"/>
+        </record>
+
+        <!--Đồng hợp kim and C2680-->
+        <record id="product_stiffness_44" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_08"/>
+        </record>
+        <record id="product_stiffness_45" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_08"/>
+        </record>
+        <record id="product_stiffness_46" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_08"/>
+        </record>
+        <record id="product_stiffness_41" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_08"/>
+        </record>
+        <record id="product_stiffness_48" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_08"/>
+        </record>
+        <record id="product_stiffness_49" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_08"/>
+        </record>
+
+        <!--Đồng hợp kim and C2700-->
+        <record id="product_stiffness_50" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_09"/>
+        </record>
+        <record id="product_stiffness_51" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_09"/>
+        </record>
+        <record id="product_stiffness_52" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_09"/>
+        </record>
+        <record id="product_stiffness_53" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_09"/>
+        </record>
+        <record id="product_stiffness_54" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_09"/>
+        </record>
+        <record id="product_stiffness_55" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_09"/>
+        </record>
+
+        <!--Đồng hợp kim and C2720-->
+        <record id="product_stiffness_56" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_10"/>
+        </record>
+        <record id="product_stiffness_57" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_10"/>
+        </record>
+        <record id="product_stiffness_58" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_10"/>
+        </record>
+        <record id="product_stiffness_59" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_10"/>
+        </record>
+        <record id="product_stiffness_60" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_10"/>
+        </record>
+        <record id="product_stiffness_61" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_10"/>
+        </record>
+
+        <!--Đồng hợp kim and C2801-->
+        <record id="product_stiffness_62" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_11"/>
+        </record>
+        <record id="product_stiffness_63" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_11"/>
+        </record>
+        <record id="product_stiffness_64" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_11"/>
+        </record>
+        <record id="product_stiffness_65" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_11"/>
+        </record>
+        <record id="product_stiffness_66" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_11"/>
+        </record>
+        <record id="product_stiffness_67" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_11"/>
+        </record>
+
+        <!--Đồng hợp kim and C36000-->
+        <record id="product_stiffness_68" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_12"/>
+        </record>
+        <record id="product_stiffness_69" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_12"/>
+        </record>
+        <record id="product_stiffness_70" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_12"/>
+        </record>
+        <record id="product_stiffness_71" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_12"/>
+        </record>
+        <record id="product_stiffness_72" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_12"/>
+        </record>
+        <record id="product_stiffness_73" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_12"/>
+        </record>
+
+        <!--Đồng hợp kim and C3602-->
+        <record id="product_stiffness_74" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_13"/>
+        </record>
+        <record id="product_stiffness_75" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_13"/>
+        </record>
+        <record id="product_stiffness_76" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_13"/>
+        </record>
+        <record id="product_stiffness_77" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_13"/>
+        </record>
+        <record id="product_stiffness_78" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_13"/>
+        </record>
+        <record id="product_stiffness_79" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_13"/>
+        </record>
+
+        <!--Đồng hợp kim and C3604-->
+        <record id="product_stiffness_80" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_14"/>
+        </record>
+        <record id="product_stiffness_81" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_14"/>
+        </record>
+        <record id="product_stiffness_82" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_14"/>
+        </record>
+        <record id="product_stiffness_83" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_14"/>
+        </record>
+        <record id="product_stiffness_84" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_14"/>
+        </record>
+        <record id="product_stiffness_85" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_14"/>
+        </record>
+
+        <!--Đồng hợp kim and C3604BD-->
+        <record id="product_stiffness_86" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_15"/>
+        </record>
+        <record id="product_stiffness_87" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_15"/>
+        </record>
+        <record id="product_stiffness_88" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_15"/>
+        </record>
+        <record id="product_stiffness_89" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_15"/>
+        </record>
+        <record id="product_stiffness_90" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_15"/>
+        </record>
+        <record id="product_stiffness_91" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_15"/>
+        </record>
+
+        <!--Đồng hợp kim and C3604BE-->
+        <record id="product_stiffness_92" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_16"/>
+        </record>
+        <record id="product_stiffness_93" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_16"/>
+        </record>
+        <record id="product_stiffness_94" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_16"/>
+        </record>
+        <record id="product_stiffness_95" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_16"/>
+        </record>
+        <record id="product_stiffness_96" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_16"/>
+        </record>
+        <record id="product_stiffness_97" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_16"/>
+        </record>
+
+        <!--Đồng hợp kim and C5191-->
+        <record id="product_stiffness_98" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_17"/>
+        </record>
+        <record id="product_stiffness_99" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_17"/>
+        </record>
+        <record id="product_stiffness_100" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_17"/>
+        </record>
+        <record id="product_stiffness_101" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_17"/>
+        </record>
+        <record id="product_stiffness_102" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_17"/>
+        </record>
+        <record id="product_stiffness_103" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_17"/>
+        </record>
+
+        <!--Đồng hợp kim and C5210-->
+        <record id="product_stiffness_104" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_18"/>
+        </record>
+        <record id="product_stiffness_105" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_18"/>
+        </record>
+        <record id="product_stiffness_106" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_18"/>
+        </record>
+        <record id="product_stiffness_107" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_18"/>
+        </record>
+        <record id="product_stiffness_108" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_18"/>
+        </record>
+        <record id="product_stiffness_109" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_18"/>
+        </record>
+
+        <!--Đồng hợp kim and C6801BD-->
+        <record id="product_stiffness_110" model="product.stiffness">
+            <field name="name">EH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_19"/>
+        </record>
+        <record id="product_stiffness_111" model="product.stiffness">
+            <field name="name">SH</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_19"/>
+        </record>
+        <record id="product_stiffness_112" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_19"/>
+        </record>
+        <record id="product_stiffness_113" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_19"/>
+        </record>
+        <record id="product_stiffness_114" model="product.stiffness">
+            <field name="name">1/4H</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_19"/>
+        </record>
+        <record id="product_stiffness_115" model="product.stiffness">
+            <field name="name">0</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_19"/>
+        </record>
+
+        <!--Đồng hợp kim and KHP109-->
+        <record id="product_stiffness_116" model="product.stiffness">
+            <field name="name">R440</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_23"/>
+        </record>
+        <record id="product_stiffness_117" model="product.stiffness">
+            <field name="name">R540</field>
+            <field name="product_material_id" ref="product_material_02"/>
+            <field name="product_alloy_id" ref="product_alloy_23"/>
+        </record>
+
+        <!--Nhôm hợp kim and A2017-->
+        <record id="product_stiffness_118" model="product.stiffness">
+            <field name="name">T3</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_26"/>
+        </record>
+        <record id="product_stiffness_119" model="product.stiffness">
+            <field name="name">T4</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_26"/>
+        </record>
+        <record id="product_stiffness_120" model="product.stiffness">
+            <field name="name">T351</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_26"/>
+        </record>
+
+        <!--Nhôm hợp kim and A2017-->
+        <record id="product_stiffness_121" model="product.stiffness">
+            <field name="name">T3</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_27"/>
+        </record>
+        <record id="product_stiffness_121" model="product.stiffness">
+            <field name="name">T4</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_27"/>
+        </record>
+        <record id="product_stiffness_122" model="product.stiffness">
+            <field name="name">T351</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_27"/>
+        </record>
+
+        <!--Nhôm hợp kim and A5052-->
+        <record id="product_stiffness_123" model="product.stiffness">
+            <field name="name">H112</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_28"/>
+        </record>
+        <record id="product_stiffness_124" model="product.stiffness">
+            <field name="name">H32</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_28"/>
+        </record>
+        <record id="product_stiffness_125" model="product.stiffness">
+            <field name="name">H34</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_28"/>
+        </record>
+        <record id="product_stiffness_126" model="product.stiffness">
+            <field name="name">O</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_28"/>
+        </record>
+
+        <!--Nhôm hợp kim and A5056-->
+        <record id="product_stiffness_127" model="product.stiffness">
+            <field name="name">H112</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_29"/>
+        </record>
+        <record id="product_stiffness_128" model="product.stiffness">
+            <field name="name">H34</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_29"/>
+        </record>
+
+        <!--Nhôm hợp kim and A5056BD-->
+        <record id="product_stiffness_129" model="product.stiffness">
+            <field name="name">H112</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_30"/>
+        </record>
+        <record id="product_stiffness_130" model="product.stiffness">
+            <field name="name">H34</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_30"/>
+        </record>
+
+        <!--Nhôm hợp kim and A5056BE-->
+        <record id="product_stiffness_131" model="product.stiffness">
+            <field name="name">H112</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_31"/>
+        </record>
+        <record id="product_stiffness_132" model="product.stiffness">
+            <field name="name">H34</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_31"/>
+        </record>
+
+        <!--Nhôm hợp kim and A6061-->
+        <record id="product_stiffness_133" model="product.stiffness">
+            <field name="name">T6</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_32"/>
+        </record>
+        <record id="product_stiffness_134" model="product.stiffness">
+            <field name="name">T651</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_32"/>
+        </record>
+        <record id="product_stiffness_135" model="product.stiffness">
+            <field name="name">T8</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_32"/>
+        </record>
+
+        <!--Nhôm hợp kim and A6063-->
+        <record id="product_stiffness_136" model="product.stiffness">
+            <field name="name">T5</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_33"/>
+        </record>
+        <record id="product_stiffness_137" model="product.stiffness">
+            <field name="name">T6</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_33"/>
+        </record>
+
+        <!--Nhôm hợp kim and A6063BE-->
+        <record id="product_stiffness_138" model="product.stiffness">
+            <field name="name">T5</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_34"/>
+        </record>
+        <record id="product_stiffness_139" model="product.stiffness">
+            <field name="name">T6</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_34"/>
+        </record>
+
+        <!--Nhôm hợp kim and A7003-->
+        <record id="product_stiffness_140" model="product.stiffness">
+            <field name="name">T5</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_35"/>
+        </record>
+        <record id="product_stiffness_141" model="product.stiffness">
+            <field name="name">T6</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_35"/>
+        </record>
+
+        <!--Nhôm hợp kim and A7075-->
+        <record id="product_stiffness_142" model="product.stiffness">
+            <field name="name">T6</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_36"/>
+        </record>
+        <record id="product_stiffness_143" model="product.stiffness">
+            <field name="name">T651</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_36"/>
+        </record>
+        <record id="product_stiffness_144" model="product.stiffness">
+            <field name="name">O</field>
+            <field name="product_material_id" ref="product_material_04"/>
+            <field name="product_alloy_id" ref="product_alloy_36"/>
+        </record>
+
+        <!--Nhôm không hợp kim and A1050-->
+        <record id="product_stiffness_145" model="product.stiffness">
+            <field name="name">H14</field>
+            <field name="product_material_id" ref="product_material_05"/>
+            <field name="product_alloy_id" ref="product_alloy_38"/>
+        </record>
+        <record id="product_stiffness_146" model="product.stiffness">
+            <field name="name">H16</field>
+            <field name="product_material_id" ref="product_material_05"/>
+            <field name="product_alloy_id" ref="product_alloy_38"/>
+        </record>
+        <record id="product_stiffness_147" model="product.stiffness">
+            <field name="name">H18</field>
+            <field name="product_material_id" ref="product_material_05"/>
+            <field name="product_alloy_id" ref="product_alloy_38"/>
+        </record>
+        <record id="product_stiffness_148" model="product.stiffness">
+            <field name="name">H24</field>
+            <field name="product_material_id" ref="product_material_05"/>
+            <field name="product_alloy_id" ref="product_alloy_38"/>
+        </record>
+        <record id="product_stiffness_149" model="product.stiffness">
+            <field name="name">O</field>
+            <field name="product_material_id" ref="product_material_05"/>
+            <field name="product_alloy_id" ref="product_alloy_38"/>
+        </record>
+
+        <!--Nhôm không hợp kim and A1100-->
+        <record id="product_stiffness_150" model="product.stiffness">
+            <field name="name">H14</field>
+            <field name="product_material_id" ref="product_material_05"/>
+            <field name="product_alloy_id" ref="product_alloy_39"/>
+        </record>
+        <record id="product_stiffness_151" model="product.stiffness">
+            <field name="name">H16</field>
+            <field name="product_material_id" ref="product_material_05"/>
+            <field name="product_alloy_id" ref="product_alloy_39"/>
+        </record>
+        <record id="product_stiffness_152" model="product.stiffness">
+            <field name="name">H18</field>
+            <field name="product_material_id" ref="product_material_05"/>
+            <field name="product_alloy_id" ref="product_alloy_39"/>
+        </record>
+        <record id="product_stiffness_153" model="product.stiffness">
+            <field name="name">H24</field>
+            <field name="product_material_id" ref="product_material_05"/>
+            <field name="product_alloy_id" ref="product_alloy_39"/>
+        </record>
+        <record id="product_stiffness_154" model="product.stiffness">
+            <field name="name">O</field>
+            <field name="product_material_id" ref="product_material_05"/>
+            <field name="product_alloy_id" ref="product_alloy_39"/>
+        </record>
+
+        <!--Nhôm phản quang and A3103-->
+        <record id="product_stiffness_155" model="product.stiffness">
+            <field name="name">H19</field>
+            <field name="product_material_id" ref="product_material_06"/>
+            <field name="product_alloy_id" ref="product_alloy_41"/>
+        </record>
+
+        <!--Nhôm phản quang and A6063-->
+        <record id="product_stiffness_153" model="product.stiffness">
+            <field name="name">T5</field>
+            <field name="product_material_id" ref="product_material_06"/>
+            <field name="product_alloy_id" ref="product_alloy_42"/>
+        </record>
+        <record id="product_stiffness_154" model="product.stiffness">
+            <field name="name">T6</field>
+            <field name="product_material_id" ref="product_material_06"/>
+            <field name="product_alloy_id" ref="product_alloy_42"/>
+        </record>
+
+        <!--Thép không gỉ and SUS301CSP-->
+        <record id="product_stiffness_155" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_07"/>
+            <field name="product_alloy_id" ref="product_alloy_44"/>
+        </record>
+        <record id="product_stiffness_156" model="product.stiffness">
+            <field name="name">3/4H</field>
+            <field name="product_material_id" ref="product_material_07"/>
+            <field name="product_alloy_id" ref="product_alloy_44"/>
+        </record>
+        <record id="product_stiffness_157" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_07"/>
+            <field name="product_alloy_id" ref="product_alloy_44"/>
+        </record>
+        <record id="product_stiffness_158" model="product.stiffness">
+            <field name="name">O</field>
+            <field name="product_material_id" ref="product_material_07"/>
+            <field name="product_alloy_id" ref="product_alloy_44"/>
+        </record>
+
+        <!--Thép không gỉ and SUS304-->
+        <record id="product_stiffness_159" model="product.stiffness">
+            <field name="name">HL</field>
+            <field name="product_material_id" ref="product_material_07"/>
+            <field name="product_alloy_id" ref="product_alloy_46"/>
+        </record>
+        <record id="product_stiffness_160" model="product.stiffness">
+            <field name="name">2B</field>
+            <field name="product_material_id" ref="product_material_07"/>
+            <field name="product_alloy_id" ref="product_alloy_46"/>
+        </record>
+        <record id="product_stiffness_161" model="product.stiffness">
+            <field name="name">BA</field>
+            <field name="product_material_id" ref="product_material_07"/>
+            <field name="product_alloy_id" ref="product_alloy_46"/>
+        </record>
+        <record id="product_stiffness_162" model="product.stiffness">
+            <field name="name">None</field>
+            <field name="product_material_id" ref="product_material_07"/>
+            <field name="product_alloy_id" ref="product_alloy_46"/>
+        </record>
+
+        <!--Thép không gỉ and SUS304CSP-->
+        <record id="product_stiffness_163" model="product.stiffness">
+            <field name="name">H</field>
+            <field name="product_material_id" ref="product_material_07"/>
+            <field name="product_alloy_id" ref="product_alloy_47"/>
+        </record>
+        <record id="product_stiffness_164" model="product.stiffness">
+            <field name="name">3/4H</field>
+            <field name="product_material_id" ref="product_material_07"/>
+            <field name="product_alloy_id" ref="product_alloy_47"/>
+        </record>
+        <record id="product_stiffness_165" model="product.stiffness">
+            <field name="name">1/2H</field>
+            <field name="product_material_id" ref="product_material_07"/>
+            <field name="product_alloy_id" ref="product_alloy_47"/>
+        </record>
+        <record id="product_stiffness_166" model="product.stiffness">
+            <field name="name">O</field>
+            <field name="product_material_id" ref="product_material_07"/>
+            <field name="product_alloy_id" ref="product_alloy_47"/>
+        </record>
+
+        <!--Thép gia công nguội and K100-->
+        <record id="product_stiffness_167" model="product.stiffness">
+            <field name="name">O</field>
+            <field name="product_material_id" ref="product_material_10"/>
+            <field name="product_alloy_id" ref="product_alloy_59"/>
+        </record>
+        <!--Thép gia công nguội and K105-->
+        <record id="product_stiffness_168" model="product.stiffness">
+            <field name="name">250 HB</field>
+            <field name="product_material_id" ref="product_material_10"/>
+            <field name="product_alloy_id" ref="product_alloy_60"/>
+        </record>
+        <!--Thép gia công nguội and K107-->
+        <record id="product_stiffness_169" model="product.stiffness">
+            <field name="name">250 HB</field>
+            <field name="product_material_id" ref="product_material_10"/>
+            <field name="product_alloy_id" ref="product_alloy_61"/>
+        </record>
+        <!--Thép gia công nguội and K110 -->
+        <record id="product_stiffness_169" model="product.stiffness">
+            <field name="name">250 HB</field>
+            <field name="product_material_id" ref="product_material_10"/>
+            <field name="product_alloy_id" ref="product_alloy_62"/>
+        </record>
+        <!--Thép gia công nguội and K245 -->
+        <record id="product_stiffness_171" model="product.stiffness">
+            <field name="name">235 HB</field>
+            <field name="product_material_id" ref="product_material_10"/>
+            <field name="product_alloy_id" ref="product_alloy_63"/>
+        </record>
+        <!--Thép gia công nguội and K340 ECOSTAR -->
+        <record id="product_stiffness_172" model="product.stiffness">
+            <field name="name">235 HB</field>
+            <field name="product_material_id" ref="product_material_10"/>
+            <field name="product_alloy_id" ref="product_alloy_64"/>
+        </record>
+        <!--Thép gia công nguội and K340 ISODUR -->
+        <record id="product_stiffness_173" model="product.stiffness">
+            <field name="name">235 HB</field>
+            <field name="product_material_id" ref="product_material_10"/>
+            <field name="product_alloy_id" ref="product_alloy_65"/>
+        </record>
+        <!--Thép gia công nguội and K353 -->
+        <record id="product_stiffness_174" model="product.stiffness">
+            <field name="name">240 HB</field>
+            <field name="product_material_id" ref="product_material_10"/>
+            <field name="product_alloy_id" ref="product_alloy_66"/>
+        </record>
+        <!--Thép gia công nguội and K360 ISODUR -->
+        <record id="product_stiffness_175" model="product.stiffness">
+            <field name="name">250 HB </field>
+            <field name="product_material_id" ref="product_material_10"/>
+            <field name="product_alloy_id" ref="product_alloy_67"/>
+        </record>
+
+        <!--Thép gia công nguội and K390 MICROCLEAN -->
+        <record id="product_stiffness_176" model="product.stiffness">
+            <field name="name">280 HB </field>
+            <field name="product_material_id" ref="product_material_10"/>
+            <field name="product_alloy_id" ref="product_alloy_68"/>
+        </record>
+        <!--Thép gia công nguội and K455 -->
+        <record id="product_stiffness_177" model="product.stiffness">
+            <field name="name">225 HB </field>
+            <field name="product_material_id" ref="product_material_10"/>
+            <field name="product_alloy_id" ref="product_alloy_69"/>
+        </record>
+        <!--Thép gia công nguội and K460 -->
+        <record id="product_stiffness_178" model="product.stiffness">
+            <field name="name">220 HB </field>
+            <field name="product_material_id" ref="product_material_10"/>
+            <field name="product_alloy_id" ref="product_alloy_70"/>
+        </record>
+        <!--Thép gia công nguội and K490 MICROCLEAN -->
+        <record id="product_stiffness_179" model="product.stiffness">
+            <field name="name">280 HB </field>
+            <field name="product_material_id" ref="product_material_10"/>
+            <field name="product_alloy_id" ref="product_alloy_71"/>
+        </record>
+        <!--Thép gia công nguội and K890 MICROCLEAN -->
+        <record id="product_stiffness_180" model="product.stiffness">
+            <field name="name">280 HB</field>
+            <field name="product_material_id" ref="product_material_10"/>
+            <field name="product_alloy_id" ref="product_alloy_72"/>
+        </record>
+        <!--Thép khuôn nhựa and M200 -->
+        <record id="product_stiffness_181" model="product.stiffness">
+            <field name="name">290 - 330 HB </field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_73"/>
+        </record>
+        <!--Thép khuôn nhựa and M201 -->
+        <record id="product_stiffness_182" model="product.stiffness">
+            <field name="name">290 - 330 HB </field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_74"/>
+        </record>
+        <!--Thép khuôn nhựa and M238 EXTRA -->
+        <record id="product_stiffness_183" model="product.stiffness">
+            <field name="name">290 - 330 HB </field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_75"/>
+        </record>
+        <!--Thép khuôn nhựa and M238 HIGH HARD -->
+        <record id="product_stiffness_184" model="product.stiffness">
+            <field name="name">355 - 395 HB</field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_76"/>
+        </record>
+        <!--Thép khuôn nhựa and M261 EXTRA -->
+        <record id="product_stiffness_185" model="product.stiffness">
+            <field name="name">38 - 42 HRC </field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_77"/>
+        </record>
+        <!--Thép khuôn nhựa and M303 EXTRA -->
+        <record id="product_stiffness_186" model="product.stiffness">
+            <field name="name">290 - 330 HB </field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_78"/>
+        </record>
+        <!--Thép khuôn nhựa and M303 HIGH HARD -->
+        <record id="product_stiffness_187" model="product.stiffness">
+            <field name="name">350 - 390 HB </field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_79"/>
+        </record>
+        <!--Thép khuôn nhựa and M310 ISOPLAST -->
+        <record id="product_stiffness_188" model="product.stiffness">
+            <field name="name">225 HB </field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_80"/>
+        </record>
+        <!--Thép khuôn nhựa and M461 EXTRA -->
+        <record id="product_stiffness_189" model="product.stiffness">
+            <field name="name">38 - 42 HRC </field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_81"/>
+        </record>
+        <!--Thép khuôn nhựa and M315 EXTRA -->
+        <record id="product_stiffness_190" model="product.stiffness">
+            <field name="name">290 - 330 HB </field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_82"/>
+        </record>
+        <!--Thép khuôn nhựa and M333 ISOPLAST -->
+        <record id="product_stiffness_191" model="product.stiffness">
+            <field name="name">220 HB </field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_83"/>
+        </record>
+        <!--Thép khuôn nhựa and M340 ISOPLAST -->
+        <record id="product_stiffness_192" model="product.stiffness">
+            <field name="name">260 HB </field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_84"/>
+        </record>
+        <!--Thép khuôn nhựa and M368 MICROCLEAN -->
+        <record id="product_stiffness_193" model="product.stiffness">
+            <field name="name">280 HB </field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_85"/>
+        </record>
+        <!--Thép khuôn nhựa and M390 MICROCLEAN -->
+        <record id="product_stiffness_194" model="product.stiffness">
+            <field name="name">280 HB </field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_86"/>
+        </record>
+        <!--Thép khuôn nhựa and M398 MICROCLEAN -->
+        <record id="product_stiffness_195" model="product.stiffness">
+            <field name="name">280 HB </field>
+            <field name="product_material_id" ref="product_material_11"/>
+            <field name="product_alloy_id" ref="product_alloy_87"/>
+        </record>
+        <!--Thép gia công nóng and W300 ISOBLOC -->
+        <record id="product_stiffness_196" model="product.stiffness">
+            <field name="name">206 HB </field>
+            <field name="product_material_id" ref="product_material_12"/>
+            <field name="product_alloy_id" ref="product_alloy_88"/>
+        </record>
+        <!--Thép gia công nóng and W302 ISODISC -->
+        <record id="product_stiffness_197" model="product.stiffness">
+            <field name="name">206 HB </field>
+            <field name="product_material_id" ref="product_material_12"/>
+            <field name="product_alloy_id" ref="product_alloy_89"/>
+        </record>
+        <!--Thép gia công nóng and W302 ISOBLOC -->
+        <record id="product_stiffness_198" model="product.stiffness">
+            <field name="name">206 HB </field>
+            <field name="product_material_id" ref="product_material_12"/>
+            <field name="product_alloy_id" ref="product_alloy_90"/>
+        </record>
+        <!--Thép gia công nóng and W303 ISODISC -->
+        <record id="product_stiffness_199" model="product.stiffness">
+            <field name="name">206 HB </field>
+            <field name="product_material_id" ref="product_material_12"/>
+            <field name="product_alloy_id" ref="product_alloy_91"/>
+        </record>
+        <!--Thép gia công nóng and W320 ISOBLOC -->
+        <record id="product_stiffness_200" model="product.stiffness">
+            <field name="name">206 HB </field>
+            <field name="product_material_id" ref="product_material_12"/>
+            <field name="product_alloy_id" ref="product_alloy_92"/>
+        </record>
+        <!--Thép gia công nóng and W350 ISOBLOC -->
+        <record id="product_stiffness_201" model="product.stiffness">
+            <field name="name">240 HB </field>
+            <field name="product_material_id" ref="product_material_12"/>
+            <field name="product_alloy_id" ref="product_alloy_93"/>
+        </record>
+        <!--Thép gia công nóng and W360 ISOBLOC -->
+        <record id="product_stiffness_202" model="product.stiffness">
+            <field name="name">206 HB </field>
+            <field name="product_material_id" ref="product_material_12"/>
+            <field name="product_alloy_id" ref="product_alloy_94"/>
+        </record>
+        <!--Thép gia công nóng and W400 VMR -->
+        <record id="product_stiffness_203" model="product.stiffness">
+            <field name="name">206 HB </field>
+            <field name="product_material_id" ref="product_material_12"/>
+            <field name="product_alloy_id" ref="product_alloy_95"/>
+        </record>
+        <!--Thép gia công nóng and W403 VMR -->
+        <record id="product_stiffness_204" model="product.stiffness">
+            <field name="name">206 HB </field>
+            <field name="product_material_id" ref="product_material_12"/>
+            <field name="product_alloy_id" ref="product_alloy_96"/>
+        </record>
+        <!--Thép gió (HSS) and S500 -->
+        <record id="product_stiffness_205" model="product.stiffness">
+            <field name="name">280 HB </field>
+            <field name="product_material_id" ref="product_material_13"/>
+            <field name="product_alloy_id" ref="product_alloy_97"/>
+        </record>
+        <!--Thép gió (HSS) and S600 -->
+        <record id="product_stiffness_207" model="product.stiffness">
+            <field name="name">280 HB </field>
+            <field name="product_material_id" ref="product_material_13"/>
+            <field name="product_alloy_id" ref="product_alloy_98"/>
+        </record>
+        <!--Thép gió (HSS) and S705 -->
+        <record id="product_stiffness_208" model="product.stiffness">
+            <field name="name">280 HB </field>
+            <field name="product_material_id" ref="product_material_13"/>
+            <field name="product_alloy_id" ref="product_alloy_99"/>
+        </record>
+        <!--Thép gió (HSS) and S290 MICROCLEAN -->
+        <record id="product_stiffness_209" model="product.stiffness">
+            <field name="name">350 HB </field>
+            <field name="product_material_id" ref="product_material_13"/>
+            <field name="product_alloy_id" ref="product_alloy_100"/>
+        </record>
+        <!--Thép gió (HSS) and S390 MICROCLEAN -->
+        <record id="product_stiffness_210" model="product.stiffness">
+            <field name="name">350 HB </field>
+            <field name="product_material_id" ref="product_material_13"/>
+            <field name="product_alloy_id" ref="product_alloy_101"/>
+        </record>
+        <!--Thép gió (HSS) and S590 MICROCLEAN -->
+        <record id="product_stiffness_211" model="product.stiffness">
+            <field name="name">300 HB </field>
+            <field name="product_material_id" ref="product_material_13"/>
+            <field name="product_alloy_id" ref="product_alloy_102"/>
+        </record>
+        <!--Thép gió (HSS) and S690 MICROCLEAN -->
+        <record id="product_stiffness_212" model="product.stiffness">
+            <field name="name">280 HB </field>
+            <field name="product_material_id" ref="product_material_13"/>
+            <field name="product_alloy_id" ref="product_alloy_103"/>
+        </record>
+        <!--Thép gió (HSS) and S790 MICROCLEAN -->
+        <record id="product_stiffness_213" model="product.stiffness">
+            <field name="name">280 HB </field>
+            <field name="product_material_id" ref="product_material_13"/>
+            <field name="product_alloy_id" ref="product_alloy_104"/>
+        </record>
+        <!--Thép dụng cụ không gỉ and N100 -->
+        <record id="product_stiffness_214" model="product.stiffness">
+            <field name="name">220 HB </field>
+            <field name="product_material_id" ref="product_material_14"/>
+            <field name="product_alloy_id" ref="product_alloy_105"/>
+        </record>
+        <!--Thép dụng cụ không gỉ and N310 -->
+        <record id="product_stiffness_215" model="product.stiffness">
+            <field name="name">220 HB </field>
+            <field name="product_material_id" ref="product_material_14"/>
+            <field name="product_alloy_id" ref="product_alloy_107"/>
+        </record>
+        <!--Thép dụng cụ không gỉ and N320 -->
+        <record id="product_stiffness_216" model="product.stiffness">
+            <field name="name">230 HB </field>
+            <field name="product_material_id" ref="product_material_14"/>
+            <field name="product_alloy_id" ref="product_alloy_108"/>
+        </record>
+        <!--Thép dụng cụ không gỉ and N335 -->
+        <record id="product_stiffness_217" model="product.stiffness">
+            <field name="name">280 HB </field>
+            <field name="product_material_id" ref="product_material_14"/>
+            <field name="product_alloy_id" ref="product_alloy_109"/>
+        </record>
+        <!--Thép dụng cụ không gỉ and N350 -->
+        <record id="product_stiffness_218" model="product.stiffness">
+            <field name="name">295 HB </field>
+            <field name="product_material_id" ref="product_material_14"/>
+            <field name="product_alloy_id" ref="product_alloy_110"/>
+        </record>
+        <!--Thép dụng cụ không gỉ and N352 -->
+        <record id="product_stiffness_219" model="product.stiffness">
+            <field name="name">248 HB </field>
+            <field name="product_material_id" ref="product_material_14"/>
+            <field name="product_alloy_id" ref="product_alloy_111"/>
+        </record>
+        <!--Thép dụng cụ không gỉ and N403 -->
+        <record id="product_stiffness_220" model="product.stiffness">
+            <field name="name">320 HB </field>
+            <field name="product_material_id" ref="product_material_14"/>
+            <field name="product_alloy_id" ref="product_alloy_113"/>
+        </record>
+        <!--Thép dụng cụ không gỉ and N540 -->
+        <record id="product_stiffness_221" model="product.stiffness">
+            <field name="name">245 HB </field>
+            <field name="product_material_id" ref="product_material_14"/>
+            <field name="product_alloy_id" ref="product_alloy_115"/>
+        </record>
+        <!--Thép dụng cụ không gỉ and N685 -->
+        <record id="product_stiffness_222" model="product.stiffness">
+            <field name="name">265 HB </field>
+            <field name="product_material_id" ref="product_material_14"/>
+            <field name="product_alloy_id" ref="product_alloy_116"/>
+        </record>
+        <!--Thép dụng cụ không gỉ and N690 -->
+        <record id="product_stiffness_223" model="product.stiffness">
+            <field name="name">285 HB </field>
+            <field name="product_material_id" ref="product_material_14"/>
+            <field name="product_alloy_id" ref="product_alloy_117"/>
+        </record>
+        <!--Thép dụng cụ không gỉ and N695 -->
+        <record id="product_stiffness_224" model="product.stiffness">
+            <field name="name">285 HB </field>
+            <field name="product_material_id" ref="product_material_14"/>
+            <field name="product_alloy_id" ref="product_alloy_118"/>
+        </record>
+        <!--Thép dụng cụ không gỉ and N700 -->
+        <record id="product_stiffness_225" model="product.stiffness">
+            <field name="name">360 HB </field>
+            <field name="product_material_id" ref="product_material_14"/>
+            <field name="product_alloy_id" ref="product_alloy_119"/>
+        </record>
+        <!--Thép dụng cụ không gỉ and N700 -->
+        <record id="product_stiffness_226" model="product.stiffness">
+            <field name="name">363 HB </field>
+            <field name="product_material_id" ref="product_material_14"/>
+            <field name="product_alloy_id" ref="product_alloy_120"/>
+        </record>
+        <!--Thép dụng cụ không gỉ and N709 -->
+        <record id="product_stiffness_227" model="product.stiffness">
+            <field name="name">363 HB </field>
+            <field name="product_material_id" ref="product_material_14"/>
+            <field name="product_alloy_id" ref="product_alloy_121"/>
+        </record>
+    </data>
+</odoo>
